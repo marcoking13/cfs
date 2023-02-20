@@ -1,0 +1,8 @@
+.schedule_admin_container{
+  box-shadow:1px 1px 1px black;
+  padding:5%;
+  background:black;
+}
+.schedule_lists{
+  border:2px solid #e6e6e6;
+}
