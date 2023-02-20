@@ -1,7 +1,7 @@
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
 let _db;
-var url ="mongodb://marcokhodr116@gmail.com:thirdpi1@us-central1.gcp.realm.mongodb.com:27020/?authMechanism=PLAIN&authSource=%24external&ssl=true&appName=application-0-xlgfu:mongodb-atlas:local-userpass" || "mongodb://localhost:27017/" ;
+var url ="mongodb+srv://marcokhodr116:thirdpi1@cluster0.9nkwh9b.mongodb.net/?retryWrites=true&w=majority" || "mongodb://localhost:27017/" ;
 
 const MongoConnect = (cb) => {
 
