@@ -12,5 +12,12 @@
     "nodemon": "^2.0.20",
     "path": "^0.12.7",
     "sequelize": "^6.28.0"
+  },
+
+    "homepage":"http://marcoking13.github.io/cfs"
+  
+  "scripts": {
+  "predeploy": "nodemon server.js",
+  "deploy": "gh-pages -d build"
   }
 }
