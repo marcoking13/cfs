@@ -4,7 +4,7 @@ var express = require("express");
 var expressLayouts = require('express-ejs-layouts');
 var app = express();
 var bodyParser = require("body-parser");
-var port = 3002;
+var port = process.env.PORT || 3002;
 
 var user_routes = require("./routes/user/user_routes.js");
 var admin_routes = require("./routes/admin/admin_routes.js");
