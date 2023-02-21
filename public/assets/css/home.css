@@ -665,7 +665,7 @@ body{
     position: absolute;
     z-index: 0 !important;
     width: 200% !important;
-    bottom: 50% !important;
+    bottom: 40% !important;
     height: 300px !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -711,7 +711,7 @@ body{
     top: 15%;
   }
   .showimg{
-    margin-top: 100%;
+    margin-top: 70%;
     height: 300px !important;
   }
   .titleshow{
@@ -771,7 +771,7 @@ body{
     /* margin-right: 45%; */
     /* float: right; */
     margin-right: 35%;
-    margin-top: -100%;
+    margin-top: -60%;
     font-family: "Akrobat";
     padding: 2%;
     padding-left: 2.5%;
@@ -785,5 +785,8 @@ body{
   }
   .big_blue_box_about{
     opacity:0;
+  }
+  .contact_section{
+    margin-top:30%;
   }
 }
