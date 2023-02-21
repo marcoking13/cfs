@@ -582,7 +582,9 @@ outline:none;
 
 
 
-
+body{
+  overflow-x: :hidden;
+}
 @media screen and (max-width:944px){
 
   .text-container{
@@ -606,7 +608,7 @@ outline:none;
     max-width:100% !important;
   }
   .intro-row{
-    width:150%;
+    width:150% !important;
   }
   .big-text{
 
