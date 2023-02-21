@@ -579,7 +579,9 @@ outline:none;
 
 
 
-
+body, html{
+    overflow-x: hidden !important;
+}
 
 
 body{
