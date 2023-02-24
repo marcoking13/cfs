@@ -566,18 +566,6 @@ outline:none;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 body{
   overflow-x: :hidden;
 }
@@ -604,7 +592,7 @@ body{
     max-width:100% !important;
   }
   .intro-row{
-    width:150% !important;
+    width:120% !important;
   }
   .big-text{
 
