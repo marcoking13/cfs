@@ -566,7 +566,7 @@ outline:none;
 
 
 
-body{
+html{
   overflow-x:hidden;
 }
 @media screen and (max-width:944px){
