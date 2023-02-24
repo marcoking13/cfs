@@ -45,8 +45,8 @@ body{
 .big-text-about{
   padding:2% !important;
 }
-.big-text-about p {
-  font-size: 60px !important;
+.big-text{
+  font-size: 60px;
   color:white;
 }
 .medium-text{
@@ -115,4 +115,56 @@ body{
   z-index:9;
   position: absolute !important;
   top:0% !important;
+}
+
+
+
+@media screen and (max-width:944px){
+  .big-text-about{
+    font-size:30px !important;
+    text-align: left;
+  }
+  .banners_about{
+    margin-top:12.5% !important;
+  }
+  .about_container{
+    margin-top:65%;
+  }
+  .mobile_divide{
+    max-width:8.333333333% !important;
+    width:8.333333333% !important;
+    flex: 0 0 8.3333333%
+
+  }
+  .mobile_mission_container{
+    width:83.333333333% !important;
+    max-width:83.33333333% !important;
+    flex: 0 0 83.333333333%
+  }
+  .what_we_do_description {
+    font-size:20px !important;
+  }
+  .what_we_do_col{
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    width:58.333333%;
+  }
+  .what_we_do_image{
+    padding-bottom: 10%;
+    position: relative;
+    right: 500px !important;
+  }
+  .logo_container{
+    width:100%;
+  }
+  .big-text-container{
+    width:100% !important;
+  }
+  .intro-text-container{
+    top:100%;
+
+  }
+  .big-text-about-big{
+    width:150% !important;
+  }
 }
