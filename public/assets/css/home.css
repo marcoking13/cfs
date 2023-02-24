@@ -125,9 +125,7 @@ body{
   width:100%;
 
 }
-html{
-  overflow-x: hidden;
-}
+
 .banners{
   position: absolute;
   width:100%;
@@ -570,7 +568,10 @@ outline:none;
 
 
 body{
-  overflow-x:hidden;
+  overflow-x:hidden !important;
+}
+video{
+  overflow-y: hidden !important;
 }
 @media screen and (max-width:944px){
 
