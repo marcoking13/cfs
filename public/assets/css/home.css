@@ -578,12 +578,6 @@ outline:none;
 
 
 
-
-body, html{
-    overflow-x: hidden !important;
-}
-
-
 body{
   overflow-x: :hidden;
 }
