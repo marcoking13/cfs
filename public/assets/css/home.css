@@ -643,6 +643,9 @@ html{
   .bigger-text-container{
     width:85% !important;
   }
+  video{
+    overflow-y: hidden;
+  }
   .wave:before{
 
     content: "";
