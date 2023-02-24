@@ -128,7 +128,7 @@ body{
     margin-top:12.5% !important;
   }
   .about_container{
-    margin-top:65%;
+    margin-top:105%;
   }
   .mobile_divide{
     max-width:8.333333333% !important;
@@ -142,17 +142,20 @@ body{
     flex: 0 0 83.333333333%
   }
   .what_we_do_description {
-    font-size:20px !important;
+    font-size:17px !important;
   }
   .what_we_do_col{
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
-    width:58.333333%;
+    flex: 0 0 65%;
+    max-width: 65%;
+    width:65%;
   }
   .what_we_do_image{
     padding-bottom: 10%;
     position: relative;
     right: 500px !important;
+  }
+  .what_we_do_title{
+    font-size:30px;
   }
   .logo_container{
     width:100%;
@@ -161,10 +164,13 @@ body{
     width:100% !important;
   }
   .intro-text-container{
-    top:100%;
+    top:80%;
 
   }
   .big-text-about-big{
-    width:150% !important;
+    width:100% !important;
+  }
+  .text-container{
+    height:500px !important;
   }
 }
