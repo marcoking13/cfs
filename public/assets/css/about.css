@@ -117,9 +117,7 @@ body{
   top:0% !important;
 }
 
-body{
-  overflow-x: hidden !important;
-}
+
 
 @media screen and (max-width:944px){
   .big-text-about{
