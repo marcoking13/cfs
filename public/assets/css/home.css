@@ -567,7 +567,9 @@ outline:none;
 
 
 @media screen and (max-width:944px){
-
+.active-dropdown{
+  height:300px !important;
+}
   .text-container{
     position: absolute !important;
     width: 100% !important;
