@@ -11,6 +11,14 @@
 .relative{
   position: relative;
 }
+
+
+body{
+  overflow-x:hidden !important;
+}
+video{
+  overflow-y: hidden !important;
+}
 .padding-left-5{
   padding-left:5%;
 }
