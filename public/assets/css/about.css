@@ -128,7 +128,7 @@ body{
     margin-top:12.5% !important;
   }
   .about_container{
-    margin-top:110%;
+    margin-top:110% !important;
     padding-bottom:20%;
   }
   .mobile_divide{
