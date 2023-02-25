@@ -71,3 +71,16 @@ font-family: "Akrobat";
   background:black !important;
   border-color:white !important;
 }
+
+@media screen and (max-width:944px){
+  .modal_divider{
+    width:8.3333333333% !important;
+    flex: 0 0 8.3333333%;
+    max-width:8.3333333333% !important
+  }
+  .modal_col{
+    width:83.333333333% !important;
+    max-width:83.33333333% !important;
+    flex: 0 0 83.333333333% !important;
+  }
+}
