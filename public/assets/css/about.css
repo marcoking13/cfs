@@ -118,7 +118,6 @@ body{
 }
 
 
-
 @media screen and (max-width:944px){
   .big-text-about{
     font-size:20px !important;
@@ -134,6 +133,7 @@ body{
     margin-top:95% !important;
     padding-bottom:20%;
   }
+
   .mobile_divide{
     max-width:8.333333333% !important;
     width:8.333333333% !important;
