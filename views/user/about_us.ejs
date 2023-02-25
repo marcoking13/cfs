@@ -1,22 +1,23 @@
 
 <%- include("./../layout/about/head.ejs") %>
 
-<div class="container-fluid home_page" >
+<div id="wrapper">
+  <div class="container-fluid home_page" >
 
-  <div class="row">
-      <div class="col-12 padding-2 background-1a navbar_container" >
+    <div class="row">
+        <div class="col-12 padding-2 background-1a navbar_container" >
 
-      </div>
+        </div>
+    </div>
+
+    <div class="showcase-container relative width-100">
+      <%- include("./../layout/about/showcase.ejs") %>
+    </div>
+
+    <%- include("./../layout/about/mission.ejs") %>
+    <%- include("./../layout/about/what_we_do.ejs") %>
+
+
   </div>
-
-  <div class="showcase-container relative width-100">
-    <%- include("./../layout/about/showcase.ejs") %>
-  </div>
-
-  <%- include("./../layout/about/mission.ejs") %>
-  <%- include("./../layout/about/what_we_do.ejs") %>
-
-
 </div>
-
 <%- include("./../layout/end.ejs") %>

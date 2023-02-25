@@ -12,9 +12,8 @@
   position: relative;
 }
 
-
-body{
-  overflow-x:hidden !important;
+#wrapper{
+  overflow-x:hidden;
 }
 video{
   overflow-y: hidden !important;
