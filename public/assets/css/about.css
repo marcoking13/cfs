@@ -124,6 +124,9 @@ body{
     font-size:20px !important;
     text-align: left;
   }
+  .big-text-about-bigger{
+    width:120% !important;
+  }
   .banners_about{
     margin-top:12.5% !important;
   }
