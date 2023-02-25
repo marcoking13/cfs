@@ -14,8 +14,12 @@
 
 #wrapper{
   overflow-x:hidden;
+  width:100%;
+  position:relative;
+  
 }
 video{
+
   overflow-y: hidden !important;
 }
 .padding-left-5{

@@ -118,10 +118,7 @@ body{
 }
 
 
-/*
- html{
-  overflow-x: hidden;
-} */
+
 @media screen and (max-width:944px){
   .big-text-about{
     font-size:20px !important;

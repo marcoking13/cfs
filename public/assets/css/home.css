@@ -562,12 +562,6 @@ outline:none;
 }
 
 
-
-body{
-  overflow-x:hidden !important;
-}
-
-
 @media screen and (max-width:944px){
 .active-dropdown{
   height:300px !important;
