@@ -131,6 +131,7 @@ body{
   }
   .about_container{
     margin-top:115%;
+    padding-bottom:20%;
   }
   .mobile_divide{
     max-width:8.333333333% !important;
@@ -165,6 +166,9 @@ body{
   }
   .big-text-container{
     width:100% !important;
+  }
+  .big-text-container {
+    width:90% !important;
   }
   .intro-text-container{
     top:80%;
