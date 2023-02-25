@@ -123,7 +123,7 @@ body{
 
 @media screen and (max-width:944px){
   .big-text-about{
-    font-size:23px !important;
+    font-size:20px !important;
     text-align: left;
   }
   .banners_about{
@@ -165,11 +165,9 @@ body{
     width:100%;
   }
   .big-text-container{
-    width:100% !important;
+    width:110% !important;
   }
-  .big-text-container {
-    width:90% !important;
-  }
+
   .intro-text-container{
     top:80%;
 
