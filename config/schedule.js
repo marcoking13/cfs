@@ -9,12 +9,14 @@ class Schedule {
       this.date = date;
       this.time = time;
       this.total = 0;
+      this.outside = 0;
   }
 
-  save(){
+  async save(){
 
     var db_instance = db.GetDb();
-
+    this.total_all_prices();
+    console.log(this);
     db_instance.collection("schedules").insertOne(this).then((result)=>{
     }).catch(err => {console.log(err)});
 
@@ -31,9 +33,12 @@ class Schedule {
 
   total_all_prices(){
     for (var i = 0; i < this.windows.length; i++){
+
       this.total += this.windows[i].total_price;
     }
-    console.log(this);
+    this.total = Math.round(this.total);
+    this.outside = Math.round(this.total * .5);
+    console.log(this.windows);
   }
 
 

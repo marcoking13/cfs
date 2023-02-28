@@ -38,7 +38,7 @@
 
       <div class="form-container-intro">
 
-        <form method = "POST" action=  "/admin/schedule">
+        <form method = "POST" action=  "/schedule">
         <div class="col-5 name_container fl">
             <input class="form-control width-100 margin-top-2_5"  placeholder="First Name" name = "firstName"  />
         </div>
@@ -60,10 +60,10 @@
             <input class="form-control width-100 margin-top-2_5" placeholder="Number of Large Windows (Greater than 6 Sqr. Ft.)" type="number" name = "lgWindowCount"  />
         </div>
         <div class="col-12 margin-top-5">
-            <input class="form-control width-100 margin-top-2_5"  placeholder="Date of Quote" type="date" name = "date"  />
+            <input class="form-control width-100 margin-top-2_5"  value = 9 placeholder="Date of Quote" type="hidden" name = "date"  />
         </div>
         <div class="col-12 margin-top-5">
-            <input class="form-control width-100 margin-top-2_5" placeholder="Date of Quote" type="time" name = "time"  />
+            <input class="form-control width-100 margin-top-2_5" value = 9 placeholder="Date of Quote" type="hidden" name = "time"  />
         </div>
         <div class="col-6">
             <button type="submit width-100 margin-top-5" class="btn btn-danger">Submit</button>

@@ -1,6 +1,29 @@
 var express = require("express");
 var path = require("path");
 var rootDir = require("./../../util/path.js");
+const Quote = require("./../../config/quote.js");
+const Schedule = require("./../../config/schedule.js");
+
+const price_sheet = [
+   {
+    key:"small",
+    price:1.5,
+    price_half:1
+  },
+  {
+  key:"medium",
+  price:2,
+  price_half:1.5
+  },
+  {
+  key:"large",
+  price:4,
+  price_half:2.5
+  }
+]
+
+
+
 
 const GetAboutUsPage = (req,res,next) => {
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),{
@@ -16,9 +39,58 @@ const GetSchedulePage = (req,res,next)=>{
   });
 }
 
+
+
+const GetScheduleData = async(req,res,next) =>{
+
+  var data = req.body;
+  var name = req.body.firstName + " " + req.body.lastName;
+  var sizes = [data.smWindowCount,data.mdWindowCount,data.lgWindowCount];
+  var windows = [];
+
+  var config = {
+    name:name,
+    date:data.date,
+    time:data.time,
+    smWindowCount:data.smWindowCount,
+    mdWindowCount:data.mdWindowCount,
+    lgWindowCount:data.lgWindowCount,
+    address:data.address
+  };
+
+  for (var i = 0; i < price_sheet.length; i++) {
+    var ps = price_sheet[i];
+    console.log(Quote);
+    var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
+    new_quote.total();
+    windows.push(new_quote);
+  }
+
+  var new_schedule = new Schedule(config.name,config.address,windows,config.date,config.time);
+
+   const response = await new_schedule.save();
+console.log(new_schedule.total_price);
+  res.render(path.join(rootDir,"views","/user/index.ejs"),{
+
+    modal:{
+      wrapper:"active_wrapper",
+      modal:"active_modal",
+      outside:new_schedule.outside,
+
+      total_price:Math.round(new_schedule.total * .9)
+    },
+    lock:"lock_screen",
+    pageTitle:"Admin Home",
+    active_path:"/"
+  });
+
+}
+
 const GetHomePage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
+    modal:null,
+    lock:"",
     active_path:"/"
   });
 }
@@ -33,5 +105,6 @@ const GetContactUsPage = (req,res,next)=>{
 
 exports.GetAboutUsPage = GetAboutUsPage;
 exports.GetSchedulePage = GetSchedulePage;
+exports.GetScheduleData = GetScheduleData;
 exports.GetHomePage = GetHomePage;
 exports.GetContactUsPage = GetContactUsPage;

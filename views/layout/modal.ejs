@@ -1,17 +1,21 @@
-<div class="cfs_modal_wrapper"></div>
+
+<% if(modal){ %>
+<div class= "cfs_modal_wrapper <%= modal.wrapper%>" id="blackWrapper"></div>
 
 
-<div class="cfs_modal" tabindex="-1">
+<div class=" cfs_modal <%= modal.modal  %>" id="mainModal"> tabindex="-1">
   <div class="row">
       <div class="col-3 modal_divider"></div>
       <div class='col-6 modal_body no-padding modal_col'>
-          <img class="width-100" src="./assets/window1.gif"/>
+
+          <img class="width-100" src="./assets/window_1.png"/>
+          <p id="modal_exit">X</p>
         <div class="modal-dialog">
 
           <p class="quote_title">Your Quote:</p>
 
-          <p class="quote_number">$30 Inside or Outside</p>
-          <p class="quote_number">$45 Inside and Outside</p>
+          <p class="quote_number">$<%=modal.outside %> Inside or Outside</p>
+          <p class="quote_number">$<%=modal.total_price %> Inside and Outside</p>
           <div class="quote_contact_us">
             <p class="quote_pitch">Schedule a Cleaning Now!</p>
             <button class="btn btn-danger quote_button_modal">489-494-4094</button>
@@ -23,3 +27,5 @@
   </div>
 
 </div>
+
+<%}%>
