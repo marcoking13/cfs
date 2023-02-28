@@ -563,6 +563,11 @@ outline:none;
   }
 }
 
+.quote_btn{
+  background:black;
+  border-color:black;
+
+}
 
 @media screen and (max-width:944px){
 .active-dropdown{
