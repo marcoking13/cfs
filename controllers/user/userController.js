@@ -3,6 +3,7 @@ var path = require("path");
 var rootDir = require("./../../util/path.js");
 const Quote = require("./../../config/quote.js");
 const Schedule = require("./../../config/schedule.js");
+var modal = null
 
 const price_sheet = [
    {
@@ -70,26 +71,28 @@ const GetScheduleData = async(req,res,next) =>{
 
    const response = await new_schedule.save();
 console.log(new_schedule.total_price);
-  res.render(path.join(rootDir,"views","/user/index.ejs"),{
+  modal = {
+    wrapper:"active_wrapper",
+    modal:"active_modal",
+    outside:new_schedule.outside,
 
-    modal:{
-      wrapper:"active_wrapper",
-      modal:"active_modal",
-      outside:new_schedule.outside,
-
-      total_price:Math.round(new_schedule.total * .9)
-    },
-    lock:"lock_screen",
-    pageTitle:"Admin Home",
-    active_path:"/"
-  });
+    total_price:Math.round(new_schedule.total * .9)
+  },
+  // res.render(path.join(rootDir,"views","/user/index.ejs"),{
+  //
+  //   modal:modal,
+  //   lock:"lock_screen",
+  //   pageTitle:"Admin Home",
+  //   active_path:"/"
+  // });
+  res.redirect("/");
 
 }
 
 const GetHomePage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
-    modal:null,
+    modal:modal,
     lock:"",
     active_path:"/"
   });
