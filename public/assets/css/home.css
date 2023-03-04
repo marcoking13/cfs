@@ -599,8 +599,8 @@ outline:none;
 
   .big-text{
     letter-spacing: 0px !important;
-    font-size:25px;
-    font-weight: bold;
+    font-size:25px !important;
+    font-weight: bold !important;
     padding:2% !important;
     margin-left:2.5% !important;
   }
