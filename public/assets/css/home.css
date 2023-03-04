@@ -44,9 +44,10 @@
 }
 .big-text{
   color:white;
-  font-family: "Noto Sans";
+  font-family: "Akrobat";
+  font-weight: bold;
   letter-spacing: 5px;
-  font-size: 40px;
+  font-size: 45px;
 }
 .absolute{
   position:absolute;
