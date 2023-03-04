@@ -609,11 +609,10 @@ outline:none;
 
   .big-text-container{
     padding:1% !important;
-    width:100% !important;
-    margin-left: 5% !important;
+    width:90% !important;
   }
   .bigger-text-container{
-    width:110% !important;
+    width:95% !important;
   }
   .about_us{
     margin-top:140% !important;
