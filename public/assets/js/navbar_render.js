@@ -16,7 +16,7 @@ var desktop_nav = `
     <p class="link_nav">Contact Us</p>
   </div>
   <div class="col-2">
-    <p class="link_nav">Schedule Quote</p>
+  <a href='/schedule'>  <p class="link_nav">Schedule Quote</p> </a>
   </div>
 
 </div>
@@ -41,7 +41,7 @@ var mobile_nav = `
         <p class="link_nav medium-font">Contact Us</p>
       </div>
       <div class="col-12">
-        <p class="link_nav medium-font">Schedule Quote</p>
+        <a href="/schedule" ><p class="link_nav medium-font">Schedule Quote</p> </a>
       </div>
       </div>
       </div>

@@ -17,16 +17,19 @@ height:100px !important;
 body{
   background:#0080B8 !important;
 }
+
 .showcase_image_about{
   width:110%;
   position: absolute;
   top:0%;
 }
+
 .lightbluebanner_about{
   width:200% !important;
   position: relative;
   z-index:99;
 }
+
 .darkbluebanner{
   opacity:.7;
   z-index:99;

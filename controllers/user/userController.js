@@ -36,7 +36,9 @@ const GetAboutUsPage = (req,res,next) => {
 const GetSchedulePage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/schedule.ejs"),{
     pageTitle:"Schedule Online",
-    active_path:"/schedule"
+    active_path:"/schedule",
+    lock:false,
+    modal:modal
   });
 }
 

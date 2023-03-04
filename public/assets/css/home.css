@@ -596,14 +596,15 @@ outline:none;
   .intro-row{
     width:100% !important;
   }
+
   .big-text{
-
     letter-spacing: 0px !important;
-    font-size:18px;
-    padding:2.5% !important;
-
+    font-size:25px;
+    font-weight: bold;
+    padding:2% !important;
     margin-left:2.5% !important;
   }
+
   .big-text-container{
     padding:2.5% !important;
     width:80% !important;
