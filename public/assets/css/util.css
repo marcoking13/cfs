@@ -7,6 +7,9 @@
 .clear{
   clear:both;
 }
+.bold{
+  font-weight:bold;
+}
 .mt2_5{
   margin-top:2.5%;
 }

@@ -50,8 +50,8 @@
 #modal_exit{
   color:#1B1742;
   position:absolute;
-  top:5%;
-  left:5%;
+  top:2%;
+  left:2%;
   font-size:25px;
   z-index:999
 }
