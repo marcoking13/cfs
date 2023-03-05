@@ -792,4 +792,10 @@ outline:none;
   .intro-form-container{
     width:120% !important;
   }
+  .transparentbanner{
+    opacity:0 !important;
+  }
+  .banners{
+    top:35% !important;
+  }
 }
