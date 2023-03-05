@@ -178,7 +178,6 @@ body{
 }
 .navbar_home{
 
-
   width:100%;
 }
 .link_nav{
@@ -573,9 +572,7 @@ outline:none;
 .bigger-text-container{
   width:175% !important;
 }
-.navbar_home{
-  background:#00103d !important
-}
+
 
 @media screen and (max-width:944px){
 .active-dropdown{
