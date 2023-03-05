@@ -3,7 +3,8 @@ var path = require("path");
 var rootDir = require("./../../util/path.js");
 const Quote = require("./../../config/quote.js");
 const Schedule = require("./../../config/schedule.js");
-var modal = null
+var modal = null;
+var lock = false;
 
 const price_sheet = [
    {
@@ -29,8 +30,10 @@ const price_sheet = [
 const GetAboutUsPage = (req,res,next) => {
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),{
       pageTitle:"About Us",
-      active_path:"/about_us"
+      active_path:"/about_us",
+      lock:false
     });
+
 }
 
 const GetSchedulePage = (req,res,next)=>{
@@ -87,6 +90,7 @@ console.log(new_schedule.total_price);
   //   pageTitle:"Admin Home",
   //   active_path:"/"
   // });
+  lock = true;
   res.redirect("/");
 
 }
@@ -95,7 +99,7 @@ const GetHomePage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
     modal:modal,
-    lock:"",
+    lock:lock,
     active_path:"/"
   });
 }
