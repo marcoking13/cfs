@@ -24,7 +24,12 @@ var desktop_nav = `
 `;
 var mobile_nav = `
 <div class="pos-f-t background-1a">
-  <div class="collapse" id="navbarToggleExternalContent" status="inactive">
+<nav class="navbar navbar-dark background-1a">
+  <button id="button_navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+  <div class="collapse active_n" id="navbarToggleExternalContent" status="inactive">
 
     <div class="row navbar_home_mobile mt2_5">
       <div class="col-1 "></div>
@@ -47,11 +52,7 @@ var mobile_nav = `
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-dark background-1a">
-    <button id="button_navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
+
 </div>
 `;
 
