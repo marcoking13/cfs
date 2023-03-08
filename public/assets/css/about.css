@@ -121,6 +121,8 @@ body{
 }
 
 
+
+
 @media screen and (max-width:944px){
   .big-text-about{
     font-size:30px !important;
@@ -136,7 +138,7 @@ body{
     width:120%;
   }
   .banners_about{
-    margin-top:12.5% !important;
+    margin-top:10% !important;
   }
   .smaller_text_container{
     width:80% !important;
@@ -198,5 +200,8 @@ body{
   }
   .intro-about-container{
     top:140%;
+  }
+  .big-text-about-bigger{
+    width:120% !important;
   }
 }
