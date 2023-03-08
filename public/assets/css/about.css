@@ -127,7 +127,7 @@ body{
     text-align: left;
   }
   .about_showcase_image{
-    height:600px !important;
+    height:500px !important;
   }
   .showcase_image_about{
     top:-40% !important;
@@ -139,7 +139,7 @@ body{
     margin-top:12.5% !important;
   }
   .about_container{
-    margin-top:85% !important;
+    margin-top:95% !important;
     padding-bottom:20%;
   }
 
