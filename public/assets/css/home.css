@@ -16,13 +16,22 @@
   background:#0080b8
 }
 
+.padding-left-5{
+  padding-left:5%;
+}
+
 .dropdown_arrow{
   width:50%;
   margin-left:25%;
 }
+
 .dropdown_container{
   margin-top:2.5%;
 
+}
+.what_we_do_image{
+  height:700px;
+  width:100%;
 }
 #vid{
   height:1200px;
