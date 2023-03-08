@@ -9,6 +9,9 @@
   padding: 5% !important;
   margin-top:-10.5% !important;
 }
+.no-background{
+  background:none !important;
+}
 .home_page{
   padding-bottom:42.5% !important;
 }
@@ -21,6 +24,13 @@
 
 @media screen and (max-width:844px){
   .quote_showcase_image{
-    height:700px !important;
+    height:600px !important;
+  }
+  .work_container{
+    margin-top:45%;
+
+  }
+  .banners_about{
+    margin-top:20% !important;
   }
 }
