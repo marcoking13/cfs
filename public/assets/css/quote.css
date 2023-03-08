@@ -12,16 +12,60 @@
 .no-background{
   background:none !important;
 }
+.margin-top-5{
+  margin-top:5%;
+}
+.margin-top-10{
+  margin-top:10%;
+}
+.margin-bottom-5{
+  margin-bottom:5%;
+}
 .home_page{
   padding-bottom:42.5% !important;
+}
+label{
+    margin-top:2.5%;
+    font-family:"Akrobat";
+    font-size:17px;
+}
+.quote_input:focus{
+  outline:none !important;
+}
+.quote_input{
+  border:none ;
+  font-family: "Akrobat";
+  font-size:20px;
+  border-bottom:2px solid black !important;
+  border-radius:0px;
+
 }
 .darkbluebackg {
   height:200px !important;
 }
+.quotesheet_container{
+  background:white;
+  margin-top:25% !important;
+  margin-bottom:5%;
+  border:2px solid #e6e6e6;
+  padding:5%;width:90%;margin-left:5%;
+  padding-bottom:15%;
+
+  box-shadow:1px 1px 9px 2px black;margin-top:20%;
+}
 .quote_showcase_image{
   height:1200px;
 }
+.quotesheet_title{
+  text-align: center;
+  font-weight:  bold;
+  font-family: "Akrobat";
+  font-size:25px;
+}
 
+.quotebutton:hover{
+  box-shadow:1px 1px 9px 2px black;
+}
 @media screen and (max-width:844px){
   .quote_showcase_image{
     height:600px !important;
