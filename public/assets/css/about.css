@@ -126,6 +126,12 @@ body{
     font-size:20px !important;
     text-align: left;
   }
+  .about_showcase_image{
+    height:600px !important;
+  }
+  .showcase_image_about{
+    top:-40% !important;
+  }
   .big-text-about-bigger{
     width:120% !important;
   }
@@ -133,7 +139,7 @@ body{
     margin-top:12.5% !important;
   }
   .about_container{
-    margin-top:95% !important;
+    margin-top:85% !important;
     padding-bottom:20%;
   }
 
