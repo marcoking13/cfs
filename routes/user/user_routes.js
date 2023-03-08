@@ -8,6 +8,7 @@ router.get("/",userController.GetHomePage);
 router.post("/schedule",userController.GetScheduleData);
 router.get("/about",userController.GetAboutUsPage);
 router.get("/schedule",userController.GetSchedulePage);
+router.get("/exit",userController.ExitOutOfModal)
 router.get("/contact_us",userController.GetContactUsPage);
 
 

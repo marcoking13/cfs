@@ -36,6 +36,16 @@ const GetAboutUsPage = (req,res,next) => {
 
 }
 
+const ExitOutOfModal = (req,res,next) => {
+  modal = null;
+  res.render(path.join(rootDir,"views","/user/index.ejs"),{
+    pageTitle:"Home Page",
+    active_path:"/",
+    lock:false,
+    modal:modal
+  })
+}
+
 const GetSchedulePage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/schedule.ejs"),{
     pageTitle:"Schedule Online",
@@ -114,6 +124,8 @@ const GetContactUsPage = (req,res,next)=>{
 
 exports.GetAboutUsPage = GetAboutUsPage;
 exports.GetSchedulePage = GetSchedulePage;
+exports.ExitOutOfModal = ExitOutOfModal;
+
 exports.GetScheduleData = GetScheduleData;
 exports.GetHomePage = GetHomePage;
 exports.GetContactUsPage = GetContactUsPage;
