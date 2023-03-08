@@ -28,9 +28,18 @@
   }
   .work_container{
     margin-top:45%;
+    padding-top:10%;
 
   }
   .banners_about{
     margin-top:20% !important;
   }
+  .what_we_do_title{
+    text-align: left;
+  }
+  .what_we_do_description{
+    text-align:left !important;
+    font-size:20px;
+  }
+
 }
