@@ -15,3 +15,12 @@
 .darkbluebackg {
   height:200px !important;
 }
+.about_showcase_image{
+  height:1200px;
+}
+
+@media screen and (max-width:844px){
+  .about_showcase_image{
+    height:600px;
+  }
+}
