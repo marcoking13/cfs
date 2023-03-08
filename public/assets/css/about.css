@@ -131,6 +131,9 @@ body{
   .about_showcase_image{
     height:500px !important;
   }
+  .mission_text_size{
+    font-size:18px !important;
+  }
   .showcase_image_about{
     top:-40% !important;
   }
