@@ -133,7 +133,7 @@ body{
     top:-40% !important;
   }
   .big-text-about-bigger{
-    width:120% !important;
+    width:120%;
   }
   .banners_about{
     margin-top:12.5% !important;
@@ -142,7 +142,7 @@ body{
     width:80% !important;
   }
   .about_container{
-    margin-top:105% !important;
+    margin-top:115% !important;
     padding-bottom:20%;
   }
 
@@ -178,7 +178,7 @@ body{
     width:100%;
   }
   .big-text-container{
-    width:110% !important;
+    width:110%;
   }
 
   .intro-text-container{
