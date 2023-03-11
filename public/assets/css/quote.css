@@ -71,9 +71,15 @@ label{
     height:600px !important;
   }
   .work_container{
-    margin-top:45%;
+    margin-top:30% !important;
     padding-top:10%;
 
+  }
+  .what_we_do_image{
+    right:0px;
+  }
+  .what_we_do_inner{
+    padding:5%;
   }
   .banners_about{
     margin-top:20% !important;
@@ -83,7 +89,7 @@ label{
   }
   .what_we_do_description{
     text-align:left !important;
-    font-size:20px;
+    font-size:14px;
   }
 
 }

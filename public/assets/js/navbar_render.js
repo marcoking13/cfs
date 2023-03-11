@@ -48,9 +48,12 @@ var mobile_nav = `
       <div class="col-12">
         <a href="/schedule" ><p class="link_nav medium-font">Schedule Quote</p> </a>
       </div>
+
       </div>
+
       </div>
     </div>
+
   </div>
 
 </div>
