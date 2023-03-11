@@ -70,10 +70,18 @@ label{
   .quote_showcase_image{
     height:600px !important;
   }
+  .quotesheet_container{
+    margin-top:20%;
+  }
   .work_container{
     margin-top:30% !important;
     padding-top:10%;
 
+  }
+  .quotebutton{
+    margin-top:10%;
+    font-size:15px;
+    border-color:none;
   }
   .what_we_do_image{
     right:0px;
