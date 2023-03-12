@@ -68,7 +68,7 @@ label{
 }
 @media screen and (max-width:844px){
   .quote_showcase_image{
-    width:1200px;
+    width:800px;
     height:600px !important;
   }
   .quotesheet_container{
@@ -89,6 +89,7 @@ label{
   }
   .what_we_do_image{
     right:0px;
+    width:1000px
   }
   .what_we_do_inner{
     padding:5%;
