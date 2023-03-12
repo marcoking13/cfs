@@ -179,6 +179,7 @@ body{
   .what_we_do_image{
     padding-bottom: 10%;
     height:500px;
+    width:1000px;
     position: relative;
   }
   .what_we_do_title{

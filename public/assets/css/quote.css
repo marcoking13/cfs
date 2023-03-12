@@ -68,6 +68,7 @@ label{
 }
 @media screen and (max-width:844px){
   .quote_showcase_image{
+    width:1200px;
     height:600px !important;
   }
   .quotesheet_container{
