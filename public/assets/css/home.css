@@ -393,11 +393,17 @@ padding-top: 3rem;
 line-height: 1.6;
 
 }
+.text-center{
+  text-align: center;
+}
 .width-90{
   width:90%
 }
 .margin-left-5{
   margin-left:5%;
+}
+.quotebutton{
+  margin-left:10% !important;
 }
 .cw{
   color:white !important;
