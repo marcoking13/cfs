@@ -680,6 +680,17 @@ cursor: auto;
     padding-left: 2.5% !important;
   }
 
+.contact_info{
+  color: color !important;
+  font-size: 15px !important;
+  font-weight: normal !important;
+  font-family: monospace !important;
+  background: #00103d !important;
+  width:100% !important;
+  padding: 1% !important;
+  text-align: center !important;
+  padding-left: 2.5% !important;
+}
   .about-us-text{
     font-size:30px !important;
   }
