@@ -797,6 +797,9 @@ cursor: auto;
     margin-left: 0%;
     left: 0%;
   }
+  .quote_small{
+    font-size:18px !important;
+  }
   .contact_us_title{
     margin-top:20%;
   }
