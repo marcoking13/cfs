@@ -395,8 +395,10 @@ line-height: 1.6;
 }
 .showboxcontact{
   position: relative;
-margin-top: 5%;
+margin-top: 10%;
   width:100%;
+  position:relative;
+  z=index:1;
   padding-bottom:20%;
   background:white;
 }
@@ -477,6 +479,8 @@ outline:none;
   padding-left:10%;
     font-weight: normal;
     font-size:35px;
+    position: relative;
+    z-index:1919;
     margin: 1.4em 0;
     font-weight: normal;
     font-family: "Akrobat";
