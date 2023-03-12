@@ -8,6 +8,10 @@
 .intro-container{
   z-index:99;
 }
+.contact_info{
+  z-index:102;
+  position: relative;
+}
 .background{
   position: relative;
   z-index:9;
