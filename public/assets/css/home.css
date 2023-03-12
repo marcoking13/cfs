@@ -476,9 +476,9 @@ outline:none;
 }
 .contact_info{
   line-height: 1.75;
-  padding-left:10%;
+
     font-weight: normal;
-    font-size:35px;
+    font-size:35px !important;
     position: relative;
     z-index:1919;
     color:black;
