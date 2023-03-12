@@ -754,7 +754,7 @@ cursor: auto;
     top: 15%;
   }
   .showimg{
-    margin-top: 170%;
+    margin-top: 75% !important;
     height: 300px !important;
   }
   .titleshow{
