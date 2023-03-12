@@ -159,7 +159,7 @@ body{
   .mobile_divide{
     max-width:8.333333333% !important;
     width:8.333333333% !important;
-    flex: 0 0 8.3333333%
+    flex: 0 0 8.3333333%;
 
   }
   .mobile_mission_container{
