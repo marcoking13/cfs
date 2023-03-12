@@ -393,14 +393,14 @@ padding-top: 3rem;
 line-height: 1.6;
 
 }
+.cw{
+  color:white !important;
+}
 .showboxcontact{
   position: relative;
-margin-top: 10%;
+  margin-top: 10%;
   width:100%;
-  position:relative;
-  z=index:1;
   padding-bottom:20%;
-  background:white;
 }
 .blueboxcontact2{
   position:  absolute;
@@ -475,13 +475,10 @@ outline:none;
   font-weight: bold;
 }
 .contact_info{
-    line-height: 1.75;
-    padding-left:10%;
+  line-height: 1.75;
+  padding-left:10%;
     font-weight: normal;
-    font-size:40px !important;
-    position: relative;
-    z-index:1919;
-    color:black;
+    font-size:35px;
     margin: 1.4em 0;
     font-weight: normal;
     font-family: "Akrobat";
@@ -605,14 +602,7 @@ cursor: auto;
   width:175% !important;
 }
 
-.contact_info{
-  color: black !important;
-  font-size: 30px ;
-  font-family: monospace !important;
-  width:100% !important;
-  padding: 1% !important;
-  padding-left: 2.5% !important;
-}
+
 @media screen and (max-width:944px){
 .active-dropdown{
   height:300px !important;
@@ -687,11 +677,6 @@ cursor: auto;
     padding-left: 2.5% !important;
   }
 
-.contact_info{
-  color: black !important;
-  font-size: 20px ;
-
-}
   .about-us-text{
     font-size:30px !important;
   }
