@@ -10,6 +10,12 @@
 .bold{
   font-weight:bold;
 }
+.padding-1{
+  padding:1%;
+}
+.padding-bottom-5{
+  padding-bottom:5%;
+}
 .mt2_5{
   margin-top:2.5%;
 }

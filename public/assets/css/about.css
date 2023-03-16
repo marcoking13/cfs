@@ -42,11 +42,13 @@ body{
 }
 .big-text-about-small{
 
-  text-align: center !important;
-  width:45% !important;
+  text-align: left !important;
+  width:95% !important;
+
 }
 .big-text-about{
   padding:2% !important;
+  width:120%;
 }
 .big-text{
   font-size: 60px;
@@ -109,7 +111,7 @@ body{
   font-size: 25px;
 }
 .about_container{
-  margin-top: 55%;
+  margin-top: 50%;
   padding-bottom:5%;
 }
 
