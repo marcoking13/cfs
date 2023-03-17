@@ -109,5 +109,11 @@ label{
     text-align:left !important;
     font-size:14px;
   }
-
+  .mobile_spacer{
+    max-width:0% !important;
+  }
+  .desktop_ba_col {
+    max-width: 100% !important;
+    width:100% !important;
+  }
 }
