@@ -111,6 +111,7 @@ label{
   }
   .mobile_spacer{
     max-width:0% !important;
+    width:0% !important;
   }
   .desktop_ba_col {
     max-width: 100% !important;
