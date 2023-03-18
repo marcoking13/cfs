@@ -1,28 +1,12 @@
 
-.relative{
-  position:relative;
-}
 .intro{
   margin-top:10% !important;
-}
-.intro-container{
-  z-index:99;
 }
 .contact_info{
   z-index:102;
   position: relative;
 }
-.background{
-  position: relative;
-  z-index:9;
-}
-.darkbluebackg{
-  background:#0080b8
-}
 
-.padding-left-5{
-  padding-left:5%;
-}
 
 .dropdown_arrow{
   width:50%;
@@ -40,19 +24,7 @@
 #vid{
   height:1200px;
 }
-.big-text-container{
-  width:140% !important;
-  background:#00103d;
-  margin-top:5%;
-  position: relative;
-  animation: move_text_left 1s ease-in 1;
-  padding:5%;
-}
-.intro-text-container{
-  position: absolute;
-  z-index:99;
-  top:120%;
-}
+
 @keyframes move_text_left{
   0%{
     left: -1000px;
@@ -61,50 +33,14 @@
     left:0px;
   }
 }
-.background-1{
-  background:#00103d !important;
-}
-.big-text{
-  color:white;
-  font-family: "Akrobat";
-  font-weight: bold;
-  letter-spacing: 5px;
-  font-size: 45px;
-}
-.absolute{
-  position:absolute;
-}
+
 .video-container {
   top:0%;
 
   left:0%;
   width:100%;
 }
-.foreground{
-  position: relative;
-  z-index:99;
-}
-.width-100{
-  width:100%;
-}
-.width-80{
-  margin-left:10%;
-  width:80%;
-}
-.text-container{
 
-  position: absolute;
-  width:55% !important;
-  padding-bottom:160%;
-  top:0%;
-}
-.width-50{
-
-  width:50%;
-}
-.no-pad{
-  padding:0;
-}
 .nav_list{
   list-style-type: none;
   color:white;
@@ -133,30 +69,6 @@ color:white !important;
 body{
   background:#0069a4 !important;
 }
-.transparentbanner{
-  background:black;
-  opacity:.7;
-  top:-10% !important;
-  position: absolute;
-  margin-left:100%;
-  width:200%;
-  height:200px;
-}
-.lightbluebanner{
-  background:#00b1ff;
-  padding:7%;
-  width:100%;
-
-}
-
-
-
-.banners{
-  position: absolute;
-  width:100%;
-  top:70%;
-  z-index:1;
-}
 
 .form-title{
   font-size: 20px;
@@ -180,17 +92,8 @@ body{
   z-index:4;
   margin-left: 5%;
   position: relative;
-
   padding:5%;
 }
-.darkbluebanner{
-  background:#0c0300;
-  padding:7%;
-  width:100%;
-
-}
-
-
 
 .about-us-text_about_link{
   font-size:30px;
@@ -627,22 +530,6 @@ cursor: auto;
   height:300px !important;
 }
 
-.showcase-container {
-  margin-top:10%;
-}
-  .text-container{
-    position: absolute !important;
-    width: 100% !important;
-    padding-bottom: 160% !important;
-    top: 0% !important;
-    height:600px !important;
-  }
-
-  .logo_container{
-    width:95% !important;
-    margin-left:5% !important;
-    margin-top:0% !important;
-  }
   .intro-form-container{
     margin-left:-5% !important;
   }
@@ -654,22 +541,6 @@ cursor: auto;
     width:100% !important;
   }
 
-  .big-text{
-    letter-spacing: 0px !important;
-    font-size:35px !important;
-    font-weight: bold !important;
-    margin-left:2.5% !important;
-    margin-top:2.5% !important
-  }
-
-
-  .big-text-container{
-    padding:1% !important;
-    width:90% !important;
-  }
-  .bigger-text-container{
-    width:95% !important;
-  }
   .about_us{
     margin-top:140% !important;
   }

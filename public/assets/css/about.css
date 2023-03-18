@@ -22,6 +22,7 @@ body{
   width:110%;
   position: absolute;
   top:0%;
+  height:100%;
 }
 
 .lightbluebanner_about{
@@ -134,16 +135,16 @@ body{
     width:140% !important;
     height:700px !important;
   }
-  .about_showcase_image{
+  /* .about_showcase_image{
     height:500px !important;
-  }
+  } */
   .mission_text_size{
     font-size:18px !important;
     padding-top:2.5% !important;
   }
-  .showcase_image_about{
+  /* .showcase_image_about{
     top:-40% !important;
-  }
+  } */
   .big-text-about-bigger{
     width:120%;
   }

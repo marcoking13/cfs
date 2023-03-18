@@ -31,7 +31,10 @@ const GetAboutUsPage = (req,res,next) => {
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),{
       pageTitle:"About Us",
       active_path:"/about_us",
-      lock:false
+      lock:false,
+      heading_1:"About",
+      heading_2:"Custom Facility Services",
+      showcase_img:"./assets/showcase_3.png"
     });
 
 }
@@ -52,6 +55,9 @@ const GetSchedulePage = (req,res,next)=>{
     active_path:"/schedule",
     lock:false,
     modal:modal,
+    heading_1:"Schedule Today!",
+    heading_2:"480-774-9493",
+    showcase_img:"./assets/showcase_3.png",
     before_and_after_images: [
       {
         before:"./assets/images/before_1.png",
@@ -144,7 +150,10 @@ const GetHomePage = (req,res,next)=>{
     pageTitle:"Home",
     modal:modal,
     lock:lock,
-    active_path:"/"
+    active_path:"/",
+    heading_1:"About",
+    heading_2:"Custom Facility Services",
+    showcase_img:"./assets/showcase_3.png"
   });
 }
 
@@ -153,6 +162,9 @@ const GetContactUsPage = (req,res,next)=>{
     pageTitle:"Contact Us",
     active_path:"/contact_us",
     lock:lock,
+    heading_1:"480-939-9292",
+    heading_2:"info@customfacilityservices.com",
+    showcase_img:"./assets/contact_us_b.png",
     modal:modal
   });
 }
