@@ -43,7 +43,7 @@ var mobile_nav = `
         <a href = "/about"><p class="link_nav medium-font">About Us</p></a>
       </div>
       <div class="col-12">
-        <p class="link_nav medium-font">Contact Us</p>
+        <a href="/contact_us"><p class="link_nav medium-font">Contact Us</p></a>
       </div>
       <div class="col-12">
         <a href="/schedule" ><p class="link_nav medium-font">Schedule Quote</p> </a>
