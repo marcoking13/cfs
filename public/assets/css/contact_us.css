@@ -33,6 +33,12 @@
   .meet_owners_container{
     margin-top:100%;
   }
+  .mobile-margin-top-5{
+    margin-top:10%;
+  }
+  .owner_name{
+    font-size:20px !important;
+  }
   .we_clean{
     width:100% !important
   }
