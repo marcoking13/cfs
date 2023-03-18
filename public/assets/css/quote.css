@@ -60,18 +60,10 @@
     font-size:15px;
     border-color:black;
   }
-  .adjust-top{
-    top:0px !important;
-    top:5% !important;
-    right:0px !important;
-    width:100% !important;
-
-  }
-  .adjust-bottom{
-    top:0px !important;
-    top:5% !important;
-    bottom:0px !important;
-    width:100% !important;
-    left:0px !important;
+  .adjust-left,.adjust-right{
+    right:0px;
+    left:0px;
+    top:0px;
+    
   }
 }
