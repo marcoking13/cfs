@@ -1,135 +1,81 @@
-.big-text-quote{
-  width:120% !important;
-}
+
 .work_container{
   margin-top:0%;
   width:100%;
 }
-.darkbluebanner{
-  padding: 5% !important;
-  margin-top:-10.5% !important;
-}
-.no-background{
-  background:none !important;
-}
-.margin-top-5{
-  margin-top:5%;
-}
-.margin-top-10{
-  margin-top:10%;
-}
-.margin-bottom-5{
-  margin-bottom:5%;
-}
-.home_page{
-  padding-bottom:42.5% !important;
-}
-label{
-    margin-top:2.5%;
-    font-family:"Akrobat";
-    font-size:17px;
-}
+
 .quote_input:focus{
   outline:none !important;
 }
-.quote_input{
-  border:none ;
-  font-family: "Akrobat";
-  font-size:20px;
-  border-bottom:2px solid black !important;
-  border-radius:0px;
 
-}
 .darkbluebackg {
   height:200px !important;
 }
-.quotesheet_container{
-  background:white;
-  margin-top:5% !important;
-  margin-bottom:5%;
-  border:2px solid #e6e6e6;
-  padding:5%;width:90%;margin-left:5%;
-  padding-bottom:15%;
 
-  box-shadow:1px 1px 9px 2px black;margin-top:20%;
+.before_background{
+  top:-10%;
+  left:0%;
 }
-.quote_showcase_image{
-  height:1200px;
-}
-.quotesheet_title{
-  text-align: center;
-  font-weight:  bold;
-  font-family: "Akrobat";
-  font-size:25px;
-}
+.adjust-top{
+  top:30px;
+  right:10px;
+  width:100% !important;
 
+}
+.adjust-bottom{
+  bottom:30px;
+  width:100% !important;
+  left:10px
+}
 .quotebutton:hover{
   box-shadow:1px 1px 9px 2px black;
 }
-
+.dark-navy-background{
+  background:#014884
+}
+.light-navy-background{
+  background:#013d84
+}
+.padding-bottom-2_5{
+  padding-bottom:2.5%;
+}
+.padding-top-2_5{
+  padding-top:2.5%;
+}
+.min-z{
+  z-index:-1;
+}
 @media screen and (max-width:844px){
-  .quote_showcase_image{
-    width:100%;
-    height:600px !important;
-  }
-  .showimg{
-    margin-top:55%;
-  }
-  .quotesheet_container{
-    margin-top:10% !important;
-  }
   .work_container{
     margin-top:0% !important;
     padding-top:10%;
 
   }
-  .before_image{
-    width:100%;
-    height:100%;
-  }
-  .before_after_title{
-    width:80% !important;
-  }
-  .whes{
-    width:100%;
+  .quotesheet_wrapper{
+    margin-top:100%;
   }
   .quotebutton{
     margin-top:10%;
     font-size:15px;
     border-color:black;
   }
-  .what_we_do_image{
-    right:0px;
-    width:100%;
-  }
-  .what_we_do_inner{
-    padding:5%;
-    padding-top:10%;
-    padding-bottom:10%;
-  }
-  .banners_about{
-    margin-top:20% !important;
-  }
-  .what_we_do_title{
-    text-align: left;
-  }
-  .what_we_do_description{
-    text-align:left !important;
-    font-size:14px;
-  }
-  .mobile_spacer{
-    max-width:0% !important;
-    width:0% !important;
-    flex:0%;
-  }
-  .desktop_ba_col {
-    max-width: 95% !important;
-    width:95% !important;
-    flex:  0 0 95%;
-    margin-left:2.5%;
+
+  .free_quote_title{
+    margin-top:70% !important;
   }
 
-.free_quote_title{
-  margin-top:70% !important;
-}
+  .adjust-top{
+    top:0px !important;
+    top:5% !important;
+    right:0px !important;
+    width:100% !important;
+
+  }
+  .adjust-bottom{
+    top:0px !important;
+    top:5% !important;
+    bottom:0px !important;
+    width:100% !important;
+    left:0px !important;
+  }
 }

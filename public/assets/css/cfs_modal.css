@@ -14,14 +14,6 @@
   animation:modal_appear .5s 1 ease-in;
 }
 
-@keyframes modal_appear{
-  0%{
-    top:-100%;
-  }
-  100%{
-    top:5%;
-  }
-}
 .lock_screen{
   overflow-y:hidden !important;
 }
@@ -60,6 +52,16 @@
   color:white !important;
   background:black !important;
   border-color:white !important;
+}
+
+
+@keyframes modal_appear{
+  0%{
+    top:-100%;
+  }
+  100%{
+    top:5%;
+  }
 }
 
 @media screen and (max-width:944px){
