@@ -153,7 +153,7 @@ const GetHomePage = (req,res,next)=>{
     active_path:"/",
     heading_1:"About",
     heading_2:"Custom Facility Services",
-    showcase_img:"./assets/showcase_3.png"
+    showcase_img:"./assets/k.png"
   });
 }
 
