@@ -305,6 +305,10 @@ white-background{
 .absolute{
   position:absolute;
 }
+.padding-top-bottom-15{
+  padding-top:15%;
+  padding-bottom:15%;
+}
 .background{
   position: relative;
   z-index:9;
