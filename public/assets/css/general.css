@@ -15,6 +15,21 @@ label{
     font-family:"Akrobat";
     font-size:17px;
 }
+.dark-navy-background{
+  background:#014884
+}
+.light-navy-background{
+  background:#013d84
+}
+.padding-bottom-2_5{
+  padding-bottom:2.5%;
+}
+.padding-top-2_5{
+  padding-top:2.5%;
+}
+.min-z{
+  z-index:-1;
+}
 .black-bottom-border{
   border-bottom:2px solid black !important;
 
