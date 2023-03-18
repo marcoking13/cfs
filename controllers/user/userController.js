@@ -34,7 +34,7 @@ const GetAboutUsPage = (req,res,next) => {
       lock:false,
       heading_1:"About",
       heading_2:"Custom Facility Services",
-      showcase_img:"./assets/showcase_3.png"
+      showcase_img:"./assets/showcase_1.png"
     });
 
 }
