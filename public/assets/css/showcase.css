@@ -11,6 +11,16 @@
     z-index:1;
 
 }
+
+.height-900px{
+  height:900px;
+}
+.absolute {
+  position: absolute;
+}
+.top--5{
+  top:-5%;
+}
 .showcase_image_container{
   position:absolute;
   width:100%;
@@ -167,5 +177,8 @@
    }
    .mobile-width-110{
      width:110% !important;
+   }
+   .mobile-height-600px{
+     height:600px;
    }
 }
