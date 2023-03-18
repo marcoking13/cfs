@@ -53,18 +53,13 @@
 
   }
   .quotesheet_wrapper{
-    margin-top:100%;
+    margin-top:130%;
   }
   .quotebutton{
     margin-top:10%;
     font-size:15px;
     border-color:black;
   }
-
-  .free_quote_title{
-    margin-top:100% !important;
-  }
-
   .adjust-top{
     top:0px !important;
     top:5% !important;
