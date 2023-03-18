@@ -151,7 +151,9 @@ const GetHomePage = (req,res,next)=>{
 const GetContactUsPage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/contact_us.ejs"),{
     pageTitle:"Contact Us",
-    active_path:"/contact_us"
+    active_path:"/contact_us",
+    lock:lock,
+    modal:modal
   });
 }
 

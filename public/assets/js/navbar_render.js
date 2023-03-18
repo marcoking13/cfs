@@ -13,7 +13,7 @@ var desktop_nav = `
     <a href = "/about"><p class="link_nav">About Us</p></a>
   </div>
   <div class="col-2">
-    <p class="link_nav">Contact Us</p>
+    <a href = "/contact_us">  <p class="link_nav">Contact Us</p></a>
   </div>
   <div class="col-2">
   <a href='/schedule'>  <p class="link_nav">Schedule Quote</p> </a>
