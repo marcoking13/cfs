@@ -150,6 +150,9 @@
    .mobile-width-90{
      width:90% !important;
    }
+   .mobile-top-35px{
+     top:35px;
+   }
    .mobile-width-100{
      width:100% !important;
    }
