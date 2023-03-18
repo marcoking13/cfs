@@ -31,7 +31,7 @@
 }
 @media screen and (max-width:844px){
   .meet_owners_container{
-    margin-top:130% !important;
+    margin-top:120% !important;
   }
   .fh{
     width:80% !important;
@@ -42,8 +42,11 @@
   .fhy{
     font-size:22px !important;
   }
-  .mobile-margin-top-5{
+  .mobile-margin-top-10{
     margin-top:10%;
+  }
+  .mobile-margin-top-15{
+    margin-top:15%;
   }
   .mobile_col_owner{
     width:100% !important;
