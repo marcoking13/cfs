@@ -36,8 +36,13 @@
   .mobile-margin-top-5{
     margin-top:10%;
   }
+  .mobile_col_owner{
+    width:100% !important;
+    max-width:100% !important;
+    flex:0 0 100% !important;
+  }
   .owner_name{
-    font-size:20px !important;
+    font-size:30px !important;
   }
   .we_clean{
     width:100% !important
