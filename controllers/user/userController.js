@@ -164,7 +164,7 @@ const GetContactUsPage = (req,res,next)=>{
     lock:lock,
     heading_1:"480-939-9292",
     heading_2:"info@customfacilityservices.com",
-    showcase_img:"./assets/contact_us_b.png",
+    showcase_img:"./assets/showcase_1.png",
     modal:modal
   });
 }
