@@ -151,8 +151,8 @@ const GetHomePage = (req,res,next)=>{
     modal:modal,
     lock:lock,
     active_path:"/",
-    heading_1:"About",
-    heading_2:"Custom Facility Services",
+    heading_1:"Make Your Windows",
+    heading_2:"Look Spotless Today!",
     showcase_img:"./assets/k.png"
   });
 }
