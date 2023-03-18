@@ -1,10 +1,10 @@
 .showcase_image {
-  height:1000px;
+  height:900px;
   width:100%;
 }
 
 .banners{
-    margin-top:0%;
+    margin-top:10%;
     position: absolute;
     width:100%;
     top:20%;
@@ -53,7 +53,7 @@
 
 }
 .top-35px{
-  top:35px
+  top:5px
 }
 .white{
   color:white;
