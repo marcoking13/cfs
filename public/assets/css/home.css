@@ -414,6 +414,9 @@ cursor: auto;
     margin-left:5% !important;
     margin-top:10% !important;
   }
+   .about-us-title{
+    line-height: 70px !important;
+  }
 
   .mobile-width-100{
     width:100% !important;
