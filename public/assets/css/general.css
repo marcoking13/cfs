@@ -1,3 +1,178 @@
+@font-face { font-family: Akrobat; font-weight: normal; src: url('./../fonts/Akrobat-Black.otf'); }
+ @font-face { font-family: Akrobat; font-weight: lighter; src: url('./../fonts/Akrobat-Light.otf'); }
+
+
+a{
+color:white !important;
+
+}
+
+body{
+  background:#0069a4 !important;
+}
+.font-60{
+  font-size:60px;
+}
+
+.padding-left-2_5{
+  padding-left:2.5%
+}
+
+.width-45{
+  width:45%;
+}
+
+.width-100{
+  width:100%;
+}
+
+
+.margin-top-25{
+  margin-top:25%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.active{
+  font-weight: bold;
+}
+.width-90{
+  width:90%
+}
+.margin-left-5{
+  margin-left:5%;
+}
+.width-25{
+  width:25%;
+}
+.font-50{
+  font-size:50px;
+}
+.margin-right-5{
+  margin-right:5%;
+}
+.text-right{
+  text-align: right;
+}
+.float-right{
+  float:right;
+}
+.padding-right-5{
+  padding-right:5%;
+}
+
+.background-006{
+  background:#0069a4;
+}
+
+.padding-bottom-10{
+  padding-bottom:10%;
+}
+.background-308{
+  background:#3080e6;
+}
+
+.padding-bottom-90{
+  padding-bottom:90%;
+}
+
+.background-009{
+  background:#0092ff;
+}
+
+.width-150{
+  width:150%;
+}
+
+.background-309{
+  background:#3080e6
+}
+.small-z{
+  z-index:5;
+}
+
+.padding-left-5{
+  margin-left:5%;
+}
+
+
+.max-z{
+  z-index:9999;
+}
+
+.height-width-95{
+  height:95%;
+  width:95%;
+}
+
+
+.background-1e5{
+  background:#1e5ba2;
+}
+
+.light-navy-shadow{
+  box-shadow:1px 2px 3px 4px #1e5ba2;
+}
+
+
+.light-font{
+  font-weight:lighter;
+}
+.font-35{
+  font-size:35px;
+}
+.text-left{
+  text-align: left;
+}
+
+
+
+.padding-1{
+  padding:1%;
+}
+.margin-top-1{
+  margin-top:1%;
+}
+.padding-right-5{
+  padding-right:5%;
+}
+.padding-left-5{
+  padding-left:5%;
+}
+.background-014{
+  background:#014884;
+}
+
+.padding-top-5{
+  padding-top:5%;
+}
+
+.font-60{
+  font-size:60px;
+}
+.background-001{
+  background:#00103d;
+}
+.margin-left-2{
+  margin-left:2%;
+}
+.padding-left-2_5{
+  padding-left:2.5%;
+}
+.stylized-black{
+  outline-color:black;
+  outline-width:2px;
+  letter-spacing:2px;
+  font-weight:normal;
+
+}
+.margin-bottom-5{
+  margin-bottom:5%;
+}
+
+
 .text-banner {
   color:white;
   font-family: 'Akrobat';
@@ -8,6 +183,10 @@
   background:#00103d
 }
 
+.half-middle{
+  width:50%;
+  margin-left:25%;
+}
 .red-bottom-border{
   border-bottom:2px solid red;
 }
@@ -458,10 +637,19 @@ white-background{
   .mobile-width-100{
     width:100% !important
   }
+  video{
+    overflow-y: hidden;
+  }
 
+  .mobile-margin-top-100{
+    margin-top:100% !important;
+  }
   .mobile-half-middle{
     width:50% !important;
     margin-left:25% !important;
+  }
+  .mobile-margin-top-50{
+    margin-top:50% !important;
   }
 
   .mobile-font-25{

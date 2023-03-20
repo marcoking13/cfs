@@ -6,10 +6,7 @@
   z-index:102;
   position: relative;
 }
-.half-middle{
-  width:50%;
-  margin-left:25%;
-}
+
 .what_we_do_image{
   height:700px;
   width:100%;
@@ -44,17 +41,6 @@
 .navbar_custom{
 background:  #0c0300;
 }
-.active{
-font-weight: bold;
-}
-a{
-color:white !important;
-
-}
-
-body{
-  background:#0069a4 !important;
-}
 
 .form-title{
   font-size: 20px;
@@ -87,123 +73,18 @@ body{
 .link_nav{
   color:white;
   font-family: "Roboto";
-
-
   font-size: 18px;
-
 }
 .link_nav:hover{
   font-weight: bold;
 }
- @font-face { font-family: Akrobat; font-weight: normal; src: url('./../fonts/Akrobat-Black.otf'); }
-  @font-face { font-family: Akrobat; font-weight: lighter; src: url('./../fonts/Akrobat-Light.otf'); }
-.about-us-title{
-  color:white;
-  font-size:60px;
-  font-weight: normal;
-
-  letter-spacing: 2px;
-  margin-bottom:5%;
-  outline-width: 2px;
-  outline-color: black;
-  font-family: "Akrobat";
-  background:#00103d;
-  width:45%;
-  padding:1%;
-  padding-left:2.5%;
-}
-
-.font-60{
-  font-size:60px;
-}
-.background-001{
-  background:#00103d;
-}
-.margin-left-2{
-  margin-left:2%;
-}
-.padding-left-2_5{
-  padding-left:2.5%;
-}
-.stylized-black{
-  outline-color:black;
-  outline-width:2px;
-  letter-spacing:2px;
-  font-weight:normal;
-
-}
-.margin-bottom-5{
-  margin-bottom:5%;
-}
-
-
-
-
-.padding-1{
-  padding:1%;
-}
-.margin-top-1{
-  margin-top:1%;
-}
-.padding-right-5{
-  padding-right:5%;
-}
-.padding-left-5{
-  padding-left:5%;
-}
-.background-014{
-  background:#014884;
-}
-
-.padding-top-5{
-  padding-top:5%;
-}
-
 
 .contact_section{
   width:100%;
 }
-.padding-left-5{
-  margin-left:5%;
-}
-
-
-.light-font{
-  font-weight:lighter;
-}
-.font-35{
-  font-size:35px;
-}
-.text-left{
-  text-align: left;
-}
-
-/* .text-about-us-box_4{
-  padding:5%;
-  width:90%;
-  background:#1e5ba2;
-  box-shadow:1px 2px 3px 4px #1e5ba2;
-} */
-
-.background-1e5{
-  background:#1e5ba2;
-}
-
-.light-navy-shadow{
-  box-shadow:1px 2px 3px 4px #1e5ba2;
-}
 
 .about_image{
   top:0% !important;
-}
-
-.max-z{
-  z-index:9999;
-}
-
-.height-width-95{
-  height:95%;
-  width:95%;
 }
 
 .big_blue_box_about{
@@ -212,36 +93,11 @@ body{
   height:800px;
 }
 
-.padding-bottom-90{
-  padding-bottom:90%;
-}
-
-.background-009{
-  background:#0092ff;
-}
-
-.width-150{
-  width:150%;
-}
-
-.background-309{
-  background:#3080e6
-}
-.small-z{
-  z-index:5;
-}
 
 .big_blue_box_about_2{
   top:85%;
   left:-5%;
   height:200px;
-}
-
-.padding-bottom-10{
-  padding-bottom:10%;
-}
-.background-308{
-  background:#3080e6;
 }
 
 .wavy_section{
@@ -258,15 +114,13 @@ body{
 
 }
 
-.background-006{
-  background:#0069a4;
-}
 .our_work_section{
   background:white;
   width:105%;
   position: relative;
   right:50px;
 }
+
 .wave:before{
   content:"";
   position:absolute;
@@ -306,24 +160,6 @@ body{
  grid-row-end: 5;
 }
 
-.width-25{
-  width:25%;
-}
-.font-50{
-  font-size:50px;
-}
-.margin-right-5{
-  margin-right:5%;
-}
-.text-right{
-  text-align: right;
-}
-.float-right{
-  float:right;
-}
-.padding-right-5{
-  padding-right:5%;
-}
 .work_grid_item_rightest{
     grid-area: rightest;
 }
@@ -359,18 +195,7 @@ padding-top: 3rem;
 line-height: 1.6;
 
 }
-.width-100{
-  width:100%;
-}
-.text-center{
-  text-align: center;
-}
-.width-90{
-  width:90%
-}
-.margin-left-5{
-  margin-left:5%;
-}
+
 .quotebutton{
   margin-left:10% !important;
 }
@@ -567,14 +392,8 @@ cursor: auto;
   height:100%;
 }
 
-.margin-top-25{
-  margin-top:25%;
-}
-
 @media screen and (max-width:944px){
-  .mobile-margin-top-50{
-    margin-top:50% !important;
-  }
+
 .active-dropdown{
   height:300px !important;
 }
@@ -590,26 +409,17 @@ cursor: auto;
     width:100% !important;
   }
 
-  .mobile-margin-top-100{
-    margin-top:100% !important;
-  }
+
   .value_row{
     margin-left:5% !important;
     margin-top:10% !important;
   }
-  .about-us-title{
-    color: white !important;
-    font-size: 35px !important;
-    line-height: 70px !important;
-    margin-bottom:10% !important;
-    font-weight: normal !important;
-    margin-bottom: 5% !important;
-    font-family: "Akrobat" !important;
-    background: #00103d !important;
+
+  .mobile-width-100{
     width:100% !important;
-    padding: 1% !important;
-    text-align: center !important;
-    padding-left: 2.5% !important;
+  }
+  .mobile-font-35{
+    font-size:35px !important;
   }
 
   .about-us-text{
@@ -619,9 +429,7 @@ cursor: auto;
     height:600px !important;
   }
 
-  video{
-    overflow-y: hidden;
-  }
+
   .wave:before{
 
     content: "";
