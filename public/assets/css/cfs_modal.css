@@ -55,14 +55,6 @@
 }
 
 
-@keyframes modal_appear{
-  0%{
-    top:-100%;
-  }
-  100%{
-    top:5%;
-  }
-}
 
 @media screen and (max-width:944px){
   .modal_divider{

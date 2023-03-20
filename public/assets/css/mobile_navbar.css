@@ -26,12 +26,3 @@
 .active-navbar{
   animation:dropdown_nav .5s 1 ease-in !important;
 }
-
-@keyframes dropdown_nav{
-  0%{
-    height:0px;
-  }
-  100%{
-    height:1080px;
-  }
-}

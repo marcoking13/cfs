@@ -1,0 +1,20 @@
+.nav_list{
+  list-style-type: none;
+  color:white;
+}
+
+.navbar_custom{
+  background:  #0c0300;
+}
+.navbar_home{
+
+  width:100%;
+}
+.link_nav{
+  color:white;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+.link_nav:hover{
+  font-weight: bold;
+}

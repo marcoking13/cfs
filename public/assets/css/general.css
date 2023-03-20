@@ -1,11 +1,126 @@
 @font-face { font-family: Akrobat; font-weight: normal; src: url('./../fonts/Akrobat-Black.otf'); }
  @font-face { font-family: Akrobat; font-weight: lighter; src: url('./../fonts/Akrobat-Light.otf'); }
 
-
+ .container-fluid{
+   padding:0%;
+ }
 a{
 color:white !important;
 
 }
+
+.font-20{
+  font-size:20px;
+}
+
+.margin-top-30{
+  margin-top:30%;
+
+}
+.padding-bottom-5{
+  padding-bottom:5%;
+}
+.no-outline{
+  outline:none;
+}
+.width-30{
+  width:30%;
+}
+.font-30{
+  font-size:30px;
+}
+.black-background{
+  background:black;
+}
+.padding-top-2_5{
+  padding-top:2.5%;
+}
+.font-25{
+  font-size:25px;
+}
+
+.right-20{
+  right:20%;
+}
+
+
+.z-9{
+  z-index:9;
+}
+.font-60{
+  font-size:60px;
+}
+.background-c7{
+  background:#c71667;
+}
+
+.z-4{
+  z-index:4;
+}
+.z-5{
+  z-index:5;
+}
+.padding-bottom-20{
+  padding-bottom:20%;
+}
+.background-005{
+  background:#005793;
+}
+.width-20{
+  width:20%;
+}
+.z-3{
+  z-index:3;
+}
+.background-006{
+  background:#0069a4;
+}
+.padding-top-3-rem{
+  padding-top: 3rem;
+}
+.line-height-1_5{
+  line-height: 1.6;
+}
+.color-01{
+  color: #00103d;
+}
+
+.margin-left-10-import {
+  margin-left:10% !important;
+}
+
+.grid{
+  display: grid;
+}
+
+.background-006{
+  background:#0069a4;
+}
+.padding-2_5{
+  padding:2.5%;
+}
+
+.cover-background{
+  background-size:cover;
+}
+
+
+
+.negative-z{
+  z-index:-3;
+}
+.background-005{
+  background:#005793;
+}
+.width-30{
+  width:30%;
+}
+
+
+.white-background{
+  background:white;
+}
+
 
 body{
   background:#0069a4 !important;
@@ -459,6 +574,14 @@ white-background{
   position: relative;
   z-index:99;
 }
+a {
+color: black;
+text-decoration: none;
+cursor: auto;
+}
+.cw{
+  color:white !important;
+}
 .width-100{
   width:100%;
 }
@@ -617,6 +740,9 @@ white-background{
   }
   .mobile-text-left{
     text-align: left !important;
+  }
+  .mobile-font-25{
+    font-size:25px !important;
   }
   .mobile-margin-top-70{
     margin-top:70% !important
