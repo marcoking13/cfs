@@ -380,12 +380,12 @@ cursor: auto;
 .quote_btn{
   background:black;
   border-color:black;
-
 }
 
 .bigger-text-container{
   width:175% !important;
 }
+
 .showimg{
   margin-top:30%;
   width:100%;
@@ -394,14 +394,18 @@ cursor: auto;
 
 @media screen and (max-width:944px){
 
-.active-dropdown{
-  height:300px !important;
-}
+  .active-dropdown{
+    height:300px !important;
+  }
 
   .intro-form-container{
     margin-left:-5% !important;
   }
   .name_container{
+    width:100% !important;
+    max-width:100% !important;
+  }
+  .mobile-max-width{
     width:100% !important;
     max-width:100% !important;
   }
@@ -414,6 +418,13 @@ cursor: auto;
     margin-left:5% !important;
     margin-top:10% !important;
   }
+  .mobile-margin-top-10{
+    margin-top:10% !important;
+  }
+  .mobile-margin-left-5{
+    margin-left:5% !important;
+  }
+
    .about-us-title{
     line-height: 70px !important;
   }
@@ -434,7 +445,6 @@ cursor: auto;
 
 
   .wave:before{
-
     content: "";
     position: absolute;
     z-index: 0 !important;
@@ -444,15 +454,15 @@ cursor: auto;
     background-size: cover !important;
     background-repeat: no-repeat !important;
   }
+
   .our_work_section{
-
-    right:0px !important;
-    margin-top: 35% !important;
-    background: white !important;
-        width: 105% !important;
-        position: relative !important;
-
+      right:0px !important;
+      margin-top: 35% !important;
+      background: white !important;
+      width: 105% !important;
+      position: relative !important;
   }
+
   .text-about-us-box_4 {
     margin-top:15% !important;
   }
