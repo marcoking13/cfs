@@ -513,6 +513,29 @@ white-background{
     flex: 0 0 8.3333333%;
     max-width:8.3333333333% !important
   }
+  .mobile-width-100{
+    width:100% !important;
+  }
+  .mobile-margin-top-10{
+    margin-top:10% !important;
+  }
+  .mobile-max-width{
+    width:100% !important;
+    max-width:100% !important;
+  }
+  .mobile-margin-left-5{
+    margin-left:5% !important;
+  }
+
+  .mobile-font-35{
+    font-size:35px !important;
+  }
+  .mobile-width-60{
+    width:60% !important;
+  }
+  .mobile-float-left{
+    float:left !important;
+  }
   .mobile-margin-top-10{
     margin-top:10% !important;
   }

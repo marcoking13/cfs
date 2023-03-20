@@ -405,10 +405,7 @@ cursor: auto;
     width:100% !important;
     max-width:100% !important;
   }
-  .mobile-max-width{
-    width:100% !important;
-    max-width:100% !important;
-  }
+
   .intro-row{
     width:100% !important;
   }
@@ -418,22 +415,9 @@ cursor: auto;
     margin-left:5% !important;
     margin-top:10% !important;
   }
-  .mobile-margin-top-10{
-    margin-top:10% !important;
-  }
-  .mobile-margin-left-5{
-    margin-left:5% !important;
-  }
 
    .about-us-title{
     line-height: 70px !important;
-  }
-
-  .mobile-width-100{
-    width:100% !important;
-  }
-  .mobile-font-35{
-    font-size:35px !important;
   }
 
   .about-us-text{
@@ -592,13 +576,8 @@ cursor: auto;
     width:90% ;
     font-size:22px !important;
   }
-  .mobile-width-60{
-    width:60% !important;
-  }
-  .mobile-float-left{
-    float:left !important;
-  }
-  .contact_us_title{
+
+  .our_clients_title{
     margin-top: -60% !important;
   }
 }
