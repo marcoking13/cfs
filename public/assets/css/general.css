@@ -345,6 +345,9 @@ white-background{
       flex: 0 0 83.333333333% !important;
 
   }
+  .mobile-margin-left-22_5{
+    margin-left:22.5% !important;
+  }
   .mobile-text-center{
     text-align:center;
   }
