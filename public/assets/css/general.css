@@ -345,6 +345,14 @@ white-background{
       flex: 0 0 83.333333333% !important;
 
   }
+  .mobile-col-12{
+
+      width:100% !important;
+      padding-bottom:5%;
+      max-width:100% !important;
+      flex: 100% !important;
+
+  }
   .mobile-height-120{
     height:120%;
   }
