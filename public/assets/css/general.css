@@ -345,6 +345,9 @@ white-background{
       flex: 0 0 83.333333333% !important;
 
   }
+  .mobile-text-center{
+    text-align:center;
+  }
   .mobile-col-12{
 
       width:100% !important;
