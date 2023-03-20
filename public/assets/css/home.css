@@ -592,4 +592,13 @@ cursor: auto;
     width:90% ;
     font-size:22px !important;
   }
+  .mobile-width-60{
+    width:60% !important;
+  }
+  .mobile-float-left{
+    float:left !important;
+  }
+  .contact_us_title{
+    margin-top: -60% !important;
+  }
 }
