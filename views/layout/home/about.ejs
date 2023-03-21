@@ -1,82 +1,39 @@
 <div class="row value_row mobile-margin-top-10">
 
     <div class="col-5 values_container mobile-col-12">
-      <div class="text-about-us-box dropdown-box padding-1 padding-top-5 width-90 margin-left-5 padding-left-5 light-navy-shadow margin-top-1 background-006" _id = 1>
-        <div class="row">
-          <div class="col-10">
-          <p class="about-us-text akrobat text-left akrobat font-35 light-font white mobile-font-30">Connect With People</p>
-          </div>
 
-            <div class="col-2">
-              <img src ="./assets/images/dropdown_arrow.png" _id=1 class="dropdown_arrow half-middle"/>
-            </div>
-          </div>
-          <div class="dropdown_container margin-top-2_5 padding-bottom-5 ghost">
-              <div className="divder_dropdown"></div>
-              <p class="dropdown_text  akrobat font-20 normal">
-                  We value meeting and creating relationships with small business owners across the state and enjoy providing something of value to the community that has shaped our lives so much.
-              </p>
-            </div>
-      </div>
-        <div class="text-about-us-box dropdown-box padding-1 padding-top-5 width-90 margin-left-5 padding-left-5 light-navy-shadow margin-top-1 background-006" _id = 2>
-            <div class="row">
-            <div class="col-10">
-              <p class="about-us-text  akrobat text-left akrobat font-35 light-font white mobile-font-30">Honest Work</p>
+        <% if(values.length > 0){ %>
+            <% for(var i = 0; i < values.length; i++){ %>
+            <div class="text-about-us-box dropdown-box padding-1 padding-top-5 width-90 margin-left-5 padding-left-5 light-navy-shadow margin-top-1 background-006" _id = <%= i %>>
+              <div class="row">
+                <div class="col-10">
+                <p class="about-us-text akrobat text-left akrobat font-35 light-font white mobile-font-30"><%= values[i].title %></p>
+                </div>
+
+                  <div class="col-2">
+                    <img src ="./assets/images/dropdown_arrow.png" class="dropdown_arrow half-middle"  _id = <%= i %>>
+                  </div>
+                </div>
+                <div class="dropdown_container margin-top-2_5 padding-bottom-5 ghost">
+                    <div className="divder_dropdown"></div>
+                    <p class="dropdown_text  akrobat font-20 normal">
+                      <%= values[i].description %>
+                    </p>
+                  </div>
             </div>
 
-              <div class="col-2">
-                <img src ="./assets/images/dropdown_arrow.png" _id=2 class="dropdown_arrow half-middle"/>
-              </div>
-            </div>
-            <div class="dropdown_container margin-top-2_5 padding-bottom-5 ghost">
-                <div className="divder_dropdown margin-top-2_5"></div>
-                <p class="dropdown_text  akrobat font-20 normal">
-                    We value honesty and integrity in our employees and ourselves that is why we strive to deliver the highest quality services to businesses who value integrity as well.
-                </p>
-              </div>
-        </div>
+            <% } %>
 
-        <div class="text-about-us-box dropdown-box padding-1 padding-top-5 width-90 margin-left-5 padding-left-5 light-navy-shadow margin-top-1 background-006" _id = 3>
-            <div class="row">
-              <div class="col-10">
-            <p class="about-us-text  akrobat text-left akrobat font-35 light-font white mobile-font-30">Accountability</p>
-            </div>
-
-              <div class="col-2">
-                <img src ="./assets/images/dropdown_arrow.png" _id=3 class="dropdown_arrow half-middle"/>
-              </div>
-            </div>
-            <div class="dropdown_container margin-top-2_5 padding-bottom-5 ghost">
-                <div className="divder_dropdown"></div>
-                <p class="dropdown_text  akrobat font-20 normal">
-                    You can be sure if we make a mistake or fall short for some reason that we will do our best to resolve it and take responsibility instead of passing on to another.
-                </p>
-              </div>
-        </div>
-        <div class="text-about-us-box dropdown-box padding-1 padding-top-5 width-90 margin-left-5 padding-left-5 light-navy-shadow margin-top-1 background-006" _id = 4>
-            <div class="row">
-              <div class="col-10">
-            <p class="about-us-text  akrobat text-left akrobat font-35  light-font white mobile-font-30">Positivity</p>
-            </div>
-
-              <div class="col-2">
-                <img src ="./assets/images/dropdown_arrow.png" _id=4 class="dropdown_arrow half-middle"/>
-              </div>
-            </div>
-
-            <div class="dropdown_container margin-top-2_5 padding-bottom-5 ghost">
-                <div className="divder_dropdown"></div>
-                <p class="dropdown_text akrobat font-20 normal">
-                  We truly believe that a good attitude is essential part of having hard working employees and also cultivating long lasting relationships with our clients.
-                </p>
-            </div>
-        </div>
+        <% } %>
 
         <div class="text-about-us-box_4 margin-top-10 padding-1 padding-top-5 width-90 margin-left-5 padding-left-5 light-navy-shadow margin-top-1 background-00 ">
             <p class="about-us-text_about_link  akrobat text-center akrobat font-35 light-font white white mobile-font-30">Learn More About Us!</p>
         </div>
+        
     </div>
+
     <div class="col-1"></div>
+
     <div class="col-6 relative">
         <img class="about_image height-width-95 max-z absolute " src = "./assets/images/about.jpg"/>
         <div class="big_blue_box_about padding-bottom-90 background-009 absolute width-150 mobile-ghost"></div>

@@ -1,8 +1,8 @@
 var express = require("express");
 var path = require("path");
 var rootDir = require("./../../util/path.js");
-var Quote = require("./../../config/quote.js");
-var Schedule = require("./../../config/schedule.js");
+var Quote = require("./../../data/quote.js");
+var Schedule = require("./../../data/schedule.js");
 
 
 

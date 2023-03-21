@@ -2,12 +2,14 @@ var express = require("express");
 var path = require("path");
 var rootDir = require("./../../util/path.js");
 
-const Quote = require("./../../config/quote.js");
-const Schedule = require("./../../config/schedule.js");
+const Quote = require("./../../data/quote.js");
+const Schedule = require("./../../data/schedule.js");
 const Pricing = require("./../../config/pricing.js");
 const ShowcaseHeadings = require("./../../config/showcase_headings.js");
 const BeforeAndAfterConfig = require("./../../config/before_and_after_config.js");
+const Values = require("./../../config/values.js");
 
+console.log(Values);
 
 var modal = null;
 var lock = false;
@@ -92,6 +94,7 @@ const GetHomePage = (req,res,next)=>{
 
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
+    values:Values,
     modal:modal,
     lock:lock,
     active_path:"/",
