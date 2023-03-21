@@ -3,7 +3,7 @@
   margin-top:5%;
 }
 
-.form-title{
+/* .form-title{
   font-size: 20px;
   width:100%;
   font-family: monospace;
@@ -21,7 +21,7 @@
   width:100%;
   font-family: monospace;
   text-align: center;
-}
+} */
 
 .about_image{
   top:0% !important;
@@ -41,10 +41,6 @@
 
 .wave{
   height:300px;
-}
-
-.background-006{
-  background:#0069a4;
 }
 
 .our_work_section{
@@ -99,9 +95,6 @@
   height:300px;
 }
 
-.quotebutton{
-  margin-left:10% !important;
-}
 
 .blueboxcontact2{
   top:0%;
@@ -130,29 +123,20 @@
 }
 
 .quotebutton:hover{
-  background:white;
-  color:black;
+  background:#00103d ;
+  color:black !important;
   font-weight: bold;
 }
 
 .dropdown_container {
-  visibility: collapse;
-  opacity:0;
-  height:0px;
   animation: .5s ease-in coll 1;
-}
-
-.dropdown_container p{
-  font-family: "Akrobat";
-  font-weight: normal;
-  font-size: 20px;
 }
 
 .active-dropdown {
   visibility: visible !important;
   opacity:1 !important;
   animation: .5s ease-in dropdown 1;
-  height:350px;
+  height:300px !important;
 }
 
 .active-dropdown p{
@@ -170,6 +154,34 @@
 
 @media screen and (max-width:944px){
 
+  .work_grid_item_left{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .work_grid_item_center{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .work_grid_item_right{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+
+  .work_grid_item_righter{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+
   .active-dropdown{
     height:300px !important;
   }
@@ -178,29 +190,8 @@
     margin-left:-5% !important;
   }
 
-  .name_container{
-    width:100% !important;
-    max-width:100% !important;
-    flex: 0 0 100%;
-  }
-
-  .intro-row{
-    width:100% !important;
-  }
-
-  .value_row{
-    margin-top:10% !important;
-  }
-
    .about-us-title{
     line-height: 70px !important;
-  }
-
-  .about-us-text{
-    font-size:30px !important;
-  }
-  .video-container video {
-    height:600px !important;
   }
 
   .wave:before{
@@ -216,138 +207,54 @@
 
   .our_work_section{
       right:0px !important;
-      margin-top: 35% !important;
-      background: white !important;
       width: 105% !important;
-      position: relative !important;
   }
 
-  .text-about-us-box_4 {
-    margin-top:15% !important;
-  }
+
   .contact_section{
     height:200px !important;
   }
+
   .our_work_grid {
-      background:white !important;
-      position:absolute !important;
-      top:0%;
-      z-index:999;
-      display:inline;
-      margin-top:20%;
-      padding:10% !important;
-      padding-bottom:40%;
+    top:0%;
   }
-  .work_grid_item{
-    float:left !important;
-    max-width:120% !important;
-    width:120% !important;
-    margin-left:2.5%;
-  }
+
   .supportbox{
-    background: #c71667;
-    position: absolute;
-    z-index: 5;
     right: 0%;
-    width: 100%;
     height: 500px;
     top: 15%;
   }
+
   .showimg{
-    margin-top: 75% !important;
     height: 300px !important;
   }
+
   .titleshow{
-    color: white;
-    font-family: "Akrobat";
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
-    position: absolute;
     top: 5%;
     left: 0%;
-    display: inline;
-    font-weight: bold;
-    z-index: 9;
-  }
-  .titleshow2{
-    color: white;
-    font-family: "Akrobat";
-    font-size: 20px;
-    text-align: center;
-    right: 0%;
-    position: absolute;
-    top: 20.5%;
-    z-index: 9;
-  }
-  .quotebutton{
-    padding: 1%;
-    background: black;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: "Akrobat";
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    margin-right: 0%;
-    outline: none;
-    box-shadow: 1px 1px 1px 1px black;
-    right: 0%;
-    margin-left: 0%;
-  }
-  .quote_small{
-    font-size:18px !important;
-  }
-  .contact_us_title{
-    margin-top:20%;
-  }
-  .contact_info{
-    font-size: 18px !important;
-    margin-left:2.5%;
-  }
-  .our_work_title{
-    padding-right: 5%;
-    width: 70%;
-    margin-right: 35%;
-    margin-top: -70%;
-    padding: 2%;
-    padding-left: 2.5%;
-    font-size: 30px;
-    position: relative;
-    z-index:999;
   }
 
-  .big_blue_box_about_2{
-    opacity:0
+  .titleshow2{
+    right: 0%;
+    top: 15%;
   }
-  .big_blue_box_about{
-    opacity:0;
+
+  .quotebutton{
+    top: 35%;
+    right: 0%;
   }
-  .contact_section{
-    margin-top:30%;
+
+  .our_work_title{
+    margin-top: -70%;
   }
+
   .intro-form-container{
     width:120% !important;
-  }
-  .transparentbanner{
-    opacity:0 !important;
-  }
-  .banners{
-    top:35% !important;
-  }
-  .bkq{
-    width:60% !important;
-  }
-  .bkc{
-    width:90% ;
-    font-size:22px !important;
   }
 
   .our_clients_title{
     margin-top: -70% !important;
   }
-
 
   .about_us{
     margin-top:140% !important;
