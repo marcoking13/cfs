@@ -1,10 +1,13 @@
 var express = require("express");
 var path = require("path");
 var rootDir = require("./../../util/path.js");
+
 const Quote = require("./../../config/quote.js");
 const Schedule = require("./../../config/schedule.js");
+
 var modal = null;
 var lock = false;
+
 var css_url = "./assets/css/";
 
 const price_sheet = [
@@ -24,9 +27,6 @@ const price_sheet = [
   price_half:2.5
   }
 ]
-
-
-
 
 const GetAboutUsPage = (req,res,next) => {
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),{
@@ -97,57 +97,53 @@ const GetSchedulePage = (req,res,next)=>{
 
 const GetScheduleData = async(req,res,next) =>{
 
-  var data = req.body;
-  var name = req.body.firstName + " " + req.body.lastName;
-  var sizes = [data.smWindowCount,data.mdWindowCount,data.lgWindowCount];
-  var windows = [];
+    var data = req.body;
+    var name = req.body.firstName + " " + req.body.lastName;
+    var sizes = [data.smWindowCount,data.mdWindowCount,data.lgWindowCount];
+    var windows = [];
 
-  var config = {
-    name:name,
-    date:data.date,
-    time:data.time,
-    smWindowCount:data.smWindowCount,
-    mdWindowCount:data.mdWindowCount,
-    lgWindowCount:data.lgWindowCount,
-    address:data.address
-  };
+    var config = {
+      name:name,
+      date:data.date,
+      time:data.time,
+      smWindowCount:data.smWindowCount,
+      mdWindowCount:data.mdWindowCount,
+      lgWindowCount:data.lgWindowCount,
+      address:data.address
+    };
 
-  for (var i = 0; i < price_sheet.length; i++) {
-    var ps = price_sheet[i];
-    console.log(Quote);
-    var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
-    new_quote.total();
-    windows.push(new_quote);
-  }
+    for (var i = 0; i < price_sheet.length; i++) {
 
-  var new_schedule = new Schedule(config.name,config.address,windows,config.date,config.time);
+      var ps = price_sheet[i];
+      var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
 
-   const response = await new_schedule.save();
-console.log(new_schedule.total_price);
-  modal = {
-    wrapper:"active_wrapper",
-    modal:"active_modal",
-    outside:new_schedule.outside,
+      new_quote.total();
+      windows.push(new_quote);
 
-    total_price:Math.round(new_schedule.total * .9)
-  },
-  // res.render(path.join(rootDir,"views","/user/index.ejs"),{
-  //
-  //   modal:modal,
-  //   lock:"lock_screen",
-  //   pageTitle:"Admin Home",
-  //   active_path:"/"
-  // });
-  lock = true;
-  res.redirect("/");
+    }
+
+    var new_schedule = new Schedule(config.name,config.address,windows,config.date,config.time);
+
+    const response = await new_schedule.save();
+
+    modal = {
+      wrapper:"active_wrapper",
+      modal:"active_modal",
+      outside:new_schedule.outside,
+      total_price:Math.round(new_schedule.total * .9)
+    }
+
+    lock = true;
+
+    res.redirect("/");
 
 }
 
 const GetHomePage = (req,res,next)=>{
+
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
     css_file:`${css_url}home.css`,
-
     modal:modal,
     lock:lock,
     active_path:"/",
@@ -155,20 +151,22 @@ const GetHomePage = (req,res,next)=>{
     heading_2:"Look Spotless Today!",
     showcase_img:"./assets/images/k.png"
   });
+
 }
 
 const GetContactUsPage = (req,res,next)=>{
+
   res.render(path.join(rootDir,"views","/user/contact_us.ejs"),{
     pageTitle:"Contact Us",
     active_path:"/contact_us",
     css_file:`${css_url}contact_us.css`,
-
     lock:lock,
     heading_1:"480-939-9292",
     heading_2:"info@customfacilityservices.com",
     showcase_img:"./assets/images/contact_us_b.png",
     modal:modal
   });
+
 }
 
 
