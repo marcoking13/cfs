@@ -808,5 +808,8 @@ cursor: auto;
   .mobile-text-center{
     text-align: center !important;
   }
+  .mobile-font-20{
+    font-size:20px !important;
+  }
 
 }
