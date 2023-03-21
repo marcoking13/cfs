@@ -1,48 +1,50 @@
 
+<%- include("./../layout/head.ejs") %>
+  <div id="wrapper" class="<%=lock %> ">
 
-  <%- include("./../layout/head.ejs") %>
-<div id="wrapper" class="<%=lock %> ">
-    <%- include("./../layout/modal.ejs") %>
-    <div class="container-fluid home_page padding-bottom-75" >
+      <%- include("./../layout/modal.ejs") %>
 
-      <div class="row">
-          <div class="col-12 padding-1 navbar_container" >
+      <div class="container-fluid home_page padding-bottom-75" >
 
-          </div>
-      </div>
-
-      <div class="showcase-container relative width-100">
-        <%- include("./../layout/new_showcase.ejs") %>
-      </div>
-
-
-  </div>
-
-  <div class="container-fluid about_us">
-    <p class="text-banner width-40 mobile-width-90  mobile-margin-left-5 mobile-text-center stylized-black text-left margin-left-2 mobile-font-30">Our Values</p>
-
-      <%- include("./../layout/home/about.ejs")  %>
-      <div class="our_work_section background-white relative mobile-margin-top-35">
-          <div class="wavy_section width-100">
-              <div class = "wave relative width-100 background-006 max-z"></div>
+        <div class="row">
+            <div class="col-12 padding-1 navbar_container" >
+            </div>
         </div>
-      <%- include("./../layout/home/top_clients.ejs") %>
-    </div>
 
-    <div class="contact_section padding-5 relative padding-5 height-300 width-100 mobile-margin-top-30">
-        <p class="about-us-title text-banner font-60 width-45 padding-1 stylized-black margin-bottom-5 white padding-left-2_5 contact_us_title mobile-font-35 mobile-width-100 mobile-text-center mobile-margin-top-20 "> Contact Us Today!</p>
-        <div class="blueboxcontact negative-z background-005 width-30 absolute"></div>
-    </div>
-    <div class="contact_info_section padding-top-3-rem color-01 line-height-1_5 white-background width-100 background-white relative width-100">
-      <p class="text-banner width-50 mobile-width-80 text-left mobile-font-25">489-939-9393 </p>
-      <p class="text-banner text-left width-80 mobile-width-90 mobile-font-25">info@customfacilityservices.com </p>
-        <%- include("./../layout/home/contact.ejs") %>
-    </div>
-</div>
+        <div class="showcase-container relative width-100">
+          <%- include("./../layout/new_showcase.ejs") %>
+        </div>
+
+      </div>
+
+    <div class="container-fluid about_us">
+
+      <p class="text-banner width-40 mobile-width-90  mobile-margin-left-5 mobile-text-center stylized-black text-left margin-left-2 mobile-font-30">Our Values</p>
+
+        <%- include("./../layout/home/about.ejs")  %>
+
+        <div class="our_work_section background-white relative mobile-margin-top-35">
+            <div class="wavy_section width-100">
+                <div class = "wave relative width-100 background-006 max-z"></div>
+            </div>
+        <%- include("./../layout/home/top_clients.ejs") %>
+
+      </div>
+
+      <div class="contact_section padding-5 relative padding-5 height-300 width-100 mobile-margin-top-30">
+          <p class="about-us-title text-banner font-60 width-45 padding-1 stylized-black margin-bottom-5 white padding-left-2_5 contact_us_title mobile-font-35 mobile-width-100 mobile-text-center mobile-margin-top-20 "> Contact Us Today!</p>
+          <div class="blueboxcontact negative-z background-005 width-30 absolute"></div>
+      </div>
+
+      <div class="contact_info_section padding-top-3-rem color-01 line-height-1_5 white-background width-100 background-white relative width-100">
+          <p class="text-banner width-50 mobile-width-80 text-left mobile-font-25">489-939-9393 </p>
+          <p class="text-banner text-left width-80 mobile-width-90 mobile-font-25">info@customfacilityservices.com </p>
+          <%- include("./../layout/home/contact.ejs") %>
+      </div>
 
   </div>
 
-
+</div>
 
 
   <script src = "./assets/js/dropdown.js"></script>
