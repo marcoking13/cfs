@@ -4,39 +4,22 @@ var rootDir = require("./../../util/path.js");
 
 const Quote = require("./../../config/quote.js");
 const Schedule = require("./../../config/schedule.js");
+const Pricing = require("./../../config/pricing.js");
+const ShowcaseHeadings = require("./../../config/showcase_headings.js");
+const BeforeAndAfterConfig = require("./../../config/before_and_after_config.js");
+
 
 var modal = null;
 var lock = false;
 
-var css_url = "./assets/css/";
-
-const price_sheet = [
-   {
-    key:"small",
-    price:1.5,
-    price_half:1
-  },
-  {
-  key:"medium",
-  price:2,
-  price_half:1.5
-  },
-  {
-  key:"large",
-  price:4,
-  price_half:2.5
-  }
-]
 
 const GetAboutUsPage = (req,res,next) => {
+
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),{
       pageTitle:"About Us",
       active_path:"/about_us",
       lock:false,
-      heading_1:"About",
-      heading_2:"Custom Facility Services",
-      css_file:`${css_url}about.css`,
-      showcase_img:"./assets/images/showcase_1.png"
+      showcase:ShowcaseHeadings[1]
     });
 
 }
@@ -47,50 +30,16 @@ const ExitOutOfModal = (req,res,next) => {
 }
 
 const GetSchedulePage = (req,res,next)=>{
+
   res.render(path.join(rootDir,"views","/user/schedule.ejs"),{
     pageTitle:"Schedule Online",
     active_path:"/schedule",
     lock:false,
     modal:modal,
-    css_file:`${css_url}quote.css`,
-    heading_1:"Schedule Today!",
-    heading_2:"480-774-9493",
-    showcase_img:"./assets/images/showcase_3.png",
-    before_and_after_images: [
-      {
-        before:"./assets/images/before_1.png",
-        after:"./assets/images/after_1.png"
-      },
-      {
-        before:"./assets/images/before_2.png",
-        after:"./assets/images/after_2.png"
-      },
-      {
-        before:"./assets/images/before_3.png",
-        after:"./assets/images/after_3.png"
-      },
-      {
-        before:"./assets/images/before_4.png",
-        after:"./assets/images/after_4.png"
-      },
-      {
-        before:"./assets/images/before_5.png",
-        after:"./assets/images/after_5.png"
-      },
-      {
-        before:"./assets/images/before_6.png",
-        after:"./assets/images/after_6.png"
-      },
-      {
-        before:"./assets/images/before_7.png",
-        after:"./assets/images/after_7.png"
-      },
-      {
-        before:"./assets/images/before_8.png",
-        after:"./assets/images/after_8.png"
-      }
-    ]
+    showcase:ShowcaseHeadings[3],
+    before_and_after_images: BeforeAndAfterConfig
   });
+
 }
 
 
@@ -143,13 +92,10 @@ const GetHomePage = (req,res,next)=>{
 
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
-    css_file:`${css_url}home.css`,
     modal:modal,
     lock:lock,
     active_path:"/",
-    heading_1:"Make Your Windows",
-    heading_2:"Look Spotless Today!",
-    showcase_img:"./assets/images/k.png"
+    showcase:ShowcaseHeadings[0]
   });
 
 }
@@ -159,21 +105,16 @@ const GetContactUsPage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/contact_us.ejs"),{
     pageTitle:"Contact Us",
     active_path:"/contact_us",
-    css_file:`${css_url}contact_us.css`,
     lock:lock,
-    heading_1:"480-939-9292",
-    heading_2:"info@customfacilityservices.com",
-    showcase_img:"./assets/images/contact_us_b.png",
-    modal:modal
+    modal:modal,
+    showcase:ShowcaseHeadings[1]
   });
 
 }
 
-
 exports.GetAboutUsPage = GetAboutUsPage;
 exports.GetSchedulePage = GetSchedulePage;
 exports.ExitOutOfModal = ExitOutOfModal;
-
 exports.GetScheduleData = GetScheduleData;
 exports.GetHomePage = GetHomePage;
 exports.GetContactUsPage = GetContactUsPage;

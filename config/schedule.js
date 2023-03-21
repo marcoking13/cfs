@@ -3,6 +3,7 @@ const db = require("./../util/database.js");
 class Schedule {
 
   constructor(name,address,windows,date,time){
+
       this.name = name;
       this.address = address;
       this.windows = windows;
@@ -16,7 +17,7 @@ class Schedule {
 
     var db_instance = db.GetDb();
     this.total_all_prices();
-    console.log(this);
+
     db_instance.collection("schedules").insertOne(this).then((result)=>{
     }).catch(err => {console.log(err)});
 
@@ -32,13 +33,14 @@ class Schedule {
   }
 
   total_all_prices(){
+
     for (var i = 0; i < this.windows.length; i++){
 
       this.total += this.windows[i].total_price;
     }
+
     this.total = Math.round(this.total);
     this.outside = Math.round(this.total * .5);
-    console.log(this.windows);
   }
 
 
