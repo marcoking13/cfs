@@ -5,6 +5,7 @@ const Quote = require("./../../config/quote.js");
 const Schedule = require("./../../config/schedule.js");
 var modal = null;
 var lock = false;
+var css_url = "./assets/css/";
 
 const price_sheet = [
    {
@@ -34,6 +35,7 @@ const GetAboutUsPage = (req,res,next) => {
       lock:false,
       heading_1:"About",
       heading_2:"Custom Facility Services",
+      css_file:`${css_url}about.css`,
       showcase_img:"./assets/showcase_1.png"
     });
 
@@ -44,6 +46,7 @@ const ExitOutOfModal = (req,res,next) => {
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home Page",
     active_path:"/",
+    css_file:`${css_url}home.css`,
     lock:false,
     modal:modal
   })
@@ -55,6 +58,7 @@ const GetSchedulePage = (req,res,next)=>{
     active_path:"/schedule",
     lock:false,
     modal:modal,
+    css_file:`${css_url}quote.css`,
     heading_1:"Schedule Today!",
     heading_2:"480-774-9493",
     showcase_img:"./assets/showcase_3.png",
@@ -148,6 +152,8 @@ console.log(new_schedule.total_price);
 const GetHomePage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
+    css_file:`${css_url}home.css`,
+
     modal:modal,
     lock:lock,
     active_path:"/",
@@ -161,6 +167,8 @@ const GetContactUsPage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/contact_us.ejs"),{
     pageTitle:"Contact Us",
     active_path:"/contact_us",
+    css_file:`${css_url}contact_us.css`,
+
     lock:lock,
     heading_1:"480-939-9292",
     heading_2:"info@customfacilityservices.com",
