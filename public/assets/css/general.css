@@ -923,6 +923,10 @@ cursor: auto;
   .mobile-margin-top-100{
     margin-top:100% !important;
   }
+  .mobile-margin-right-10{
+    margin-right:10% !important;
+
+  }
   .mobile-half-middle{
     width:50% !important;
     margin-left:25% !important;
