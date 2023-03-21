@@ -800,6 +800,9 @@ cursor: auto;
   .mobile-margin-top-50{
     margin-top:50% !important;
   }
+  .mobile-width-90{
+    width:90% !important;
+  }
 
   .mobile-font-25{
     font-size:24px !important;
