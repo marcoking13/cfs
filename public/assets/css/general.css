@@ -1,9 +1,35 @@
 @font-face { font-family: Akrobat; font-weight: normal; src: url('./../fonts/Akrobat-Black.otf'); }
  @font-face { font-family: Akrobat; font-weight: lighter; src: url('./../fonts/Akrobat-Light.otf'); }
-
+ .relative{
+   position: relative;
+ }
  .container-fluid{
    padding:0%;
  }
+
+ .top-0{
+   top:0%;
+ }
+ .font-20{
+   font-size:20px;
+ }
+ .border-bottom-light-red{
+   border-bottom: 2px solid #FF5757;
+ }
+.font-70{
+  font-size: 70px;
+
+}
+ .medium-text{
+   font-size: 30px !important;
+ }
+ .margin-top-20{
+   margin-top: 20%;
+ }
+ .padding-bottom-5{
+   padding-bottom:5%;
+ }
+
 a{
 color:white !important;
 
@@ -582,7 +608,6 @@ white-background{
   z-index:99;
 }
 a {
-color: black;
 text-decoration: none;
 cursor: auto;
 }
@@ -738,6 +763,40 @@ cursor: auto;
       margin-top:20%;
     }
 
+      .mobile-col-1{
+        max-width:8.333333333% !important;
+        width:8.333333333% !important;
+        flex: 0 0 8.3333333%;
+
+      }
+      .mobile-padding-top-5{
+        padding-top:5%;
+      }
+      .mobile-padding-top-bottom-10{
+        padding-top:10%;
+          padding-bottom:10%;
+      }
+      .mobile-padding-top-2_5{
+        padding-top:2.5% !important;
+      }
+
+        .mobile-font-16 {
+          font-size:16px !important;
+        }
+
+
+        .mobile-font-18{
+          font-size:18px !important;
+        }
+
+
+
+
+      .mobile-col-10{
+        width:83.333333333% !important;
+        max-width:83.33333333% !important;
+        flex: 0 0 83.333333333%
+      }
   .mobile-margin-top-10{
     margin-top:10% !important;
   }
@@ -751,10 +810,31 @@ cursor: auto;
   .mobile-font-20{
     font-size: 20px !important;
   }
+  .mobile-padding-bottom{
+    padding-bottom:20% !important;
+  }
+  .mobile-col-6_{
+    margin-left:5%;
+    flex: 0 0 65%;
+    max-width: 65%;
+    width:65%;
+  }
+  .mobile-font-30{
+    font-size:30px;
+  }
+
+    .mobile-col-6{
+      flex: 0 0 50%;
+      max-width: 50%;
+      width:50%;
+    }
   .mobile-padding-bottom-40{
     padding-bottom:40%;
   }
+.mobile-padding-bottom-10{
+  padding-bottom: 10%;
 
+}
   .mobile-max-width{
     width:100% !important;
     max-width:100% !important;

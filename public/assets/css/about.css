@@ -1,219 +1,28 @@
-.banners_about {
-  margin-top:15%;
-  width:100%;
-}
-
-
-.transparentbanner_about{
-right:40% !important;
-  width:60% !important;
-top:100% !important;
-
-z-index:999;
-height:100px !important;
-
-
-}
-body{
-  background:#0080B8 !important;
-}
-
-.showcase_image_about{
-  width:110%;
-  position: absolute;
-  top:0%;
-  height:100%;
-}
-
-.lightbluebanner_about{
-  width:200% !important;
-  position: relative;
-  z-index:99;
-}
-
-.darkbluebanner{
-  opacity:.7;
-  z-index:99;
-  position: relative;
-}
-.big-text-about-big{
-  padding:1% !important;
-  text-align: center;
-  width:70%;
-}
-.big-text-about-small{
-
-  text-align: left !important;
-  width:95% !important;
-
-}
-.big-text-about{
-  padding:2% !important;
-  width:120%;
-}
-.big-text{
-  font-size: 60px;
-  color:white;
-}
-.medium-text{
-  font-size: 30px !important;
-}
-.about_title{
-  font-family: "Akrobat";
-  color: white;
-  padding-top: 5%;
-  text-align: center;
-  font-size: 40px;
-}
-.what_we_do_inner{
-  z-index:2;
-  position: absolute;
-  top:0%;
-}
-.relative{
-  position: relative;
-}
-.image_about_us{
-  position: absolute;
-  top:0%;
-  width:100%;
-  z-index:1;
-}
-.what_we_do_title{
-  font-family: "Akrobat";
-  color: white;
-  padding-top: 5%;
-    font-weight: bold;
-  text-align: left;
-  font-size: 70px;
-}
-.link_about{
-  font-family: "Akrobat";
-  color: white;
-  padding-top: 5%;
-  text-align: center;
-  font-size: 20px;
-  width:80%;
-  border-bottom: 2px solid #FF5757;
-  padding-bottom: 5%;
-}
-.what_we_do_description{
-  font-family: "Akrobat";
-  color: white;
-  padding-top: 5%;
-  text-align: left;
-  font-size: 25px;
-}
-.about_description{
-  font-family: "Akrobat";
-  color: white;
-  padding-top: 5%;
-  text-align: center;
-  font-size: 25px;
-}
-.about_container{
-  margin-top: 50%;
-  padding-bottom:5%;
-}
-
-.about_image{
-  width:110% !important;
-  z-index:9;
-  position: absolute !important;
-  top:0% !important;
-}
-
-
-
 
 @media screen and (max-width:944px){
-  .big-text-about{
-    font-size:30px !important;
-    text-align: left;
-  }
-  .whes{
+
+  .what_we_do_image{
     width:140% !important;
     height:700px !important;
   }
-  /* .about_showcase_image{
-    height:500px !important;
-  } */
-  .mission_text_size{
-    font-size:18px !important;
-    padding-top:2.5% !important;
-  }
-  /* .showcase_image_about{
-    top:-40% !important;
-  } */
-  .big-text-about-bigger{
-    width:120%;
-  }
-  .banners_about{
-    margin-top:10% !important;
-  }
-  .smaller_text_container{
-    width:100% !important;
-  }
+
   .about_container{
     margin-top:110% !important;
-    padding-bottom:20%;
   }
 
-  .mobile_divide{
-    max-width:8.333333333% !important;
-    width:8.333333333% !important;
-    flex: 0 0 8.3333333%;
-
-  }
-  .mobile_mission_container{
-    width:83.333333333% !important;
-    max-width:83.33333333% !important;
-    flex: 0 0 83.333333333%
-  }
-  .what_we_do_description {
-    font-size:17px !important;
-  }
-  .what_we_do_col{
-    margin-left:5%;
-    flex: 0 0 65%;
-    max-width: 65%;
-    width:65%;
-  }
   .what_we_do_image{
-    padding-bottom: 10%;
     height:700px;
     width:1000px;
-    position: relative;
   }
-  .what_we_do_title{
-    font-size:30px;
-  }
-  .logo_container{
-    width:100%;
-  }
-  .big-text-container{
-    width:110%;
-  }
+
 
   .intro-text-container{
     top:80%;
+  }
 
-  }
-  .big-text-about-big{
-    width:100% !important;
-  }
   .text-container{
     height:500px !important;
   }
-  .link_col{
-    flex: 0 0 50%;
-    max-width: 50%;
-    width:50%;
-  }
-  .intro-about-container{
-    top:140%;
-  }
-  .big-text-about-bigger{
-    width:120% !important;
-  }
+
+
 }
