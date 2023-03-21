@@ -235,14 +235,14 @@
       z-index:999;
       display:inline;
       margin-top:20%;
-      padding:10%;
+      padding:10% !important;
       padding-bottom:40%;
   }
   .work_grid_item{
     float:left !important;
-    max-width:100%;
-    width:100%;
-    margin-left:5%;
+    max-width:120% !important;
+    width:100% !important;
+    margin-left:2.5%;
   }
   .supportbox{
     background: #c71667;
