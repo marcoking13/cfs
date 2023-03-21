@@ -941,6 +941,9 @@ cursor: auto;
   .mobile-text-center{
     text-align: center !important;
   }
+  .mobile-infinite-z{
+    z-index:99999999;
+  }
   .mobile-font-20{
     font-size:20px !important;
   }
