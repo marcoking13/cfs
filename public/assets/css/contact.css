@@ -1,6 +1,7 @@
 
 .we_clean_inner{
   background:url('./../images/services.png');
+  background-size:cover
 }
 
 @media screen and (max-width:844px){

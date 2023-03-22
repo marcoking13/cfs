@@ -13,6 +13,11 @@ const price_sheet = [
   key:"large",
   price:4,
   price_half:2.5
+},
+  {
+  key:"screens",
+  price:5,
+  price_half:5
   }
 ]
 

@@ -20,6 +20,9 @@
  .border-bottom-light-red{
    border-bottom: 2px solid #FF5757;
  }
+ .background-modal{
+   background:#1B1742;
+ }
 .font-70{
   font-size: 70px;
 
@@ -34,6 +37,9 @@
    padding-bottom:5%;
  }
 
+.lock {
+  overflow-y:hidden;
+}
 a{
 color:white !important;
 
@@ -114,7 +120,9 @@ color:white !important;
 .color-01{
   color: #00103d;
 }
-
+.infinite-z{
+  z-index:999999999999999 !important;
+}
 .margin-left-10-import {
   margin-left:10% !important;
 }
@@ -133,7 +141,9 @@ color:white !important;
 .cover-background{
   background-size:cover;
 }
-
+.z-99{
+  z-index:99;
+}
 
 
 .negative-z{
@@ -747,6 +757,12 @@ cursor: auto;
     flex: 0 0 8.3333333%;
     max-width:8.3333333333% !important
   }
+  .mobile-col-6{
+    width:50% !important;
+    flex: 0 0 50%;
+    max-width:50% !important
+  }
+  
   .mobile-width-100{
     width:100% !important;
   }

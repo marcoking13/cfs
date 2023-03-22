@@ -9,10 +9,17 @@ const ShowcaseHeadings = require("./../../config/showcase_headings.js");
 const BeforeAndAfterConfig = require("./../../config/before_and_after_config.js");
 const Values = require("./../../config/values.js");
 
-console.log(Values);
 
 var modal = null;
 var lock = false;
+
+function returnLockClass(isLocked){
+  if(lock){
+    return "lock";
+  }else{
+    return " ";
+  }
+}
 
 
 const GetAboutUsPage = (req,res,next) => {
@@ -20,7 +27,7 @@ const GetAboutUsPage = (req,res,next) => {
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),{
       pageTitle:"About Us",
       active_path:"/about_us",
-      lock:false,
+      lock:returnLockClass(lock),
       showcase:ShowcaseHeadings[1]
     });
 
@@ -28,6 +35,7 @@ const GetAboutUsPage = (req,res,next) => {
 
 const ExitOutOfModal = (req,res,next) => {
   modal = null;
+  lock = null;
   res.redirect("/");
 }
 
@@ -36,7 +44,7 @@ const GetSchedulePage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/schedule.ejs"),{
     pageTitle:"Schedule Online",
     active_path:"/schedule",
-    lock:false,
+    lock:returnLockClass(lock),
     modal:modal,
     showcase:ShowcaseHeadings[3],
     before_and_after_images: BeforeAndAfterConfig
@@ -59,13 +67,14 @@ const GetScheduleData = async(req,res,next) =>{
       time:data.time,
       smWindowCount:data.smWindowCount,
       mdWindowCount:data.mdWindowCount,
+      screenCount:data.screenCount,
       lgWindowCount:data.lgWindowCount,
       address:data.address
     };
 
-    for (var i = 0; i < price_sheet.length; i++) {
+    for (var i = 0; i < Pricing.length; i++) {
 
-      var ps = price_sheet[i];
+      var ps = Pricing[i];
       var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
 
       new_quote.total();
@@ -90,13 +99,31 @@ const GetScheduleData = async(req,res,next) =>{
 
 }
 
-const GetHomePage = (req,res,next)=>{
+
+const GetPopupModalPage = (req,res,next)=>{
 
   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
     values:Values,
     modal:modal,
-    lock:lock,
+    lock:returnLockClass(lock),
+    active_path:"/",
+    showcase:ShowcaseHeadings[0]
+  });
+
+}
+
+
+const GetHomePage = (req,res,next)=>{
+
+  modal = null;
+  lock = false;
+
+  res.render(path.join(rootDir,"views","/user/index.ejs"),{
+    pageTitle:"Home",
+    values:Values,
+    modal:modal,
+    lock:returnLockClass(lock),
     active_path:"/",
     showcase:ShowcaseHeadings[0]
   });
@@ -108,7 +135,7 @@ const GetContactUsPage = (req,res,next)=>{
   res.render(path.join(rootDir,"views","/user/contact_us.ejs"),{
     pageTitle:"Contact Us",
     active_path:"/contact_us",
-    lock:lock,
+    lock:returnLockClass(lock),
     modal:modal,
     showcase:ShowcaseHeadings[1]
   });
@@ -118,6 +145,7 @@ const GetContactUsPage = (req,res,next)=>{
 exports.GetAboutUsPage = GetAboutUsPage;
 exports.GetSchedulePage = GetSchedulePage;
 exports.ExitOutOfModal = ExitOutOfModal;
+exports.GetPopupModalPage = GetPopupModalPage;
 exports.GetScheduleData = GetScheduleData;
 exports.GetHomePage = GetHomePage;
 exports.GetContactUsPage = GetContactUsPage;

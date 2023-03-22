@@ -86,4 +86,6 @@ nav_button.addEventListener("click",()=>{
   }
 });
 
-document.getElementById('vid').play();
+if(document.getElementById('vid-modal')){
+  document.getElementById('vid-modal').play();
+}

@@ -1,28 +1,11 @@
 
+.intro-row{
+  top:65%;
+  left:-5%;
+}
 .about_us{
-  margin-top:5%;
+  margin-top:35%;
 }
-
-/* .form-title{
-  font-size: 20px;
-  width:100%;
-  font-family: monospace;
-  text-align: center;
-}
-
-.intro-form-container{
-    background:white;
-    padding:5%;
-    margin-left:5%;
-}
-
-.form-subtitle{
-  font-size: 14px;
-  width:100%;
-  font-family: monospace;
-  text-align: center;
-} */
-
 .about_image{
   top:0% !important;
 }
@@ -56,7 +39,7 @@
   width:110%;
   height:200px;
   background-size:cover;
-  background:url("./../wave.png");
+  background:url("./../images/wave.png");
   background-repeat:no-repeat;
 }
 
@@ -66,18 +49,21 @@
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
 .work_grid_item_center{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
 .work_grid_item_right{
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
 .work_grid_item_righter{
   grid-column-start: 3;
   grid-column-end: 4;
@@ -101,7 +87,6 @@
   right:0%;
   height:300px;
 }
-
 
 .supportbox{
   right:5%;
@@ -149,6 +134,9 @@
   opacity:1 !important;
   visibility: visible;
   animation: .5s ease-in dropdown 1;
+}
+.min-z{
+  z-index:1 !important;
 }
 
 
@@ -226,7 +214,6 @@
   }
 
   .showimg{
-    height: 300px !important;
   }
 
   .titleshow{
