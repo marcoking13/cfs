@@ -6,7 +6,21 @@
  .container-fluid{
    padding:0%;
  }
-
+.padding-bottom-0{
+  padding-bottom:0% !important;
+}
+ .no-style-button, .no-style-input[type="submit"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.darker-navy-background{
+  background:#002F57;
+}
  .top-0{
    top:0%;
  }
@@ -16,6 +30,9 @@
  .padding-top-bottom-10{
    padding-top:10%;
    padding-bottom:10%;
+ }
+ .width-30{
+   width:35%;
  }
  .border-bottom-light-red{
    border-bottom: 2px solid #FF5757;
@@ -762,7 +779,7 @@ cursor: auto;
     flex: 0 0 50%;
     max-width:50% !important
   }
-  
+
   .mobile-width-100{
     width:100% !important;
   }

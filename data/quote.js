@@ -9,6 +9,11 @@ class Quote {
   }
 
   total(){
+
+    if(this.total_windows <=0){
+      this.total_price  = 0;
+    }
+    
     this.total_price =  this.total_windows * this.price;
   }
 

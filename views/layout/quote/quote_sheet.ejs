@@ -1,12 +1,12 @@
 <div class="quotesheet_wrapper">
   <p class="mobile-width-80 width-40 text-banner">Free Quote! </p>
-
-<div class="quotesheet_container mobile-margin-top-10 padding-5 white-background margin-bottom-5 padding-bottom-15 heavy-shadow margin-left-5 width-90 gray-border margin-top-5 margin-top-20" >
+  <div class=" mobile-margin-top-10 padding-5 padding-bottom-0 white-background margin-bottom-5 heavy-shadow margin-left-5 width-90 gray-border margin-top-5 margin-top-20">
+    <div class="quotesheet_container" >
   <p class="quotesheet_title text-center akrobat font-25 bold">Make Your Windows Shine Today!</p>
 
-  <form action="/schedule" action="POST">
+  <form action="/modal" method="POST">
 
-  <div class="row padding-bottom-15">
+  <div class="row padding-bottom-5">
       <div class="col-12">
           <label>
               First Name
@@ -21,38 +21,42 @@
       </div>
       <div class="col-12">
           <label>
-              Address
+              Screen Count
           </label>
-          <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20" name="address" placeholder="Enter address" />
+          <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="screenCount" placeholder="Enter Screen Count" />
       </div>
       <div class="col-12">
           <label>
               Windows Less than 4X4 Ft
           </label>
-          <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20" name="smallWindows" placeholder="Enter Window Count" />
+          <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="smWindowCount" placeholder="Enter Window Count" />
       </div>
       <div class="col-12">
           <label>
               Windows Bigger than 4X4 and Less than 8X8 Ft
           </label>
-          <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20" name="mediumWindows" placeholder="Enter Window Count" />
+          <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="mdWindowCount" placeholder="Enter Window Count" />
       </div>
       <div class="col-12">
           <label>
               Windows Bigger than 8X8 Ft
           </label>
-          <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20" name="largeWindows" placeholder="Enter Window Count" />
+          <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="lgWindowCount" placeholder="Enter Window Count" />
+      </div>
+      <div class="col-12">
+          <input type="hidden" name="key" value = <%= active_path %> placeholder="Enter first name" />
       </div>
       <div class="col-3"></div>
 
-      <div class="col-6">
-        <button class="width-100 quotebutton margin-top-10 margin-bottom-5"type="submit"> Receive Quote</button>
+      <div class="col-6 margin-top-5">
+
+        <button class="width-100 quotebutton margin-top-5 margin-bottom-5 white btn black-background akrobat"type="submit"> Receive Quote</button>
       </div>
 
       <div class='col-3'></div>
 
       </form>
-      
+</div>
   </div>
 
 

@@ -3,7 +3,7 @@
 
 <div id="wrapper" class="<%=lock %> ">
 
-  <div class="container-fluid home_page" >
+  <div class="container-fluid" >
 
     <div class="row">
         <div class="col-12 padding-1 background-1a navbar_container" ></div>
@@ -18,7 +18,14 @@
 
 
   </div>
-  
+
+  <div style="margin-top:0%; z-index:9999;position:relative">
+    <%- include("./../layout/footer.ejs") %>
+  </div>
+
+
 </div>
+
+
 
 <%- include("./../layout/end.ejs") %>

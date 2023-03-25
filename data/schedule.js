@@ -16,6 +16,7 @@ class Schedule {
   async save(){
 
     var db_instance = db.GetDb();
+    
     this.total_all_prices();
 
     db_instance.collection("schedules").insertOne(this).then((result)=>{
@@ -35,12 +36,16 @@ class Schedule {
   total_all_prices(){
 
     for (var i = 0; i < this.windows.length; i++){
-
-      this.total += this.windows[i].total_price;
+      if(typeof this.windows[i].total_price == "number" ){
+        this.total += this.windows[i].total_price;
+      }
     }
 
-    this.total = Math.round(this.total);
-    this.outside = Math.round(this.total * .5);
+
+      this.total = Math.round(this.total);
+      this.outside = Math.round(this.total * .5);
+
+
   }
 
 

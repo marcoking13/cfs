@@ -1,55 +1,57 @@
 
-  <div class="row intro-row absolute width-100 z-99 mobile-ghost">
-    <div class="col-1 mobile-col-1"></div>
-    <div class="mobile-col-1"></div>
-    <div class="mobile-col-1"></div>
-    <div class="intro-form-container col-4 mobile-col-6 padding-2 white-background">
-        <p class="form-title text-center akrobat font-25 bold"> Get a Quote Today!</p>
-        <p class="form-subtitle font-20 akrobat text-center"> We will get back to you as soon as we can!</p>
-          <form method = "POST" action=  "/schedule">
-        <div class="form-container-intro row width-100">
+<div style="position:absolute;left;top:65%;left:10%;width:30%;z-index:99;background:white;padding:2%">
+  <div class="row">
+      <div class="col-12">
+        <div class="quotesheet_container width-100" >
+<p class="quotesheet_title text-center akrobat font-25 bold">Make Your Windows Shine Today!</p>
 
+<form action="/modal" method="POST">
 
-          <div class="col-12">
-              <label class="font-20 akrobat">Name</label>
-              <input class="form-control width-100"  placeholder="First & Last Name" name = "firstName"  />
-          </div>
+<div class="row padding-bottom-5">
+  <div class="col-12">
+      <label>
+          Full Name
+      </label>
+      <input class="form-control quote_input akrobat no-radius black-bottom-border font-20 no-border" name="firstName" placeholder="Enter first name" />
+  </div>
 
+  <div class="col-6">
+      <label>
+          Screen Count
+      </label>
+      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="screenCount" placeholder="Screen Count" />
+  </div>
+  <div class="col-6">
+      <label>
+          Less than 4X4 Ft
+      </label>
+      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="smWindowCount" placeholder="Window Count" />
+  </div>
+  <div class="col-6">
+      <label>
+          Between 4X4-8X8 Ft
+      </label>
+      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="mdWindowCount" placeholder="Window Count" />
+  </div>
+  <div class="col-6">
+      <label>
+          Bigger than 8X8 Ft
+      </label>
+      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="lgWindowCount" placeholder="Window Count" />
+  </div>
+  <div class="col-6">
+      <input type="hidden" name="key" value = <%= active_path %> placeholder="Enter first name" />
+  </div>
+  <div class="col-3"></div>
 
-          <div class="col-12">
-              <label class="font-20 akrobat">Address</label>
-              <input class="form-control width-100"  placeholder="Address" name = "address"  />
-          </div>
+  <div class="col-12">
+    <button class="width-100 margin-top-10 margin-bottom-5 btn white black-background"type="submit"> Receive Quote</button>
+  </div>
 
-          <div class="col-12">
-              <label class="font-20 akrobat">Screens</label>
-              <input class="form-control width-100" placeholder="How Many Screens" name = "screenCount"  />
-          </div>
+  <div class='col-3'></div>
 
-          <div class="col-12">
-              <label class="font-20 akrobat">Small Windows</label>
-              <input class="form-control width-100" placeholder="Windows Less than 4 Sqr. Ft" type="number" name = "smWindowCount"  />
-          </div>
-          <div class="col-12">
-              <label class="font-20 akrobat">Medium Windows</label>
-              <input class="form-control width-100" placeholder="Windows Between 4 and 6 Sqr. Ft" type="number" name = "mdWindowCount"  />
-          </div>
-          <div class="col-12">
-              <label class="font-20 akrobat">Large Windows</label>
-              <input class="form-control width-100" placeholder="Windows Greater than 6 Sqr. Ft" type="number" name = "lgWindowCount"  />
-          </div>
-          <div class="col-12">
-              <input class="form-control width-100"  value = 9 placeholder="Date of Quote" type="hidden" name = "date"  />
-          </div>
-          <div class="col-12">
-              <input class="form-control width-100" value = 9 placeholder="Date of Quote" type="hidden" name = "time"  />
-          </div>
-          <div class="col-12">
-              <button type="submit" class="quote_btn width-100 margin-top-5 btn btn-danger">Submit</button>
-          </div>
-
-        </form>
-
-        </div>
+  </form></div>
     </div>
+
+  </div>
 </div>

@@ -5,11 +5,11 @@ var userController = require("./../../controllers/user/userController.js")
 var rootDir = require("./../../util/path.js")
 
 router.get("/",userController.GetHomePage);
-router.post("/schedule",userController.GetScheduleData);
 router.get("/about",userController.GetAboutUsPage);
 router.get("/schedule",userController.GetSchedulePage);
-router.get("/modal",userController.GetPopupModalPage)
-router.get("/exit",userController.ExitOutOfModal)
+router.post("/modal",userController.GetScheduleData)
+router.post("/exit",userController.ExitOutOfModal)
+
 router.get("/contact_us",userController.GetContactUsPage);
 
 

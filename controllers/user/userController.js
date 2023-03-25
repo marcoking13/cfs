@@ -36,7 +36,15 @@ const GetAboutUsPage = (req,res,next) => {
 const ExitOutOfModal = (req,res,next) => {
   modal = null;
   lock = null;
-  res.redirect("/");
+  var url = req.body;
+
+
+
+
+    url.key.replace(' ', '');
+    res.redirect(url.key);
+
+
 }
 
 const GetSchedulePage = (req,res,next)=>{
@@ -52,74 +60,65 @@ const GetSchedulePage = (req,res,next)=>{
 
 }
 
+async function  getData(req){
+  var data = req.body;
+  var name = req.body.firstName + " " + req.body.lastName;
+  var sizes = [data.smWindowCount,data.mdWindowCount,data.lgWindowCount,data.screenCount];
+  var windows = [];
+
+
+  var config = {
+    name:name,
+    smWindowCount:data.smWindowCount,
+    mdWindowCount:data.mdWindowCount,
+    screenCount:data.screenCount,
+    lgWindowCount:data.lgWindowCount,
+    address:data.address
+  };
+
+
+
+  for (var i = 0; i < Pricing.length; i++) {
+
+    var ps = Pricing[i];
+    var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
+
+    new_quote.total();
+    windows.push(new_quote);
+
+  }
+
+  var new_schedule = new Schedule(config.name,config.address,windows,config.date,config.time);
+
+  const response = await new_schedule.save();
+
+
+  modal = {
+    wrapper:"active_wrapper",
+    modal:"active_modal",
+    outside:new_schedule.outside,
+    total_price:Math.round(new_schedule.total)
+  }
+  console.log(modal);
+
+  lock = true;
+
+}
+
 
 
 const GetScheduleData = async(req,res,next) =>{
 
-    var data = req.body;
-    var name = req.body.firstName + " " + req.body.lastName;
-    var sizes = [data.smWindowCount,data.mdWindowCount,data.lgWindowCount];
-    var windows = [];
 
-    var config = {
-      name:name,
-      date:data.date,
-      time:data.time,
-      smWindowCount:data.smWindowCount,
-      mdWindowCount:data.mdWindowCount,
-      screenCount:data.screenCount,
-      lgWindowCount:data.lgWindowCount,
-      address:data.address
-    };
-
-    for (var i = 0; i < Pricing.length; i++) {
-
-      var ps = Pricing[i];
-      var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
-
-      new_quote.total();
-      windows.push(new_quote);
-
-    }
-
-    var new_schedule = new Schedule(config.name,config.address,windows,config.date,config.time);
-
-    const response = await new_schedule.save();
-
-    modal = {
-      wrapper:"active_wrapper",
-      modal:"active_modal",
-      outside:new_schedule.outside,
-      total_price:Math.round(new_schedule.total * .9)
-    }
-
-    lock = true;
-
-    res.redirect("/");
+    await getData(req);
+    console.log(modal);
+    res.redirect(req.body.key);
 
 }
-
-
-const GetPopupModalPage = (req,res,next)=>{
-
-  res.render(path.join(rootDir,"views","/user/index.ejs"),{
-    pageTitle:"Home",
-    values:Values,
-    modal:modal,
-    lock:returnLockClass(lock),
-    active_path:"/",
-    showcase:ShowcaseHeadings[0]
-  });
-
-}
-
 
 const GetHomePage = (req,res,next)=>{
 
-  modal = null;
-  lock = false;
-
-  res.render(path.join(rootDir,"views","/user/index.ejs"),{
+   res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
     values:Values,
     modal:modal,
@@ -145,7 +144,6 @@ const GetContactUsPage = (req,res,next)=>{
 exports.GetAboutUsPage = GetAboutUsPage;
 exports.GetSchedulePage = GetSchedulePage;
 exports.ExitOutOfModal = ExitOutOfModal;
-exports.GetPopupModalPage = GetPopupModalPage;
 exports.GetScheduleData = GetScheduleData;
 exports.GetHomePage = GetHomePage;
 exports.GetContactUsPage = GetContactUsPage;

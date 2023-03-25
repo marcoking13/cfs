@@ -3,8 +3,11 @@
   top:65%;
   left:-5%;
 }
+.supportbox{
+  left:10% !important;
+}
 .about_us{
-  margin-top:35%;
+  margin-top:15%;
 }
 .about_image{
   top:0% !important;
