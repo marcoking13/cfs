@@ -875,6 +875,9 @@ cursor: auto;
   padding-bottom: 10%;
 
 }
+.mobile-height-600px{
+  height:600px !important;
+}
   .mobile-max-width{
     width:100% !important;
     max-width:100% !important;
