@@ -648,6 +648,9 @@ cursor: auto;
 .width-100{
   width:100%;
 }
+.min-z{
+  z-index:1 !important;
+}
 
 .no-border{
   border:none;
@@ -906,6 +909,9 @@ cursor: auto;
   .mobile-text-center{
     text-align:center;
   }
+  .mobile-padding-5{
+    padding:5% !important;
+  }
   .mobile-col-12{
 
       width:100% !important;
@@ -919,6 +925,9 @@ cursor: auto;
   }
   .mobile-padding-5{
     padding:5% !important;
+  }
+  .mobile-margin-left-0{
+    margin-left:0% !important;
   }
   .mobile-width-80{
     width:80% !important;

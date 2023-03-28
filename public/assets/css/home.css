@@ -138,10 +138,11 @@
   visibility: visible;
   animation: .5s ease-in dropdown 1;
 }
-.min-z{
-  z-index:1 !important;
-}
 
+.home_quote_container{
+  top:65%;
+  left:5%;
+}
 
 @media screen and (max-width:944px){
 
@@ -242,13 +243,19 @@
     width:120% !important;
   }
 
+  .home_quote_container{
+    top: 305%;
+    left: 10%;
+
+  }
+
   .our_clients_title{
     margin-top: -70% !important;
 
   }
 
   .about_us{
-    margin-top:140% !important;
+    margin-top:175% !important;
   }
 
 
