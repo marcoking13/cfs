@@ -878,6 +878,16 @@ cursor: auto;
 .mobile-height-600px{
   height:607px !important;
 }
+.mobile-margin-left-25{
+  margin-left:25% !important;
+}
+.mobile-font-40{
+  font-size:40px;
+
+}
+.mobile-margin-left-0{
+  margin-left:0% !important;
+}
 .mobile-width-50{
   width:50%;
 }
