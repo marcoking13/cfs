@@ -12,7 +12,7 @@
   }
 
   .what_we_do_image{
-    height:700px;
+    height:1000px !important;
     width:1000px;
   }
 
@@ -20,7 +20,9 @@
   .intro-text-container{
     top:80%;
   }
-
+.what_we_do_container{
+  height:700px !important;
+}
   .text-container{
     height:500px !important;
   }
