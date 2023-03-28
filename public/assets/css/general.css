@@ -1048,7 +1048,9 @@ cursor: auto;
   video{
     overflow-y: hidden;
   }
-
+  .mobile-height-575px{
+    height:575px !important;
+  }
   .mobile-margin-top-100{
     margin-top:100% !important;
   }
