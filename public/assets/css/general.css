@@ -878,6 +878,9 @@ cursor: auto;
 .mobile-height-600px{
   height:605px !important;
 }
+.mobile-width-50{
+  width:50%;
+}
   .mobile-max-width{
     width:100% !important;
     max-width:100% !important;
