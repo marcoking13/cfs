@@ -989,6 +989,9 @@ cursor: auto;
   .margin-left-2_5{
     margin-left:2.5%;
   }
+  .mobile-height-550px{
+    height:550px !important;
+  }
   .mobile-margin-top-20{
     margin-top:20% !important;
   }
