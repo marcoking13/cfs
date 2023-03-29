@@ -143,7 +143,9 @@
   top:65%;
   left:5%;
 }
-
+.footer_wrapper_home{
+  margin-top:40%; z-index:9999;position:relative
+}
 @media screen and (max-width:944px){
 
   .work_grid_item_left{
@@ -152,7 +154,12 @@
     grid-row-start: 1;
     grid-row-end: 3;
   }
-
+  .showimg{
+    height:300px !important;
+  }
+  .footer_wrapper_home{
+    margin-top:100% !important;
+  }
   .work_grid_item_center{
     grid-column-start: 4;
     grid-column-end: 7;
