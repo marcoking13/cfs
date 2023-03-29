@@ -875,6 +875,9 @@ cursor: auto;
   padding-bottom: 10%;
 
 }
+.mobile-margin-top-0{
+  margin-top: 0% !important;
+}
 .mobile-height-600px{
   height:607px !important;
 }
