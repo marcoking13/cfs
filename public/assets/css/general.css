@@ -1,5 +1,9 @@
 @font-face { font-family: Akrobat; font-weight: normal; src: url('./../fonts/Akrobat-Black.otf'); }
  @font-face { font-family: Akrobat; font-weight: lighter; src: url('./../fonts/Akrobat-Light.otf'); }
+ footer p, footer a, footer i {
+   font-family: "Akrobat";
+   
+ }
  .relative{
    position: relative;
  }
