@@ -2,7 +2,7 @@
  @font-face { font-family: Akrobat; font-weight: lighter; src: url('./../fonts/Akrobat-Light.otf'); }
  footer p, footer a, footer i {
    font-family: "Akrobat";
-   
+
  }
  .relative{
    position: relative;
@@ -12,6 +12,9 @@
  }
 .padding-bottom-0{
   padding-bottom:0% !important;
+}
+.body-background{
+  background:#0069a4
 }
  .no-style-button, .no-style-input[type="submit"] {
 	background: none;
