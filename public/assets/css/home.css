@@ -59,7 +59,11 @@
   grid-row-start: 1;
   grid-row-end: 3;
 }
-
+.showimg{
+  height:100%;
+  height:600px;
+  margin-top:20%;
+}
 .work_grid_item_right{
   grid-column-start: 5;
   grid-column-end: 6;
@@ -155,7 +159,7 @@
     grid-row-end: 3;
   }
   .showimg{
-    height:300px !important;
+    height:275px !important;
   }
   .footer_wrapper_home{
     margin-top:100% !important;
