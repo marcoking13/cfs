@@ -6,35 +6,53 @@
 <div class=" cfs_modal <%= modal.modal  %> width-100 modal_pos absolute infinte-z" id="mainModal" tabindex="-1">
   <div class="row">
       <div class="col-3 mobile-col-1"></div>
-      <div class='col-6 modal_body no-padding mobile-col-10 cfs-heading-background border-radius-5px heavy-shadow padding-bottom-2_5 background-modal'>
+      <div class='col-6 modal_body no-padding mobile-col-10 white-background border-radius-5px heavy-shadow background-modal'>
 
-          <video id='vid-modal' autoPlay autoLoop class="width-100">
-              <source src = "./assets/images/showcase.mp4"  class = "height-100 width-100" type='video/mp4'></source>
-          </video>
+          <div class="row">
 
-          <form action ="/exit" method="POST">
-            <input type='hidden' name = "key" value = "<%= active_path %>" />
+            <div class="col-6">
+                <div class="row" style="margin-left:0%">
 
-            <button class="no-style-button " type="submit"><p class="super-max-z font-25 absolute"id="modal_exit">X</p>
+                  <div class="before_box width-100" style="height:200px;background:url('./assets/images/before_1.png')">
+                      <p class="text-banner width-40 float-left margin-top-5"> Before </p>
+                  </div>
 
-            </button>
-              </form>
+                  <div class="before_box width-100 " style="height:200px;background:url('./assets/images/after_1.png')">
+                      <p class="text-banner width-40 float-right margin-top-50 " style="margin-top:30%"> After </p>
+                  </div>
+
+                  </div>
+              </div>
+
+
+      <div class="col-6">
+
         <div class="modal-dialog">
 
-          <p class="quote_title font-30 white bold akrobat text-center">Your Quote:</p>
+          <p class="quote_title font-40  bold akrobat text-center margin-top-10">Your Quote:</p>
 
-          <p class="quote_number font-25 white bold akrobat text-center">$<%=modal.outside %> Inside or Outside</p>
-          <p class="quote_number font-25 margin-top-2_5 akrobat text-center white">$<%=modal.total_price %> Inside and Outside</p>
+          <p class="quote_number font-25  bold akrobat text-center margin-top-15" style="margin-top:10%">$<%=modal.outside %> Inside or Outside</p>
+          <p class="quote_number font-25 margin-top-2_5 akrobat text-center ">$<%=modal.total_price %> Inside and Outside</p>
 
           <div class="quote_contact_us font-25 margin-top-2_5 akrobat text-center margin-top-10">
-            <p class="quote_pitch italic white akrobat white text-center font-20">Schedule a Cleaning Now!</p>
-            <button class="btn btn-danger quote_button_modal width-90 margin-left-5 border-color-white white akrobat transparent border-radius-30px relative super-max-z font-20">489-494-4094</button>
+            <p class="quote_pitch italic  akrobat  text-center font-20">Schedule a Cleaning Now!</p>
+            <button class="btn width-90 btn-danger quote_button_modal width-80 margin-left-5 black  akrobat transparent border-radius-30px relative super-max-z font-20 border-bottom-black">489-494-4094</button>
           </div>
 
+      </div>
+
+                <form action ="/exit" method="POST">
+                  <input type='hidden' name = "key" value = "<%= active_path %>" />
+
+                  <button class="no-style-button " type="submit"><p class="super-max-z font-25 absolute" style="right:-75% !important" id="modal_exit">X</p>
+
+                  </button>
+                    </form>
       </div>
     </div>
   </div>
 
-</div>
 
+</div>
+</div>
 <%}%>

@@ -5,6 +5,8 @@ var rootDir = require("./../../util/path.js");
 const Quote = require("./../../data/quote.js");
 const Schedule = require("./../../data/schedule.js");
 const Pricing = require("./../../config/pricing.js");
+const Clients = require("./../../config/clients.js");
+
 const ShowcaseHeadings = require("./../../config/showcase_headings.js");
 const BeforeAndAfterConfig = require("./../../config/before_and_after_config.js");
 const Values = require("./../../config/values.js");
@@ -133,6 +135,7 @@ const GetContactUsPage = (req,res,next)=>{
 
   res.render(path.join(rootDir,"views","/user/contact_us.ejs"),{
     pageTitle:"Contact Us",
+    clients:Clients,
     active_path:"/contact_us",
     lock:returnLockClass(lock),
     modal:modal,

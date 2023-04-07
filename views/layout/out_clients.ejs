@@ -1,0 +1,24 @@
+<div class="white-background padding-top-5 paddding-bottom-10">
+  <p class="text-banner  text-left width-30 font-30 mobile-font-30 mobile-width-80" style="font-size:40px"> Our Top Clients </p>
+
+<div class="row padding-2">
+  <% for(var i = 0; i < clients.length; i++){ %>
+      <div class="col-3 mobile-col-12 margin-top-2_5" style='padding:0%;'>
+    <div class="margin-left-5  margin-top-2_5 relative client_card card padding-bottom-20 heavy-shadow" >
+        <div style="height:300px">
+        <% if(clients[i].small == false) {%>
+        <img class="width-100 padding-10 padding-top-5 margin-top-5-neg "src = "<%= './assets/images/' + clients[i].logo%>"/>
+        <%}else{%>
+          <img class="width-100 padding-10 margin-top-10 padding-top-10 "  src = "<%= './assets/images/' + clients[i].logo%>"/>
+
+
+          <%}%>
+
+        </div>
+    </div>
+    </div>
+
+  <%}%>
+
+</div>
+</div>

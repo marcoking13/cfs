@@ -38,6 +38,9 @@
   z-index:999;
   position: absolute;
 }
+.modal_pos{
+  top:20%;
+}
 
 #modal_exit{
   color:#1B1742;
@@ -63,6 +66,6 @@
 
 @media screen and (max-width:844px){
   .modal_pos{
-    top:10% !important;
+    top:20% !important;
   }
 }
