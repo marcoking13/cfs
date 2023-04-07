@@ -124,6 +124,7 @@ const GetHomePage = (req,res,next)=>{
     pageTitle:"Home",
     values:Values,
     modal:modal,
+    clients:Clients,
     lock:returnLockClass(lock),
     active_path:"/",
     showcase:ShowcaseHeadings[0]
