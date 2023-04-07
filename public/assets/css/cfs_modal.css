@@ -83,7 +83,7 @@ left: -10% !important;
     padding-bottom:0% !important;
   }
   .before_box{
-    height:250px !important;
+    height:300px !important;
   }
   .mobile-after{
     position: absolute;
@@ -94,7 +94,7 @@ left: -10% !important;
     position: relative;
     z-index:99;
     margin-top:0% !important;
-    height:300px;
+    height:300px !important;
   }
 
 }
