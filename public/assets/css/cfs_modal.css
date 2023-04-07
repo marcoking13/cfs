@@ -85,5 +85,10 @@ left: 0% !important;
   .before_box{
     height:300px !important;
   }
+  .mobile-after{
+    position: absolute;
+    bottom:0%;
+    
+  }
 
 }
