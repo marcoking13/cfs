@@ -270,5 +270,11 @@
     margin-top:215% !important;
   }
 
+  .work_grid_item_rightest{
+    width: 300%;
+float: right !important;
+margin-left: 205%;
+  }
+
 
 }
