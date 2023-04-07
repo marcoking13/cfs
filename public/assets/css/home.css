@@ -271,9 +271,13 @@
   }
 
   .work_grid_item_rightest{
+    margin-top: 40% !important;
+    grid-area: none !important;
     width: 300%;
-float: right !important;
-margin-left: 205%;
+    float: right !important;
+    margin-left: 205%;
+    position: absolute;
+    top: 170%;
   }
 
 
