@@ -88,7 +88,10 @@ left: 0% !important;
   .mobile-after{
     position: absolute;
     bottom:0%;
-    
+
+  }
+  .after_box{
+    height:300px;
   }
 
 }
