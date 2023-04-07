@@ -48,6 +48,9 @@
 #modal_exit:hover{
   color:black !important;
 }
+.modal_wrapper_pos{
+  top:5% !important;
+}
 
 .quote_button_modal{
   margin-top:1%;
