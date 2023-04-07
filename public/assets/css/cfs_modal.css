@@ -57,7 +57,9 @@
   margin-top:1%;
   border-width:2px !important;
 }
-
+.mobile-height-200px{
+  height:200px !important;
+}
 .quote_button_modal:hover{
   color:white !important;
   background:black !important;
@@ -75,6 +77,10 @@
     color: #1B1742 !important;
 top: 0% !important;
 left: 0% !important;
+  }
+
+  .client_card{
+    padding-bottom:0% !important;
   }
 
 }
