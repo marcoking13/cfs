@@ -76,7 +76,7 @@
   #modal_exit{
     color: #1B1742 !important;
 top: 0% !important;
-left: 5% !important;
+left: -5% !important;
   }
 
   .client_card{
