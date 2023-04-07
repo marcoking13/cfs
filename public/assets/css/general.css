@@ -183,7 +183,8 @@ color:white !important;
   width:30%;
 }
 label {
-margin-top:1.5%;
+margin-top:1.5% !important;
+padding-top:2% !important;
 }
 
 
