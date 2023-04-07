@@ -68,7 +68,7 @@
 
 @media screen and (max-width:844px){
   .modal_pos{
-    top:20% !important;
+    top:10% !important;
   }
   .mobile-col-10{
     padding-bottom:0 !important;
@@ -91,7 +91,7 @@ left: -5% !important;
 
   }
   .after_box{
-    margin-top:30% !important;
+    margin-top:15% !important;
     height:300px;
   }
 
