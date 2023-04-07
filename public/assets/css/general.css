@@ -168,7 +168,9 @@ color:white !important;
 .z-99{
   z-index:99;
 }
-
+.values-background{
+  background:#25739F;
+}
 
 .negative-z{
   z-index:-3;
@@ -177,7 +179,11 @@ color:white !important;
   background:#005793;
 }
 .width-30{
+  
   width:30%;
+}
+label {
+
 }
 
 
