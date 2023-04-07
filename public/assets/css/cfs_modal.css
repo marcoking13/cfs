@@ -82,5 +82,8 @@ left: 0% !important;
   .client_card{
     padding-bottom:0% !important;
   }
+  .before_box{
+    height:300px !important;
+  }
 
 }
