@@ -91,6 +91,8 @@ left: -10% !important;
 
   }
   .after_box{
+    position: relative;
+    z-index:99;
     margin-top:0% !important;
     height:300px;
   }
