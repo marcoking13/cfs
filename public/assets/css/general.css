@@ -1130,7 +1130,9 @@ cursor: auto;
     margin-top:50% !important;
   }
   .mobile-margin-top-20-neg{
-    margin-top: -20% !important;
+    margin-top: -50% !important;
+    position: relative;
+    z-index: 9999;
   }
   .mobile-padding-bottom-5{
     padding-bottom: 5% !important;
