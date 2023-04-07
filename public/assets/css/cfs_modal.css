@@ -87,11 +87,11 @@ left: -10% !important;
   }
   .mobile-after{
     position: absolute;
-    bottom:2.5%;
+    bottom:1% !important;
 
   }
   .after_box{
-    margin-top:10% !important;
+    margin-top:0% !important;
     height:300px;
   }
 
