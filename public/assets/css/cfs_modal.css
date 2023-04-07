@@ -48,9 +48,7 @@
 #modal_exit:hover{
   color:black !important;
 }
-.modal_wrapper_pos{
-  top:20% !important;
-}
+
 
 .quote_button_modal{
   margin-top:1%;
@@ -61,4 +59,10 @@
   color:white !important;
   background:black !important;
   border-color:white !important;
+}
+
+@media screen and (max-width:844px){
+  .modal_pos{
+    top:10% !important;
+  }
 }
