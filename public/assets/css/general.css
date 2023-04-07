@@ -7,6 +7,9 @@
  .relative{
    position: relative;
  }
+ .margin-top-5-neg{
+   margin-top: -5%;
+ }
  .container-fluid{
    padding:0%;
  }
