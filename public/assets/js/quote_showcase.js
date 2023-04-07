@@ -4,4 +4,6 @@ function switch_image(query,src_name){
   img.setAttribute("src",src_name);
 }
 
-switch_image("mobile_showcase","./assets/images/quote_mobile.png")
+if(window.innerWidth <=844){
+  switch_image("mobile_showcase","./assets/images/quote_mobile.png")
+}

@@ -10,6 +10,9 @@
   top:-10%;
   left:0%;
 }
+.quotesheet_wrapper{
+  margin-top:5%;
+}
 
 .quotebutton:hover{
   box-shadow:1px 1px 9px 2px black;
