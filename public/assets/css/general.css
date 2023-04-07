@@ -1122,6 +1122,9 @@ cursor: auto;
     margin-right:10% !important;
 
   }
+  .mobile-margin-top-20{
+    margin-top: 20%;
+  }
   .mobile-half-middle{
     width:50% !important;
     margin-left:25% !important;
