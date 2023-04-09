@@ -1077,6 +1077,9 @@ cursor: auto;
     flex:  0 0 95%;
     margin-left:2.5%;
   }
+  .mobile-padding-left-5{
+    padding-left:5% !important;
+  }
   .mobile-margin-left-2_5{
     margin-left:2.5%;
   }
