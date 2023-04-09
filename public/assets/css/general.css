@@ -1144,9 +1144,14 @@ cursor: auto;
   .mobile-font-15{
     font-size: 15px !important;
   }
+  .mobile-width-110{
+    width:110%;
+  }
   .mobile-margin-top-20-neg{
     margin-top: -70% !important;
     position: relative;
+    width:110%;
+    padding:10%;
     z-index: 9999;
   }
   .mobile-padding-bottom-5{
