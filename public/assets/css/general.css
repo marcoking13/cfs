@@ -1080,6 +1080,10 @@ cursor: auto;
   .mobile-padding-left-5{
     padding-left:5% !important;
   }
+  .mobile-padding-right-left-5{
+    padding-left:5% !important;
+      padding-right:5% !important;
+  }
   .mobile-margin-left-2_5{
     margin-left:2.5%;
   }
