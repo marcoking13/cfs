@@ -1080,6 +1080,23 @@ cursor: auto;
     flex:  0 0 95%;
     margin-left:2.5%;
   }
+  .mobile-col-10{
+    max-width: 83.33333333333333% !important;
+    width:83.33333333333333% !important;
+    flex:  0 0 83.3333333333333333%;
+  }
+  .mobile-col-1{
+    max-width: .0833333333333333% !important;
+    width:.0833333333333333% !important;
+    flex:  0 0 .083333333333333333%;
+  }
+
+  .mobile-col-11{
+    max-width: 95% !important;
+    width:95% !important;
+    flex:  0 0 95%;
+    margin-left:2.5%;
+  }
   .mobile-padding-left-5{
     padding-left:5% !important;
   }
