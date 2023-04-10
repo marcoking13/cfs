@@ -1090,6 +1090,9 @@ cursor: auto;
   .mobile-margin-left-2_5{
     margin-left:2.5%;
   }
+  .mobile-height-125px{
+    height:125px !important;
+  }
   .mobile-margin-top-75{
     margin-top: 75% !important;
 
