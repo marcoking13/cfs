@@ -112,7 +112,10 @@
   visibility: visible;
   animation: .5s ease-in dropdown 1;
 }
-
+.contact_info{
+  padding-top: 10%;
+    margin-top: -2.5%;
+}
 .home_quote_container{
   top:65%;
   left:5%;
