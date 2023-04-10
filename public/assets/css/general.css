@@ -1002,6 +1002,9 @@ cursor: auto;
   .mobile-top-35px{
     top:35px;
   }
+  .mobile-height-150px{
+    height: 150px !important;
+  }
   .mobile-width-100{
     width:100% !important;
   }
