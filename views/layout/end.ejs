@@ -8,6 +8,9 @@
   <script src = "./assets/js/quote_images.js"></script>
   <script src = "./assets/js/mobile_image_switch.js"></script>
   <script>
+      if(window.innerHeight > window.innerWidth){
+        document.getElementsByTagName("body")[0].style.transform = "rotate(90deg)"
+      }
       if(window.innerWidth<=844){
         var vid = document.getElementById("vid-modal");
         vid.play();
