@@ -1141,6 +1141,9 @@ cursor: auto;
     width:50% !important;
     margin-left:25% !important;
   }
+  .mobile-width-110{
+    width:110% !important;
+  }
   .mobile-margin-top-50{
     margin-top:50% !important;
   }
