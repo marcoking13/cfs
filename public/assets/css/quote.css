@@ -10,6 +10,13 @@
   top:-10%;
   left:0%;
 }
+.x_before_box{
+
+  border-bottom:2px solid #01488;
+}
+.x_after_box{
+  border-bottom:2px solid #002F57;
+}
 .quotesheet_wrapper{
   margin-top:5%;
 }
