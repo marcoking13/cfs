@@ -127,14 +127,14 @@
   margin-top:40%; z-index:9999;position:relative
 }
 .wavy_section{
-  bottom: 25px;
+  bottom: 50px;
 position: relative;
 }
 @media screen and (max-width:944px){
 
   .mobile-margin-top-20-neg{
     width:110% !important;
-    margin-top: -100% !important;
+    margin-top: -90% !important;
     position: relative;
     z-index: 9999;
   }
