@@ -1083,6 +1083,9 @@ cursor: auto;
     flex:  0 0 95%;
     margin-left:2.5%;
   }
+  .mobile-margin-top-5-neg{
+    margin-top: -5% !important;
+  }
   .mobile-col-0{
     max-width: 83.33333333333333% !important;
     width:83.33333333333333% !important;
