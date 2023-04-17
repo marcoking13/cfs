@@ -132,7 +132,12 @@ position: relative;
 }
 @media screen and (max-width:944px){
 
-
+  .mobile-margin-top-20-neg{
+    width:110% !important;
+    margin-top: -80% !important;
+    position: relative;
+    z-index: 9999;
+  }
   .showimg{
     height:275px !important;
   }

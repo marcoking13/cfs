@@ -1187,12 +1187,7 @@ cursor: auto;
   .mobile-padding-top-15{
     padding-top:15%;
   }
-  .mobile-margin-top-20-neg{
-    width:110% !important;
-    margin-top: -70% !important;
-    position: relative;
-    z-index: 9999;
-  }
+
   .mobile-padding-bottom-5{
     padding-bottom: 5% !important;
   }
