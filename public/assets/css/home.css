@@ -131,7 +131,9 @@
 position: relative;
 }
 @media screen and (max-width:944px){
-
+.contact_us_con{
+  margin-top:5% !important;
+}
   .mobile-margin-top-20-neg{
     width:110% !important;
     margin-top: -90% !important;
@@ -229,7 +231,7 @@ position: relative;
     width:100% !important;
     font-size: 40px;
     position: absolute;
-    
+
   }
   .client_row{
     padding-left:10% !important;
