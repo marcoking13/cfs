@@ -3,21 +3,25 @@
   background:url('./../images/services.png');
   background-size:cover
 }
+.p_row{
+  left:-5% !important;
+}
 
 @media screen and (max-width:844px){
   .meet_owners_container{
     margin-top:140% !important;
   }
   .mobile_text_banner_out_clients{
-    left: -21%;
+    left: -60% !important;
+    position: absolute;
     text-align:center !important;
     width:145% !important;
     font-size: 40px;
-    position: absolute;
   }
   .contact_us_con{
     padding-top:20% !important;
   }
+
 
   .showcase_client{
     height:150px !important;
