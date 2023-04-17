@@ -15,15 +15,15 @@ module.exports = [
     showcase_img:"./assets/images/showcase_1.png"
   },
   {
-    heading_1:"480-939-9292",
-    heading_2:"info@customfacilityservices.com",
+    heading_1:"Contact Us Today!",
+    heading_2:"480-959-5555",
     css_file:`${css_url}contact_us.css`,
     showcase_img:"./assets/images/contact_us_b.png",
   },
   {
     css_file:`${css_url}quote.css`,
-    heading_1:"Schedule Today!",
-    heading_2:"480-774-9493",
+    heading_1:"In a Hurry?",
+    heading_2:"Recieve an Online Quote Below!",
     showcase_img:"./assets/images/showcase_3.png",
   }
 
