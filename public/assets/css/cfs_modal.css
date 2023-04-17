@@ -97,4 +97,10 @@ left: -10% !important;
     height:300px !important;
   }
 
+  .logo_img{
+        margin-top: -12.5% !important;
+  }
+  .small_logo_img{
+        margin-top: -17.5% !important;
+  }
 }

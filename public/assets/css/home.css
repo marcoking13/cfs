@@ -207,13 +207,18 @@
   .about_us{
     margin-top:225% !important;
   }
-
+  .showcase_client{
+    height:200px !important;
+  }
   .mobile_text_banner_out_clients{
     left: -15%;
     text-align:center !important;
     width:130% !important;
     font-size: 40px;
     position: absolute;
+  }
+  .client_row{
+    padding-left:15% !important;
   }
 
 

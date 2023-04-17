@@ -1,19 +1,19 @@
 <div class="white-background padding-5 padding-bottom-10 width-100 padding-bottom-10">
-  <div class="row width-90 padding-2 padding-left-5">
+  <div class="row width-90 padding-2 padding-left-5 ">
     <div class="col-3 mobile-col-0"></div>
     <div class="col-6 mobile-col-12">
       <p class="mobile_text_banner_out_clients text-banner text-center width-100 font-30 mobile-font-30 " style="font-size:40px"> Our Top Clients </p>
     </div>
       </div>
-<div class="row padding-2 padding-bottom-5 width-90 padding-left-5 mobile-padding-top-15 contact_us_con">
+<div class="row padding-2 padding-bottom-5 width-90 padding-left-5 mobile-padding-top-15 contact_us_con client_row">
   <% for(var i = 0; i < clients.length; i++){ %>
-      <div class="col-3 mobile-col-6 margin-top-2_5" >
+      <div class="col-3 mobile-col-12 margin-top-2_5" >
     <div class="margin-left-10  margin-top-2_5 relative client_card card padding-bottom-20 mobile-padding-bottom-5 heavy-shadow padding-2" >
-        <div style="height:300px" class="mobile-height-125px">
+        <div style="height:300px" class="showcase_client">
         <% if(clients[i].small == false) {%>
-          <img class="width-100 padding-5  margin-top-5-neg  "src = "<%= './assets/images/' + clients[i].logo %>"/>
+          <img class="width-100 padding-5  margin-top-5-neg  small_logo_img "src = "<%= './assets/images/' + clients[i].logo %>"/>
         <%}else{%>
-          <img class="width-100 padding-5 mobile-margin-top-5-neg "  src = "<%= './assets/images/' + clients[i].logo %>"/>
+          <img class="width-100 padding-5 margin-top-top-5-neg logo_img "  src = "<%= './assets/images/' + clients[i].logo %>"/>
 
 
           <%}%>

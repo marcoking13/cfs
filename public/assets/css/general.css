@@ -1113,7 +1113,7 @@ cursor: auto;
     margin-left:2.5%;
   }
   .mobile-height-125px{
-    height:100px !important;
+    height:150px !important;
   }
   .mobile-margin-top-75{
     margin-top: 75% !important;
@@ -1182,9 +1182,9 @@ cursor: auto;
     padding-top:15%;
   }
   .mobile-margin-top-20-neg{
+    width:110% !important;
     margin-top: -70% !important;
     position: relative;
-    width: 110% !important;
     z-index: 9999;
   }
   .mobile-padding-bottom-5{
