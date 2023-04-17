@@ -134,7 +134,7 @@ position: relative;
 
   .mobile-margin-top-20-neg{
     width:110% !important;
-    margin-top: -80% !important;
+    margin-top: -100% !important;
     position: relative;
     z-index: 9999;
   }
