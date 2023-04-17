@@ -126,6 +126,10 @@
 .footer_wrapper_home{
   margin-top:40%; z-index:9999;position:relative
 }
+.wavy_section{
+  bottom: 50px;
+position: relative;
+}
 @media screen and (max-width:944px){
 
 
@@ -149,7 +153,6 @@
   }
 
   .wave:before{
-    top:50px;
     content: "";
     position: absolute;
     z-index: 0 !important;
@@ -216,6 +219,7 @@
   }
   .mobile_text_banner_out_clients{
     left: -0%;
+        margin-left: 35%;
     text-align:center !important;
     width:100% !important;
     font-size: 40px;
