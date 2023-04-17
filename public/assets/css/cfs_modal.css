@@ -103,4 +103,12 @@ left: -10% !important;
   .small_logo_img{
         margin-top: -17.5% !important;
   }
+  .p_row{
+    position: absolute;
+left: 25% !important;
+width: 80% !important;
+margin-top: 5% !important;
+  }
+
+
 }

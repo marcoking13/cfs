@@ -553,6 +553,9 @@ opacity:1;
 .heavy-shadow{
   box-shadow:1px 1px 9px 2px black;
 }
+.margin-top-7_5{
+  margin-top: 7.5%;
+}
 .font-25{
   font-size: 25px;
 }

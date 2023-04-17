@@ -146,6 +146,7 @@
   }
 
   .wave:before{
+    top:50px;
     content: "";
     position: absolute;
     z-index: 0 !important;
@@ -223,7 +224,6 @@
   .mobile_text_banner_out_clients{
     font-size:45px !important;
   }
-
 
 
 }
