@@ -1178,6 +1178,12 @@ cursor: auto;
   .mobile-margin-top-50{
     margin-top:50% !important;
   }
+  .mobile-padding-top-10{
+    padding-top:10% !important;
+  }
+  .mobile-margin-top-5{
+    margin-top:5% !important;
+  }
   .mobile-font-15{
     font-size: 15px !important;
   }
