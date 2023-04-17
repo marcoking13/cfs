@@ -208,6 +208,14 @@
     margin-top:225% !important;
   }
 
+  .mobile_text_banner_out_clients{
+    left: -15%;
+    text-align:center !important;
+    width:130% !important;
+    font-size: 40px;
+    position: absolute;
+  }
+
 
 
 }

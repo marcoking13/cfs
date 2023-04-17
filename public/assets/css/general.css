@@ -1086,9 +1086,9 @@ cursor: auto;
     flex:  0 0 83.3333333333333333%;
   }
   .mobile-col-10{
-    max-width: 0% !important;
-    width:0% !important;
-    flex:  0 0 0%;
+    width: 83.333333333% !important;
+    max-width: 83.33333333% !important;
+    flex: 0 0 83.333333333%;
   }
   .mobile-col-1{
     max-width: .0833333333333333% !important;
@@ -1178,11 +1178,13 @@ cursor: auto;
   .mobile-width-110{
     width:110%;
   }
+  .mobile-padding-top-15{
+    padding-top:15%;
+  }
   .mobile-margin-top-20-neg{
-    margin-top: -75% !important;
+    margin-top: -70% !important;
     position: relative;
-    width:110%;
-    padding:5%;
+    width: 110% !important;
     z-index: 9999;
   }
   .mobile-padding-bottom-5{
