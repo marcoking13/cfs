@@ -1191,7 +1191,10 @@ cursor: auto;
     width:110%;
   }
   .mobile-padding-top-15{
-    padding-top:15%;
+    padding-top:15% !important;
+  }
+  .mobile-padding-top-20{
+    padding-top:20% !important;
   }
 
   .mobile-padding-bottom-5{
