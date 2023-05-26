@@ -1003,6 +1003,9 @@ cursor: auto;
       flex: 100% !important;
 
   }
+  .mobile-padding-top-0{
+    padding-top:0% !important;
+  }
   .mobile-height-120{
     height:120%;
   }
