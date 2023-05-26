@@ -1003,6 +1003,10 @@ cursor: auto;
       flex: 100% !important;
 
   }
+  .mobile-padding-top-bottom-2_5{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
   .mobile-padding-top-9{
     padding-top:9% !important;
   }
