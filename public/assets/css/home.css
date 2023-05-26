@@ -7,7 +7,7 @@
   left:10% !important;
 }
 .about_us{
-  margin-top:20%;
+  margin-top:25%;
 }
 .about_image{
   top:0% !important;
@@ -119,6 +119,10 @@
   padding-top: 10%;
   margin-top: -2.5%;
 }
+.text-about-us-box_4{
+  position: relative;
+  z-index:99999;
+}
 .home_quote_container{
   top:65%;
   left:5%;
@@ -129,6 +133,9 @@
 .wavy_section{
   bottom: 50px;
 position: relative;
+}
+.values_row{
+  margin-top:2.5%;
 }
 @media screen and (max-width:944px){
 .contact_us_con{

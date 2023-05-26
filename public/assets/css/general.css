@@ -8,8 +8,24 @@
    position: relative;
 
  }
+ .padding-top-bottom-5{
+   padding-top:5%;
+   padding-bottom:5%;
+ }
  .black{
    color:black
+ }
+ .height-712px{
+       height: 712px;
+ }
+ .padding-top-2_5{
+   padding-top:2.5%;
+ }
+ .margin-top-5-neg{
+   margin-top:-5%;
+ }
+ .margin-top-7_5-neg{
+   margin-top:-6.5%;
  }
  .border-bottom-black{
    border:1px solid black;
