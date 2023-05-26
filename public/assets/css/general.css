@@ -1018,6 +1018,10 @@ cursor: auto;
   .mobile-width-90{
     width:90% !important;
   }
+  .mobile-90-5{
+    width: 90%;
+margin-left: 5%;
+  }
   .mobile-top-35px{
     top:35px;
   }
