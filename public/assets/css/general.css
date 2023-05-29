@@ -904,8 +904,14 @@ cursor: auto;
   .mobile-margin-top-10{
     margin-top:10% !important;
   }
+  .mobile-font-30{
+    font-size:30px;
+  }
   .mobile-margin-top-15{
     margin-top:15% !important;
+  }
+  .mobile-width-60{
+    width:60% !important;
   }
 
   .mobile-font-30{
