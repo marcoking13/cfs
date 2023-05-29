@@ -6,7 +6,21 @@
 .p_row{
   left:-5% !important;
 }
-
+.bottom-0{
+  bottom:0%;
+}
+.padding-0{
+  padding:0% !important;
+}
+.float-right{
+  float:right;
+}
+.left-0{
+  left: 0% ;
+}
+.right-0{
+  right: 0% ;
+}
 @media screen and (max-width:844px){
   .meet_owners_container{
     margin-top:140% !important;
