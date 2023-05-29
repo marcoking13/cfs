@@ -894,7 +894,9 @@ cursor: auto;
         }
 
 
-
+.mobile-background-white{
+  background:white !important;
+}
 
       .mobile-col-10{
         width:83.333333333% !important;
