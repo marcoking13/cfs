@@ -26,11 +26,52 @@
 
 
 @media screen and (max-width:1000px) and (orientation:landscape){
+
+
     .intro-text-container{
       margin-top: -5% !important;
     }
     .banners{
       margin-top:7.5% !important;
+    }
+    .logo_col{
+        width:8.3333333333% !important;
+        flex: 0 0 8.3333333%;
+        max-width:8.3333333333% !important
+    }
+    .home_quote_container{
+      top: 240% !important;
+    }
+    .about_us{
+      margin-top: 140% !important;
+    }
+    .mobile-margin-top-neg{
+        margin-top: 30% !important;
+    }
+    .showcase_client{
+        margin-top: 30% !important;
+    }
+    .client_card{
+      width: 70% !important;
+      margin-left: 10% !important;
+    }
+    .client_row{
+      padding-top:15% !important;
+    }
+    .mobile_text_banner_out_client{
+      margin-left: 42.5% !important;
+      width: 100% !important;
+    }
+    .about-us-title{
+      position: absolute;
+    top: -7.5%;
+    left: 0%;
+    }
+    .supportbox{
+          margin-top: 50% !important;
+    }
+    .showimg{
+      margin-top: 50% !important;
     }
 }
 @media screen and (max-width:1000px){
