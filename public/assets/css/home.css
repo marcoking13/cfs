@@ -137,7 +137,7 @@ position: relative;
 .values_row{
   margin-top:2.5%;
 }
-@media screen and (max-width:944px){
+@media screen and (max-width:1000px){
 .contact_us_con{
   margin-top:5% !important;
 }

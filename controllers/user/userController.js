@@ -101,7 +101,6 @@ async function  getData(req){
     outside:new_schedule.outside,
     total_price:Math.round(new_schedule.total)
   }
-  console.log(modal);
 
   lock = true;
 
@@ -110,16 +109,17 @@ async function  getData(req){
 
 
 const GetScheduleData = async(req,res,next) =>{
-
-
     await getData(req);
     console.log(modal);
+    Schedule.findAll().then((data)=>{
+      console.log(data);
+    })
     res.redirect(req.body.key);
 
 }
 
 const GetHomePage = (req,res,next)=>{
-
+  Schedule.findAll((data)=>{console.log(data)});
    res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
     values:Values,

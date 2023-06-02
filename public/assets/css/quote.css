@@ -26,7 +26,7 @@
   box-shadow:1px 1px 9px 2px black;
 }
 
-@media screen and (max-width:844px){
+@media screen and (max-width:1000px){
   .work_container{
     margin-top:0% !important;
     padding-top:10%;

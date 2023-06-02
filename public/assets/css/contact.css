@@ -21,7 +21,7 @@
 .right-0{
   right: 0% ;
 }
-@media screen and (max-width:844px){
+@media screen and (max-width:1000px){
   .meet_owners_container{
     margin-top:140% !important;
   }
