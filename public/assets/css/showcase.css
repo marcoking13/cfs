@@ -35,15 +35,15 @@
       margin-top:7.5% !important;
     }
     .logo_col{
-        width:8.3333333333% !important;
-        flex: 0 0 8.3333333%;
-        max-width:8.3333333333% !important
+        width:40% !important;
+        flex: 40%;
+        max-width:40% !important
     }
     .home_quote_container{
       top: 240% !important;
     }
     .about_us{
-      margin-top: 140% !important;
+      margin-top: 155% !important;
     }
     .mobile-margin-top-neg{
         margin-top: 30% !important;
