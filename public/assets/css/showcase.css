@@ -24,6 +24,12 @@
     top: 30%;
 }
 
+
+@media screen and (max-width:1000px) and (orientation:landscape){
+    .intro-text-container{
+      margin-top: 0% !important;
+    }
+}
 @media screen and (max-width:1000px){
    .showcase_image{
      height:600px !important;
@@ -49,5 +55,6 @@
      margin-top:15%;
      top:120%;
    }
+
 
 }
