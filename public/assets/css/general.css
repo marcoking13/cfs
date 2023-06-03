@@ -609,7 +609,7 @@ white-background{
 }
 
 .no-border{
-  border: 2px solid transparent !important;
+  border: 2px solid transparent;
 }
 .white{
   color:white;
