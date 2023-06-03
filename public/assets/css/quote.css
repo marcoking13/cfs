@@ -47,3 +47,9 @@
 
   }
 }
+
+@media screen and (orientation:landscape) and (max-width:1000px){
+  .quotesheet_wrapper{
+    margin-top:70% !important;
+  }
+}
