@@ -38,6 +38,12 @@
       flex:100% !important;
 
   }
+  .link_about{
+    font-size:25px;
+  }
+  .what_we_do_title{
+    font-size:45px !important;
+  }
   .landscape-col-0{
     width:0% !important;
     max-width:0% !important;
