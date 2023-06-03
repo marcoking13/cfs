@@ -33,6 +33,18 @@
     height:500px !important;
   }
 
+
+
+}
+
+@media screen and (orientation:landscape) and (max-width:1000px){
+  .about_container{
+        margin-top: 60% !important;
+  }
+  .link_about{
+    font-size:18px !important;
+  }
+
   .landscape-col-12{
 
       width:100% !important;
@@ -41,7 +53,8 @@
 
   }
   .link_about{
-    font-size:25px !important;
+    font-size:18px !important;
+    letter-spacing:3px !important;
   }
   .what_we_do_title{
     font-size:45px !important;
@@ -81,15 +94,5 @@
       max-width:0% !important;
       flex:0% !important;
 
-  }
-
-}
-
-@media screen and (orientation:landscape) and (max-width:1000px){
-  .about_container{
-        margin-top: 60% !important;
-  }
-  .link_about{
-    font-size:20px !important;
   }
 }
