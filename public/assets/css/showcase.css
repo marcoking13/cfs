@@ -69,6 +69,7 @@
     .mobile_text_banner_out_client{
       margin-left: 42.5% !important;
       width: 100% !important;
+      margin-top:-5%;
     }.contact_us_con{
       margin-top:-2.5%;
     }
@@ -91,7 +92,7 @@
       margin-top: 50% !important;
     }
     .mobile-margin-top-20-neg{
-          margin-top: -45% !important;
+          margin-top: -40% !important;
     }
 }
 @media screen and (max-width:1000px){
