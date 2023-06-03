@@ -21,7 +21,7 @@
 
   }
   .mobile-margin-top-35{
-    margin-top: 35% !important;
+    margin-top: 35% ;
 
   }
   .mobile-font-20{
@@ -29,16 +29,16 @@
 
   }
   .mobile-margin-top-35{
-    margin-top: 35% !important;
+    margin-top: 35%;
 
   }
 
     .mobile-margin-top-10{
-      margin-top:10% !important;
+      margin-top:10% ;
     }
 
     .mobile-font-30{
-      font-size:30px !important;
+      font-size:30px ;
     }
 
   .mobile-padding-2{
@@ -50,7 +50,7 @@
   }
 
   .mobile-margin-top-40{
-    margin-top:40% !important;
+    margin-top:40% ;
   }
 
   .mobile-relative{
@@ -70,37 +70,37 @@
 
   }
   .mobile-ghost{
-    visibility: hidden !important;
-    height:0px !important;
-    opacity:0% !important;
-    width:0px !important;
+    visibility: hidden ;
+    height:0px ;
+    opacity:0% ;
+    width:0px ;
   }
 
   .mobile-col-1{
-    width:8.3333333333% !important;
+    width:8.3333333333% ;
     flex: 0 0 8.3333333%;
-    max-width:8.3333333333% !important
+    max-width:8.3333333333% ;
   }
   .mobile-col-6{
-    width:50% !important;
-    flex: 0 0 50%;
-    max-width:50% !important
+    width:50% ;
+    flex: 0 0 50% ;
+    max-width:50%
   }
 
   .mobile-width-100{
-    width:100% !important;
+    width:100% ;
   }
 
     .mobile-margin-left-right-0{
-      margin-right: 0% !important;
-      margin-left: 0% !important;
+      margin-right: 0% ;
+      margin-left: 0% ;
 
 
     }
 
 
     .mobile-font-18{
-      font-size:18px !important;
+      font-size:18px ;
     }
 
     .mobile-margin-top-20{
@@ -108,8 +108,8 @@
     }
 
       .mobile-col-1{
-        max-width:8.333333333% !important;
-        width:8.333333333% !important;
+        max-width:8.333333333% ;
+        width:8.333333333% ;
         flex: 0 0 8.3333333%;
 
       }
@@ -121,49 +121,49 @@
           padding-bottom:10%;
       }
       .mobile-padding-top-2_5{
-        padding-top:2.5% !important;
+        padding-top:2.5% ;
       }
 
         .mobile-font-16 {
-          font-size:16px !important;
+          font-size:16px ;
         }
 
 
         .mobile-font-18{
-          font-size:18px !important;
+          font-size:18px ;
         }
 
 
 .mobile-background-white{
-  background:white !important;
+  background:white ;
 }
 
       .mobile-col-10{
-        width:83.333333333% !important;
-        max-width:83.33333333% !important;
+        width:83.333333333% ;
+        max-width:83.33333333% ;
         flex: 0 0 83.333333333%
       }
   .mobile-margin-top-10{
-    margin-top:10% !important;
+    margin-top:10% ;
   }
   .mobile-font-30{
     font-size:30px;
   }
   .mobile-margin-top-15{
-    margin-top:15% !important;
+    margin-top:15% ;
   }
   .mobile-width-60{
-    width:60% !important;
+    width:60% ;
   }
 
   .mobile-font-30{
-    font-size: 30px !important;
+    font-size: 30px ;
   }
   .mobile-font-20{
-    font-size: 20px !important;
+    font-size: 20px ;
   }
   .mobile-padding-bottom{
-    padding-bottom:20% !important;
+    padding-bottom:20% ;
   }
   .mobile-col-6_{
     margin-left:5%;
@@ -188,64 +188,64 @@
 
 }
 .mobile-margin-top-0{
-  margin-top: 0% !important;
+  margin-top: 0% ;
 }
 .mobile-height-600px{
-  height:607px !important;
+  height:607px ;
 }
 .mobile-margin-left-25{
-  margin-left:25% !important;
+  margin-left:25% ;
 }
 
 .mobile-margin-left-20{
-  margin-left:20% !important;
+  margin-left:20% ;
 }
 .mobile-font-40{
   font-size:40px;
 
 }
 .mobile-margin-left-0{
-  margin-left:0% !important;
+  margin-left:0% ;
 }
 .mobile-width-50{
   width:50%;
 }
   .mobile-max-width{
-    width:100% !important;
-    max-width:100% !important;
+    width:100% ;
+    max-width:100% ;
   }
   .mobile-margin-left-5{
-    margin-left:5% !important;
+    margin-left:5% ;
   }
 
   .mobile-font-35{
-    font-size:35px !important;
+    font-size:35px ;
   }
   .mobile-width-60{
-    width:60% !important;
+    width:60% ;
   }
   .mobile-float-left{
-    float:left !important;
+    float:left ;
   }
   .mobile-margin-top-10{
-    margin-top:10% !important;
+    margin-top:10% ;
   }
   .mobile-col-10{
 
-      width:83.333333333% !important;
+      width:83.333333333% ;
       padding-bottom:5%;
-      max-width:83.33333333% !important;
-      flex: 0 0 83.333333333% !important;
+      max-width:83.33333333% ;
+      flex: 0 0 83.333333333% ;
 
   }
   .mobile-margin-left-22_5{
-    margin-left:27.5% !important;
+    margin-left:27.5% ;
   }
   .mobile-text-center{
     text-align:center;
   }
   .mobile-padding-5{
-    padding:5% !important;
+    padding:5% ;
   }
   .mobile-col-12{
 
@@ -260,16 +260,16 @@
     padding-bottom: 2.5%;
   }
   .mobile-padding-top-9{
-    padding-top:9% !important;
+    padding-top:9% ;
   }
   .mobile-height-120{
     height:120%;
   }
   .mobile-padding-5{
-    padding:5% !important;
+    padding:5% ;
   }
   .mobile-margin-left-0{
-    margin-left:0% !important;
+    margin-left:0% ;
   }
   .mobile-width-80{
     width:80% !important;
@@ -285,37 +285,37 @@ margin-left: 5%;
     top:35px;
   }
   .mobile-height-150px{
-    height: 150px !important;
+    height: 150px ;
   }
   .mobile-width-100{
-    width:100% !important;
+    width:100% ;
   }
   .mobile-width-120{
-    width:120% !important;
+    width:120% ;
   }
   .mobile-width-110{
-    width:110% !important;
+    width:110%
   }
   .mobile-height-600px{
     height:600px;
   }
   .mobile-font-25{
-    font-size:25px !important;
+    font-size:25px ;
   }
   .mobile-padding-10{
-    padding:10% !important;
+    padding:10% ;
   }
   .mobile-width-80{
-    width:80% !important
+    width:80%
   }
   .mobile-height-100{
-    height:100% !important
+    height:100%
   }
   .mobile-width-100{
-    width:100% !important;
+    width:100% ;
   }
   .mobile-margin-top-0{
-    margin-top: 0% !important;
+    margin-top: 0% ;
   }
   .no-border{
     border:none;
