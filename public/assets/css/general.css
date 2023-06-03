@@ -1009,10 +1009,10 @@ cursor: auto;
   }
   .mobile-col-12{
 
-      width:100% !important;
+      width:100% ;
       padding-bottom:5%;
-      max-width:100% !important;
-      flex: 100% !important;
+      max-width:100% ;
+      flex: 100% ;
 
   }
   .mobile-padding-top-bottom-2_5{
