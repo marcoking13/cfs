@@ -40,13 +40,16 @@
         max-width:33.3333333333% !important
     }
     .home_quote_container{
-      top: 245% !important;
+      top: 240% !important;
     }
     .about_us{
-      margin-top: 145% !important;
+      margin-top: 140% !important;
     }
     .mobile-margin-top-neg{
         margin-top: 30% !important;
+    }
+    .wavy_section{
+          margin-top: -10% !important;
     }
     .showcase_client{
         margin-top: 30% !important;
@@ -66,7 +69,7 @@
       margin-top:-2.5%;
     }
     .small_logo_img{
-      position: absolute;
+      position: absolute !important;
       top: -25% !important;
     }
     .logo_img{
