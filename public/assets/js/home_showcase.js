@@ -7,6 +7,7 @@ function switch_image(query,src_name){
 if(window.innerWidth <=844){
 
   switch_image("mobile_showcase","./assets/images/home_mobile.png")
-}else if(window.innerHeight > window.innerWidth){
+}
+ if(window.innerHeight > window.innerWidth){
     switch_image("mobile_showcase","./assets/images/landscape_showcase.png")
 }
