@@ -53,6 +53,7 @@
     }
     .client_card{
       width: 70% !important;
+      position:relative;
       margin-left: 10% !important;
     }
     .client_row{
@@ -63,6 +64,10 @@
       width: 100% !important;
     }.contact_us_con{
       margin-top:-2.5%;
+    }
+    .small_logo_img{
+      position: absolute;
+      top: -25% !important;
     }
     .logo_img{
           margin-top: -30% !important;
