@@ -448,73 +448,73 @@ margin-left: 5%;
     margin-top: 20%;
   }
   .mobile-half-middle{
-    width:50% !important;
-    margin-left:25% !important;
+    width:50% ;
+    margin-left:25% ;
   }
   .mobile-width-110{
-    width:110% !important;
+    width:110% ;
   }
   .mobile-margin-top-50{
-    margin-top:50% !important;
+    margin-top:50% ;
   }
   .mobile-padding-top-10{
-    padding-top:10% !important;
+    padding-top:10% ;
   }
   .mobile-margin-top-5{
-    margin-top:5% !important;
+    margin-top:5% ;
   }
   .mobile-font-15{
-    font-size: 15px !important;
+    font-size: 15px ;
   }
   .mobile-width-110{
     width:110%;
   }
   .mobile-padding-top-15{
-    padding-top:15% !important;
+    padding-top:15% ;
   }
   .mobile-padding-top-25{
     padding-top:25%;
   }
   .mobile-padding-top-20{
-    padding-top:20% !important;
+    padding-top:20% ;
   }
 
   .mobile-padding-bottom-5{
-    padding-bottom: 5% !important;
+    padding-bottom: 5% ;
   }
   .mobile-margin-right-5{
-    margin-right: 2.5% !important;
+    margin-right: 2.5% ;
   }
 
   .mobile-margin-top-2-neg{
-    margin-top: -2% !important;
+    margin-top: -2% ;
   }
   .mobile-padding-bottom-5{
-    padding-bottom: 5% !important;
+    padding-bottom: 5% ;
   }
   .mobile-width-90{
-    width:90% !important;
+    width:90% ;
   }
 
   .mobile-font-25{
-    font-size:25px !important;
+    font-size:25px ;
   }
   .mobile-half-middle{
-    width:50% !important;
+    width:50% ;
     margin-left:25% !important;
   }
   .mobile-padding-right-5{
-    padding-right:10% !important;
+    padding-right:10% ;
   }
 
   .mobile-text-center{
-    text-align: center !important;
+    text-align: center ;
   }
   .mobile-infinite-z{
     z-index:99999999;
   }
   .mobile-font-20{
-    font-size:20px !important;
+    font-size:20px ;
   }
 
 }

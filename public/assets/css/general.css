@@ -910,7 +910,7 @@ cursor: auto;
 
 
 .mobile-background-white{
-  background:white !important;
+  background:white ;
 }
 
       .mobile-col-10{
@@ -1287,7 +1287,7 @@ margin-left: 5%;
   padding-left:5% !important;
 }
   .mobile-text-center{
-    text-align: center !important;
+    text-align: center ;
   }
   .mobile-infinite-z{
     z-index:99999999;

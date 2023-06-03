@@ -21,6 +21,9 @@
 .right-0{
   right: 0% ;
 }
+.our_clients_contact_wrapper{
+  padding:0%;background:white;padding-left:0%;
+}
 @media screen and (max-width:1000px){
   .meet_owners_container{
     margin-top:140% !important;
@@ -41,4 +44,27 @@
     height:200px !important;
   }
 
+}
+
+@media screen and  (orientation:landscape) and (max-width:1000px){
+    .landscape-col-6{
+
+        width:50% !important;
+        max-width:50% !important;
+        flex:50% !important;
+
+    }
+    .landscape-background-none{
+      background:none !important ;
+    }
+    .our_clients_contact_wrapper{
+      padding-left:5% !important;
+    }
+    .description_owner{
+      margin-top: 5% !important;
+      text-align: left !important;
+    }
+    .meet_owners_container{
+      margin-top: 60% !important;
+    }
 }
