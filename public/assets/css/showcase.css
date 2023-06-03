@@ -24,7 +24,9 @@
     top: 30%;
 }
 
-
+.showcase_client{
+  height:300px;
+}
 @media screen and (max-width:1000px) and (orientation:landscape){
 
 
@@ -100,6 +102,13 @@
     }
     .mobile-margin-top-20-neg{
           margin-top: -40% !important;
+    }
+    .landscape-col-6{
+
+        width:50% !important;
+        max-width:50% !important;
+        flex: 50% !important;
+
     }
 }
 @media screen and (max-width:1000px){
