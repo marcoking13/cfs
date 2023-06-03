@@ -8,6 +8,6 @@ if(window.innerWidth <=844){
 
   switch_image("mobile_showcase","./assets/images/home_mobile.png")
 }
- if(window.innerHeight > window.innerWidth){
-    switch_image("mobile_showcase","./assets/images/landscape_showcase.png")
+ if(window.innerHeight < window.innerWidth){
+    switch_image("mobile_showcase","./assets/images/showcase_landscape.png")
 }
