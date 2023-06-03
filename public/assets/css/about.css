@@ -89,4 +89,7 @@
   .about_container{
         margin-top: 60% !important;
   }
+  .link_about{
+    font-size:18px !important;
+  }
 }
