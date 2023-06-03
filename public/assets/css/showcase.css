@@ -27,9 +27,9 @@
 .showcase_client{
   height:300px;
 }
+
+
 @media screen and (max-width:1000px) and (orientation:landscape){
-
-
 
     .intro-text-container{
       margin-top: -5% !important;
