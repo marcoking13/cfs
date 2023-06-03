@@ -57,6 +57,8 @@
 
     .showcase_client{
         margin-top: 30% !important;
+        position:relative;
+        bottom:30px;
     }
     .client_card{
       width: 70% !important;
@@ -65,11 +67,14 @@
     }
     .client_row{
       padding-top:15% !important;
+
     }
     .mobile_text_banner_out_client{
       margin-left: 42.5% !important;
       width: 100% !important;
       margin-top:-5%;
+      position:relative;
+      bottom:30px;
     }.contact_us_con{
       margin-top:-2.5%;
     }
