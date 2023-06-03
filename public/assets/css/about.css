@@ -38,6 +38,27 @@
       flex:100% !important;
 
   }
+  .landscape-col-3{
+
+      width:25% !important;
+      max-width:25% !important;
+      flex:25% !important;
+
+  }
+  .landscape-col-10{
+
+      width:83.33333% !important;
+      max-width:83.3333% !important;
+      flex:83.3333% !important;
+
+  }
+  .landscape-col-1{
+
+      width:8.3333% !important;
+      max-width:8.3333% !important;
+      flex:8.3333% !important;
+
+  }
   .landscape-col-0{
 
       width:0% !important;
