@@ -608,7 +608,7 @@ white-background{
   background:white;
 }
 
-.no-border{
+.no-border-bottom{
   border: 2px solid transparent;
 }
 .white{
