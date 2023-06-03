@@ -604,8 +604,11 @@ opacity:1;
 .padding-5{
   padding:5%;
 }
-white-background{
+.white-background{
   background:white;
+}
+.black-bottom-border{
+  border-bottom:1px solid black !important;
 }
 
 .no-border-bottom{
