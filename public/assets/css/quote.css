@@ -50,7 +50,7 @@
 
 @media screen and (orientation:landscape) and (max-width:1000px){
   .quotesheet_wrapper{
-    margin-top:65% !important;
+    margin-top:60% !important;
   }
   .landscape-margin-top-2_5{
     margin-top:2.5% !important;
