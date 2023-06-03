@@ -3,7 +3,7 @@
      opacity:0%;
   }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
   .mobile_visible_only{
     visibility:visible !important;
     opacity:100%  !important;
@@ -401,7 +401,7 @@ margin-left: 5%;
     height:150px !important;
   }
   .mobile-margin-top-75{
-    margin-top: 75% !important;
+    margin-top: 75%;
 
   }
   .mobile-absolute{
