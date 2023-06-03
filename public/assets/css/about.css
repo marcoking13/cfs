@@ -33,7 +33,10 @@
     height:500px !important;
   }
 
-
+  .link_about{
+    font-size:18px !important;
+    letter-spacing:3px !important;
+  }
 
 }
 
@@ -41,9 +44,7 @@
   .about_container{
         margin-top: 60% !important;
   }
-  .link_about{
-    font-size:18px !important;
-  }
+
 
   .landscape-col-12{
 
