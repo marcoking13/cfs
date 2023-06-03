@@ -19,7 +19,9 @@
   padding-top:7.5% !important;
 }
 
-
+.value_col{
+  margin-left:5% !important;
+}
   .intro-text-container{
     top:80%;
   }

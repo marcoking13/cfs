@@ -401,11 +401,21 @@ body{
   font-weight:normal;
 
 }
+.desktop_visible_only{
+  visibility: hidden;
+  height:0;
+  width:0;
+  opacity:0;
+}
 .margin-bottom-5{
   margin-bottom:5%;
 }
-
-
+.white-background{
+  background:white;
+}
+.background-white{
+  background:white;
+}
 .text-banner {
   color:white;
   font-family: 'Akrobat';
@@ -1267,6 +1277,9 @@ margin-left: 5%;
     padding-right:10% !important;
   }
 
+.mobile-padding-left-5{
+  padding-left:5% !important;
+}
   .mobile-text-center{
     text-align: center !important;
   }
