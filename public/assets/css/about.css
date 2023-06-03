@@ -34,8 +34,8 @@
   }
 
   .link_about{
-    font-size:18px !important;
-    letter-spacing:3px !important;
+    font-size:16px;
+    letter-spacing:3px;
   }
 
 }
@@ -55,7 +55,6 @@
   }
   .link_about{
     font-size:18px !important;
-    letter-spacing:3px !important;
   }
   .what_we_do_title{
     font-size:45px !important;
