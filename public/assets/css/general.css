@@ -19,6 +19,9 @@
  .black{
    color:black
  }
+ .dark-shadow{
+   box-shadow:2px 2px 3px 4px #e6e6e6;
+ }
  .height-712px{
        height: 712px;
  }

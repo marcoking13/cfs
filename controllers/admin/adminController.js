@@ -25,4 +25,24 @@ const GetIndexPage = (req,res,next) => {
 
 }
 
+const DeleteQuotes = (req,res,next) => {
+  console.log(req.body)
+  Schedule.deleteThese(req.body.quotes,(schedules)=>{
+
+    if(schedules){
+        res.render(path.join(rootDir,"views","/admin/index.ejs"),{
+          quotes:schedules,
+          modal:null,
+          pageTitle:"Admin Home",
+          active_path:"/admin/home"
+        })
+      }else{
+        console.log(schedules)
+      }
+
+    });
+
+}
+
+exports.DeleteQuotes = DeleteQuotes;
 exports.GetIndexPage = GetIndexPage;

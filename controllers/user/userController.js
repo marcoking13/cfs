@@ -119,7 +119,7 @@ const GetScheduleData = async(req,res,next) =>{
 }
 
 const GetHomePage = (req,res,next)=>{
-  Schedule.findAll((data)=>{console.log(data)});
+  Schedule.findAll((data)=>{console.log(data[0])});
    res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
     values:Values,

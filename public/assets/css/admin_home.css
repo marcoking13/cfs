@@ -1,8 +1,55 @@
-.schedule_admin_container{
-  box-shadow:1px 1px 1px black;
-  padding:5%;
-  background:black;
+
+.option_button:hover{
+  background:red !important;
 }
-.schedule_lists{
-  border:2px solid #e6e6e6;
+.option_button{
+  position:absolute;
+  right:5%;
+  top:40%;
+  color:white;
+  border-radius:50%;
+  height:16px;
+  width:16px;
+  border:2px solid red
+}
+.inner_button{
+  border-radius:50%;height:8px;width:8px;margin-left:17.5%;
+  margin-top:20%;
+  background:white
+}
+.active_option_button{
+  border-radius:50%;height:8px;width:8px;margin-left:20%;
+  margin-top:20%;
+  background:white
+}
+
+.favorite_button{
+  position:absolute;
+  right:1%;
+  top:5%;
+
+}
+.favorite_button:hover{
+  filter:invert(58%) sepia(63%) saturate(3267%) hue-rotate(325deg) brightness(103%) contrast(107%);
+}
+.delete_quote_button{
+  background:none;
+  color:#FF5757;
+  border-color:#FF5757 !important;
+  margin-top:-30%;
+  visibility: hidden;
+}
+.active_quote_button{
+  visibility: visible !important;
+}
+
+.delete_quote_button:hover{
+  background:#FF5757 !important;
+  color:white;
+}
+
+
+.active_delete{
+  background:#FF5757 !important;
+  color:white;
 }
