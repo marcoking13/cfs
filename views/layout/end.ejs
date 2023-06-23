@@ -7,14 +7,53 @@
   <script src ="./assets/js/modal.js"></script>
   <script src = "./assets/js/quote_images.js"></script>
   <script src = "./assets/js/mobile_image_switch.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
-      // if(window.innerHeight > window.innerWidth){
-      //   document.getElementsByTagName("body")[0].style.transform = "rotate(90deg)"
-      // }
-      if(window.innerWidth<=844){
-        var vid = document.getElementById("vid-modal");
-        vid.play();
+    const currentUrl = window.location.href;
+    function getUrl(url){
+      return url.split('/').pop();
+    }
+    const tailend = getUrl(currentUrl);
+    var t;
+    console.log(tailend);
+    if(tailend.length == 0){
+      t = "Home Page";
+    }
+    if(tailend == "about"){
+      t = "About Us";
+
+    }
+    if(tailend == "contact_us"){
+      t = "Contact Us";
+    }
+    if(tailend == "schedule"){
+      t = "Schedule Quote"
+    }
+    console.log(t)
+    axios.post("/admin/roots",t);
+  </script>
+  <script>
+    const getBrowserName =  () => {
+        let browserInfo = navigator.userAgent;
+        let browser;
+        if (browserInfo.includes('Opera') || browserInfo.includes('Opr')) {
+          browser = 'Opera';
+        } else if (browserInfo.includes('Edg')) {
+          browser = 'Edge';
+        } else if (browserInfo.includes('Chrome')) {
+          browser = 'Chrome';
+        } else if (browserInfo.includes('Safari')) {
+          browser = 'Safari';
+        } else if (browserInfo.includes('Firefox')) {
+          browser = 'Firefox'
+        } else {
+          browser = 'unknown'
+        }
+          return browser;
       }
+      var v =  getBrowserName();
+      console.log(v);
+      axios.post("/admin/browser",v)
   </script>
 
 </body>

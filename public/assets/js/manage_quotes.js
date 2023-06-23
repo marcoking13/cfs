@@ -1,6 +1,7 @@
 var quotes_to_be_deleted = [];
 
 var option_buttons = document.getElementsByClassName("option_button");
+var favorite_buttons = document.getElementsByClassName("favorite_button");
 
 var delete_button = document.querySelector(".delete_quote_button");
 
@@ -13,9 +14,57 @@ delete_button.addEventListener("click", async (e)=>{
     'Content-Type': 'application/x-www-form-urlencoded'
   }
 });
-      console.log(r);
+     window.location.assign("/admin/home");
   }
 })
+
+for (var i = 0; i < favorite_buttons.length; i++)
+{
+
+
+  var isFav = favorite_buttons[i].getAttribute("isFav");
+  console.log(isFav == "false");
+  if(isFav == "true"){
+    favorite_buttons[i].classList.add("active_fav");
+  }else{
+    favorite_buttons[i].classList.remove("active_fav");
+  }
+
+  favorite_buttons[i].addEventListener("click", async (e)=>{
+      isFav = e.target.getAttribute("isFav");
+      var toggle = false;
+      console.log(e.target.getAttribute("isFav"));
+      if(!isFav || isFav == "false" || isFav == false){
+        toggle = true;
+      }else{
+        toggle = false;
+      }
+
+      await axios.post("/admin/favorite",{isFav:toggle,_id:e.target.getAttribute("quote_id")}, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+      });
+
+      e.target.setAttribute("isFav",toggle);
+
+      if(toggle){
+        e.target.classList.add("active_fav");
+      }else{
+      e.target.classList.remove("active_fav");
+      }
+      console.log(toggle);
+      console.log(e.target.getAttribute("isFav"));
+
+  })
+
+
+}
+
+
+
+
+
 
 
 function MakeDeleteButtonVisible(){

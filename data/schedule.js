@@ -2,7 +2,7 @@ const db = require("./../util/database.js");
 var ObjectId = require('mongodb').ObjectId;
 class Schedule {
 
-  constructor(name,address,windows,date,time){
+  constructor(name,address,windows,date,time,favorite){
 
       this.name = name;
       this.address = address;
@@ -11,6 +11,7 @@ class Schedule {
       this.time = time;
       this.total = 0;
       this.outside = 0;
+      this.isFavorite = false;
   }
 
   async save(){
@@ -23,6 +24,14 @@ class Schedule {
     }).catch(err => {console.log(err)});
 
   }
+
+
+  static async MakeFavorite(id,toggle,cb){
+      var db_instance = db.GetDb();
+      await db_instance.collection("schedules").updateOne({ _id: new ObjectId(id)}, {$set: {isFavorite: toggle}});
+      cb(true)
+  }
+
 
 
   static async findAll(cb){
@@ -41,24 +50,15 @@ class Schedule {
 
   }
 
-
-  static async deleteAll(cb){
-
-    var db_instance = db.GetDb();
-    var schedules =  await db_instance.collection("schedules").deleteMany();
-    cb(schedules);
-
-  }
-
   static async deleteThese(quotes,cb){
 
     var db_instance = db.GetDb();
-    console.log(quotes);
+
     for ( var i = 0; i < quotes.length; i++){
       var objectID = new ObjectId(quotes[i])
       var schedules =  await db_instance.collection("schedules").deleteOne({_id:objectID});
-      console.log(schedules)
     }
+
 
 
     cb(true);

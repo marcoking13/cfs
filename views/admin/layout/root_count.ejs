@@ -1,0 +1,35 @@
+<div class="row"style="border-radius:0px;border:2px solid #e6e6e6;height:250px;border-left:0px solid whitep;padding:0">
+
+    <% var count = 0 %>
+    <% var placement = "st" %>
+    <% console.log(meta.pages) %>
+    <% for (let page of meta.pages){%>
+      <% if(count == 1){ %>
+          <% placement = "nd" %>
+        <%}%>
+        <% if(count == 2){ %>
+            <% placement = "rd" %>
+          <%}%>
+          <% if(count >= 3){ %>
+              <% placement = "th" %>
+            <%}%>
+      <% if(count == 0){ %>
+        <div class= "col-4 number_one  padding-top-5"  >
+            <p class="text-center font-20 akrobat margin-top-5"><%= page.name %> </p>
+
+            <p class="text-center font-20 akrobat margin-top-5"><%= page.qty %></p>
+            <!-- <p class="text-center font-40 akrobat margin-top-5 bold"><%= count + 1  + " "+placement %></p> -->
+        </div>
+
+      <%} else { %>
+      <div class= "col-4 padding-top-5" >
+          <p class="text-center font-20 akrobat margin-top-5"><%= page.name %> </p>
+
+          <p class="text-center font-20 akrobat margin-top-5"><%= page.qty %></p>
+          <!-- <p class="text-center font-40 akrobat margin-top-5 bold"><%= count + 1 +placement %></p> -->
+      </div>
+    <%}%>
+    <% count = count + 1  %>
+    <%}%>
+
+</div>

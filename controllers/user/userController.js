@@ -4,6 +4,7 @@ var rootDir = require("./../../util/path.js");
 
 const Quote = require("./../../data/quote.js");
 const Schedule = require("./../../data/schedule.js");
+const Meta = require("./../../data/meta.js");
 const Pricing = require("./../../config/pricing.js");
 const Clients = require("./../../config/clients.js");
 
@@ -11,6 +12,12 @@ const ShowcaseHeadings = require("./../../config/showcase_headings.js");
 const BeforeAndAfterConfig = require("./../../config/before_and_after_config.js");
 const Values = require("./../../config/values.js");
 
+const isLoaded = false;
+
+const { detect } = require('detect-browser');
+
+
+// handle the case where we don't detect the browser
 
 var modal = null;
 var lock = false;
@@ -23,8 +30,20 @@ function returnLockClass(isLocked){
   }
 }
 
+// const AddBrowserView = (req,res) =>{
+//   const browserName = req.body.name;
+//   Meta.AddBrowserView(browserName);
+// }
+
+function AddPageView(req){
+    const ipAddress = req.ip;
+    Meta.AddPageView(ipAddress);
+}
+
 
 const GetAboutUsPage = (req,res,next) => {
+
+    AddPageView(req);
 
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),{
       pageTitle:"About Us",
@@ -36,13 +55,10 @@ const GetAboutUsPage = (req,res,next) => {
 }
 
 const ExitOutOfModal = (req,res,next) => {
-  modal = null;
-  lock = null;
-  var url = req.body;
 
-
-
-
+    modal = null;
+    lock = null;
+    var url = req.body;
     url.key.replace(' ', '');
     res.redirect(url.key);
 
@@ -50,7 +66,7 @@ const ExitOutOfModal = (req,res,next) => {
 }
 
 const GetSchedulePage = (req,res,next)=>{
-
+  AddPageView(req);
   res.render(path.join(rootDir,"views","/user/schedule.ejs"),{
     pageTitle:"Schedule Online",
     active_path:"/schedule",
@@ -109,17 +125,15 @@ async function  getData(req){
 
 
 const GetScheduleData = async(req,res,next) =>{
+
     await getData(req);
-    console.log(modal);
-    Schedule.findAll().then((data)=>{
-      console.log(data);
-    })
     res.redirect(req.body.key);
 
 }
 
 const GetHomePage = (req,res,next)=>{
-  Schedule.findAll((data)=>{console.log(data[0])});
+
+   AddPageView(req);
    res.render(path.join(rootDir,"views","/user/index.ejs"),{
     pageTitle:"Home",
     values:Values,
@@ -133,7 +147,7 @@ const GetHomePage = (req,res,next)=>{
 }
 
 const GetContactUsPage = (req,res,next)=>{
-
+  AddPageView(req);
   res.render(path.join(rootDir,"views","/user/contact_us.ejs"),{
     pageTitle:"Contact Us",
     clients:Clients,
