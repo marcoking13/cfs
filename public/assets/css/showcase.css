@@ -178,4 +178,16 @@
   .mobile-text-center{
     text-align:center !important;
   }
+  .value_row{
+      padding-bottom:30% !important;
+  }
+  .client_row{
+    margin-top:15% !important;
+  }
+  .landscape-col-4{
+    margin-left: -12.5%;
+  }
+  .showcase_client{
+    height: 440px !important;
+  }
  }
