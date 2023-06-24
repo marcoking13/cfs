@@ -11,6 +11,8 @@
     z-index:1;
 
 }
+
+
 .showcase_image_container{
   position:absolute;
   width:100%;
@@ -155,3 +157,11 @@
 
 
 }
+
+@media screen and (max-width:1200px) and (min-width:781px) and (orientation:landscape){
+
+  .intro-text-container  {
+    margin-top:15%;
+  }
+
+ }
