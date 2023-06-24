@@ -158,10 +158,14 @@
 
 }
 
-@media screen and (max-width:1200px) and (min-width:781px) and (orientation:landscape){
+@media screen and (max-width:1200px) and (min-width:800px) and (orientation:portrait){
 
   .intro-text-container  {
-    margin-top:15%;
+    margin-top:1% !important;
+
+  }
+  .banners{
+    margin-top: 5% !important
   }
 
  }
