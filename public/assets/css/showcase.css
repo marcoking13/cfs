@@ -197,4 +197,14 @@
   #showid{
         margin-top: 50% !important;
   }
+  .about_container{
+
+    margin-top:50% !important
+  }
+  .link_about {
+  font-size:30px !important;
+  }
+  .value_row{
+    padding-bottom:.5% !important;
+  }
  }
