@@ -190,4 +190,11 @@
   .showcase_client{
     height: 440px !important;
   }
+  .about-us-title{
+    margin-left: -6% !important;
+    margin-top:-.5% !important;
+  }
+  #showid{
+        margin-top: 50% !important;
+  }
  }
