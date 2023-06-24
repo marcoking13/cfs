@@ -167,5 +167,15 @@
   .banners{
     margin-top: 5% !important
   }
+  .home_quote_container{
 
+    top: 240%;
+
+  }
+  .about_us{
+        margin-top: 135% !important;
+  }
+  .mobile-text-center{
+    text-align:center !important;
+  }
  }
