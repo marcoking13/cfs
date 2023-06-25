@@ -27,6 +27,8 @@
 }
 .relative{
   position: relative;
+}footer{
+  background: #0069a4 !important
 }
 @font-face { font-family: Akrobat; font-weight: normal; src: url('./../fonts/Akrobat-Black.otf'); }
  @font-face { font-family: Akrobat; font-weight: lighter; src: url('./../fonts/Akrobat-Light.otf'); }
