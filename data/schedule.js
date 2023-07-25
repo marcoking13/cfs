@@ -27,19 +27,25 @@ class Schedule {
   }
 
   static async MakeFavorite(id,toggle,cb){
+
       var db_instance = db.GetDb();
       var data = await db_instance.collection("schedules").updateOne({ _id: new ObjectId(id)}, {$set: {isFavorite: toggle}});
+
       if(data){
         cb(true)
       }else{
         cb(false);
       }
+
   }
 
   static async returnAll(){
+
     var db_instance = db.GetDb();
     var schedules =  await db_instance.collection("schedules").find({}).toArray();
+
     return schedules;
+
   }
 
 
@@ -47,6 +53,7 @@ class Schedule {
 
     var db_instance = db.GetDb();
     var schedules =  await db_instance.collection("schedules").find({}).toArray();
+
     cb(schedules);
 
   }
@@ -55,6 +62,7 @@ class Schedule {
 
     var db_instance = db.GetDb();
     var schedules =  await db_instance.collection("schedules").deleteMany();
+
     cb(schedules);
 
   }
@@ -63,13 +71,18 @@ class Schedule {
 
     var db_instance = db.GetDb();
     var flag = false;
+
     if(quotes.length >= 0){
+
       for ( var i = 0; i < quotes.length; i++){
         var objectID = new ObjectId(quotes[i])
         var schedules =  await db_instance.collection("schedules").deleteOne({_id:objectID});
       }
+
       flag = true;
+
     }
+
     cb(flag);
 
   }
@@ -78,9 +91,11 @@ class Schedule {
 
     var db_instance = db.GetDb();
     var flag = false;
+
     await db_instance.collection("completed").deleteMany({});
 
     if(quotes.length >=0){
+
       for ( var i = 0; i < quotes.length; i++){
 
         var objectID = new ObjectId(quotes[i]);
@@ -91,9 +106,10 @@ class Schedule {
         await db_instance.collection("completed").find({}).toArray();
 
       }
-      flag  = true;
-    }
 
+      flag  = true;
+
+    }
 
     cb(flag);
 
@@ -111,7 +127,6 @@ class Schedule {
 
     this.total = Math.round(this.total);
     this.outside = Math.round(this.total * .5);
-
 
   }
 

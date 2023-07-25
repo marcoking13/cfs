@@ -22,21 +22,25 @@ class Meta {
     }
 
     this.time_running = 0;
+    
   }
 
   static async ResetViews () {
+
     var db_instance = db.GetDb();
+
     await db_instance.collection("unique_visitors").deleteMany();
     await db_instance.collection("visitors").deleteMany();
     await db_instance.collection("browsers").deleteMany();
     await db_instance.collection("pages").deleteMany();
+
   }
 
   static  async AddPageView  (ip,find){
 
     var db_instance = db.GetDb();
     var find = await db_instance.collection("vistors").findOne({ip:ip});
-    console.log(find);
+
     if(!find){
       await db_instance.collection("unique_visitors").insertOne({ip:ip});
     }else{
@@ -56,7 +60,7 @@ class Meta {
       await db_instance.collection("browsers").insertOne({browser:browser,qty:1});
     }
 
-    await db_instance.collection("browsers").find({}).toArray();
+      await db_instance.collection("browsers").find({}).toArray();
 
   }
 
@@ -82,19 +86,27 @@ class Meta {
   }
 
   static async ReturnAllBrowsers(){
+
       var db_instance = db.GetDb();
       const data =  await db_instance.collection("browsers").find({}).toArray();
+
       return data;
+
   }
 
   static async FindAllRoots(){
+
       var db_instance = db.GetDb();
       const data =  await db_instance.collection("pages").find({}).toArray();
+
       await db_instance.collection("pages").deleteOne({_id: new ObjectId("64928d0baee03fa0d26f2696")});
+
       return data;
+
   }
 
   static  async GetVisitorCount  (){
+
     var db_instance = db.GetDb();
     var total_views = await db_instance.collection("unique_visitors").find({}).toArray();
     var unique_views = await db_instance.collection("visitors").find({}).toArray();

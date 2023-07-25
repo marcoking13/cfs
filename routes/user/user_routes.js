@@ -12,6 +12,4 @@ router.get("/contact_us",userController.GetContactUsPage);
 router.post("/modal",userController.GetScheduleData)
 router.post("/exit",userController.ExitOutOfModal)
 
-
-
 module.exports = router;

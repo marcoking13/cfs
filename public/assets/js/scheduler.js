@@ -14,43 +14,60 @@ var name_of_job;
 var day_id;
 var address;
 
-add_user.addEventListener("click",(e)=>{
-  ShowAddLaborModal(e);
-});
+function AddToSubmitForms(){
 
+  if(submit_button && submit_form){
 
-if(submit_button && submit_form){
+    submit_button.addEventListener("click", (e)=>{
+      e.preventDefault();
+      Submit();
+    })
 
-  submit_button.addEventListener("click", (e)=>{
-    e.preventDefault();
-    Submit();
-  })
+    submit_form.addEventListener("submit", (e)=>{
+      e.preventDefault();
+      Submit();
+    })
 
-  submit_form.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    Submit();
-  })
+  }
 
 }
 
-const RenderOverlay =(deleteIt,className)=>{
+function Init(){
+
+  add_user.addEventListener("click",(e)=>{
+    ShowAddLaborModal(e);
+  });
+
+  AddToSubmitForms();
+  AddEventListenerForEditScheduleModal();
+
+}
+
+const RenderOverlay = (deleteIt,className)=>{
+
   var form = document.querySelector("."+className);
 
-  if(!deleteIt){
+  function toggle(is_in_front,form){
+
+    var z = is_in_front ? "max-z" : "min-z";
     overlay_container.innerHTML = `<div class="overlay_edit"></div>`;
-    form.classList.add("max-z");
-    form.classList.remove("min-z");
 
-  }else{
-    overlay_container.innerHTML = "";
-    form.classList.remove("max-z");
+    form.classList.add(z);
+    form.classList.remove(!z);
 
-    form.classList.add("min-z");
   }
 
-  window.scrollTo(0, 0);
+  if(!deleteIt){
+    toggle(true,form);
+  }else{
+    toggle(false,form);
+  }
+
   var html = document.getElementsByTagName("html");
   html[0].classList.add("freeze");
+
+  window.scrollTo(0, 0);
+
 }
 
 const ShowAddLaborModal = (e) => {
@@ -61,22 +78,18 @@ const ShowAddLaborModal = (e) => {
 
 const ShowScheduleModal = (e) => {
 
+  var element = e.target.parentElement.getAttribute("name") == "cell" ? e.target.parentElement : e.target;
   var time = element.getAttribute("delta_time");
   var person_id = element.getAttribute("_id");
   var time_id = element.getAttribute("time_id");
   var day_id = element.getAttribute("day_id");
   var schedule_id = element.getAttribute("schedule_id");
+
   var time_el = document.querySelector(".time_delta_container");
+
   var time_text = `<p class="font-30 text-center akrobat time_delta"> ${time}:00 AM - </p>`
+
   edit_modal.classList.add("modal_schedule_active");
-
-  var element;
-
-  if(e.target.parentElement.getAttribute("name") == "cell"){
-    element = e.target.parentElement;
-  }else{
-    element = e.target;
-  }
 
   SetId(person_id,time_id,schedule_id,day_id);
   RenderOverlay(false,"modal_schedule");
@@ -84,22 +97,20 @@ const ShowScheduleModal = (e) => {
   time_el.innerHTML = ""
   time_el.innerHTML =time_text;
 
-
-
 }
 
-
-
 const SetId = (person,time,schedule,day) => {
+
   person_id = person;
   time_id = time;
   schedule_id = schedule;
   day_id = day;
-  console.log(person_id,time_id,schedule_id,day)
+
 }
 
 
 const Submit = async (e) => {
+
   var job_input = document.getElementById("job_input");
   var address_input = document.getElementById("address_input");
 
@@ -114,19 +125,24 @@ const Submit = async (e) => {
     schedule_id: schedule_id,
     day_id:day_id
   }
-  console.log(data);
+
   await axios.post("/admin/edit/schedule",data,{headers: { 'content-type':'application/x-www-form-urlencoded', 'accept':'application/json' }});
+
   window.location.assign("/admin/schedule")
 
 }
 
+function AddEventListenerForEditScheduleModal(){
 
+  for(var i = 0; i < edit_schedule.length; i++){
 
+    edit_schedule[i].addEventListener("click",(e)=>{
+      ShowScheduleModal(e);
+    })
 
-for(var i = 0; i < edit_schedule.length; i++){
-
-  edit_schedule[i].addEventListener("click",(e)=>{
-    ShowScheduleModal(e);
-  })
+  }
 
 }
+
+
+Init();

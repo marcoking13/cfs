@@ -6,12 +6,13 @@ var complete_button = document.querySelector(".complete_quote_button");
 
 const sendQuotes  = async (className,backend_url,frontend_url)=>{
 
-  complete_button = document.querySelector("."+className)
-
   var interactable = complete_button.getAttribute("interactable");
   var  r;
 
+  complete_button = document.querySelector("."+className)
+
   if(interactable == 1){
+
        r = await axios.post(`/admin/${backend_url}`,{quotes:quotes_to_be_deleted}, {
 
       headers: {
@@ -29,11 +30,15 @@ const sendQuotes  = async (className,backend_url,frontend_url)=>{
 function MakeDeleteButtonVisible(){
 
   if(quotes_to_be_deleted.length > 0 ){
+
     delete_button.classList.add("active_quote_button");
     delete_button.setAttribute("interactable",1);
+
   }else{
+
     delete_button.classList.remove("active_quote_button");
     delete_button.setAttribute("interactable",-1);
+
   }
 
 }
@@ -46,12 +51,14 @@ function ToggleDelete(element){
   if(quotes_to_be_deleted.length == 0 ){
 
     quotes_to_be_deleted.push(id);
+
     element.classList.add("active_delete");
 
     if(quotes_to_be_deleted.length >= 0){
       complete_button.classList.remove("inactive_quote");
       complete_button.setAttribute("interactable",1);
     }
+
     found = false;
 
   }else{
@@ -88,63 +95,74 @@ function ToggleDelete(element){
 }
 
 function AddFavoriteEvents(){
+
   for (var i = 0; i < favorite_buttons.length; i++)
   {
 
-  var isFav = favorite_buttons[i].getAttribute("isFav");
+    var isFav = favorite_buttons[i].getAttribute("isFav");
 
-  if(isFav == "true"){
-    favorite_buttons[i].classList.add("active_fav");
-  }else{
-    favorite_buttons[i].classList.remove("active_fav");
-  }
+    if(isFav == "true"){
+      favorite_buttons[i].classList.add("active_fav");
+    }else{
+      favorite_buttons[i].classList.remove("active_fav");
+    }
 
-  favorite_buttons[i].addEventListener("click", async (e)=>{
+    favorite_buttons[i].addEventListener("click", async (e)=>{
 
-      isFav = e.target.getAttribute("isFav");
-      var toggle = false;
+        var toggle = false;
 
-      if(!isFav || isFav == "false" || isFav == false){
-        toggle = true;
-      }else{
-        toggle = false;
-      }
+        isFav = e.target.getAttribute("isFav");
 
-      await axios.post("/admin/favorite",{isFav:toggle,_id:e.target.getAttribute("quote_id")}, {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          }
-      });
+        if(!isFav || isFav == "false" || isFav == false){
+          toggle = true;
+        }else{
+          toggle = false;
+        }
 
-      e.target.setAttribute("isFav",toggle);
+        await axios.post("/admin/favorite",{isFav:toggle,_id:e.target.getAttribute("quote_id")}, {
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        });
 
-      if(toggle){
-        e.target.classList.add("active_fav");
-      }else{
-        e.target.classList.remove("active_fav");
-      }
+        e.target.setAttribute("isFav",toggle);
 
-    })
+        if(toggle){
+          e.target.classList.add("active_fav");
+        }else{
+          e.target.classList.remove("active_fav");
+        }
 
-  }
+      })
+
+    }
+
 }
 
 function AddOptionEvents(){
 
     for (var i = 0; i < option_buttons.length; i++) {
-
       option_buttons[i].addEventListener("click", (e)=>{ToggleDelete(e.target)})
     }
 
 }
 
-delete_button.addEventListener("click", async (e)=>{
-  sendQuotes("delete_quote_button","delete_quotes","home");
-});
+function Init(){
 
-complete_button.addEventListener("click", async (e)=>{
-  setQuotesToBeCompleted("complete_quote_button","complete_quotes","home");
-})
+  if(delete_button){
 
-AddOptionEvents();
-AddFavoriteEvents();
+    delete_button.addEventListener("click", async (e)=>{
+      sendQuotes("delete_quote_button","delete_quotes","home");
+    });
+
+    complete_button.addEventListener("click", async (e)=>{
+      setQuotesToBeCompleted("complete_quote_button","complete_quotes","home");
+    })
+
+    AddOptionEvents();
+    AddFavoriteEvents();
+  }
+
+}
+
+Init();

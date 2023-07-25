@@ -1,11 +1,13 @@
 
 <% if(modal){ %>
-<div class= "cfs_modal_wrapper max-z <%= modal.wrapper%> modal_wrapper_pos" id="blackWrapper"></div>
+  <div class= "cfs_modal_wrapper max-z <%= modal.wrapper%> modal_wrapper_pos" id="blackWrapper"></div>
 
+  <div class=" cfs_modal <%= modal.modal  %> width-100 modal_pos absolute infinte-z" id="mainModal" tabindex="-1">
 
-<div class=" cfs_modal <%= modal.modal  %> width-100 modal_pos absolute infinte-z" id="mainModal" tabindex="-1">
-  <div class="row">
+    <div class="row">
+
       <div class="col-3 mobile-col-1"></div>
+
       <div class='col-6 modal_body no-padding mobile-col-10 white-background border-radius-5px heavy-shadow background-modal'>
 
           <div class="row">
@@ -24,35 +26,37 @@
                   </div>
               </div>
 
+           <div class="col-6">
 
-      <div class="col-6">
+              <div class="modal-dialog">
 
-        <div class="modal-dialog">
+                <p class="quote_title font-40  bold akrobat text-center margin-top-10 mobile-margin-top-20">Your Quote:</p>
 
-          <p class="quote_title font-40  bold akrobat text-center margin-top-10 mobile-margin-top-20">Your Quote:</p>
+                <p class="quote_number font-25  bold akrobat text-center margin-top-10" >$<%=modal.outside %> Inside or Outside</p>
+                <p class="quote_number font-25 margin-top-2_5 akrobat text-center ">$<%=modal.total_price %> Inside and Outside</p>
 
-          <p class="quote_number font-25  bold akrobat text-center margin-top-10" >$<%=modal.outside %> Inside or Outside</p>
-          <p class="quote_number font-25 margin-top-2_5 akrobat text-center ">$<%=modal.total_price %> Inside and Outside</p>
+                <div class="quote_contact_us font-25 margin-top-2_5 akrobat text-center margin-top-10">
+                  <p class="quote_pitch italic  akrobat  text-center font-20">Schedule a Cleaning Now!</p>
+                  <button class="btn width-90 btn-danger quote_button_modal width-80 margin-left-5 black  akrobat transparent border-radius-30px relative super-max-z font-20 border-bottom-black mobile-font-15">489-494-4094</button>
+                </div>
 
-          <div class="quote_contact_us font-25 margin-top-2_5 akrobat text-center margin-top-10">
-            <p class="quote_pitch italic  akrobat  text-center font-20">Schedule a Cleaning Now!</p>
-            <button class="btn width-90 btn-danger quote_button_modal width-80 margin-left-5 black  akrobat transparent border-radius-30px relative super-max-z font-20 border-bottom-black mobile-font-15">489-494-4094</button>
-          </div>
+             </div>
 
-      </div>
-
-                <form action ="/exit" method="POST">
+              <form action ="/exit" method="POST">
                   <input type='hidden' name = "key" value = "<%= active_path %>" />
 
-                  <button class="no-style-button " type="submit"><p class="super-max-z font-25 absolute" style="right:-75% !important" id="modal_exit">X</p>
+                  <button class="no-style-button " type="submit"><p class="super-max-z font-25 absolute" style="right:-75% !important" id="modal_exit">X</p></button>
 
-                  </button>
-                    </form>
-      </div>
-    </div>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+     </div>
+
   </div>
 
-
-</div>
-</div>
 <%}%>

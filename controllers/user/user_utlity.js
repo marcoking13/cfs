@@ -39,15 +39,18 @@ async function  getData(req){
     address:data.address
   };
 
-  for (var i = 0; i < Pricing.length; i++) {
-    var ps = Pricing[i];
-    var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
-    new_quote.total();
-    windows.push(new_quote);
-  }
-
   var new_schedule = new Schedule(config.name,config.address,windows,config.date,config.time);
   const response = await new_schedule.save();
+
+  for (var i = 0; i < Pricing.length; i++) {
+
+    var ps = Pricing[i];
+    var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
+
+    new_quote.total();
+    windows.push(new_quote);
+
+  }
 
   modal = {
     wrapper:"active_wrapper",

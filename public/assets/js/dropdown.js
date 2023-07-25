@@ -13,9 +13,7 @@ function AddDropdownEvents(){
 
 }
 
-
- function resetDropdown(e){
-
+function resetDropdown(e){
 
     var id = e.target.getAttribute("_id");
 
@@ -33,8 +31,14 @@ function AddDropdownEvents(){
 
     }
 
-
  }
 
+function Init(){
 
-AddDropdownEvents();
+  if(document.querySelector(".dropdown_arrow"){
+    AddDropdownEvents();
+  }
+
+}
+
+Init();

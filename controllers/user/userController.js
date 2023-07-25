@@ -32,6 +32,7 @@ var data_rendered_to_page = {
 function returnData (title,path,index,css_path){
 
   var new_data = {...data_rendered_to_page};
+
   new_data.pageTitle = title;
   new_data.active_path = path;
   new_data.modal = modal
@@ -44,7 +45,6 @@ function returnData (title,path,index,css_path){
 
 const GetAboutUsPage = (req,res,next) => {
 
-
     var data = returnData("About Us","/about_us",1,"about.css");
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),data);
 
@@ -52,9 +52,11 @@ const GetAboutUsPage = (req,res,next) => {
 
 const ExitOutOfModal = (req,res,next) => {
 
+    var url = req.body;
+
     modal = null;
     lock = null;
-    var url = req.body;
+
 
     url.key.replace(' ', '');
     res.redirect(url.key);
@@ -66,6 +68,7 @@ const GetSchedulePage = (req,res,next)=>{
   utility.AddPageView(req);
 
   var data = returnData("Schedule Online","/schedule",3,"quote.css");
+
   res.render(path.join(rootDir,"views","/user/schedule.ejs"),data);
 
 }
@@ -73,6 +76,7 @@ const GetSchedulePage = (req,res,next)=>{
 const GetScheduleData = async(req,res,next) =>{
 
     await utility.getData(req);
+
     res.redirect(req.body.key);
 
 }
@@ -80,6 +84,7 @@ const GetScheduleData = async(req,res,next) =>{
 const GetHomePage = (req,res,next)=>{
 
    var data = returnData("Home","/",0,"home.css");
+
    res.render(path.join(rootDir,"views","/user/index.ejs"),data);
 
 }
@@ -89,6 +94,7 @@ const GetContactUsPage = (req,res,next)=>{
   utility.AddPageView(req);
 
   var data = returnData("Contact Us","/contact_us",2,"contact.css");
+
   res.render(path.join(rootDir,"views","/user/contact_us.ejs"),data);
 
 }

@@ -1,7 +1,7 @@
 <ul class="schedule_lists margin-top-5">
 
       <% var new_quotes = path == "/admin/home"  ? limited_quotes : quotes %>
-      <% console.log(quotes) %>
+
       <% if (quotes.length < 0) {%>
           <p> No Quotes Yet..</p>
       <% }else{ %>
@@ -9,33 +9,41 @@
         <% for (let quote of new_quotes){%>
 
           <li class="list_item_schedule row padding-2 dark-shadow relative width-100" quote_id = <%= quote._id %>>
-            <div class="col-6">
-              <p class="list_item_name font-16 akrobat"> <%= "Name: "+quote.name %></p>
-            </div>
-            <div class="col-6">
-              <p class="list_item_name font-16 akrobat"> Small (qty) : <%= quote.windows[0].total_windows %></p>
-            </div>
-            <div class="col-6">
-              <p class="list_item_name font-16 akrobat"> Medium (qty): <%= quote.windows[1].total_windows %></p>
-            </div>
-            <div class="col-6">
-              <p class="list_item_name font-16 akrobat"> Large (qty): <%= quote.windows[2].total_windows %></p>
-            </div>
-            <div class="col-12">
-              <p class="list_item_name font-18 akrobat"> Screens (qty): <%= quote.windows[3].total_windows %></p>
-            </div>
-            <div class="col-6">
-              <p class="list_item_name font-18 akrobat"> Total: <%= quote.total %></p>
-            </div>
-            <div class="col-6">
-              <p class="list_item_name font-18 akrobat"> Outside / Inside: <%= quote.outside %></p>
-            </div>
-              <div  class="option_button" >
 
+              <div class="col-6">
+                <p class="list_item_name font-16 akrobat"> <%= "Name: "+quote.name %></p>
               </div>
-             <div  class="favorite_button"quote_id = <%= quote._id %> isFav = <%= quote.isFavorite %> >
-                  <img class="fav_icon"  quote_id = <%= quote._id %> isFav = <%= quote.isFavorite %> src= "./../assets/images/fav.png"/>
+
+              <div class="col-6">
+                <p class="list_item_name font-16 akrobat"> Small (qty) : <%= quote.windows[0].total_windows %></p>
               </div>
+
+              <div class="col-6">
+                <p class="list_item_name font-16 akrobat"> Medium (qty): <%= quote.windows[1].total_windows %></p>
+              </div>
+
+              <div class="col-6">
+                <p class="list_item_name font-16 akrobat"> Large (qty): <%= quote.windows[2].total_windows %></p>
+              </div>
+
+              <div class="col-12">
+                <p class="list_item_name font-18 akrobat"> Screens (qty): <%= quote.windows[3].total_windows %></p>
+              </div>
+
+              <div class="col-6">
+                <p class="list_item_name font-18 akrobat"> Total: <%= quote.total %></p>
+              </div>
+
+              <div class="col-6">
+                <p class="list_item_name font-18 akrobat"> Outside / Inside: <%= quote.outside %></p>
+              </div>
+
+              <div  class="option_button" ></div>
+
+              <div  class="favorite_button"quote_id = <%= quote._id %> isFav = <%= quote.isFavorite %> >
+                <img class="fav_icon"  quote_id = <%= quote._id %> isFav = <%= quote.isFavorite %> src= "./../assets/images/fav.png"/>
+              </div>
+
           </li>
 
         <%}%>

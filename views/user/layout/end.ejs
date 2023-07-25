@@ -4,57 +4,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js" integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src ="./assets/js/navbar_render.js"></script>
-  <script src ="./assets/js/modal.js"></script>
   <script src = "./assets/js/quote_images.js"></script>
-  <script src = "./assets/js/mobile_image_switch.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    const currentUrl = window.location.href;
-    function getUrl(url){
-      return url.split('/').pop();
-    }
-    const tailend = getUrl(currentUrl);
-    var t;
-    console.log(tailend);
-    if(tailend.length == 0){
-      t = "Home Page";
-    }
-    if(tailend == "about"){
-      t = "About Us";
-
-    }
-    if(tailend == "contact_us"){
-      t = "Contact Us";
-    }
-    if(tailend == "schedule"){
-      t = "Schedule Quote"
-    }
-    console.log(t)
-    axios.post("/admin/roots",t);
-  </script>
-  <script>
-    const getBrowserName =  () => {
-        let browserInfo = navigator.userAgent;
-        let browser;
-        if (browserInfo.includes('Opera') || browserInfo.includes('Opr')) {
-          browser = 'Opera';
-        } else if (browserInfo.includes('Edg')) {
-          browser = 'Edge';
-        } else if (browserInfo.includes('Chrome')) {
-          browser = 'Chrome';
-        } else if (browserInfo.includes('Safari')) {
-          browser = 'Safari';
-        } else if (browserInfo.includes('Firefox')) {
-          browser = 'Firefox'
-        } else {
-          browser = 'unknown'
-        }
-          return browser;
-      }
-      var v =  getBrowserName();
-      console.log(v);
-      axios.post("/admin/browser",v)
-  </script>
+  <script src = "./assets/js/showcase.js"></script>
+  <script src = "./assets/js/browser_counter.js"></script>
+  <script src = "./assets/js/root_counter.js"></script>
 
 </body>
 

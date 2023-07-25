@@ -1,6 +1,5 @@
 <div class="row padding-2_5">
 
-
     <div class="col-2">
         <div class="width-100 add_box add_box_schedule"  id="addUser" >
             <img class="width-50 margin-left-25" src = "./../assets/images/add.png" />
@@ -13,19 +12,27 @@
       <% var image; %>
 
       <% if(i == 0){ %>
+
           <div class="col-2">
+
                 <div class="width-100 add_box add_box_big add_box_big_active add_box_schedule" " style="background:<%=people[i].color %>">
                   <img class="width-100 " src = "./../assets/images/profile.png" />
                   <p class="akrobat text-center font-20 color-ea"><%= people[i].name %> </p>
                 </div>
+
           </div>
+
       <% }else{%>
+
          <div class="col-2">
+
              <div class="width-100 add_box add_box_big add_box_schedule"  style="opacity:.5;background:<%=people[i].color %>">
                  <img class="width-100 " src = "./../assets/images/profile.png" />
                  <p class="akrobat text-center font-20 color-ea "><%= people[i].name %> </p>
             </div>
+
          </div>
+
       <%}%>
 
     <%}%>

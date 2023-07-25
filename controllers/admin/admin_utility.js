@@ -89,6 +89,7 @@ const renderAllData = async(req,res)=>{
 
 
       var new_data_to_page = {...data_rendered_to_page};
+
       new_data_to_page.limited_quotes = limited_schedules
       new_data_to_page.quotes = full_schedules;
       new_data_to_page.pageTitle = "Admin";

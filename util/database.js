@@ -10,9 +10,7 @@ const MongoConnect = (cb) => {
     cb("Success")
   });
 
-
 }
-
 
 const GetDb = () => {
 

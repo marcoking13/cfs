@@ -32,26 +32,25 @@ var data_rendered_to_page = {
 
 }
 
-
-
 const EditSchedule = async (req,res,next) => {
   var data  = req.body;
 
   await Labor.EditSchedule(data,()=>{
-    console.log("SKSK")
     res.redirect("/admin/schedule");
-
   });
+
 }
 
 const GetIndexPage = async (req,res,next) => {
+
    var data = await utility.renderAllData(req,res);
-   console.log(data.meta.pages);
 
    res.render(path.join(rootDir,"views","/admin/index.ejs"),data);
+
 }
 
 const GetQuotePage = async (req,res,next) => {
+
   var data = await utility.renderAllData(req,res);
 
     Schedule.findAll((schedules)=>{
@@ -61,8 +60,6 @@ const GetQuotePage = async (req,res,next) => {
       data_rendered_to_page.quotes = new_schedules;
       data_rendered_to_page.path = req.path;
       data_rendered_to_page.pageTitle = "Admin Quotes";
-
-      console.log(data_rendered_to_page);
 
       res.render(path.join(rootDir,"views","/admin/quote.ejs"),new_data_to_page);
 
@@ -116,13 +113,17 @@ const AddLaborer = async(req,res,next)=>{
 }
 
 const AddBrowserView = (req,res,next) =>{
+
     const browserName = Object.keys(req.body)[0];
     Meta.AddBrowserView(browserName);
+
 }
 
 const RootCount = (req,res,next) =>{
+
     const pageName = Object.keys(req.body)[0];
     Meta.AddRootView(pageName);
+    
 }
 
 const DeleteQuotes = (req,res,next) => {
