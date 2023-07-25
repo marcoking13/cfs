@@ -1,8 +1,8 @@
 
-<%- include("./../layout/head.ejs") %>
+<%- include("./layout/head.ejs") %>
   <div id="wrapper" class="<%=lock %> ">
 
-      <%- include("./../layout/modal.ejs") %>
+      <%- include("./layout/modal.ejs") %>
 
       <div class="container-fluid home_page padding-bottom-75" >
 
@@ -12,8 +12,8 @@
         </div>
 
         <div class="showcase-container relative width-100">
-          <%- include("./../layout/new_showcase.ejs") %>
-          <%- include("./../layout/quote_form.ejs") %>
+          <%- include("./layout/new_showcase.ejs") %>
+          <%- include("./layout/quote_form.ejs") %>
         </div>
 
       </div>
@@ -21,7 +21,7 @@
     <div class="container-fluid about_us">
 
 
-        <%- include("./../layout/home/about.ejs")  %>
+        <%- include("./layout/home/about.ejs")  %>
 
         <div class="our_work_section background-white relative mobile-margin-top-35">
             <div class="wavy_section width-100">
@@ -29,7 +29,7 @@
             </div>
 
         <div class="mobile-margin-top-20-neg margin-top-5-neg">
-          <%- include("./../layout/out_clients.ejs") %>
+          <%- include("./layout/out_clients.ejs") %>
         </div>
       </div>
 
@@ -41,7 +41,7 @@
       <div class="contact_info_section padding-top-3-rem mobile-padding-top-9 color-01 line-height-1_5 white-background width-100 background-white relative width-100">
           <p class="text-banner mobile-margin-top-5-neg width-50 mobile-width-80 text-left mobile-font-25">489-939-9393 </p>
           <p class="text-banner text-left width-80 mobile-width-90 mobile-font-20">info@customfacilityservices.com </p>
-          <%- include("./../layout/home/contact.ejs") %>
+          <%- include("./layout/home/contact.ejs") %>
       </div>
 
   </div>
@@ -54,7 +54,7 @@
 
   <div class="footer_wrapper_home">
 
-  <%- include("./../layout/footer.ejs") %>
+  <%- include("./layout/footer.ejs") %>
   </div>
 
 
@@ -64,5 +64,5 @@
           switch_image("showid","./assets/images/show.png")
         }
   </script>
-  <%- include("./../layout/end.ejs") %>
+  <%- include("./layout/end.ejs") %>
   <script src = "./assets/js/home_showcase.js"></script>
