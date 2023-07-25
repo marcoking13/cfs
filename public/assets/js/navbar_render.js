@@ -68,15 +68,21 @@ if(width >=844){
 }
 
 var nav_button = document.getElementById("button_navbar");
-nav_button.addEventListener("click",()=>{
+
+if(nav_button){
+    nav_button.addEventListener("click",()=>{
+
   var nav_container = document.getElementById("navbarToggleExternalContent");
   var toggle = "inactive";
+
   if(nav_container.getAttribute("status") == "inactive"){
     toggle = "active";
   }else{
     toggle = "inactive";
   }
+
   nav_container.setAttribute("status",toggle);
+
   if(nav_container.getAttribute("status") == "inactive"){
     nav_container.classList.add("active-navbar");
     nav_container.classList.remove("collapse");
@@ -84,8 +90,6 @@ nav_button.addEventListener("click",()=>{
     nav_container.classList.add("collapse");
     nav_container.classList.remove("active-navbar");
   }
-});
 
-if(document.getElementById('vid-modal')){
-  document.getElementById('vid-modal').play();
+});
 }

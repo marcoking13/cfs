@@ -5,6 +5,5 @@ function switch_image(query,src_name){
 }
 
 if(window.innerWidth <=844){
-
-switch_image("mobile_showcase","./assets/images/about_mobile.png")
+  switch_image("mobile_showcase","./assets/images/about_mobile.png")
 }

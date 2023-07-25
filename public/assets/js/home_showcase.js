@@ -4,9 +4,6 @@ function switch_image(query,src_name){
   img.setAttribute("src",src_name);
 }
 
-
-
-else if(window.innerWidth <=844){
-
+if(window.innerWidth <=844){
   switch_image("mobile_showcase","./assets/images/showcase_landscape.png")
 }

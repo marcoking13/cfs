@@ -1,9 +1,12 @@
 var express = require("express");
 var path = require("path");
 var rootDir = require("./../../util/path.js");
+
 var Quote = require("./../../data/quote.js");
 var Schedule = require("./../../data/schedule.js");
 var Meta = require("./../../data/meta.js");
+var Labor = require("./../../data/labor.js");
+var utility = require("./admin_utility.js");
 
 var brow = {
   firefox:0,
@@ -12,163 +15,139 @@ var brow = {
   edge:0
 }
 
+var data_rendered_to_page = {
 
-const GetIndexPage = (req,res,next) => {
+  quotes:null,
+  modal:null,
+  limited_quotes:null,
+  path:null,
 
-    renderHomeQuotes(req,res)
-}
-const GetQuotePage = (req,res,next) => {
-
-  Schedule.findAll((schedules)=>{
-    var new_schedules = [];
-
-    if(schedules.length > 3){
-      for(var i = 0; i<3; i++){
-        new_schedules.push(schedules[i]);
-      }
-    }
-
-        res.render(path.join(rootDir,"views","/admin/quote.ejs"),{
-          quotes:new_schedules,
-          modal:null,
-          pageTitle:"Admin Home",
-          active_path:"/admin/home"
-        })
-      })
+  pageTitle:null,
+  people:null,
+  meta:{
+    views: null,
+    brow:null,
+    pages:null
+  }
 
 }
+
+
+
+const EditSchedule = async (req,res,next) => {
+  var data  = req.body;
+
+  await Labor.EditSchedule(data,()=>{
+    console.log("SKSK")
+    res.redirect("/admin/schedule");
+
+  });
+}
+
+const GetIndexPage = async (req,res,next) => {
+   var data = await utility.renderAllData(req,res);
+   console.log(data.meta.pages);
+
+   res.render(path.join(rootDir,"views","/admin/index.ejs"),data);
+}
+
+const GetQuotePage = async (req,res,next) => {
+  var data = await utility.renderAllData(req,res);
+
+    Schedule.findAll((schedules)=>{
+
+      var new_schedules = utility.MakeFavoritesBeginningArray(schedules);
+      var new_data_to_page = {...data};
+      data_rendered_to_page.quotes = new_schedules;
+      data_rendered_to_page.path = req.path;
+      data_rendered_to_page.pageTitle = "Admin Quotes";
+
+      console.log(data_rendered_to_page);
+
+      res.render(path.join(rootDir,"views","/admin/quote.ejs"),new_data_to_page);
+
+  })
+
+}
+
+const ShowSchedule = async (req,res,next) => {
+
+      var laborers = await Labor.ReturnAllLaborers();
+
+      var new_data_to_page = {...data_rendered_to_page};
+      new_data_to_page.pageTitle = "Admin Schedules";
+      new_data_to_page.path = req.path;
+      new_data_to_page.people = laborers;
+
+      res.render(path.join(rootDir,"views","/admin/schedule_detail.ejs"),new_data_to_page);
+
+  }
 
 const MakeFavorite = async(req,res,next) => {
 
     var _id = req.body._id;
     var isFav = req.body.isFav;
+
     var fav = await Schedule.MakeFavorite(_id,isFav,(success)=>{
-      renderHomeQuotes(req,res)
+      var data = utility.renderAllData(req,res);
+      res.render(path.join(rootDir,"views",`/admin/index.ejs`),data);
     });
 
 }
 
+const CompleteQuotes = async(req,res,next)=>{
 
-const renderHomeQuotes = async (req,res)=>{
-
-
-
-  Meta.FindAllRoots((roots)=>{
-
-    console.log(roots);
-
-    Meta.FindAllBrowsers((browsers)=>{
-
-      for(var i = 0; i < browsers.length;i++){
-
-        if(browsers[i].browser == "Edge"){
-          brow.edge = browsers[i].qty
-        }
-        else if(browsers[i].browser == "Chrome"){
-          brow.chrome = browsers[i].qty
-        }
-        else if(browsers[i].browser == "Safari"){
-          brow.safari = browsers[i].qty
-        }
-        else if(browsers[i].browser == "Firefox"){
-          brow.firefox = browsers[i].qty
-        }
-      }
-
-      console.log(brow);
-
-
-
-    Schedule.findAll(async (schedules)=>{
-      var new_schedules = [];
-      var count = 3;
-      var meta_views = await Meta.GetVisitorCount();
-      await GetBrowserCounts();
-
-      if(schedules.length > count){
-        count = 3;
-      }else{
-        count = schedules.length;
-      }
-
-      for(var i = 0; i < count; i++){
-        new_schedules.push(schedules[i]);
-      }
-
-        res.render(path.join(rootDir,"views","/admin/index.ejs"),{
-            quotes:new_schedules,
-            modal:null,
-            pageTitle:"Admin Home",
-            meta:{
-              views: meta_views,
-              brow:brow,
-              pages:
-              roots
-
-            },
-            active_path:"/admin/home"
-          })
-        })
-     });
-  })
-}
-
-
-    const AddBrowserView = (req,res,next) =>{
-      const browserName = Object.keys(req.body)[0];
-
-      Meta.AddBrowserView(browserName);
-    }
-
-    const RootCount = (req,res,next) =>{
-      const pageName = Object.keys(req.body)[0];
-
-      console.log(pageName)
-      Meta.AddRootView(pageName);
-    }
-
-const DeleteQuotes = (req,res,next) => {
-
-  Schedule.deleteThese(req.body.quotes,(data)=>{
-      console.log("Schedule Time");
+  Schedule.completeThese(req.body.quotes,(data)=>{
       res.redirect("/admin/home");
     });
 
 }
 
-const GetBrowserCounts = async ()=>{
+const AddLaborer = async(req,res,next)=>{
 
+  var person = req.body.first + " " + req.body.last;
 
-    Meta.FindAllBrowsers((browsers)=>{
+  var new_laborer = new Labor(person);
 
-      for(var i = 0; i < browsers.length;i++){
+  new_laborer.AddLaborer((data)=>{
+    res.redirect('/admin/home');
+  });
 
-        if(browsers[i].browser == "Edge"){
-          brow.edge = browsers[i].qty
-        }
-        else if(browsers[i].browser == "Chrome"){
-          brow.chrome = browsers[i].qty
-        }
-        else if(browsers[i].browser == "Safari"){
-          brow.safari = browsers[i].qty
-        }
-        else if(browsers[i].browser == "Firefox"){
-          brow.firefox = browsers[i].qty
-        }
-      }
+}
 
-      console.log(brow);
+const AddBrowserView = (req,res,next) =>{
+    const browserName = Object.keys(req.body)[0];
+    Meta.AddBrowserView(browserName);
+}
 
+const RootCount = (req,res,next) =>{
+    const pageName = Object.keys(req.body)[0];
+    Meta.AddRootView(pageName);
+}
 
-    })
+const DeleteQuotes = (req,res,next) => {
 
+  Schedule.deleteThese(req.body.quotes,(data)=>{
+      res.redirect("/admin/home");
+    });
+
+}
+
+const CompletedQuotes = (req,res,next) => {
+
+   Schedule.completeThese(req.body.quotes,(data)=>{
+       res.redirect('/admin/quotes');
+   })
 
 }
 
 exports.DeleteQuotes = DeleteQuotes;
 exports.GetIndexPage = GetIndexPage;
 exports.RootCount = RootCount;
-
+exports.EditSchedule = EditSchedule;
+exports.AddLaborer = AddLaborer;
+exports.ShowSchedule = ShowSchedule;
+exports.CompleteQuotes = CompleteQuotes;
 exports.GetQuotePage = GetQuotePage;
 exports.AddBrowserView = AddBrowserView;
 exports.MakeFavorite = MakeFavorite;

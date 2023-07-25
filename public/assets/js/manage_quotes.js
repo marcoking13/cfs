@@ -1,71 +1,30 @@
 var quotes_to_be_deleted = [];
-
 var option_buttons = document.getElementsByClassName("option_button");
 var favorite_buttons = document.getElementsByClassName("favorite_button");
-
 var delete_button = document.querySelector(".delete_quote_button");
+var complete_button = document.querySelector(".complete_quote_button");
 
+const sendQuotes  = async (className,backend_url,frontend_url)=>{
 
-delete_button.addEventListener("click", async (e)=>{
-  var interactable = e.target.getAttribute("interactable");
+  complete_button = document.querySelector("."+className)
+
+  var interactable = complete_button.getAttribute("interactable");
+  var  r;
+
   if(interactable == 1){
-      var r = await axios.post("/admin/delete_quotes",{quotes:quotes_to_be_deleted}, {
-  headers: {
-    'Content-Type': 'application/x-www-form-urlencoded'
-  }
-});
-     window.location.assign("/admin/home");
-  }
-})
+       r = await axios.post(`/admin/${backend_url}`,{quotes:quotes_to_be_deleted}, {
 
-for (var i = 0; i < favorite_buttons.length; i++)
-{
-
-
-  var isFav = favorite_buttons[i].getAttribute("isFav");
-  console.log(isFav == "false");
-  if(isFav == "true"){
-    favorite_buttons[i].classList.add("active_fav");
-  }else{
-    favorite_buttons[i].classList.remove("active_fav");
-  }
-
-  favorite_buttons[i].addEventListener("click", async (e)=>{
-      isFav = e.target.getAttribute("isFav");
-      var toggle = false;
-      console.log(e.target.getAttribute("isFav"));
-      if(!isFav || isFav == "false" || isFav == false){
-        toggle = true;
-      }else{
-        toggle = false;
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
       }
 
-      await axios.post("/admin/favorite",{isFav:toggle,_id:e.target.getAttribute("quote_id")}, {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          }
-      });
+    });
 
-      e.target.setAttribute("isFav",toggle);
+     window.location.assign(`/admin/${frontend_url}`);
 
-      if(toggle){
-        e.target.classList.add("active_fav");
-      }else{
-      e.target.classList.remove("active_fav");
-      }
-      console.log(toggle);
-      console.log(e.target.getAttribute("isFav"));
-
-  })
-
+  }
 
 }
-
-
-
-
-
-
 
 function MakeDeleteButtonVisible(){
 
@@ -84,14 +43,21 @@ function ToggleDelete(element){
   var id = element.parentElement.getAttribute("quote_id");
   var found = false;
 
-  if(quotes_to_be_deleted == 0){
+  if(quotes_to_be_deleted.length == 0 ){
 
     quotes_to_be_deleted.push(id);
     element.classList.add("active_delete");
+
+    if(quotes_to_be_deleted.length >= 0){
+      complete_button.classList.remove("inactive_quote");
+      complete_button.setAttribute("interactable",1);
+    }
     found = false;
 
   }else{
 
+    complete_button.classList.remove("inactive_quote");
+    complete_button.setAttribute("interactable",1);
 
     for(var i = 0; i < quotes_to_be_deleted.length; i++){
 
@@ -99,7 +65,7 @@ function ToggleDelete(element){
 
         var index = quotes_to_be_deleted.indexOf(id);
 
-        if(index > -1){
+        if(index > 0){
           quotes_to_be_deleted.splice(index,1);
           element.classList.remove("active_delete");
         }
@@ -117,17 +83,68 @@ function ToggleDelete(element){
 
   }
 
-
   MakeDeleteButtonVisible();
 
+}
+
+function AddFavoriteEvents(){
+  for (var i = 0; i < favorite_buttons.length; i++)
+  {
+
+  var isFav = favorite_buttons[i].getAttribute("isFav");
+
+  if(isFav == "true"){
+    favorite_buttons[i].classList.add("active_fav");
+  }else{
+    favorite_buttons[i].classList.remove("active_fav");
+  }
+
+  favorite_buttons[i].addEventListener("click", async (e)=>{
+
+      isFav = e.target.getAttribute("isFav");
+      var toggle = false;
+
+      if(!isFav || isFav == "false" || isFav == false){
+        toggle = true;
+      }else{
+        toggle = false;
+      }
+
+      await axios.post("/admin/favorite",{isFav:toggle,_id:e.target.getAttribute("quote_id")}, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+      });
+
+      e.target.setAttribute("isFav",toggle);
+
+      if(toggle){
+        e.target.classList.add("active_fav");
+      }else{
+        e.target.classList.remove("active_fav");
+      }
+
+    })
+
+  }
+}
+
+function AddOptionEvents(){
+
+    for (var i = 0; i < option_buttons.length; i++) {
+
+      option_buttons[i].addEventListener("click", (e)=>{ToggleDelete(e.target)})
+    }
 
 }
 
+delete_button.addEventListener("click", async (e)=>{
+  sendQuotes("delete_quote_button","delete_quotes","home");
+});
 
+complete_button.addEventListener("click", async (e)=>{
+  setQuotesToBeCompleted("complete_quote_button","complete_quotes","home");
+})
 
-
-
-for (var i = 0; i < option_buttons.length; i++) {
-
-  option_buttons[i].addEventListener("click", (e)=>{ToggleDelete(e.target)})
-}
+AddOptionEvents();
+AddFavoriteEvents();

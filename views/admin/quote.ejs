@@ -1,66 +1,27 @@
 <%- include("./layout/head.ejs") %>
 
-        <div class="container-fluid">
+  <div class="container-fluid relative">
 
           <div class="row">
               <div class="col-12 padding-2 background-1a"></div>
           </div>
 
-       <p class="admin_home_subtitle akrobat font-20 bold margin-left-15 margin-top-2_5 padding-left-2_5"> Online Quotes </p>
+          <p class="admin_home_subtitle akrobat font-20 bold margin-left-15 margin-top-2_5 padding-left-2_5 "> Online Quotes </p>
 
-          <div class= "dark-shadow padding-bottom-2_5  ">
-            <div class="row">
-              <div class="col-1"></div>
-              <div class="col-10">
-                  <ul class="schedule_lists margin-top-5">
-                        <% if (quotes.length < 0) {%>
-                            <p> No Quotes Yet..</p>
+          <div class= "dark-shadow padding-bottom-2_5 relative ">
 
-                        <% }else{ %>
-                        <% for (let quote of quotes){%>
-                          <li class="list_item_schedule row padding-2 dark-shadow relative" quote_id = <%= quote._id %>>
-                            <div class="col-6">
-                              <p class="list_item_name font-16 akrobat"> <%= "Name: "+quote.name %></p>
-                            </div>
-                            <div class="col-6">
-                              <p class="list_item_name font-16 akrobat"> Small (qty) : <%= quote.windows[0].total_windows %></p>
-                            </div>
-                            <div class="col-6">
-                              <p class="list_item_name font-16 akrobat"> Medium (qty): <%= quote.windows[1].total_windows %></p>
-                            </div>
-                            <div class="col-6">
-                              <p class="list_item_name font-16 akrobat"> Large (qty): <%= quote.windows[2].total_windows %></p>
-                            </div>
-                            <div class="col-12">
-                              <p class="list_item_name font-18 akrobat"> Screens (qty): <%= quote.windows[3].total_windows %></p>
-                            </div>
-                            <div class="col-6">
-                              <p class="list_item_name font-18 akrobat"> Total: <%= quote.total %></p>
-                            </div>
-                            <div class="col-6">
-                              <p class="list_item_name font-18 akrobat"> Outside / Inside: <%= quote.outside %></p>
-                            </div>
-                              <div  class="option_button" >
+              <%- include("./layout/quotes/edit_quotes.ejs") %>
 
-                              </div>
-                             <div  class="favorite_button" quote_id = <%= quote._id %> isFav = <%= quote.isFavorite %> >
-                                  <img style="width:20px;height:20px;" src= "./../assets/images/fav.png"/>
-                              </div>
-                          </li>
-                        <%}%>
-                        <%}%>
-                        <% if(quotes.length > 0){ %>
-                        <li class="list_item_schedule row dark-shadow border-ea padding-2 padding-top-2_5" >
-                          <div class="col-12">
-                            <p class="list_item_name font-16 akrobat text-center"> See More...</p>
-                          </div>
+                    <div class="row">
 
-                        </li>
-                      <%}%>
-                  </ul>
-              </div>
-              <div class="col-2">
-                  <button class="btn btn-danger width-50 margin-top-5-neg margin-left-25 delete_quote_button"interactable=-1> Delete </button>
-              </div>
+                      <div class="col-1"></div>
+
+                      <div class="col-10">
+                          <%- include("./layout/quotes/quote.ejs") %>
+                      </div>
+
+                    </div>
+
             </div>
-          </div>
+
+<%- include("./layout/end.ejs") %>

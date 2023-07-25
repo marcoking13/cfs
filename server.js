@@ -21,7 +21,33 @@ app.set("view engine","ejs");
 db.MongoConnect(()=>{
 
   app.listen(port,()=>{
-    console.log("Website is running on localhost:"+port);
+    // var days = ["Monday","Tuesday","Wendsday","Thursday","Friday","Saturday","Sunday"];
+    // var seperateByHours = 2;
+    // var numberOfJobs = 8;
+    // var schedule = [];
+    //
+    // function GenerateSchedule(seperateByHours, numberOfJobs,days){
+    //   var arr = [];
+    //   for(var i = 0; i < days.length; i++){
+    //     var startTime = 7;
+    //     var daySchedule = [];
+    //     for(var k = 0; k < numberOfJobs; k++){
+    //
+    //       daySchedule.push({
+    //         job:"Job Name",
+    //         time:startTime
+    //       })
+    //       startTime += 2
+    //     }
+    //     arr.push({
+    //       day:days[i],
+    //       schedule:daySchedule
+    //     })
+    //   }
+    //   return arr;
+    // }
+    // console.log(GenerateSchedule(seperateByHours, numberOfJobs,days)[0].schedule[0])
+    // console.log("Website is running on localhost:"+port);
   });
 
 });
