@@ -3,9 +3,51 @@
   background:url('./../images/services.png');
   background-size:cover
 }
+.description_owner{
+  font-size:2rem;
+}
 .p_row{
   left:-5% !important;
 }
+.owner_img{
+  height:70vh;
+  width:70%;
+  margin-left: 0;
+}
+.owner_name{
+  font-size:4rem;
+  width:70%;
+  text-align: center;
+  display: inline-block;
+}
+.owner_box_overlay{
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(37, 98, 159, 1),
+  rgba(56, 182, 255, 1));
+  position: absolute;
+  z-index:-1;
+  height:105%;
+  left:-20%;
+  top:-5%;
+  width:200%;
+}
+.wave_contact_img{
+
+  position:absolute;
+  top:65%;
+  left:-5%;
+  z-index:0;
+
+
+
+
+  width:130%;
+  height:20rem;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
 .bottom-0{
   bottom:0%;
 }
