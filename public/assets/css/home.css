@@ -21,7 +21,10 @@
   left:-5%;
   height:800px;
 }
-
+.home_quote_container{
+  top:20%;
+  left:5%;
+}
 .value_row_text{
   padding-right:15%;
 }
@@ -164,8 +167,17 @@
   z-index:99999;
 }
 .home_quote_container{
-  top:65%;
+  top:12.5%;
+  width:80%;
   left:5%;
+  box-shadow: 0rem 2rem 5rem rgba(0,0,0,.5);
+  transform: scale(1);
+  transition: transform .5s;
+}
+.quote_submit_button{
+  height:7.5vh;
+  font-size:2rem;
+  font-family: "Akrobat"
 }
 .footer_wrapper_home{
   margin-top:40%; z-index:9999;position:relative
