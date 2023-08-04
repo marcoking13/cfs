@@ -35,11 +35,11 @@
 }
 
 .value_row_overlay_box{
-  height:60vh;
+  height:80vh;
   max-width:60%;
   float:left;
-  margin-top: 30%;
   width:60%;
+    margin-top: 10%;
   display: inline;
   background:#1670A4;
 }
@@ -60,9 +60,9 @@
   height:25vh
 }
 .value_row_overlay_box--big{
-  height:60vh;
+  height:80vh;
   width:40%;
-  margin-top: 30%;
+  margin-top: 10%;
   max-width:40%;
   float:left;
   display: inline;
