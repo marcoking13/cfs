@@ -10,6 +10,11 @@ module.exports = [
     small:false
   },
   {
+    name:"Rachel's Art Studio",
+    logo:"art.jpg",
+    small:false
+  },
+  {
     name:"BKB",
     logo:"bkb.png",
     small:false

@@ -69,6 +69,7 @@ const renderAllData = async(req,res)=>{
 
       var limited_schedules = [];
       var full_schedules = [];
+      var total_potential_sales = 0;
       var roots = await Meta.FindAllRoots();
       var schedules = await Schedule.returnAll();
       var count = schedules.length;
@@ -83,8 +84,13 @@ const renderAllData = async(req,res)=>{
       for(var i = 0; i < count; i++){
         limited_schedules.push(schedules[i]);
       }
+
       for(var i = 0; i < schedules.length; i++){
         full_schedules.push(schedules[i]);
+      }
+
+      for(var i = 0; i < schedules.length; i++){
+        total_potential_sales += schedules[i].total;
       }
 
 
@@ -95,6 +101,7 @@ const renderAllData = async(req,res)=>{
       new_data_to_page.pageTitle = "Admin";
       new_data_to_page.people = laborers;
       new_data_to_page.path = req.path;
+      new_data_to_page.total_potential_sales = total_potential_sales;
       new_data_to_page.meta.views = meta_views;
       new_data_to_page.meta.pages = roots;
       new_data_to_page.meta.brow = new_brow;

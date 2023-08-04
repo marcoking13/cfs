@@ -1,18 +1,43 @@
 const db = require("./../util/database.js");
 var ObjectId = require('mongodb').ObjectId;
 
+const price_sheet = [
+   {
+    key:"small",
+    price:2.5,
+    price_half:1
+  },
+  {
+  key:"medium",
+  price:3.5,
+  price_half:1.5
+  },
+  {
+  key:"large",
+  price:5.5,
+  price_half:2.5
+},
+  {
+  key:"screens",
+  price:6.5,
+  price_half:6
+  }
+]
+
 class Schedule {
 
-  constructor(name,address,windows,date,time,favorite){
+  constructor(name,address,windows,date,time,new_sizes){
 
       this.name = name;
       this.address = address;
       this.windows = windows;
+      this.new_sizes = new_sizes;
       this.date = date;
       this.time = time;
       this.total = 0;
       this.outside = 0;
       this.isFavorite = false;
+
   }
 
   async save(){
@@ -20,6 +45,7 @@ class Schedule {
     var db_instance = db.GetDb();
 
     this.total_all_prices();
+
 
     db_instance.collection("schedules").insertOne(this).then((result)=>{
     }).catch(err => {console.log(err)});
@@ -63,7 +89,6 @@ class Schedule {
     var db_instance = db.GetDb();
     var schedules =  await db_instance.collection("schedules").deleteMany();
 
-    cb(schedules);
 
   }
 
@@ -117,16 +142,28 @@ class Schedule {
 
   total_all_prices(){
 
-    for (var i = 0; i < this.windows.length; i++){
 
-      if(typeof this.windows[i].total_price == "number" ){
-        this.total += this.windows[i].total_price;
+    var total = 0;
+
+    for(var i = 0; i < this.new_sizes.length; i++){
+
+      if(this.new_sizes[i] && price_sheet[i].key){
+
+        for(var k = 0; k < price_sheet.length; k++){
+
+          if(this.new_sizes[i].key == price_sheet[k].key)
+            {
+              total += price_sheet[k].price * this.new_sizes[i].count;
+            }
+
+        }
+
       }
 
     }
 
-    this.total = Math.round(this.total);
-    this.outside = Math.round(this.total * .5);
+    this.total = Math.ceil(total);
+    this.outside = Math.round(total * .6);
 
   }
 

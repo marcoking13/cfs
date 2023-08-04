@@ -11,7 +11,7 @@
 
                     <% if( people[0].schedule[i].schedule[k].job){%>
 
-                          <td name="cell" class="height-20vh font-size-30 relative eds cell z-3" _id = <%= people[0]._id %> schedule_id = <%=i%> time_id = <%=k%> delta_time=<%=people[0].schedule[i].schedule[k].time %> ><%=people[0].schedule[i].schedule[k].time %>:00 AM
+                          <td name="cell" class="height-20vh font-size-30 relative eds cell z-3" day_id = <%= [i]  %> _id = <%= people[0]._id %> schedule_id = <%=i%> time_id = <%=k%> delta_time=<%=people[0].schedule[i].schedule[k].time %> ><%=people[0].schedule[i].schedule[k].time %>:00 AM
                             <img class="edit_button_schedule eds z-3" src = "./../assets/images/w.png" />
                             <span class=" font-20 eds"> <%= people[0].schedule[i].schedule[k].job %> </span>
                             <span class="font-15 eds" >  Enter Address </span>

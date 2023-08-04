@@ -1,3 +1,5 @@
+var hasCounted = false;
+
 const getBrowserName =  () => {
 
     let browserInfo = navigator.userAgent;
@@ -21,9 +23,22 @@ const getBrowserName =  () => {
 
   }
 
-function Init(){
-  var v =  getBrowserName();
-  axios.post("/admin/browser",v)
+const InitBrowser =  async ()=>{
+
+
+    var v =  getBrowserName();
+    var root = GetRoot();
+    var obj ={
+      browser:v,
+      root:root
+    }
+    console.log(obj);
+
+    var  a =  await axios.post("/admin/browser",obj)
+    console.log(a);
+
 }
 
-Init();
+window.onload = (event) => {
+   InitBrowser();
+}

@@ -13,7 +13,12 @@
 
         <div class="showcase-container relative width-100">
           <%- include("./layout/new_showcase.ejs") %>
+          <br></br>
+          <br />
+          <br />
+          <div class='margin-top-10'>
           <%- include("./layout/quote_form.ejs") %>
+          </div>
         </div>
 
       </div>
@@ -28,8 +33,8 @@
                 <div class = "wave relative width-100 background-006 max-z"></div>
             </div>
 
-        <div class="mobile-margin-top-20-neg margin-top-5-neg">
-          <%- include("./layout/out_clients.ejs") %>
+        <div class="mobile-margin-top-20-neg margin-top-10-neg"style="margin-top:-7.5%">
+          <%- include("./layout/our_clients.ejs") %>
         </div>
       </div>
 
@@ -38,21 +43,27 @@
           <div class="blueboxcontact negative-z background-005 width-30 absolute"></div>
       </div>
 
-      <div class="contact_info_section padding-top-3-rem mobile-padding-top-9 color-01 line-height-1_5 white-background width-100 background-white relative width-100">
-          <p class="text-banner mobile-margin-top-5-neg width-50 mobile-width-80 text-left mobile-font-25">489-939-9393 </p>
+      <div class="contact_info_section padding-top-3-rem mobile-padding-top-9 color-01 line-height-1_5 white-background width-100 background-white relative width-100"style="padding-bottom:5%">
+          <p class="text-banner mobile-margin-top-5-neg width-50 mobile-width-80 text-left mobile-font-25 margin-top-2_5">489-939-9393 </p>
           <p class="text-banner text-left width-80 mobile-width-90 mobile-font-20">info@customfacilityservices.com </p>
-          <%- include("./layout/home/contact.ejs") %>
+      </div>
+
+      <div style="height:100vh">
+        <%- include("./layout/home/gallery.ejs") %>
+        <div style="position:relative;top:-50vh">
+          <%- include("./layout/footer.ejs") %>
+          </div>
       </div>
 
   </div>
 
 </div>
 
-  <div class="footer_wrapper_home">
 
-    <%- include("./layout/footer.ejs") %>
-    
-  </div>
+
+
+
+
 
 
   <%- include("./layout/end.ejs") %>

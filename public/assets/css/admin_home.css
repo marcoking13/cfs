@@ -217,7 +217,7 @@ visibility: visible;
 .root_page{
   transform:translateY(0px);
   transition: all .5s;
-  background:gold;color:white;height:30vh;padding:5%
+  background:gold;color:white;padding:5%
 
 }
 .submit_user{

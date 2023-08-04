@@ -20,37 +20,45 @@ function returnLockClass(lock){
 
 function AddPageView(req){
     const ipAddress = req.ip;
-    Meta.AddPageView(ipAddress);
+    console.log(ipAddress)
 }
 
 async function  getData(req){
 
   var data = req.body;
-  var name = req.body.firstName + " " + req.body.lastName;
+  var name = req.body.firstName;
   var sizes = [data.smWindowCount,data.mdWindowCount,data.lgWindowCount,data.screenCount];
+  var fixed_sizes = ["small","medium","large","screen"];
+  var configured_sizes = [];
   var windows = [];
+  var counter = 0;
+
+  sizes.forEach((size)=>{
+
+    var new_window_size = {
+      key:fixed_sizes[counter],
+      count:size
+    }
+
+    counter++;
+    configured_sizes.push(new_window_size);
+
+  })
 
   var config = {
     name:name,
-    smWindowCount:data.smWindowCount,
-    mdWindowCount:data.mdWindowCount,
-    screenCount:data.screenCount,
-    lgWindowCount:data.lgWindowCount,
+    windows:configured_sizes,
+    smWindowCount:{key:"small",count:data.smWindowCount},
+    mdWindowCount:{key:"medium",count:data.mdWindowCount},
+    screenCount:{key:"screen",count:data.screenCount},
+    lgWindowCount:{key:"large",count:data.lgWindowCount},
     address:data.address
   };
 
-  var new_schedule = new Schedule(config.name,config.address,windows,config.date,config.time);
+  var new_schedule = new Schedule(config.name,config.address,windows,config.date,config.time,config.windows);
+
   const response = await new_schedule.save();
 
-  for (var i = 0; i < Pricing.length; i++) {
-
-    var ps = Pricing[i];
-    var new_quote = new Quote(ps.key,ps.price,sizes[i],ps.price_half);
-
-    new_quote.total();
-    windows.push(new_quote);
-
-  }
 
   modal = {
     wrapper:"active_wrapper",

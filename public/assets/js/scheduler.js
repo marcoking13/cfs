@@ -71,7 +71,9 @@ const RenderOverlay = (deleteIt,className)=>{
 }
 
 const ShowAddLaborModal = (e) => {
+
   modal_user.classList.add("active_user_modal");
+
   RenderOverlay(false,"add_user_modal");
 
 }
@@ -90,12 +92,12 @@ const ShowScheduleModal = (e) => {
   var time_text = `<p class="font-30 text-center akrobat time_delta"> ${time}:00 AM - </p>`
 
   edit_modal.classList.add("modal_schedule_active");
-
+  console.log(day_id);
   SetId(person_id,time_id,schedule_id,day_id);
   RenderOverlay(false,"modal_schedule");
 
   time_el.innerHTML = ""
-  time_el.innerHTML =time_text;
+  time_el.innerHTML = time_text;
 
 }
 

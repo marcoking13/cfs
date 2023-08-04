@@ -9,6 +9,7 @@ var bodyParser = require("body-parser");
 
 var app = express();
 var port = process.env.PORT || 3002;
+app.use(bodyParser.json({extended:true}));
 
 app.use(bodyParser.urlencoded());
 
@@ -21,6 +22,7 @@ app.set("view engine","ejs");
 db.MongoConnect(()=>{
 
   app.listen(port,()=>{
+
     // var days = ["Monday","Tuesday","Wendsday","Thursday","Friday","Saturday","Sunday"];
     // var seperateByHours = 2;
     // var numberOfJobs = 8;

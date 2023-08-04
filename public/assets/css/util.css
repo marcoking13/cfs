@@ -1,3 +1,7 @@
+html{
+  font-size:62.5%;
+}
+
 .mt5{
   margin-top:5% !important;
 }
@@ -16,6 +20,9 @@
 }
 .padding-top-20{
   padding-top: 20%;
+}
+.padding-left-0{
+  padding-left:0%;
 }
 .freeze{
   overflow: hidden !important;
@@ -528,7 +535,29 @@ padding-top:2% !important;
   padding:1%;
   background:#00103d
 }
+.padding-bottom-10{
+  padding-bottom:10%;
+}
+.width-95{
+  width:95%;
+}
+.margin-bottom-small{
+  margin-bottom: 5%;
+}
+.text-banner-new {
+  color:white;
+  font-family: 'Akrobat';
+  text-align:center;
+  font-size:4rem;
+  font-weight:bold;
+  padding:1%;
+  display:inline-block;
+  background:#00103d
+}
 
+.big-text{
+  font-size:6rem;
+}
 .half-middle{
   width:50%;
   margin-left:25%;

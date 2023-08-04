@@ -22,7 +22,7 @@ class Meta {
     }
 
     this.time_running = 0;
-    
+
   }
 
   static async ResetViews () {
@@ -39,10 +39,12 @@ class Meta {
   static  async AddPageView  (ip,find){
 
     var db_instance = db.GetDb();
-    var find = await db_instance.collection("vistors").findOne({ip:ip});
-
+    var find = await db_instance.collection("visitors").findOne({ip:ip});
     if(!find){
+
       await db_instance.collection("unique_visitors").insertOne({ip:ip});
+      await db_instance.collection("visitors").insertOne({ip:ip});
+
     }else{
       await db_instance.collection("visitors").insertOne({ip:ip});
     }
@@ -52,6 +54,7 @@ class Meta {
   static async AddBrowserView(browser){
 
     var db_instance = db.GetDb();
+
     var instance = await db_instance.collection("browsers").findOne({browser:browser});
 
     if(instance){
@@ -60,13 +63,14 @@ class Meta {
       await db_instance.collection("browsers").insertOne({browser:browser,qty:1});
     }
 
-      await db_instance.collection("browsers").find({}).toArray();
+     await db_instance.collection("browsers").find({}).toArray();
 
   }
 
   static async AddRootView(browser){
 
     var db_instance = db.GetDb();
+
     var instance = await db_instance.collection("pages").findOne({name:browser});
 
     if(instance){
@@ -75,7 +79,8 @@ class Meta {
       await db_instance.collection("pages").insertOne({name:browser,qty:1});
     }
 
-      await db_instance.collection("pages").find({}).toArray();
+      var d = await db_instance.collection("pages").find({}).toArray();
+      console.log(d);
 
   }
 

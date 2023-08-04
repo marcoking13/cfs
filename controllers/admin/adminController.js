@@ -18,6 +18,7 @@ var brow = {
 var data_rendered_to_page = {
 
   quotes:null,
+  total_potential_sales:0,
   modal:null,
   limited_quotes:null,
   path:null,
@@ -31,6 +32,7 @@ var data_rendered_to_page = {
   }
 
 }
+
 
 const EditSchedule = async (req,res,next) => {
   var data  = req.body;
@@ -114,16 +116,21 @@ const AddLaborer = async(req,res,next)=>{
 
 const AddBrowserView = (req,res,next) =>{
 
-    const browserName = Object.keys(req.body)[0];
-    Meta.AddBrowserView(browserName);
+    const ipAddress = req.ip;
+       
 
+    if(req.body.root !== "Schedule Page"){
+      Meta.AddPageView(ipAddress);
+      Meta.AddRootView(req.body.root);
+      Meta.AddBrowserView(req.body.browser);
+    }
 }
 
 const RootCount = (req,res,next) =>{
 
     const pageName = Object.keys(req.body)[0];
     Meta.AddRootView(pageName);
-    
+
 }
 
 const DeleteQuotes = (req,res,next) => {

@@ -2,7 +2,11 @@ const currentUrl = window.location.href;
 const tailend = getUrl(currentUrl);
 var t;
 
-function Init(){
+function getUrl(url){
+  return url.split('/').pop();
+}
+
+function GetRoot(){
 
   if(tailend.length == 0){
     t = "Home Page";
@@ -19,13 +23,5 @@ function Init(){
   if(tailend == "schedule"){
     t = "Schedule Quote"
   }
-
-  axios.post("/admin/roots",t);
-
+  return t;
 }
-
-function getUrl(url){
-  return url.split('/').pop();
-}
-
-Init();

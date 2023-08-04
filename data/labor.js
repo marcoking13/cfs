@@ -68,6 +68,7 @@ class Labor {
     var _id = new ObjectId(data.person_id);
     var person = await db_instance.collection("laborers").findOne({_id:_id});
     var new_person = {...person};
+    console.log(new_person.schedule[data.day_id],data.day_id)
 
     new_person.schedule[data.day_id].schedule[data.time_id].job = data.name_of_job;
     new_person.schedule[data.day_id].schedule[data.time_id].address = data.address;

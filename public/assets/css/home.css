@@ -7,7 +7,7 @@
   left:10% !important;
 }
 .about_us{
-  margin-top:25%;
+  margin-top:30%;
 }
 .about_image{
   top:0% !important;
@@ -22,11 +22,51 @@
   height:800px;
 }
 
+.value_row_text{
+  padding-right:15%;
+}
 .big_blue_box_about_2{
   top:85%;
   left:-5%;
   height:200px;
 }
+
+.value_row_overlay_box{
+  height:60vh;
+  max-width:60%;
+  float:left;
+  margin-top: 30%;
+  width:60%;
+  display: inline;
+  background:#1670A4;
+}
+.about-us-title{
+  margin-top:5%;
+}
+.contact_section{
+  margin-top:-2.5%;
+}
+.value_row_image{
+  height:75vh;
+  width:100%;
+  position: absolute;
+  top:5%;
+  left:-10%;
+}
+.text-about-us-box_4{
+  height:25vh
+}
+.value_row_overlay_box--big{
+  height:60vh;
+  width:40%;
+  margin-top: 30%;
+  max-width:40%;
+  float:left;
+  display: inline;
+
+  background:#2985BB;
+}
+
 
 .wave{
   height:300px;
