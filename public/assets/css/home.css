@@ -5,8 +5,73 @@
   top:65%;
   left:-5%;
 }
-.value_row{
+.about_us_row{
   position:relative;
+}
+.home_quote_container{
+  position: absolute;
+  z-index:99;
+  background:white;
+  padding:2%;
+}
+.quotesheet_container{
+  width:100%;
+}
+.quotesheet_title{
+  text-align: center;
+  font-family: "Akrobat";
+  font-size:2.5rem;
+  font-weight: bold;
+}
+.padding-bottom-small{
+  padding-bottom: 5%;
+}
+.padding-top-small{
+  padding-top:5%;
+}
+.quote_input_home{
+  font-family: "Akrobat";
+  border-radius:0px;
+  border:none;
+  border-bottom:1px solid black;
+  font-size:2rem;
+  outline:none;
+}
+.client_container{
+  background:white;
+  padding:5%;
+  padding-left:0%;
+  padding-top:2.5%;
+  width:100%;
+  padding-bottom:5%;
+}
+.quote_submit_button{
+  width:100%;
+  margin-top:10%;
+  margin-bottom:5%
+  color:white !important;
+  background:black;
+}
+.btn{
+  color:white !important;
+}
+.client_row{
+  margin-left: 5%;
+}
+.our_client_banner{
+  width:50%;
+  text-align: center;
+  font-size:4rem;
+}
+.margin-top-very-small{
+  margin-top: 2.5%;
+}
+.padding-small{
+  padding:5%;
+}
+.client_img{
+  width:100%;
+  margin-top:-5%;
 }
 .supportbox{
   left:10% !important;
@@ -14,7 +79,7 @@
 .gallery_home_container{
   height:100vh;
 }
-.values_row_dropdown{
+.about_us_dropdown{
   padding:1% 5%;
   padding-top:5%;
   width:90%;
@@ -23,7 +88,7 @@
   margin-top:1%;
 
 }
-.values_row_heading{
+.about_us_heading{
   font-family: "Akrobat";
   font-size:3.5rem;
   padding-left:2.5%;
@@ -56,8 +121,10 @@
   top:25%;
   left:5%;
 }
-.value_row_text{
+.about_us_banner{
+  width:95%;
   padding-right:15%;
+
 }
 .big_blue_box_about_2{
   top:85%;
@@ -65,7 +132,7 @@
   height:200px;
 }
 
-.value_row_overlay_box{
+.about_us_overlay_box{
   height:80vh;
   max-width:60%;
   float:left;
@@ -94,17 +161,15 @@
     height:32rem;
     width:100%
   }
-.value_row_image{
+.about_us_image{
   height:75vh;
   width:100%;
   position: absolute;
   top:5%;
   left:-10%;
 }
-.text-about-us-box_4{
-  height:25vh
-}
-.value_row_overlay_box--big{
+
+.about_us_overlay_box--big{
   height:80vh;
   width:40%;
   margin-top: 10%;
@@ -233,10 +298,6 @@
   margin-top: -2.5%;
 }
 
-.text-about-us-box_4{
-  position: relative;
-  z-index:99999;
-}
 .home_quote_container{
   top:15%;
   width:80%;
@@ -263,12 +324,12 @@ width:100%;
   background:white;
   position:relative;
 }
-.value_row_dropdown_text{
+.dropdown_text{
   font-family: "Akrobat";
   font-size:2rem;
 
 }
-.text_about_us_link{
+.about_us_link{
   padding-top:5%;
   font-family: "Akrobat";
   text-align: center;
@@ -276,7 +337,7 @@ width:100%;
   color:white;
 
 }
-.text_about_us_button{
+.about_us_button{
   padding:2%;
   width:90%;
   text-align: center;

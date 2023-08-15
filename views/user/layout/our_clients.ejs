@@ -1,11 +1,17 @@
-<div class="white-background padding-5 padding-left-0 padding-top-2_5 width-100 padding-bottom-5">
-   <p class="mobile_text_banner_out_clients text-banner width-50 text-center width-100 mobile-font-30 font-40 "style="margin-left:-7.5%" > Our Top Clients </p>
+<div class="client_container">
 
-    <div class="row">
+   <p class="our_client_banner text-banner"> Our Top Clients </p>
+
+    <div class="row client_row">
+
     <% for(var i = 0; i < clients.length; i++){ %>
-        <div class="col-2 mobile-col-12 landscape-col-4 margin-top-2_5" >
-          <img class="width-100 padding-5 margin-top-5-neg   "src = "<%= './assets/images/' + clients[i].logo %>"/>
+
+        <div class="col-2 mobile-col-12 landscape-col-4 margin-top-very-small" >
+          <img class="client_img   "src = "<%= './assets/images/' + clients[i].logo %>"/>
         </div>
+
     <%}%>
+
     </div>
+
   </div>

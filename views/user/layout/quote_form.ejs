@@ -1,41 +1,38 @@
-
-<div class="absolute mobile-width-80 z-99 white-background padding-2 mobile-padding-5 home_quote_container">
+<div class="home_quote_container">
 
   <div class="row">
 
       <div class="col-12">
 
-          <div class="quotesheet_container width-100" >
+          <div class="quotesheet_container" >
 
-              <p class="quotesheet_title text-center akrobat font-25 bold">Make Your Windows Shine Today!</p>
+              <p class="quotesheet_title ">Make Your Windows Shine Today!</p>
 
             <form action="/modal" method="POST">
 
-              <div class="row padding-bottom-5">
+              <div class="row padding-bottom-small">
 
-                  <div class="col-6 padding-top-5">
+                  <div class="col-6 padding-top-small">
 
                       <label>
                           Full Name
                       </label>
 
-                      <input class="form-control quote_input akrobat no-radius black-bottom-border font-20 no-border" name="firstName" placeholder="Enter first name" />
+                      <input class="form-control quote_input quote_input_home" name="firstName" placeholder="Enter first name" />
 
                       <label>
                           Address
                       </label>
 
-                      <input class="form-control quote_input akrobat no-radius black-bottom-border font-20 no-border" name="address" placeholder="Enter Address" />
+                      <input class="form-control quote_input quote_input_home" name="address" placeholder="Enter Address" />
                       <label>
                           Zip Code
                       </label>
-                      <input class="form-control quote_input akrobat no-radius black-bottom-border font-20 no-border" type="number"name="address" placeholder="Enter Zip Code" />
-
+                      <input class="form-control quote_input quote_input_home" type="number"name="address" placeholder="Enter Zip Code" />
 
                   </div>
 
-
-                  <div class="col-6 padding-top-5">
+                  <div class="col-6 padding-top-small">
                     <div class="row">
 
                       <div class="col-4">
@@ -43,7 +40,7 @@
                             Screen Count
                         </label>
 
-                        <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="screenCount" placeholder="Screen Count" />
+                        <input class="form-control quote_input quote_input_home "  type="number" name="screenCount" placeholder="Screen Count" />
 
                       </div>
 
@@ -53,7 +50,7 @@
                         < 4X4 Ft
                     </label>
 
-                    <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="smWindowCount" placeholder="Window Count" />
+                    <input class="form-control quote_input quote_input_home"  type="number" name="smWindowCount" placeholder="Window Count" />
 
                   </div>
 
@@ -63,7 +60,7 @@
                         4X4 to 8X8 Ft
                     </label>
 
-                    <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="mdWindowCount" placeholder="Window Count" />
+                    <input class="form-control quote_input quote_input_home"  type="number" name="mdWindowCount" placeholder="Window Count" />
 
                   </div>
 
@@ -73,18 +70,18 @@
                           > 8X8 Ft
                       </label>
 
-                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="lgWindowCount" placeholder="Window Count" />
+                      <input class="form-control quote_input quote_input_home"  type="number" name="lgWindowCount" placeholder="Window Count" />
 
                     </div>
 
-                  <div class="col-6 padding-top-5">
+                  <div class="col-6 padding-top-small">
                       <input type="hidden" name="key" value = <%= active_path %> placeholder="Enter first name" />
                   </div>
 
                   <div class="col-3"></div>
 
                 <div class="col-12 ">
-                  <button class="width-100 margin-top-10 margin-bottom-5 btn white black-background quote_submit_button"type="submit"> Receive Quote</button>
+                  <button class="quote_submit_button btn"type="submit"> Receive Quote</button>
                 </div>
 
                 <div class='col-3'></div>
@@ -92,10 +89,9 @@
               </form>
 
            </div>
-           </div>
 
-      </div>
+        </div>
+
+    </div>
 
   </div>
-
-</div>

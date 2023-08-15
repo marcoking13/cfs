@@ -1,26 +1,96 @@
 
-.we_clean_inner{
-  background:url('./../images/services.png');
-  background-size:cover
+.work_inner_container{
+  padding-top:5%;
+  padding-bottom:10%;
+  width:100%;
+
 }
-.description_owner{
-  font-size:2rem;
+.work_heading{
+  font-size:6rem;
+  color:white;
+  width:40%;
+}
+.margin-top-small{
+  margin-top: 5%;
+}
+.work_col{
+  padding:0%;
+}
+.work_container{
+  position: relative;
+
+}
+.work_image_banner--left{
+  left:0;
+}
+.work_image_banner--right{
+  right: 0;
+}
+.work_image_banner{
+  width:50%;
+  bottom:0;
+
+  position: absolute;
+
+}
+.work_image{
+  width:100%;
+}
+
+.work_image_container{
+  width:100%;
 }
 .p_row{
   left:-5% !important;
+
 }
-.owner_img{
+.client_row{
+  margin-top: 5%;
+}
+.our_client_banner{
+  width:50%;
+  text-align: center;
+  font-size:4rem;
+}
+.meet_owner_img{
   height:70vh;
   width:70%;
   margin-left: 0;
 }
-.owner_name{
+.client_img{
+  width:100%;
+  margin-top:-5%;
+}
+.meet_owner_name{
+  margin-top:5%;
+  font-family: "Akrobat";
+  color:white;
   font-size:4rem;
   width:70%;
   text-align: center;
   display: inline-block;
 }
-.owner_box_overlay{
+.client_container{
+  background:white;
+  padding:5%;
+  padding-left:0%;
+  padding-top:2.5%;
+  width:100%;
+  padding-bottom:5%;
+}
+.meet_owner_col--2{
+  text-align: left;
+  font-size:3rem;
+  color:white;
+  font-family: "Akrobat";
+}
+.meet_owner_banner{
+  width:50%;
+}
+.meet_owner_row{
+  margin-top:5%;
+}
+.meet_owner_overlay{
   background-image: linear-gradient(
     to right bottom,
     rgba(37, 98, 159, 1),
@@ -65,6 +135,10 @@
 }
 .our_clients_contact_wrapper{
   padding:0%;background:white;padding-left:0%;
+}
+.meet_owners_container{
+  padding: 5% 0%;
+  position: relative;;
 }
 @media screen and (max-width:1000px){
   .meet_owners_container{

@@ -21,80 +21,100 @@
     <p class="mobile-width-80 width-40 text-banner">Free Quote! </p>
 
     <div class="row"style="padding:2%">
+
       <div class="col-6"">
+
           <div class="width-100" style="padding:5%;background:white;margin-top:5%">
+
             <form action="/modal" method="POST">
 
-            <div class="row padding-bottom-5">
-                <div class="col-12">
-                    <label>
-                        First Name
-                    </label>
-                    <input class="form-control quote_input akrobat no-radius black-bottom-border font-20 no-border" name="firstName" placeholder="Enter first name" />
-                </div>
-                <div class="col-12">
-                    <label>
-                        Last Name
-                    </label>
-                    <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20" name="lastName" placeholder="Enter last name" />
-                </div>
-                <div class="col-12">
-                    <label>
-                        Screen Count
-                    </label>
-                    <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="screenCount" placeholder="Enter Screen Count" />
-                </div>
-                <div class="col-12">
-                    <label>
-                        Windows Less than 4X4 Ft
-                    </label>
-                    <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="smWindowCount" placeholder="Enter Window Count" />
-                </div>
-                <div class="col-12">
-                    <label>
-                        Windows Bigger than 4X4 and Less than 8X8 Ft
-                    </label>
-                    <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="mdWindowCount" placeholder="Enter Window Count" />
-                </div>
-                <div class="col-12">
-                    <label>
-                        Windows Bigger than 8X8 Ft
-                    </label>
-                    <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="lgWindowCount" placeholder="Enter Window Count" />
-                </div>
-                <div class="col-12">
-                    <input type="hidden" name="key" value = <%= active_path %> placeholder="Enter first name" />
-                </div>
-                <div class="col-3"></div>
+              <div class="row padding-bottom-5">
 
-                <div class="col-6 margin-top-5">
+                  <div class="col-12">
 
-                  <button class="width-100 quotebutton margin-top-5 margin-bottom-5 white btn black-background akrobat"type="submit"> Receive Quote</button>
-                </div>
+                      <label>
+                          First Name
+                      </label>
 
-                <div class='col-3'></div>
+                      <input class="form-control quote_input akrobat no-radius black-bottom-border font-20 no-border" name="firstName" placeholder="Enter first name" />
+                  </div>
+
+                  <div class="col-12">
+
+                      <label>
+                          Last Name
+                      </label>
+
+                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20" name="lastName" placeholder="Enter last name" />
+                  </div>
+
+                  <div class="col-12">
+
+                      <label>
+                          Screen Count
+                      </label>
+
+                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="screenCount" placeholder="Enter Screen Count" />
+
+                  </div>
+
+                  <div class="col-12">
+
+                      <label>
+                          Windows Less than 4X4 Ft
+                      </label>
+
+                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="smWindowCount" placeholder="Enter Window Count" />
+
+                  </div>
+
+                  <div class="col-12">
+
+                      <label>
+                          Windows Bigger than 4X4 and Less than 8X8 Ft
+                      </label>
+
+                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="mdWindowCount" placeholder="Enter Window Count" />
+
+                  </div>
+
+                  <div class="col-12">
+
+                      <label>
+                          Windows Bigger than 8X8 Ft
+                      </label>
+
+                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="lgWindowCount" placeholder="Enter Window Count" />
+
+                  </div>
+
+                  <div class="col-12">
+                      <input type="hidden" name="key" value = <%= active_path %> placeholder="Enter first name" />
+                  </div>
+
+                  <div class="col-3"></div>
+
+                  <div class="col-6 margin-top-5">
+                    <button class="width-100 quotebutton margin-top-5 margin-bottom-5 white btn black-background akrobat"type="submit"> Receive Quote</button>
+                  </div>
+
+                  <div class='col-3'></div>
 
                 </form>
           </div>
-      </div>
-      </div>
-        <div class="col-6">
-              <div class="image_container_before relative">
-                  <img class="width-100" src="./assets/images/before_1.png"/>
-                  <p class="text-banner absolute width-50 "style="top:0;left:0">Before </p>
-              </div>
-              <div class="image_container_after relative">
-                  <img class="width-100" src="./assets/images/after_1.png"/>
-                  <p class="text-banner absolute width-50 "style="bottom:0;right:0">After </p>
-              </div>
-          </div>
-      </div>
+
+    </div>
+
+  </div>
+
+   <div class="col-6">
+      <%- include("./layout/quote/before_and_after.ejs") %>
+    </div>
+
+    </div>
 
       <div class="margin-top-5-neg">
         <%- include("./layout/footer.ejs") %>
       </div>
-
-
-
 
 <%- include("./layout/end.ejs") %>

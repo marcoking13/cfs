@@ -1,41 +1,43 @@
-<div class="row value_row">
+<div class="row about_us_row">
 
-    <div class="col-5 values_container value_row_container mobile-col-12">
+    <div class="col-5 mobile-col-12">
 
         <div class="margin-bottom-small">
+
           <div class="row">
               <div class="col-12">
-                  <p class="width-95 text-banner-new values_row_text" > Our Values </p>
+                  <p class="text-banner-new about_us_banner" > Our Values </p>
               </div>
           </div>
+
         </div>
+
         <% if(values.length > 0){ %>
 
             <% for(var i = 0; i < values.length; i++){ %>
 
-                <div class="text-about-us-box values_row_dropdown dropdown-box light-navy-shadow values-background" _id = <%= i %>>
+                <div class=" about_us_dropdown light-navy-shadow values-background" _id = <%= i %>>
 
                   <div class="row">
 
                     <div class="col-10">
-                      <p class="about-us-text values_row_heading light-font"><%= values[i].title %></p>
+                      <p class=" about_us_heading light-font"><%= values[i].title %></p>
                     </div>
 
                     <div class="col-2">
-                        <img src ="./assets/images/dropdown_arrow.png " class="dropdown_arrow values_row_arrow"  _id = <%= i %>>
+                        <img src ="./assets/images/dropdown_arrow.png " class="dropdown_arrow "  _id = <%= i %>>
                     </div>
 
                   </div>
 
-                    <div class="value_row_dropdown_container dropdown_container ghost">
+                    <div class=" dropdown_container ghost">
 
-                        <div className="divder_dropdown value_row_divider"></div>
-                        <p class="dropdown_text value_row_dropdown_text">
+                        <div className="divder_dropdown dropdown_divider"></div>
+                        <p class="dropdown_text">
                           <%= values[i].description %>
                         </p>
 
                     </div>
-
 
                 </div>
 
@@ -43,20 +45,22 @@
 
         <% } %>
 
-        <div class="text_about_us_button light-navy-shadow background-00 ">
-            <p class="text_about_us_link ">Learn More About Us!</p>
+        <div class="about_us_button light-navy-shadow background-00 ">
+            <p class="about_us_link ">Learn More About Us!</p>
         </div>
 
     </div>
 
     <div class="col-1"></div>
 
-    <div class="col-6 value_row_image_container">
-        <div class="value_row_overlay_box">
-        </div>
-        <div class="value_row_overlay_box--big">
-        </div>
-        <img class="value_row_image" src = "./../assets/images/panels.jpg"/>
+    <div class="col-6">
+
+        <div class="about_us_overlay_box"></div>
+
+        <div class="about_us_overlay_box--big"></div>
+
+        <img class="about_us_image" src = "./../assets/images/panels.jpg"/>
+
     </div>
 
 </div>
