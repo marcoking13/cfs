@@ -1,20 +1,45 @@
 .quote_input:focus{
   outline:none !important;
 }
-
+.quotesheet_box{
+  padding:5% 5%;
+  background: white;
+  margin-bottom:5%;
+ width:90%;
+ margin-left:5%;
+ border:1px solid grey;
+ margin-top:20%;
+}
 /* .darkbluebackg {
   height:200px !important;
 } */
-
+.quotesheet_title{
+  text-align: center;
+  font-family: "Akrobat";
+  font-size:2.5rem;
+  font-weight: bold;
+}
 .before_background{
   top:-10%;
   left:0%;
+}
+.quote_banner{
+  width:40%;
+}
+.quotesheet_container{
+
 }
 .x_before_box{
 
   border-bottom:2px solid rgb(1, 72, 132);
 }
-
+.quote_input{
+  font-family: "Akrobat";
+  border-bottom:1px solid black;
+  font-size:2rem;
+  border-radius:0px;
+  outline:none;
+}
 .x_after_box{
   border-bottom:2px solid #002F57;
 }
@@ -25,7 +50,20 @@
 .quotebutton:hover{
   box-shadow:1px 1px 9px 2px black;
 }
-
+.margin-top-small{
+  margin-top:5%;
+}
+.padding-bottom-small{
+  padding-bottom:5%;
+}
+.quotebutton{
+  margin-top:5%;
+  
+  margin-bottom:5%;
+  color:white;
+  background:black;
+  font-family: "Akrobat";
+}
 @media screen and (max-width:1000px){
   .work_container{
     margin-top:0% !important;

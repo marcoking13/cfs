@@ -2,7 +2,12 @@
   height:900px;
   width:100%;
 }
-
+.row{
+  position: relative;
+}
+.showcase_container{
+  position: relative;
+}
 .banners{
     margin-top:5%;
     position: absolute;
@@ -12,14 +17,53 @@
 
 }
 
-
+.showcase_home_container{
+  width:100%;
+  position:relative;
+}
 .showcase_image_container{
   position:absolute;
   width:100%;
   top:0%;
 }
+.showcase_container{
+  height:100vh;
+}
+.showcase_background{
+  z-index:0;
+  width:50%;
+  margin-left:2.5%;
+  position: absolute;
+  top:-5%;
+}
+.cfs-heading{
+  font-size:3.5rem;
+  font-family: "Akrobat";
+  margin-top:2.5%;
+  margin-left:2.5%;
+  font-weight: bold;
+  color:white;
+}
+.intro-text-container{
+  width:80%;
+}
 
+.cfs-heading-background{
+  padding:1%;
+  margin-top:2.5%;
+  width:75%;
+}
+.cfs-heading-background--1{
+  width:50%;
+}
+.logo_container{
+  z-index:99;
+  position: relative;
+  width:50%;
+  padding-left:2.5%;
+  margin-left:2.5%;
 
+}
 .intro-text-container{
     position: absolute;
     z-index: 99;
@@ -29,7 +73,12 @@
 .showcase_client{
   height:300px;
 }
-
+.logo_col{
+  position: relative;
+  background:none;
+  z-index:99;
+   padding:0;
+}
 
 @media screen and (max-width:1000px) and (orientation:landscape){
 

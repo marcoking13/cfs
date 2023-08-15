@@ -1,12 +1,7 @@
-<div class="row value_row mobile-margin-top-10 relative">
+<div class="row value_row">
 
     <div class="col-5 values_container value_row_container mobile-col-12">
-        <!-- <div class="mobile-text-center">
-            <p class = "text-banner-new big-text  value_row_text"> Our Values </p>
-        </div>
-      <p class="text-banner width-90 mobile-width-100  mobile-margin-left-0 mobile-text-center padding-left-5 stylized-black text-left margin-left-5 mobile-font-30">Our Values</p>
 
-        <br /> -->
         <div class="margin-bottom-small">
           <div class="row">
               <div class="col-12">
@@ -18,24 +13,24 @@
 
             <% for(var i = 0; i < values.length; i++){ %>
 
-                <div class="text-about-us-box values_row_drodown dropdown-box padding-1 padding-left-5 padding-top-5 width-90 margin-left-5 padding-left-5 light-navy-shadow margin-top-1 values-background" _id = <%= i %>>
+                <div class="text-about-us-box values_row_dropdown dropdown-box light-navy-shadow values-background" _id = <%= i %>>
 
                   <div class="row">
 
                     <div class="col-10">
-                      <p class="about-us-text values_row_heading akrobat text-left akrobat font-35 padding-left-2_5 light-font white mobile-font-30"><%= values[i].title %></p>
+                      <p class="about-us-text values_row_heading light-font"><%= values[i].title %></p>
                     </div>
 
                     <div class="col-2">
-                        <img src ="./assets/images/dropdown_arrow.png " class="dropdown_arrow half-middle values_row_arrow"  _id = <%= i %>>
+                        <img src ="./assets/images/dropdown_arrow.png " class="dropdown_arrow values_row_arrow"  _id = <%= i %>>
                     </div>
 
                   </div>
 
-                    <div class="value_row_dropdown_container dropdown_container margin-top-2_5 padding-bottom-5 ghost">
+                    <div class="value_row_dropdown_container dropdown_container ghost">
 
                         <div className="divder_dropdown value_row_divider"></div>
-                        <p class="dropdown_text akrobat font-20 normal value_row_dropdown_text">
+                        <p class="dropdown_text value_row_dropdown_text">
                           <%= values[i].description %>
                         </p>
 
@@ -48,8 +43,8 @@
 
         <% } %>
 
-        <div class="text-about-us-box_4 margin-top-10 padding-1 padding-top-5 width-90 margin-left-5 padding-left-5 light-navy-shadow margin-top-1 background-00 relative padding-bottom-10 max-z relative">
-            <p class="about-us-text_about_link  padding-top-5 akrobat text-center akrobat font-35 light-font white white mobile-font-30 ">Learn More About Us!</p>
+        <div class="text_about_us_button light-navy-shadow background-00 ">
+            <p class="text_about_us_link ">Learn More About Us!</p>
         </div>
 
     </div>

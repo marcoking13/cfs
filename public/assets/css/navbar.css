@@ -6,15 +6,19 @@
 .navbar_custom{
   background:  #0c0300;
 }
-.navbar_home{
 
+.navbar_home{
   width:100%;
+}
+.navbar_container{
+  padding:1%;
 }
 .link_nav{
   color:white;
   font-family: "Roboto";
   font-size: 18px;
 }
+
 .link_nav:hover{
   font-weight: bold;
 }
