@@ -7,7 +7,8 @@ html{
   padding-bottom:5%;
   padding-top:0%;
 }
-.about_value_row{
+
+.value_row{
   background-image: linear-gradient(
       to right bottom,
       rgba(37, 98, 159, .7),
@@ -39,6 +40,7 @@ html{
       transition: all .5;
       display: inline-block;
 }
+
 .what_we_do_description{
   font-size:2rem;
 }
@@ -64,6 +66,7 @@ html{
   margin-top:10%;
   text-align:  center;
 }
+
 .normal_link{
   display: inline;
 }
@@ -102,7 +105,7 @@ html{
    font-weight:bold
 
 }
-.link_about{
+.what_we_do_link{
   border-bottom:orangered 1px solid;
    padding-top:5%;
    font-family:"Akrobat";
@@ -114,63 +117,15 @@ html{
 .what_we_do_description{
   color:white ;text-align:left; padding-top:5%; font-family: "Akrobat"
 }
-@media screen and (max-width:1000px){
-.what_we_do_title{
-  font-size:3rem;
-}
-.what_we_do_description{
-  font-size: 1.8rem;
-}
-  .what_we_do_image{
-    width:140% !important;
-    height:700px !important;
-  }
-
-  .about_container{
-    margin-top:130% !important;
-  }
-
-  .what_we_do_image{
-    height:1000px !important;
-    width:1000px;
-  }
-.value_row{
-  padding-top:7.5% !important;
-}
-
-.value_col{
-  margin-left:5% !important;
-}
-  .intro-text-container{
-    top:80%;
-  }
-
-
-.what_we_do_inner{
-  position: absolute;
-  z-index:3;
-  top:0%;
-}
-.description_owner{
-  margin-top:-5% ;
-}
-  .text-container{
-    height:500px !important;
-  }
-
-  .link_about{
-    font-size:14px !important;
-    letter-spacing:3px;
-  }
-
-}
-
 .about_title{
   color:white;
   text-align:center;
   font-size:4rem;
   padding-top:5%;
   font-family:"Akrobat";
+}
+.value_box{
+  height:100%;
 }
 
 
@@ -188,9 +143,103 @@ html{
 .value_inner_row{
   margin-top:5%
 }
-@media screen and (orientation:landscape) and (max-width:1000px){
+
+@media screen and (max-width:680px){
+
+  .what_we_do_title{
+    font-size:3rem;
+    text-align: center;
+  }
+
+  .what_we_do_description{
+    font-size: 2rem;
+    text-align: center;
+    width:100%;
+  }
+
+  .what_we_do_image{
+    width:140% !important;
+    height:70rem !important;
+  }
+
   .about_container{
-        margin-top: 60% !important;
+    margin-top:140% !important;
+  }
+
+  .about_description{
+    text-align: justify;
+  }
+
+  .what_we_do_col{
+    padding:10%;
+  }
+
+  .what_we_do_image{
+    height:100rem !important;
+    width:100rem;
+  }
+
+  .value_row{
+    padding:5%;
+    height:105vh;
+    max-height:105vh;
+    padding-top: 0% !important;
+  }
+  .value_col{
+    margin-top:0%;
+  }
+
+  .value_col{
+    width:50%;
+    margin-top:10%;
+    max-width:50%;
+    flex:50%;
+    position: relative;
+    bottom:2rem;
+  }
+
+  .intro-text-container{
+    top:80%;
+  }
+
+  .what_we_do_inner{
+    position: absolute;
+    z-index:3;
+    top:0%;
+  }
+
+  .description_owner{
+    margin-top:-5% ;
+  }
+
+  .text-container{
+    height:50rem !important;
+  }
+
+  .what_we_do_link{
+    font-size:2rem !important;
+    letter-spacing:3px;
+    text-align: center;
+    margin-left:25%;
+    width:50% !important;
+
+  }
+
+  .about_link_row{
+    margin-top:15%;
+  }
+
+  .what_we_do_container{
+    margin-top:0%;
+    height:110vh !important;
+  }
+
+}
+
+
+/*@media screen and (orientation:landscape) and (max-width:1000px){
+  .about_container{
+     margin-top: 75% !important;
   }
 
   .value_inner_row{

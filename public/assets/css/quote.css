@@ -10,6 +10,31 @@
  border:1px solid grey;
  margin-top:20%;
 }
+.schedule_showcase_container{
+  width:100%;
+  position: relative;
+}
+.schedule_banner{
+  width:40%;
+}
+.schedule_row{
+  padding:2%;
+}
+.quote_input{
+  border:none;
+  border-bottom;:1px solid black;
+  font-size:2.5rem;
+}
+.quotebutton{
+  font-size:2.5rem;
+  color:white;
+}
+.schedule_quotesheet_row{
+  padding-bottom:5%;
+}
+.schedule_quotesheet{
+  padding:5%;background:white;margin-top:5%
+}
 /* .darkbluebackg {
   height:200px !important;
 } */
@@ -58,7 +83,7 @@
 }
 .quotebutton{
   margin-top:5%;
-  
+
   margin-bottom:5%;
   color:white;
   background:black;

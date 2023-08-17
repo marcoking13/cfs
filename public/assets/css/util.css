@@ -18,6 +18,20 @@ html{
   border:none !important;
   -webkit-appearance: none;
 }
+.navbar_container{
+  padding:1%;
+}
+.margin-top-small-neg{
+  margin-top:-5%;
+}
+.about_footer_container{
+  z-index:99;
+  position: relative;
+}
+.showcase_container{
+  width:100%;
+  position: relative;
+}
 .padding-top-20{
   padding-top: 20%;
 }

@@ -4,13 +4,13 @@
 
     <%- include("./layout/modal.ejs") %>
 
-    <div class="container-fluid " >
+    <div class="container-fluid">
 
       <div class="row">
-          <div class="col-12 padding-1 background-1a navbar_container" ></div>
+          <div class="col-12 background-1a navbar_container" ></div>
       </div>
 
-      <div class="showcase-container relative width-100">
+      <div class="showcase_container">
         <%- include("./layout/new_showcase.ejs") %>
       </div>
 
@@ -18,17 +18,17 @@
 
     <br />
 
-    <p class="mobile-width-80 width-40 text-banner">Free Quote! </p>
+    <p class=" text-banner schedule_banner">Free Quote! </p>
 
-    <div class="row"style="padding:2%">
+    <div class="row schedule_row">
 
       <div class="col-6"">
 
-          <div class="width-100" style="padding:5%;background:white;margin-top:5%">
+          <div class="width-100 schedule_quotesheet" >
 
             <form action="/modal" method="POST">
 
-              <div class="row padding-bottom-5">
+              <div class="row schedule_quotesheet_row ">
 
                   <div class="col-12">
 
@@ -36,7 +36,7 @@
                           First Name
                       </label>
 
-                      <input class="form-control quote_input akrobat no-radius black-bottom-border font-20 no-border" name="firstName" placeholder="Enter first name" />
+                      <input class="form-control quote_input" name="firstName" placeholder="Enter first name" />
                   </div>
 
                   <div class="col-12">
@@ -45,7 +45,7 @@
                           Last Name
                       </label>
 
-                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20" name="lastName" placeholder="Enter last name" />
+                      <input class="form-control quote_input" name="lastName" placeholder="Enter last name" />
                   </div>
 
                   <div class="col-12">
@@ -54,7 +54,7 @@
                           Screen Count
                       </label>
 
-                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="screenCount" placeholder="Enter Screen Count" />
+                      <input class="form-control quote_input "  type="number" name="screenCount" placeholder="Enter Screen Count" />
 
                   </div>
 
@@ -64,7 +64,7 @@
                           Windows Less than 4X4 Ft
                       </label>
 
-                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="smWindowCount" placeholder="Enter Window Count" />
+                      <input class="form-control quote_input "  type="number" name="smWindowCount" placeholder="Enter Window Count" />
 
                   </div>
 
@@ -74,7 +74,7 @@
                           Windows Bigger than 4X4 and Less than 8X8 Ft
                       </label>
 
-                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="mdWindowCount" placeholder="Enter Window Count" />
+                      <input class="form-control quote_input"  type="number" name="mdWindowCount" placeholder="Enter Window Count" />
 
                   </div>
 
@@ -84,7 +84,7 @@
                           Windows Bigger than 8X8 Ft
                       </label>
 
-                      <input class="form-control quote_input no-border black-bottom-border no-radius akrobat font-20"  type="number" name="lgWindowCount" placeholder="Enter Window Count" />
+                      <input class="form-control quote_input "  type="number" name="lgWindowCount" placeholder="Enter Window Count" />
 
                   </div>
 
@@ -94,8 +94,8 @@
 
                   <div class="col-3"></div>
 
-                  <div class="col-6 margin-top-5">
-                    <button class="width-100 quotebutton margin-top-5 margin-bottom-5 white btn black-background akrobat"type="submit"> Receive Quote</button>
+                  <div class="col-6 margin-top-small">
+                    <button class="width-100 quotebutton"type="submit"> Receive Quote</button>
                   </div>
 
                   <div class='col-3'></div>
@@ -113,7 +113,7 @@
 
     </div>
 
-      <div class="margin-top-5-neg">
+      <div class="margin-top-small-neg">
         <%- include("./layout/footer.ejs") %>
       </div>
 

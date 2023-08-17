@@ -14,6 +14,7 @@
   background:white;
   padding:2%;
 }
+
 .quotesheet_container{
   width:100%;
 }
@@ -299,7 +300,7 @@
 }
 
 .home_quote_container{
-  top:15%;
+  top:85%;
   width:80%;
   left:5%;
   box-shadow: 0rem 2rem 5rem rgba(0,0,0,.5);
@@ -385,9 +386,70 @@ width:100%;
   position:relative;top:-50vh
 }
 
+@media screen and (max-width:680px){
+  .home_quote_container{
+    top:125%;
+  }
+  .form_col--inner{
+    width:100%;
+    max-width:100%;
+    flex:100%;
+  }
+  .about_us_row{
+    margin-top:155%;
+  }
+  .about_us_banner{
+    width:100%;
+  }
+  .about_us_heading{
+    font-size: 3rem;
+  }
+  .about_us_button{
+    margin-top:5%;
+  }
+  .desktop_only{
+    visibility: hidden;
+    height:0px;
+    width:0px;
+  }
+  .wave{
+    width:105%;
+  }
+  .our_work_section{
+    width:100%;
+    right:0px;
+  }
+  .our_client_banner{
+    font-size:2.5rem;
+    width:80%;
+    text-align: center;
+  }
+  .contact_section_title {
+    width:90%;
+  }
+  .contact_section{
+    height:15rem;
+  }
+  .contact_info_section--number{
+    font-size:2.5rem !important;
+    width:90%;
+  }
+  .contact_info_section--email{
+    font-size:2.5rem !important;
+    width:95%;
+  }
+  .gallery_img{
+    height:25vh !important;
+    width:100%;
+  }
+  .gallery_img--big{
+    height:50vh !important;
+    width:100%;
+  }
 
+}
 
-
+/*
 
 @media screen and (max-width:1000px){
 .contact_us_con{
@@ -531,4 +593,4 @@ width:100%;
 .text_about_us_link{
   font-size:2rem;
 }
-}
+} */
