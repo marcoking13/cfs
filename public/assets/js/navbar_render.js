@@ -5,12 +5,15 @@ var nav_button = document.getElementById("button_navbar");
 
 var desktop_nav = `
 
-<div class="row navbar_home">
+<div class="row navbar_custom">
 
-  <div class="col-4"></div>
+  <div class="col-3">
+    <p class="link_nav"style="margin-left:10%;position:relative;bottom:.5rem"> Custom Facility Service</p>
+  </div>
+  <div class="col-1"></div>
 
   <div class="col-2">
-    <a href="/"><p class="link_nav">Home</p></a>
+    <a href="/"><p class="link_nav margin-left-5">Home</p></a>
   </div>
 
   <div class="col-2">
@@ -25,15 +28,16 @@ var desktop_nav = `
     <a href='/schedule'>  <p class="link_nav">Schedule Quote</p> </a>
   </div>
 
+
 </div>
 
 `;
 
 var mobile_nav = `
 
-<div class="pos-f-t background-1a">
+<div class="pos-f-t navbar_custom">
 
-  <nav class="navbar navbar-dark background-1a">
+  <nav class="navbar navbar_custom">
 
     <button id="button_navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

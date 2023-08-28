@@ -4,7 +4,7 @@
 }
 
 .navbar_custom{
-  background:  #0c0300;
+  background:  #0069a4 !important ;
 }
 
 .navbar_home{
@@ -12,6 +12,9 @@
 }
 .navbar_container{
   padding:1%;
+  z-index: 99229;
+  position: relative;
+  background:  #0069a4 !important ;
 }
 .link_nav{
   color:white;

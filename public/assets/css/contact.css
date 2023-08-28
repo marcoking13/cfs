@@ -8,11 +8,16 @@
 .work_heading{
   font-size:6rem;
   color:white;
-  width:40%;
+  width:100%;
+  text-align: center;
+}
+.work_col{
+  height:50vh;
 }
 .margin-top-small{
   margin-top: 5%;
 }
+
 .work_col{
   padding:0%;
 }
@@ -20,12 +25,72 @@
   position: relative;
 
 }
+.work_image{
+  background-size: cover;
+  height:100%;
+  width:100%;
+
+
+}
+.work_image_container{
+  height:100%;
+}
+.work_image--5{
+  position:relative;
+}
+.work_image--1{
+  background-image:url("./../images/what_we_do_1.png");
+}
+.work_image--2{
+  background-image:url("./../images/what_we_do_2.png");
+}
+.work_image--3{
+  background-image:url("./../images/what_we_do_3.png");
+}
+.work_image--4{
+  background-image:url("./../images/what_we_do_4.png");
+}
+.work_col{
+  overflow: hidden;
+}
+.work_overlay{
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  z-index:99;
+  left:0;
+  background:black;
+  opacity:.4;
+}
 .margin-top-small-neg{
   margin-top:-5%;
 }
 .our_clients_contact_wrapper{
   position: relative;
 }
+.work_image_banner{
+  text-align: center;
+  font-family: "Merienda One";
+  color:white;
+  width:100%;
+  left:0%;
+  top:35%;
+  font-size:4rem;
+  z-index:9999;
+
+
+}
+.work_image_container:hover{
+  transform:scale(1.1);
+
+  z-index:-4;
+}
+.work_image_container:hover .work_image{
+  filter: blur(5px);
+  transition: all .4s;
+}
+
 .page{
 padding-bottom:75%
 }
@@ -40,7 +105,7 @@ padding-bottom:75%
   right: 0;
 }
 .work_image_banner{
-  width:50%;
+  width:100%;
   bottom:0;
 
   position: absolute;
@@ -52,6 +117,7 @@ padding-bottom:75%
 
 .work_image_container{
   width:100%;
+  transition: all .5s;
 }
 .p_row{
   left:-5% !important;

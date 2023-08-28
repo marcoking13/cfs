@@ -1,5 +1,5 @@
 .showcase_image {
-  height:900px;
+  height:100vh;
   width:100%;
 }
 .row{
@@ -9,12 +9,47 @@
   position: relative;
 }
 .banners{
-    margin-top:5%;
+    margin-top:10%;
     position: absolute;
     width:100%;
     top:20%;
     z-index:1;
 
+}
+
+.showcase_banner--1{
+  width:80%;
+  height:15vh;
+  background:linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, .5)) !important;
+
+}
+
+.showcase_banner--2{
+  width:30% !important;
+  height:10vh;
+  position: relative;
+  bottom:5rem;
+
+}
+.showcase_number{
+  position: absolute;
+  right:0%;
+  font-size:2rem;
+  top:-2%;
+  font-family: "Montserrat";
+  font-weight:700;
+  z-index:999999999999;
+  padding:1%;
+  box-shadow:0rem 2rem 4rem black;
+  text-align: right;
+  color:white;
+  background:#00103d;
+  transition: all .5s;
+
+}
+.logo{
+  width:80%;
+  margin-left:12.5%;
 }
 
 .showcase_home_container{
@@ -26,8 +61,13 @@
   width:100%;
   top:0%;
 }
+.showcase_text_text_container{
+  margin-left: 5%;
+}
 .showcase_container{
   height:100vh;
+  width:100%;
+  background-image:linear-gradient(to right, rgba(3, 77, 118, 1),rgba(3, 77, 118, 1),rgba(3, 77, 118, .3)),url("./../images/contact_showcase.png");
 }
 .showcase_background{
   z-index:0;
@@ -36,32 +76,59 @@
   position: absolute;
   top:-5%;
 }
-.cfs-heading{
-  font-size:3.5rem;
-  font-family: "Akrobat";
-  margin-top:2.5%;
-  margin-left:2.5%;
-  font-weight: bold;
-  color:white;
-}
-.intro-text-container{
-  width:80%;
+.showcase_text_container{
+  width:100%;
 }
 
-.cfs-heading-background{
-  padding:1%;
-  margin-top:2.5%;
-  width:75%;
+.cfs-heading{
+  display: inline;
+  padding:2%;
+  font-size:7rem;
+  background:#00103d;
 }
+
+.intro-text-container{
+  width:80%;
+  margin-top:0%;
+}
+span{
+  font-family: "Montserrat",sans-serif;
+
+}
+.cfs-heading-container{
+  padding:1%;
+  margin-top:5%;
+  font-family: "Montserrat",sans-serif;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: .01rem;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+
+}
+
 .cfs-heading-background--1{
   width:50%;
 }
+
 .logo_container{
   z-index:99;
   position: relative;
   width:50%;
+  background-image:linear-gradient(to bottom, rgba(56, 182, 255, 1),rgba(0, 105, 164, 1));
+
+  margin-left:2.5%;
+
+}
+.showcase_background{
+  height:100vh;
+  width:50%;
   padding-left:2.5%;
   margin-left:2.5%;
+  background:#0069a4 !important;
 
 }
 .intro-text-container{
@@ -75,8 +142,7 @@
 }
 .logo_col{
   position: relative;
-  background:none;
-  z-index:99;
+  z-index:0;
    padding:0;
 }
 
