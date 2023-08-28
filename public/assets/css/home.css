@@ -8,6 +8,7 @@
 .about_us_row{
   position:relative;
   z-index: 99220009;
+  margin-top:10%;
 }
 .home_quote_container{
   position: absolute;
@@ -98,7 +99,7 @@
 
 }
 .about_us_container{
-  margin-top:30%;
+  margin-top:35%;
 }
 .footer_home_container{
   top:-50vh;
@@ -420,14 +421,17 @@ padding-left: 5% !important;
   .home_quote_container{
     top:125%;
   }
+
   .form_col--inner{
     width:100%;
     max-width:100%;
     flex:100%;
   }
-  .about_us_row{
-    margin-top:155%;
-  }
+
+.contact_section{
+  height:45vh;
+}
+
   .about_us_banner{
     width:100%;
   }
@@ -448,6 +452,10 @@ padding-left: 5% !important;
   .our_work_section{
     width:100%;
     right:0px;
+        padding-bottom: 30%;
+  }
+  .contact_section{
+    margin-top:20%;
   }
   .our_client_banner{
     font-size:2.5rem;
@@ -457,17 +465,15 @@ padding-left: 5% !important;
   .contact_section_title {
     width:90%;
   }
-  .contact_section{
-    height:15rem;
-  }
-  .contact_info_section--number{
-    font-size:2.5rem !important;
-    width:90%;
-  }
-  .contact_info_section--email{
-    font-size:2.5rem !important;
-    width:95%;
-  }
+
+  .contact_info_section--number {
+    font-size: 5rem !important;
+    width: 70% !important;
+}
+.contact_info_section--email {
+  font-size: 3rem !important;
+  width: 90% !important;
+}
   .gallery_img{
     height:25vh !important;
     width:100%;
@@ -475,6 +481,12 @@ padding-left: 5% !important;
   .gallery_img--big{
     height:50vh !important;
     width:100%;
+  }
+  .our_clients_col--left{
+    left:-20%;
+  }
+  .new_our_clients_container{
+    margin-top:0%;
   }
 
 }

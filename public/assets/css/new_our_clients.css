@@ -1,6 +1,6 @@
 .new_our_clients_container{
-  padding:0% 0;margin-top:5%;background:#0069a4;
-  padding-bottom:20%;
+  padding:0% 0;margin-top:2.5%;background:#0069a4;
+  padding-bottom:15%;
   padding-top:5%;
 }
 .new_our_clients_row{
@@ -28,7 +28,7 @@
   transition: all 1s;
 }
 .our_clients_col--main_{
-  z-index:999 !important;transform:scale(1) translateX(45%) !important;
+  z-index:999 !important;transform:scale(1.1) translateX(45%) !important;
   transition: all 1s;
 }
 .our_clients_col--right_{
@@ -130,4 +130,81 @@ width: 100%;
 .our_clients_overlay--left{
   left:0;
   background-image:linear-gradient(to right, rgba(3, 77, 118, 1),rgba(3, 77, 118, .5), rgba(3, 77, 118, 0), rgba(3, 77, 118, 0),rgba(3, 77, 118, 0));
+}
+
+@media screen and (max-width:680px){
+   .our_clients_col {
+      width:70% !important;
+    }
+    .main_box_paragraph{
+      font-size: 1.3rem;
+      font-family: 'Montserrat';
+      margin-top: 5%;
+      font-weight: 500;
+      text-align: center;
+      width: 100%;
+    }
+    .box_col{
+      width:100%;
+      flex:100%;
+      max-width:100%;
+      padding:0%;
+    }
+    .box_col--bottom{
+      margin-top:-55%;
+      background:white;
+    }
+    .our_clients_col--main{
+      transform: scale(1.05) translateX(20%);
+
+    }
+    .our_clients_overlay{
+          height: 55vh;
+          background-image: linear-gradient(to bottom, rgba(3, 77, 118, 1), rgba(3, 77, 118, .5),rgba(3, 77, 118, 0));
+    }
+    .our_client_buttons{
+      position: absolute;
+      top: 165%;
+      width: 100%;
+    }
+    .our_client_button{
+      height: 1.5rem;
+      width: 15%;
+      float: left;
+      margin-left: 10%;
+    }
+    .our_clients_col--right{
+      transform: scale(1) translateX(125%)
+    }
+    .new_our_clients_row{
+      position: relative;
+      height: 45vh;
+      margin-top: 15%;
+    }
+
+    .main_box_heading{
+      text-align: center;
+      margin-top: 5%;
+      font-size: 2.5rem;
+    }
+    .button_col_our_clients{
+      width:100%;
+      position: relative;
+      right:5rem;
+    }
+    .blc{
+      width:0%;flex:0%;max-width:0%:
+    }
+    .contact_section_bluebox {
+    z-index: -1;
+    width: 30%;
+    top: -25%;
+    height: 150%;
+  }
+  .contact_section_title {
+    font-size: 7rem !important;
+    width: 85% !important;
+    text-align: left !important;
+    padding-left: 5% !important;
+  }
 }

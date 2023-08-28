@@ -4,11 +4,14 @@
   padding-bottom:10%;
   width:100%;
 
+
 }
 .work_heading{
   font-size:6rem;
+  font-weight: 600;
+  font-family: "Montserrat" !important;
   color:white;
-  width:100%;
+  width:40%;
   text-align: center;
 }
 .work_col{
@@ -17,7 +20,97 @@
 .margin-top-small{
   margin-top: 5%;
 }
+.banner_side{
+  font-size: 2.5rem;
+  color:white;
+  padding-left: 0%;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background:navy;
+  width:100%;
+  padding-left: 20%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all .5s;
 
+}
+.image_wrapper_before_and_after{
+  padding:5%;
+  margin-top: 10%;
+}
+.image_side{
+  width:100%;
+  height:60vh;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all .5s;
+
+}
+.image_el{
+  height:100%;
+}
+.image_container_before_and_after_inner{
+  position: relative;
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition:  all .5s;
+}
+
+.banner_flip_inner{
+  position: relative;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition:  all .5s;
+  transform: rotateY(0deg);
+
+}
+
+.banner_side--front{
+  background:#00103d;
+}
+.work_col{
+  padding:0;
+}
+
+.before_and_after_box_background{
+  width:70%;
+  background:#025889;
+  position: absolute;
+  height:85vh;
+  z-index:0;
+  left:15%;
+  top:15%;
+}
+
+.image_container_before_and_after_inner--flipped{
+  transform: rotateY(180deg);
+}
+.image_side--after{
+  transform: rotateY(180deg);
+}
+.banner_side--back{
+   transform: rotateY(180deg);
+   background:#38B6FF
+}
+
+.banner_flip_inner--flipped {
+  transform: rotateY(180deg) !important;
+}
+
+.banner_side p{
+  color: white;
+  font-size: 3.5rem;
+  text-align: left;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
 .work_col{
   padding:0%;
 }
@@ -67,6 +160,10 @@
   margin-top:-5%;
 }
 .our_clients_contact_wrapper{
+  position: relative;
+}
+.image_wrapper_before_and_after{
+  top: 5rem;
   position: relative;
 }
 .work_image_banner{
@@ -177,6 +274,7 @@ padding-bottom:75%
   position: absolute;
   z-index:-1;
   height:105%;
+
   left:-20%;
   top:-5%;
   width:200%;
@@ -216,8 +314,12 @@ padding-bottom:75%
   padding:0%;background:white;padding-left:0%;
 }
 .meet_owners_container{
-  padding: 5% 0%;
+  padding: 1% 0%;
   position: relative;;
+}
+.meet_owners_container p{
+  color:white !important;
+
 }
 /* @media screen and (max-width:1000px){
   .meet_owners_container{

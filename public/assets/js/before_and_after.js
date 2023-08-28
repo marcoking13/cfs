@@ -1,0 +1,37 @@
+var is_flipped = false;
+var images = document.getElementsByClassName("image_container_before_and_after_inner");
+var banner = document.querySelector(".banner_flip_inner");
+
+setInterval(()=>{
+
+
+
+        for(var i = 0; i < images.length; i++){
+
+          if(!is_flipped){
+
+            images[i].classList.add("image_container_before_and_after_inner--flipped")
+          }else{
+            images[i].classList.remove("image_container_before_and_after_inner--flipped")
+          }
+
+        }
+
+        if(!is_flipped){
+
+          banner.classList.add("banner_flip_inner--flipped")
+        }else{
+
+          banner.classList.remove("banner_flip_inner--flipped")
+        }
+
+        if(!is_flipped){
+          is_flipped = true;
+        }else{
+         is_flipped = false;
+        }
+
+
+
+
+},4000)

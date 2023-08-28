@@ -6,24 +6,31 @@ module.exports = [
     heading_1:"Make Your Windows",
     heading_2:"Look Spotless Today!",
     showcase_img:"./assets/images/k.png",
+    className:"showcase_container--home",
     css_file:`${css_url}home.css`,
   },
   {
     heading_1:"About",
     heading_2:"Custom Facility Services",
     css_file:`${css_url}about.css`,
+    className:"showcase_container--about",
+
     showcase_img:"./assets/images/showcase_1.png"
   },
   {
     heading_1:"Contact Us Today!",
     heading_2:"480-959-5555",
     css_file:`${css_url}contact_us.css`,
+    className:"showcase_container--contact",
+
     showcase_img:"./assets/images/contact_us_b.png",
   },
   {
     css_file:`${css_url}quote.css`,
     heading_1:"In a Hurry?",
-    heading_2:"Recieve an Online Quote Below!",
+    className:"showcase_container--schedule",
+
+    heading_2:"Get a Quick Quote Below!",
     showcase_img:"./assets/images/showcase_3.png",
   }
 

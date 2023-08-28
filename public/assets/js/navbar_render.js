@@ -25,7 +25,7 @@ var desktop_nav = `
   </div>
 
   <div class="col-2">
-    <a href='/schedule'>  <p class="link_nav">Schedule Quote</p> </a>
+    <a href='/#hq'>  <p class="link_nav">Schedule Quote</p> </a>
   </div>
 
 
