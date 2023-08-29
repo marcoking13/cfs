@@ -159,7 +159,7 @@ width: 100%;
 
     }
     .our_clients_col--main_{
-      transform: scale(1.05) translateX(20%);
+      transform: scale(1.05) translateX(20%)  !important;;
       transition: transform .4s !important;
     }
     .our_clients_overlay{
@@ -183,13 +183,13 @@ width: 100%;
 
     }
     .our_clients_col--right_{
-      transform: scale(1) translateX(125%);
+      transform: scale(1) translateX(125%)  !important;;
       transition: transform .4s !important;
 
 
     }
     .our_clients_col--left_{
-      transform: scale(1) translateX(-35%);
+      transform: scale(1) translateX(-35%) !important;
       transition: transform .4s !important;
 
 
