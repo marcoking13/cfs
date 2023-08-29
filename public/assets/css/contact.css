@@ -384,7 +384,8 @@ width: 100%;
   .banner_flip_inner {
     width: 90%;
     margin-left: 5%;
-    margin-top:5%;
+    text-align: center;
+    margin-top:15%;
 
   }
   .before_and_after_box_background {
