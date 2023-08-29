@@ -354,6 +354,7 @@ padding-bottom:75%
   .meet_owners_container{
       margin-top:10% !important;
       position: relative;
+      padding-bottom:20%;
       z-index:99999999999999999999;
 
   }
@@ -370,7 +371,7 @@ background-image: linear-gradient( to right bottom, rgba(56, 182, 255, 1),rgba(3
 padding-top: 5%;
 z-index:-99;
 position: relative;
-padding-bottom: 10%;
+padding-bottom: 0% !important;
 width: 100%;
   }
   .meet_owner_description{
@@ -379,6 +380,53 @@ width: 100%;
     font-family: "Akrobat";
     color:white;
   }
+  .banner_flip_inner {
+    width: 50%;
+  }
+  .before_and_after_box_background {
+      width: 40% !important;
+      background: #025889;
+      position: absolute;
+      height: 105vh;
+      z-index: -1 !important;
+      left:80%;
+      top: -5%;
+  }
+.before_and_after_col--2{
+
+    margin-top: 20%;
+    margin-left: 10%;
+
+}
+.work_inner_container{
+  position: relative;
+  z-index: 99;
+}
+.before_and_after_col--3{
+
+
+  margin-top: 10%;
+  margin-left: 20%;
+
+}
+
+.new_before_and_after_container{
+  margin-top:0% !important;
+}
+.image_container_before_and_after--3{
+  margin-top:50%;
+}
+.image_container_before_and_after--2{
+  margin-top:20%;
+}
+.image_side img{
+  height:40vh !important;
+}
+.before_and_after_col{
+  width:80%;
+  max-width:80%;
+  flex:80%;
+}
   .work_row{
     margin-top: 10% !important;
   }
