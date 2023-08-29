@@ -207,4 +207,7 @@ width: 100%;
     text-align: left !important;
     padding-left: 5% !important;
   }
+  .our_clients_text_banner{
+    width:70%;
+  }
 }
