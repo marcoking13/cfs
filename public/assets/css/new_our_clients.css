@@ -194,9 +194,9 @@ width: 100%;
 
 
     }
-    .our_client_button--2{
+    /* .our_client_button--2{
       visibility: hidden;
-    }
+    } */
     .new_our_clients_row{
       position: relative;
       height: 45vh;
