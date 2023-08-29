@@ -178,6 +178,9 @@ a:hover{
     text-align: center;
     width:100%;
   }
+  .about_value_row{
+    padding-top:0% !important;
+  }
 
   .what_we_do_image{
     width:140% !important;
