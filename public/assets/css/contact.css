@@ -381,11 +381,13 @@ width: 100%;
     color:white;
   }
   .banner_flip_inner {
-    width: 80%;
+    width: 90%;
+    margin-left: 5%;
+
   }
   .before_and_after_box_background {
-      width: 40% !important;
-      background: #025889;
+      width: 10% !important;
+      background: none;
       position: absolute;
       height: 105vh;
       z-index: -1 !important;
