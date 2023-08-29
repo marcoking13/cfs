@@ -384,9 +384,17 @@ width: 100%;
   .banner_flip_inner {
     width: 90%;
     margin-left: 5%;
-    text-align: center;
-    margin-top:15%;
+    text-align: center !important;
+    margin-top:15% !important;
 
+  }
+  .banner_side p{
+    color: white;
+    font-size: 3.5rem;
+    text-align: center !important;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-top:10%;
   }
   .before_and_after_box_background {
       width: 10% !important;
