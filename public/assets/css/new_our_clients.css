@@ -196,7 +196,7 @@ width: 100%;
     }
 
     .our_clients_col--left_{
-      transform: scale(1) translateX(-35%) !important;
+      transform: scale(1) translateX(-55%) !important;
       transition: transform .4s !important;
 
 
