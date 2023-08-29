@@ -465,7 +465,7 @@ padding-left: 5% !important;
   }
   .contact_section_title {
     width:90%;
-    font-size:3rem;
+    font-size:3rem !important;
   }
 
   .contact_info_section--number {
