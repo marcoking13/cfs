@@ -164,12 +164,12 @@ a:hover{
 @media screen and (max-width:680px){
 
   .what_we_do_title{
-    font-size:3rem;
+    font-size:2rem;
     text-align: center;
   }
 
   .what_we_do_description{
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
     width:100%;
   }
@@ -180,7 +180,7 @@ a:hover{
   }
 
   .about_container{
-    margin-top:140% !important;
+    margin-top:40% !important;
   }
 
   .about_description{
@@ -207,10 +207,11 @@ a:hover{
   }
 
   .value_col{
-    width:50%;
+    width:90%;
     margin-top:10%;
-    max-width:50%;
-    flex:50%;
+    max-width:90%;
+    flex:90%;
+    margin-left:5%;
     position: relative;
     bottom:2rem;
   }
