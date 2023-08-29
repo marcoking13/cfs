@@ -171,8 +171,11 @@ width: 100%;
       z-index:99999999999999999999999999;
 
       position: absolute;
-      top: 165%;
+      top: 175%;
       width: 100%;
+    }
+    .our_client_button--2{
+      visibility: hidden;
     }
     .our_client_button{
       height: 1.5rem;
@@ -190,6 +193,7 @@ width: 100%;
 
 
     }
+
     .our_clients_col--left_{
       transform: scale(1) translateX(-35%) !important;
       transition: transform .4s !important;
