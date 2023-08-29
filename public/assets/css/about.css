@@ -190,7 +190,9 @@ a:hover{
   .what_we_do_col{
     padding:10%;
   }
-
+.about_title{
+  font-size:2.5rem;
+}
   .what_we_do_image{
     height:100rem !important;
     width:100rem;
