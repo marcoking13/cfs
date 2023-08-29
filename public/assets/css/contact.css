@@ -352,7 +352,9 @@ padding-bottom:75%
     margin-left:25%;
   }
   .meet_owners_container{
-      margin-top:145%;
+      margin-top:165%;
+      position: relative;
+      z-index:99999999999999999999;
   }
   .meet_owner_banner{
     width:80%;
