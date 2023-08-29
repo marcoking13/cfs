@@ -433,7 +433,8 @@ padding-left: 5% !important;
 }
 
   .about_us_banner{
-    width:100%;
+    width:90%;
+    margin-left:5%;
   }
   .about_us_heading{
     font-size: 3rem;
