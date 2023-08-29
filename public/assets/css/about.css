@@ -216,11 +216,10 @@ a:hover{
   }
 
   .value_col{
-    width:90%;
+    width:50%;
     margin-top:10%;
-    max-width:90%;
-    flex:90%;
-    margin-left:5%;
+    max-width:50%;
+    flex:50%;
     position: relative;
     bottom:2rem;
   }
