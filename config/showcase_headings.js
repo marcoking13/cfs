@@ -10,8 +10,8 @@ module.exports = [
     css_file:`${css_url}home.css`,
   },
   {
-    heading_1:"About",
-    heading_2:"Custom Facility Services",
+    heading_1:"About Us",
+    heading_2:"Our Values & Services",
     css_file:`${css_url}about.css`,
     className:"showcase_container--about",
 
@@ -19,7 +19,7 @@ module.exports = [
   },
   {
     heading_1:"Contact Us Today!",
-    heading_2:"480-822-0511",
+    heading_2:"We are Happy to Help!",
     css_file:`${css_url}contact_us.css`,
     className:"showcase_container--contact",
 
