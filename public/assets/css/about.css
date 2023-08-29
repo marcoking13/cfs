@@ -185,6 +185,7 @@ a:hover{
   }
 
   .about_container{
+    padding:2% 0;
     margin-top:7.5% !important;
   }
 
@@ -216,10 +217,10 @@ a:hover{
   }
 
   .value_col{
-    width:50%;
+    width:100%;
     margin-top:10%;
-    max-width:50%;
-    flex:50%;
+    max-width:100%;
+    flex:100%;
     position: relative;
     bottom:2rem;
   }
@@ -257,7 +258,7 @@ a:hover{
 
   .what_we_do_container{
     margin-top:0%;
-    height:110vh !important;
+    height:140vh !important;
     background-image:linear-gradient(to bottom,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .5),url('./../images/what_we_do_new.png');
 
   }
