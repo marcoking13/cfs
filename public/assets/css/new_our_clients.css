@@ -172,14 +172,15 @@ width: 100%;
 
       position: absolute;
       top: 175%;
+
       width: 100%;
     }
     .our_client_button--2{
       visibility: hidden;
     }
     .our_client_button{
-      height: 1.5rem;
-      width: 15%;
+      height: 2rem;
+      width: 25%;
       float: left;
       margin-left: 5%;
     }
