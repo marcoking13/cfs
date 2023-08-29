@@ -180,11 +180,11 @@ a:hover{
 
   .what_we_do_image{
     width:140% !important;
-    height:70rem !important;
+    height:100vh !important;
   }
 
   .about_container{
-    margin-top:40% !important;
+    margin-top:20% !important;
   }
 
   .about_description{
@@ -195,7 +195,7 @@ a:hover{
     padding:10%;
   }
 .about_title{
-  font-size:3rem;
+  font-size:4rem;
 }
   .what_we_do_image{
     height:100rem !important;
@@ -204,8 +204,8 @@ a:hover{
 
   .value_row{
     padding:5%;
-    height:105vh;
-    max-height:105vh;
+    height:205vh;
+    max-height:205vh;
     padding-top: 0% !important;
   }
   .value_col{
