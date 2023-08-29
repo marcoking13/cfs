@@ -169,7 +169,7 @@ width: 100%;
     }
     .our_client_buttons{
       position: absolute;
-      top: 105%;
+      top: 225%;
       width: 100%;
     }
     .our_client_button{
@@ -223,7 +223,7 @@ width: 100%;
     height: 150%;
   }
   .contact_section_title {
-    width: 85% !important;
+    width: 95% !important;
     text-align: left !important;
     padding-left: 5% !important;
   }
