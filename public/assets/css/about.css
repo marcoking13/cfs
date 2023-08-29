@@ -168,6 +168,10 @@ a:hover{
     text-align: center;
   }
 
+  .about_description{
+    font-size:2rem;
+  }
+
   .what_we_do_description{
     font-size: 1.6rem;
     text-align: center;
@@ -191,7 +195,7 @@ a:hover{
     padding:10%;
   }
 .about_title{
-  font-size:2.5rem;
+  font-size:3rem;
 }
   .what_we_do_image{
     height:100rem !important;
