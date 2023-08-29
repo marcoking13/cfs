@@ -381,7 +381,7 @@ width: 100%;
     color:white;
   }
   .banner_flip_inner {
-    width: 50%;
+    width: 80%;
   }
   .before_and_after_box_background {
       width: 40% !important;
@@ -411,7 +411,7 @@ width: 100%;
 }
 
 .new_before_and_after_container{
-  margin-top:0% !important;
+  margin-top:5% !important;
 }
 .image_container_before_and_after--3{
   margin-top:50%;
@@ -421,6 +421,7 @@ width: 100%;
 }
 .image_side img{
   height:40vh !important;
+  z-index:9999999999999;
 }
 .before_and_after_col{
   width:80%;
