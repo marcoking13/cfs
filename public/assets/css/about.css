@@ -186,7 +186,12 @@ a:hover{
     width:140% !important;
     height:100vh !important;
   }
+  .mobile-col-0{
+    width:0% !important;
+    max-width:0% !important;
+    flex:0% !important;
 
+  }
   .about_container{
     padding:10% 0;
     margin-top:7.5% !important;
