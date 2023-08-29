@@ -19,7 +19,7 @@ module.exports = [
   },
   {
     heading_1:"Contact Us Today!",
-    heading_2:"480-959-5555",
+    heading_2:"480-822-0511",
     css_file:`${css_url}contact_us.css`,
     className:"showcase_container--contact",
 
