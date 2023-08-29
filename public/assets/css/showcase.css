@@ -159,7 +159,7 @@ span{
 
 @media screen and (max-width:890px){
   .cfs-heading-container{
-    width:140%;
+    width:130%;
   }
 
   .showcase_banner{
@@ -199,7 +199,7 @@ span{
     margin-top:35%;
   }
   .home_quote_container{
-    top:90%;
+    top:70%;
     width:90%;
     left:5%;
   }
