@@ -428,9 +428,9 @@ padding-left: 5% ;
     flex:100%;
   }
 
-.contact_section{
-  height:25vh;
-}
+  .contact_section{
+    height:25vh !important;
+  }
 
   .about_us_banner{
     width:90%;
@@ -453,7 +453,7 @@ padding-left: 5% ;
   .our_work_section{
     width:100%;
     right:0px;
-        padding-bottom: 30%;
+    padding-bottom: 30%;
   }
   .contact_section{
     margin-top:20%;
@@ -464,8 +464,8 @@ padding-left: 5% ;
     text-align: center;
   }
   .contact_section_title {
-    width:90%;
-    font-size:3rem !important;
+    width:95% !important;
+    font-size:2.6rem !important;
   }
 
   .contact_info_section--number {
@@ -473,8 +473,8 @@ padding-left: 5% ;
     width: 70% !important;
 }
 .contact_info_section--email {
-  font-size: 3rem !important;
-  width: 90% !important;
+  font-size: 2.6rem !important;
+  width: 95% !important;
 }
   .gallery_img{
     height:25vh !important;
