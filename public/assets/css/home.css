@@ -494,6 +494,10 @@ padding-left: 5% ;
   .about_us_row{
     margin-top:120% !important;
   }
+  .contact_section_bluebox{
+    height:40rem;
+    margin-top:-5%;
+  }
 }
 
 /*
