@@ -488,7 +488,9 @@ padding-left: 5% !important;
   .new_our_clients_container{
     margin-top:0%;
   }
-
+  .about_us_row{
+    margin-top:15%;
+  }
 }
 
 /*
