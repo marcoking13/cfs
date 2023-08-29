@@ -165,7 +165,9 @@ a:hover{
 
   .what_we_do_title{
     font-size:3rem;
-    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: justify;
   }
 
   .about_description{
@@ -174,9 +176,12 @@ a:hover{
   }
 
   .what_we_do_description{
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     width:100%;
+    font-family: "Montserrat";
+    text-align: justify;
+
   }
   .about_value_row{
     padding-top:0% !important;
@@ -207,6 +212,7 @@ a:hover{
 
   .about_title{
     font-size:4rem;
+
   }
   .what_we_do_image{
     height:100rem !important;
