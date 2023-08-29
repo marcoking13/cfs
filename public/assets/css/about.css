@@ -164,19 +164,17 @@ a:hover{
 @media screen and (max-width:680px){
 
   .what_we_do_title{
-    font-size:4rem;
+    font-size:3rem;
     text-align: center;
   }
 
   .about_description{
     font-size:2rem;
-    text-align: center !important;
-    width:90% !important;
-    margin-left:5%;
+    text-align: justify !important;
   }
 
   .what_we_do_description{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     width:100%;
   }
@@ -246,7 +244,7 @@ a:hover{
   }
 
   .what_we_do_link{
-    font-size:3rem !important;
+    font-size:2rem !important;
     letter-spacing:3px;
     text-align: center;
     margin-left:25%;
