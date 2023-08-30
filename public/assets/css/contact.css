@@ -360,6 +360,12 @@ padding-bottom:75%
   .meet_owner_banner{
     width:80%;
   }
+  .showcase_background {
+    height:70vh !important;
+}
+.banners{
+  margin-top:45% !important;
+}
   .meet_owner_name{
     text-align: center !important;
     width:100%;
