@@ -417,7 +417,7 @@ padding-left: 5% ;
   text-align: left ;
   padding-left: 5% ;
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:680px){
   .home_quote_container{
     top:125%;
   }
