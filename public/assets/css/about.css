@@ -16,9 +16,7 @@ html{
       rgba(56, 182, 255, .7)),
       url("./../images/wet.png");
   background-size: cover;
-  height:90vh;
-  max-height:90vh;
-
+padding-bottom:10%;
 }
 
 .value_box:hover{
@@ -228,8 +226,7 @@ a:hover{
 
   .value_row{
     padding:5%;
-    height:225vh;
-    max-height:225vh;
+
     padding-top: 0% !important;
   }
 
