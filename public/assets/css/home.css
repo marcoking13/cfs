@@ -492,7 +492,7 @@ padding-left: 5% ;
     margin-top:0%;
   }
   .about_us_row{
-    margin-top:120% !important;
+    margin-top:100% !important;
   }
   .contact_section_bluebox{
     height:50rem;
@@ -502,7 +502,7 @@ padding-left: 5% ;
 
 @media screen and (max-width:490px){
   .about_us_row{
-    margin-top:100% !important;
+    margin-top:110% !important;
   }
   .new_our_clients_container{
     margin-top:-2% !important;
