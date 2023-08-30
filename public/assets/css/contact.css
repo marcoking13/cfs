@@ -388,13 +388,19 @@ width: 100%;
     margin-top:15% !important;
 
   }
+  .image_wrapper_before_and_after{
+    top:10rem;
+  }
+  .banner_side{
+    padding:0 !important
+  }
   .banner_side p{
     color: white;
     font-size: 3.5rem;
     text-align: center !important;
     font-family: "Montserrat";
     font-weight: 600;
-    margin-top:10%;
+    margin-top:5%;
   }
   .before_and_after_box_background {
       width: 10% !important;
@@ -409,15 +415,21 @@ width: 100%;
 
     margin-top: 20%;
     margin-left: 10%;
+    z-index:9999;
+    position: relative;
 
 }
 .work_inner_container{
   position: relative;
   z-index: 99;
 }
+.work_image_banner {
+  width:100% !important;
+}
 .before_and_after_col--3{
 
-
+  z-index:999999;
+  position: relative;
   margin-top: 10%;
   margin-left: 20%;
 
