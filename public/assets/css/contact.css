@@ -352,10 +352,9 @@ padding-bottom:75%
     margin-left:25%;
   }
   .meet_owners_container{
-      margin-top:15% !important;
+      margin-top:10% !important;
       position: relative;
       padding-bottom:20%;
-      z-index:99999999999999999999;
 
   }
   .meet_owner_banner{
@@ -390,6 +389,9 @@ width: 100%;
   }
   .image_wrapper_before_and_after{
     top:7rem;
+  }
+  .meet_owner_banner{
+    /* margin-top: -7.5% !important; */
   }
   .banner_side{
     padding:0 !important
