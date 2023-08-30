@@ -162,7 +162,15 @@ a:hover{
 }
 
 @media screen and (max-width:680px){
+.value_divide{
+  height:0 !important;
+  width:0 !important;
+  display:inline !important;
+  position: absolute;
+  max-width:0 !important;
+  flex: 0 !important;
 
+}
   .what_we_do_title{
     font-size:3rem;
     font-weight: 700;
@@ -177,10 +185,9 @@ a:hover{
 
   .what_we_do_description{
     font-size: 1.8rem;
-    text-align: center;
+    text-align: left;
     width:100%;
     font-family: "Montserrat";
-    text-align: justify;
 
   }
   .about_value_row{
@@ -221,8 +228,8 @@ a:hover{
 
   .value_row{
     padding:5%;
-    height:255vh;
-    max-height:255vh;
+    height:225vh;
+    max-height:225vh;
     padding-top: 0% !important;
   }
 
