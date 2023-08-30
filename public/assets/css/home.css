@@ -500,6 +500,18 @@ padding-left: 5% ;
   }
 }
 
+@media screen and (max-width:490px){
+  .about_us_row{
+    margin-top:100% !important;
+  }
+  .new_our_clients_container{
+    margin-top:-2% !important;
+  }
+  .contact_section_title{
+    margin-top:25% !important;
+  }
+}
+
 /*
 
 @media screen and (max-width:1000px){
