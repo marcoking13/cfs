@@ -417,7 +417,7 @@ padding-left: 5% ;
   text-align: left ;
   padding-left: 5% ;
 }
-@media screen and (max-width:680px){
+@media screen and (max-width:380px){
   .home_quote_container{
     top:125%;
   }
@@ -509,6 +509,9 @@ padding-left: 5% ;
   }
   .contact_section_title{
     margin-top:25% !important;
+  }
+  .meet_owners_container {
+    margin-top: 12.5% !important;
   }
 }
 

@@ -344,7 +344,7 @@ padding-bottom:75%
 } */
 
 
-@media screen and (max-width:680px){
+@media screen and (max-width:380px){
   .meet_owner_img{
     height: 70%;
     width: 50%;
@@ -510,6 +510,13 @@ width: 100%;
   margin-left:5%;
 }
 
+}
+
+@media screen and (max-width:490px){
+
+  .meet_owners_container {
+    margin-top: 12.5% !important;
+  }
 }
 /*
 @media screen and  (orientation:landscape) and (max-width:1000px){
