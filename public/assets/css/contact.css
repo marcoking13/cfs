@@ -421,7 +421,7 @@ width: 100%;
 
   }
   .image_wrapper_before_and_after{
-    top:6rem;
+    top:3rem;
   }
   .meet_owner_banner{
     /* margin-top: -7.5% !important; */
@@ -569,6 +569,9 @@ width:90%!important;
 width:100% !important;
 max-width: 100%;
 flex:100%;
+}
+.before_and_after_col--2{
+      margin-top: 80% !important;
 }
 }
 
