@@ -3,8 +3,8 @@ html{
 }
 .about_container{
   position: relative;
-  padding-bottom:15%;
-  padding-top:15%;
+  padding-bottom:5%;
+  padding-top:5%;
   text-align: justify !important;
 }
 
