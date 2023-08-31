@@ -2,20 +2,22 @@ var is_flipped = false;
 var images = document.getElementsByClassName("image_container_before_and_after_inner");
 var banner = document.querySelector(".banner_flip_inner");
 
+function AddClass(i){
+  console.log(i)
+  if(!is_flipped){
+    images[i].classList.add("image_container_before_and_after_inner--flipped")
+  }else{
+    images[i].classList.remove("image_container_before_and_after_inner--flipped")
+  }
+
+}
 setInterval(()=>{
 
 
 
         for(var i = 0; i < images.length; i++){
-
-          if(!is_flipped){
-
-            images[i].classList.add("image_container_before_and_after_inner--flipped")
-          }else{
-            images[i].classList.remove("image_container_before_and_after_inner--flipped")
-          }
-
-        }
+          AddClass(i);
+      }
 
         if(!is_flipped){
 

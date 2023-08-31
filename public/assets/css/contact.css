@@ -40,7 +40,6 @@
 }
 .image_side{
   width:100%;
-  height:60vh;
   position: absolute;
   backface-visibility: hidden;
   transition: transform .5s;
@@ -80,13 +79,23 @@
 }
 
 .before_and_after_box_background{
-  width:70%;
+  width:40%;
   background:#025889;
   position: absolute;
-  height:85vh;
+  height:105vh;
   z-index:0;
-  left:15%;
-  top:15%;
+  left:0%;
+  top:-5%;
+}
+
+.before_and_after_box_background--2{
+  width:60%;
+  background:#024972;
+  position: absolute;
+  height:105vh;
+  z-index:0;
+  left:40%;
+  top:-5%;
 }
 
 .image_container_before_and_after_inner--flipped{
@@ -124,6 +133,8 @@
   width:100%;
 
 
+}.image_el {
+  height:70vh;
 }
 .work_image_container{
   height:100%;
@@ -315,7 +326,7 @@ padding-bottom:75%
 }
 .meet_owners_container{
   padding: 1% 0%;
-  position: relative;;
+  position: relative;
 }
 .meet_owners_container p{
   color:white !important;
@@ -342,9 +353,24 @@ padding-bottom:75%
   }
 
 } */
+.before_and_after_col{
+  position: relative;
+}
 
-
+/* .before_and_after_col--3{
+  margin-top: 20%;
+} */
 @media screen and (max-width:680px){
+  .before_and_after_col--2{
+    margin-top: 70% !important;
+  }
+  .before_and_after_col--1{
+    margin-top: 20% !important;
+  }
+  .before_and_after_col--3{
+  visibility: hidden;
+  }
+
   .meet_owner_img{
     height: 70%;
     width: 50%;
@@ -411,18 +437,26 @@ width: 100%;
     font-weight: 600;
     margin-top:2.5%;
   }
+  .before_and_after_box_background--2 {
+    width: 40%;
+    background: #024972;
+    position: absolute;
+    height: 125vh;
+    z-index: -1;
+    left: 0%;
+    top: -15%;
+}
   .before_and_after_box_background {
       width: 10% !important;
       background: none;
       position: absolute;
-      height: 105vh;
+      height: 115vh;
       z-index: -1 !important;
       left:80%;
-      top: -5%;
+      top: -45% !important;
   }
 .before_and_after_col--2{
 
-    margin-top: 20%;
     margin-left: 10%;
     z-index:9999;
     position: relative;
@@ -506,11 +540,27 @@ width: 100%;
 .client_col{
   margin-top:10%;
 }
+.before_and_after_col{
+width:90%!important;
+  max-width:90% !important;
+  flex:90% !important;
+  padding:0 !important;
+  margin:0;
+  margin-left:5%;
+}
+.image_el{
+  height:auto !important;
+  margin-top:-20%;
+}
 .client_img{
   width:90%;
   margin-left:5%;
 }
-
+.before_and_after_col--1{
+width:100% !important;
+max-width: 100%;
+flex:100%;
+}
 }
 
 @media screen and (max-width:490px){
