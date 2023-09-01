@@ -40,7 +40,7 @@ var mobile_nav = `
   <nav class="navbar navbar_custom">
 
     <button id="button_navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <img class="button_img" style="height:1rem;width:1rem"src="./assets/images/menu.svg" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"/>
     </button>
 
   </nav>
@@ -87,7 +87,7 @@ function NavClick(){
 
     var nav_container = document.getElementById("navbarToggleExternalContent");
     var toggle = "inactive";
-
+console.log("S")
     if(nav_container.getAttribute("status") == "inactive"){
       toggle = "active";
     }else{
@@ -118,7 +118,10 @@ function Init(){
     navbar_element.innerHTML = mobile_nav;
   }
 
+ nav_button = document.getElementById("button_navbar");
+
   if(nav_button){
+    console.log("S")
 
       nav_button.addEventListener("click",()=>{
 

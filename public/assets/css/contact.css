@@ -497,12 +497,10 @@ width: 100%;
 
 }
 .before_and_after_col--1{
-
   z-index:999999;
   position: relative;
   margin-top: 5%;
   margin-left: 20%;
-
 }
 
 .new_before_and_after_container{
@@ -590,6 +588,12 @@ flex:100%;
 }
 .before_and_after_col--2{
       margin-top: 80% !important;
+}
+.image_side{
+  transition: transform .2s !important;
+}
+.banner_flip_inner {
+  transition: transform 1s !important;
 }
 }
 

@@ -11,11 +11,15 @@ function AddClass(i){
   }
 
 }
-setInterval(()=>{
+
+const timer = ms => new Promise(res => setTimeout(res, ms));
+
+setInterval(async ()=>{
 
 
 
         for(var i = 0; i < images.length; i++){
+          await timer(200);
           AddClass(i);
       }
 

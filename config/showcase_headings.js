@@ -15,7 +15,7 @@ module.exports = [
     css_file:`${css_url}about.css`,
     className:"showcase_container--about",
 
-    showcase_img:"./assets/images/showcase_1.png"
+    showcase_img:"./assets/images/sl.jpg"
   },
   {
     heading_1:"Contact Us Today!",

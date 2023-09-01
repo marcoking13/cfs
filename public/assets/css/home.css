@@ -16,6 +16,9 @@
   background:white;
   padding:2%;
 }
+.contact_info_section p{
+  padding-left:5%;
+}
 
 .quotesheet_container{
   width:100%;
@@ -301,6 +304,10 @@ padding-left: 5% !important;
   top:70%;
   left:5%;
   width:80%;
+}
+.contact_section p{
+  padding-left:5% !important;
+
 }
 .contact_info_section{
 

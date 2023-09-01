@@ -22,6 +22,14 @@
   font-size: 18px;
 }
 
+.button_img{
+filter: invert(23%) sepia(68%) saturate(968%) hue-rotate(167deg) brightness(97%) contrast(103%);
+}
+
 .link_nav:hover{
   font-weight: bold;
+}
+.collapse-it:not(.show) {
+    display: none;
+    transition: all.5s;
 }
