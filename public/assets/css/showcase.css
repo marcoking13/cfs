@@ -158,7 +158,38 @@ span{
    padding:0;
 }
 
-@media screen and (max-width:890px){
+
+@media screen and (max-width:768px) and (orientation:portrait) and (min-width:700px){
+  .showcase_container{
+    margin-top: 1% !important;
+    height:70vh;
+  }
+  .banners {
+    margin-top: 27.5% !important;
+    width: 100%;
+    z-index: 1;
+}
+  .cfs-heading {
+    width: 100%;
+    display: block;
+    padding: 2%;
+    font-size: 4.2rem;
+    background: #00103d;
+}
+.showcase_banner--1 {
+    width: 80%;
+    height: 5vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, .5)) !important;
+}
+.showcase_banner--2 {
+    width: 30% !important;
+    height: 5vh;
+    position: relative;
+    bottom: 2rem;
+}
+
+}
+@media screen and (max-width:690px){
   .cfs-heading-container{
     width:145%;
   }

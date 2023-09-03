@@ -10,7 +10,7 @@ var desktop_nav = `
   <div class="col-3">
     <p class="link_nav"style="margin-left:10%;position:relative;bottom:.5rem"> Custom Facility Service</p>
   </div>
-  <div class="col-1"></div>
+  <div class="col-1 no_col"></div>
 
   <div class="col-2">
     <a href="/"><p class="link_nav margin-left-5">Home</p></a>
@@ -24,8 +24,8 @@ var desktop_nav = `
     <a href = "/contact_us">  <p class="link_nav">Contact Us</p></a>
   </div>
 
-  <div class="col-2">
-    <a href='/#hq'>  <p class="link_nav">Schedule Quote</p> </a>
+  <div class="col-2 sc_col">
+    <a href='/#hq'>  <p class="link_nav">Free Quote</p> </a>
   </div>
 
 
@@ -87,7 +87,7 @@ function NavClick(){
 
     var nav_container = document.getElementById("navbarToggleExternalContent");
     var toggle = "inactive";
-console.log("S")
+
     if(nav_container.getAttribute("status") == "inactive"){
       toggle = "active";
     }else{
@@ -112,16 +112,15 @@ console.log("S")
 
 function Init(){
 
-  if(width >=844){
+  if(width >= 700){
     navbar_element.innerHTML = desktop_nav;
   }else{
     navbar_element.innerHTML = mobile_nav;
   }
 
- nav_button = document.getElementById("button_navbar");
+  nav_button = document.getElementById("button_navbar");
 
   if(nav_button){
-    console.log("S")
 
       nav_button.addEventListener("click",()=>{
 

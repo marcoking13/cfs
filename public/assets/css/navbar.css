@@ -33,3 +33,35 @@ filter: invert(23%) sepia(68%) saturate(968%) hue-rotate(167deg) brightness(97%)
     display: none;
     transition: all.5s;
 }
+
+@media screen and (max-width:770px) and (orientation:portrait) and (min-width:700px){
+  .navbar_custom {
+    margin-top: 2.5%;
+    padding: 0 1;
+    height: 3rem;
+    background: #0069a4 !important;
+}
+.link_nav {
+    font-size: 1.5rem;
+    margin-left: 10%;
+}
+.navbar_wrapper{
+  padding:0 5%;
+}
+
+.sc_col{
+  -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+}
+.no_col{
+  flex:0%;
+  width:0%;
+  max-width:0%;
+}
+.showcase_container {
+    margin-top: 2.5% !important;
+    height: 70vh;
+}
+
+}

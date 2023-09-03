@@ -3,7 +3,7 @@
      opacity:0%;
   }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:690px) {
   .mobile_visible_only{
     visibility:visible !important;
     opacity:100%  !important;

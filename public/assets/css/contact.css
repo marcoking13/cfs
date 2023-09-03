@@ -367,6 +367,99 @@ padding-bottom:75%
 /* .before_and_after_col--3{
   margin-top: 20%;
 } */
+
+@media screen and (max-width:768px) and (min-width:700px) and (orientation:portrait){
+  .meet_owner_col--2 {
+    margin-top: 5%;
+    text-align: justify;
+    font-size: 3rem;
+    color: white;
+    font-family: "Akrobat";
+}
+.meet_owner_col {
+  width:100%;
+  max-width:100%;
+  flex:100%;
+}
+.meet_owner_name {
+    margin-top: 5%;
+    font-family: "Akrobat";
+    color: white;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.work_container{
+  padding-bottom:5%;
+}
+.before_and_after_box_background{
+  height:120vh
+}
+.before_and_after_col{
+  width:50% !important;
+  flex:50% !important;
+  max-width:50%;
+}
+.before_and_after_col--3{
+  margin-top:55%;
+}
+.image_el{
+  height:40vh;
+}
+.before_and_after_box_background--2{
+  height:120vh
+}
+.new_before_and_after_container{
+  padding-top: 10%;
+    z-index: -1;
+    height: 100vh;
+    position: relative;
+    margin-top: -15%;
+}
+.banner_flip_inner {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    transition: all .5s;
+    transform: rotateY(0deg);
+}
+.work_row{
+  margin-top:10%;
+}
+.work_inner_container {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    width: 100%;
+}
+.work_heading {
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: "Montserrat" !important;
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+.meet_owners_container {
+    padding: 1% 0%;
+    padding-top:15% !important;
+    position: relative;
+}
+.meet_owner_img {
+    height: 70vh;
+    width: 100%;
+    margin-left: 0;
+}
+.meet_owner_col--2{
+  width:100%;
+  max-width:100%;
+  flex:100%;
+  margin-left:0%;
+}
+}
 @media screen and (max-width:680px){
   .before_and_after_col--2{
     margin-top: 40% !important;

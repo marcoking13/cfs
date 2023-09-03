@@ -520,6 +520,132 @@ padding-left: 5% ;
   }
 }
 
+
+@media screen and (max-width: 768px) and (min-width:700px) and (orientation: portrait) {
+.about_us_row{
+  margin-top:50% !important
+}
+.about_us_image {
+    height: 45vh;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: -10%;
+}
+
+.contact_section p {
+    margin-top: 15%;
+    padding-left: 5% !important;
+}
+.contact_section_bluebox {
+    top: 5;
+    left: -5%;
+    height: 300px;
+    z-index: -1;
+    width: 30%;
+    top: 30%;
+    height: 80%;
+    position: absolute;
+}
+.our_clients_col--main_ {
+    z-index: 999 !important;
+    transform: scale(1.05) translateX(25%);
+    transition: all 1s;
+}
+.our_clients_col--right {
+    z-index: 9 !important;
+    transform: scale(1) translateX(115%);
+    transition: all 1s;
+}
+.our_clients_col--left {
+    z-index: 9 !important;
+    transform: scale(1) translateX(-5%);
+    transition: all 1s;
+}
+.our_clients_col--left_ {
+    z-index: 9 !important;
+    transform: scale(1) translateX(-5%);
+    transition: all 1s;
+}
+.our_clients_col--main {
+    z-index: 999 !important;
+    transform: scale(1.05) translateX(25%);
+    transition: all 1s;
+}
+
+.about_us_overlay_box--big {
+    height: 50vh;
+    width: 30%;
+    margin-top: 10%;
+    max-width: 30%;
+    float: left;
+    display: inline;
+    background: #2985BB;
+}
+.our_clients_col {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+}
+.our_clients_col {
+    width:60%;
+}
+.new_our_clients_row {
+    position: relative;
+    height: 55vh;
+    margin-top: 15%;
+}
+.about_us_link {
+    padding-top: 2.5%;
+    font-family: "Akrobat";
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+.about_us_image{
+  margin-left:10%
+}
+.about_us_overlay_box {
+    height: 50vh;
+    width: 70%;
+    margin-top: 10%;
+    max-width: 70%;
+    float: left;
+    display: inline;
+    background: #2985BB;
+}
+.about_us_col{
+  width:45% !important;
+  max-width:45% !important;
+  flex:45% !important
+
+}
+.no_col{
+  width:0% !important;
+  max-width:0% !important;
+  flex:0% !important
+
+}
+.about_us_overlay_box {
+    height: 50vh;
+    max-width: 60%;
+    float: left;
+    width: 60%;
+    margin-top: 10%;
+    display: inline;
+    background: #1670A4;
+}
+.about_us_overlay_box--big {
+    height: 50vh;
+    width: 40%;
+    margin-top: 10%;
+    max-width: 40%;
+    float: left;
+    display: inline;
+    background: #2985BB;
+}
+}
 @media screen and (max-width:490px){
   .about_us_row{
     margin-top:110% !important;

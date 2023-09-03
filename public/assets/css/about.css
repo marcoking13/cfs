@@ -160,6 +160,8 @@ a:hover{
 }
 
 @media screen and (max-width:680px){
+
+
 .value_divide{
   height:0 !important;
   width:0 !important;
@@ -277,8 +279,7 @@ a:hover{
   .what_we_do_container{
     margin-top:0%;
     height:120vh !important;
-    background-image:linear-gradient(to bottom,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .5)),url('./../images/what_we_do_new.png') !important;
-
+    background-image: linear-gradient(to right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .8),rgba(0, 35, 50, .7)),url("./../images/what_we_do_new.png");
   }
   .what_we_do_link {
     font-size: 2rem !important;
@@ -288,6 +289,41 @@ a:hover{
         width: 40% !important;
 }
 
+}
+
+@media screen and (orientation:portrait) and (min-width:700px) and (max-width:800px){
+  .about_us_col{
+    width:83.33% !important;
+    max-width:83.33% !important;
+    flex:83.33% !important;
+  }
+  .about_container {
+    position: relative;
+    padding-bottom: 15%;
+    padding-top: 15%;
+    text-align: justify !important;
+}
+  .what_we_do_col{
+    width:75% !important;
+    max-width:75% !important;
+    flex:75%;
+    margin-left: 5%;
+
+  }
+  .what_we_do_container{
+        background-image: linear-gradient(to right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .7),rgba(0, 35, 50, .7)),url(./../images/what_we_do_new.png);
+  }
+  .value_col-inner{
+    width:50% !important;
+    max-width:50% !important;
+    flex:50% !important;
+    margin-top:5%;
+  }
+  .about_us_divider{
+    width:8.33% !important;
+    max-width:8.33% !important;
+    flex:8.33% !important;
+  }
 }
 
 

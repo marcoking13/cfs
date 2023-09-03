@@ -1,3 +1,4 @@
+@media screen and (max-width:680px){
 .pos-f-t{
   position: absolute;
   top:0%;
@@ -25,4 +26,5 @@
 }
 .active-navbar{
   animation:dropdown_nav .5s 1 ease-in !important;
+}
 }

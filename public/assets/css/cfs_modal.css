@@ -67,7 +67,7 @@
   border-color:white !important;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:690px){
   .modal_pos{
     top:5% !important;
   }

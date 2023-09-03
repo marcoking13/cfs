@@ -793,7 +793,7 @@ cursor: auto;
   opacity:0;
   height:0px;
 }
-@media screen and (max-width:844px){
+@media screen and (max-width:690px){
   .mobile-width-70{
     width: 70%;
 
