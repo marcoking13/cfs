@@ -567,6 +567,9 @@ padding-left: 5% ;
     transform: scale(1) translateX(-5%);
     transition: all 1s;
 }
+.about_us_heading{
+  font-size:3rem;
+}
 .our_clients_col--main {
     z-index: 999 !important;
     transform: scale(1.05) translateX(25%);

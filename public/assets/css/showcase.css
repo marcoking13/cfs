@@ -170,11 +170,12 @@ span{
     z-index: 1;
 }
   .cfs-heading {
-    width: 100%;
+    width: 120%;
     display: block;
     padding: 2%;
+    margin-left:0%;
     font-weight:800;
-    font-size: 4.5rem;
+    font-size: 4.8rem;
     background: #00103d;
 }
 .showcase_banner--1 {
