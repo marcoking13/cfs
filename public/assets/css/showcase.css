@@ -164,17 +164,21 @@ span{
     margin-top: 1% !important;
     height:70vh;
   }
+  .intro-text-container {
+    width: 100%;
+    margin-top: 0%;
+}
   .banners {
     margin-top: 27.5% !important;
     width: 100%;
     z-index: 1;
 }
-  .cfs-heading {
-    width: 120%;
-    display: block;
-    padding: 2%;
-    margin-left:0%;
-    font-weight:600;
+.cfs-heading {
+    /* width: 120%; */
+    display: inline;
+    padding: 2% 7.5%;
+    margin-left: 0%;
+    font-weight: 600;
     font-size: 5rem;
     background: #00103d;
 }
