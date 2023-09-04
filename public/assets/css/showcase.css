@@ -173,7 +173,8 @@ span{
     width: 100%;
     display: block;
     padding: 2%;
-    font-size: 4.2rem;
+    font-weight:800;
+    font-size: 4.5rem;
     background: #00103d;
 }
 .showcase_banner--1 {
