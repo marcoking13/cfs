@@ -578,7 +578,10 @@ padding-left: 5% ;
 
 .about_us_overlay_box--big {
     position: absolute;
-    height: 55vh;
+    height: 42.5vh;
+    visibility: visible;
+    left:25%;
+    top:20%;
     width: 100%;
     margin-top: -5%;
     margin-left: -15%;
@@ -614,6 +617,7 @@ padding-left: 5% ;
 }
 .about_us_overlay_box {
     height: 50vh;
+    visibility: hidden;
     width: 70%;
     margin-top: 10%;
     max-width: 70%;
