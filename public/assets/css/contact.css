@@ -368,13 +368,17 @@ padding-bottom:75%
   margin-top: 20%;
 } */
 
-@media screen and (max-width:768px) and (min-width:700px) and (orientation:portrait){
+@media screen and (max-width:1100px) and (min-width:700px) and (orientation:portrait){
   .meet_owner_col--2 {
     margin-top: 5%;
     text-align: justify;
     font-size: 3rem;
     color: white;
     font-family: "Akrobat";
+}
+.meet_owners_container {
+  z-index:11;
+    position: relative;
 }
 .meet_owner_col {
   width:100%;

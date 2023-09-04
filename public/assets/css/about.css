@@ -291,7 +291,7 @@ a:hover{
 
 }
 
-@media screen and (orientation:portrait) and (min-width:700px) and (max-width:800px){
+@media screen and (orientation:portrait) and (min-width:700px) and (max-width:1100px){
   .about_us_col{
     width:83.33% !important;
     max-width:83.33% !important;
