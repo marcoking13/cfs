@@ -577,10 +577,13 @@ padding-left: 5% ;
 }
 
 .about_us_overlay_box--big {
-    height: 50vh;
-    width: 30%;
-    margin-top: 10%;
-    max-width: 30%;
+    position: absolute;
+    height: 55vh;
+    width: 100%;
+    margin-top: -5%;
+    margin-left: -15%;
+
+    max-width: 100%;
     float: left;
     display: inline;
     background: #2985BB;
@@ -639,15 +642,7 @@ padding-left: 5% ;
     display: inline;
     background: #1670A4;
 }
-.about_us_overlay_box--big {
-    height: 50vh;
-    width: 40%;
-    margin-top: 10%;
-    max-width: 40%;
-    float: left;
-    display: inline;
-    background: #2985BB;
-}
+
 }
 @media screen and (max-width:490px){
   .about_us_row{
