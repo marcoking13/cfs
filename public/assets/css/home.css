@@ -568,7 +568,7 @@ padding-left: 5% ;
     transition: all 1s;
 }
 .about_us_heading{
-  font-size:3rem;
+  font-size:2.7rem !important;
 }
 .our_clients_col--main {
     z-index: 999 !important;
