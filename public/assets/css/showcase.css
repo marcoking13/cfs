@@ -9,7 +9,7 @@
   position: relative;
 }
 .banners{
-    margin-top:10%;
+    margin-top:5%;
     position: absolute;
     width:100%;
     top:20%;
@@ -95,7 +95,7 @@
 .cfs-heading{
   display: inline;
   padding:2%;
-  font-size:6.5rem;
+  font-size:6rem;
   background:#00103d;
 }
 
