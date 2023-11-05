@@ -76,7 +76,7 @@
   background-image:linear-gradient(to right, rgba(3, 77, 118, 1),rgba(3, 77, 118, 1),rgba(3, 77, 118, .3)),url("./../images/contact_showcase.png");
 }
 .showcase_container--about{
-  background-image:linear-gradient(to right, rgba(3, 77, 118, 1),rgba(3, 77, 118, .5),rgba(3, 77, 118, .3)),url("./../images/sl.jpg");
+  background-image:linear-gradient(to right, rgba(3, 77, 118, 1),rgba(3, 77, 118, .5),rgba(3, 77, 118, .3)),url("./../images/about_showcase_1.png");
 }
 .showcase_container--schedule{
   background-image:linear-gradient(to right, rgba(3, 77, 118, 1),rgba(3, 77, 118, .8),rgba(3, 77, 118, .3)),url("./../images/showcase_1.png");
@@ -96,9 +96,12 @@
   display: inline;
   padding:2%;
   font-size:6rem;
+
   background:#00103d;
 }
-
+.brs{
+    margin-top:7.5%;
+}
 .intro-text-container{
   width:80%;
   margin-top:0%;
@@ -172,7 +175,7 @@ span{
     margin-left: -2.5%;
 }
   .banners {
-    margin-top: 27.5% !important;
+    margin-top: 27.5% ;
     width: 100%;
     z-index: 1;
 }
@@ -187,22 +190,38 @@ span{
 }
 .showcase_banner--1 {
     width: 80%;
-    height: 5vh;
+    height: 7vh;
     background: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, .5)) !important;
 }
+.about_description{
+  font-size: 3rem;
+}
+
 .showcase_banner--2 {
     width: 30% !important;
-    height: 5vh;
+    height: 10vh;
     position: relative;
     bottom: 2rem;
 }
 
 }
+.our_work_section{
+  background:none !important;
+}
 @media screen and (max-width:690px){
   .cfs-heading-container{
-    width:145%;
+    width:120%;
   }
-
+  .our_work_section{
+    background:none !important;
+  }
+  .showcase_background{
+    height:105vh !important;
+  }
+  .button_img{
+    height:2rem !important;
+    width:2rem !important;
+  }
   .showcase_banner{
     width:100%;
     max-width:100%;
@@ -212,16 +231,24 @@ span{
   .about_us_row{
     margin-top:105%;
   }
-  .cfs-heading{
-    margin-top:5%;
-    font-size:2.2rem;
+  .showcase_container{
+        background-position: 230%;
   }
+  .cfs-heading{
+    display: inline;
+    box-sizing: border-box;
+    padding:2% 3%;
+    line-height:5rem;
+    font-size:2.5rem;
+  }
+
   .showcase_container{
     margin-top: 5% !important;
     height:70vh;
   }
   .showcase_text_container{
     margin-top:10%;
+    width:100%;
   }
   .showcase_banner{
     height:5vh;
@@ -241,7 +268,7 @@ span{
     margin-top:35%;
   }
   .home_quote_container{
-    top:75%;
+    top:85%;
     width:90%;
     left:5%;
   }

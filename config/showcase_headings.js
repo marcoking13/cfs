@@ -10,12 +10,12 @@ module.exports = [
     css_file:`${css_url}home.css`,
   },
   {
-    heading_1:"About Us",
-    heading_2:"Our Values & Services",
+    heading_1:"Learn About Us",
+    heading_2:"Values & Services",
     css_file:`${css_url}about.css`,
     className:"showcase_container--about",
 
-    showcase_img:"./assets/images/sl.jpg"
+    showcase_img:"./assets/images/about_showcase_1.jpg"
   },
   {
     heading_1:"Contact Us Today!",

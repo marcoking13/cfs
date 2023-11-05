@@ -12,20 +12,143 @@
         <%- include("./layout/new_showcase.ejs") %>
       </div>
 
-      <%- include("./layout/contact/meet_the_owners.ejs") %>
+      <div style="padding:2.5%;position:relative">
 
-      <%- include("./layout/contact/what_we_do.ejs") %>
+      <div class="row margin-top-5 clean--new" style="padding:2%">
+          <div class="col-7">
 
-      <%- include("./layout/contact/before_and_after.ejs") %>
+              <p style="color:white;opacity:.8;font-size:5rem;font-weight:400;line-height:1"> We are Ready to Help
+                <br /> Anytime </p>
 
+              <div style="margin-top:10%">
+                <p style="color:white;opacity:.8;font-size:1.7rem;font-weight:400;line-height:1.2"> We serve the greater Phoenix area in Arizona, USA </p>
+              </div>
+
+             <div style="margin-top:2.5%">
+              <div style="height:1px;background:white;width:80%"></div>
+
+            </div>
+
+          </div>
+
+          <div class="col-4 contact_c_col">
+
+            <p style="color:white;opacity:.8;font-size:1.7rem;font-weight:400;line-height:1.2">Call 480-822-0511 to ensure your windows look great!   </p>
+            <div class="margin-top-5">
+              <p style="color:white;opacity:.8;font-size:1.7rem;font-weight:400;line-height:1.2">You can also email us at info@customfacilityservices.com </p>
+            </div>
+            <div class='margin-top-10'>
+              <p style="border:1px solid white;border-radius:20px;font-size:2rem;color:white;padding:1% 5%;text-align:center;display:inline">480-822-0511</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="row what_we_clean_s" style="padding:2%;position:relative">
+
+        <div class="clean_arrow clean_arrow--left clean_arrow_visible">
+            <img class="clean_arrow_img clean_arrow--left" src = "./assets/images/arrow.png"style="transform:rotate(180deg)">
+        </div>
+        <div class="clean_arrow clean_arrow--right clean_arrow_visible">
+            <img class="clean_arrow_img clean_arrow--right " src = "./assets/images/arrow.png"/>
+        </div>
+
+        <div class="col-7 ">
+
+            <p style="color:white;opacity:.8;font-size:5rem;font-weight:600;line-height:1"> What We Clean </p>
+
+            <div class="progress_container" style="margin-left:20%;margin-top:5%;transform:translate3d(0px,0px,0px)">
+
+              <div class="clean_bubble_ clean_bubble_active" ><p>1</p></div>
+              <div class="what_we_clean_line clean_line_active" ></div>
+
+              <div class="clean_bubble" > <p> 2</p></div>
+              <div class="what_we_clean_line"></div>
+
+              <div class="clean_bubble" ><p>3</p></div>
+              <div class="what_we_clean_line"></div>
+
+              <div class="clean_bubble"><p>4</p></div>
+
+          </div>
+
+        </div>
+        <div class="col-4">
+          <div class="steps_box">
+             <p class="steps_title">1.Window Panes </p>
+
+             <ul class="steps_list">
+
+              <li class="steps_list_">
+                 We will make sure both the inside and outside of the window glass will be spotless
+              </li>
+              <li class="steps_list_">
+                Our team can clean up to 2 story buildings
+              </li>
+              <li class="steps_list_">
+                 We remove all streaks so its like we were never there!
+              </li>
+
+            </ul>
+
+            <div class="line_steps"></div>
+          </div>
+
+        </div>
+
+      </div>
+        <div class="row">
+
+
+          <div class="col-4"style="margin-left:2.5%">
+
+            <div class="relative">
+
+              <img class="ring width-100" src = "./assets/images/1.png"style="position:absolute;top:100%;"/>
+
+              <div class="knob_s"style="top:40px;right:-10px;position:relative">
+              <div class="knob_short_parent">
+                <div class="knob_short"></div>
+                <div class="knob_line_short"></div>
+              </div>
+
+              <div class="knob_long_parent">
+                <div class="knob_long"></div>
+                <div class="knob_line_long"></div>
+              </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-2">
+
+          </div>
+          <div class="col-5">
+              <p style="color;font-size:30px;font-weight:500;color:white;margin-left:10%;margin-top:5%">48 Hour Raincheck Guarantee!</p>
+              <p style="text-align:justify;color;font-size:18px;font-weight:300;color:white;margin-left:10%;margin-top:10%">
+                  We know that one of the most annoying things with windows is paying to have them clean only for it to rain the next day. That is why it is our promise that if it rains within 48-hours of us cleaning
+                  your establishment or residence we will come back whenever is best avaiable for you and clean the exterior for free!
+              </p>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div style="position:relative;padding-top:0%;margin-top:15%;border-top:1px solid white">
+        <%- include("./layout/footer.ejs") %>
+      </div>
 
     </div>
+
 
   </div>
 
   <div class="margin-top-small-neg">
-    <%- include("./layout/footer.ejs") %>
+
   </div>
 
-<script src = "./assets/js/before_and_after.js"></script>
+
+<script src = "./assets/js/steps.js"></script>
   <%- include("./layout/end.ejs") %>

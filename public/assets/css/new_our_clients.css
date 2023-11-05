@@ -131,7 +131,22 @@ width: 100%;
   left:0;
   background-image:linear-gradient(to right, rgba(3, 77, 118, 1),rgba(3, 77, 118, .5), rgba(3, 77, 118, 0), rgba(3, 77, 118, 0),rgba(3, 77, 118, 0));
 }
-
+@media screen and (min-width:700px) and (max-width:1200px) and (orientation:portrait){
+  .our_clients_main_box{
+    height: 70%;
+  }
+  .our_clients_overlay{
+        height: 70%;
+  }
+  .new_our_clients_container{
+        padding-bottom: 0%;
+  }
+  .our_client_buttons{
+    position: absolute;
+    top: 79%;
+    width: 100%;
+  }
+}
 @media screen and (max-width:680px){
    .our_clients_col {
       width:70% !important;

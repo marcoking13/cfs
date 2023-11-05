@@ -65,3 +65,8 @@ filter: invert(23%) sepia(68%) saturate(968%) hue-rotate(167deg) brightness(97%)
 }
 
 }
+@media screen and (max-width:1200px) and (min-width:700px) {
+  .navbar_wrapper{
+    padding:0%;
+  }
+}

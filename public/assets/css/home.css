@@ -86,17 +86,22 @@
   height:100vh;
 }
 .about_us_dropdown{
-  padding:1% 5%;
-  padding-top:5%;
   width:90%;
   margin-left:5%;
-  padding-left:5%;
+  padding-left:2.5%;
+  padding-top:2.5%;
   margin-top:1%;
 
 }
+.about_us_col--2{
+  position: absolute;
+width: 50%;
+right: 0%;
+top: -20%;
+}
 .about_us_heading{
   font-family: "Akrobat";
-  font-size:3.5rem;
+  font-size:2.5rem;
   padding-left:2.5%;
   color:white;
 
@@ -109,7 +114,7 @@
   position:relative;
 }
 .about_image{
-  top:0% !important;
+  top:-10% !important;
 }
 .p_row{
   left:0%;
@@ -143,7 +148,6 @@
   max-width:60%;
   float:left;
   width:60%;
-    margin-top: 10%;
   display: inline;
   background:#1670A4;
 }
@@ -164,21 +168,21 @@
     margin-top:-2.5%;
     padding:5%;
     position:relative ;
-    height:32rem;
+    height:25rem;
     width:100%
   }
 .about_us_image{
   height:75vh;
   width:100%;
   position: absolute;
-  top:5%;
+  top:0%;
   left:-10%;
 }
 
 .about_us_overlay_box--big{
   height:80vh;
   width:40%;
-  margin-top: 10%;
+  margin-top: 0%;
   max-width:40%;
   float:left;
   display: inline;
@@ -227,7 +231,7 @@
   height:300px;
   z-index:-1;
   width:30%;
-  top:0%;
+  top:-5%;
   height:100%;
   position:absolute;
 }
@@ -242,7 +246,7 @@
 .supportbox{
   right:5%;
   height:400px;
-  top:15%;
+  top:5%;
 }
 
 .titleshow{
@@ -289,7 +293,8 @@
 .contact_info_section--number {
   display:block;
   padding:1%;
-
+  font-weight: normal !important;
+    letter-spacing: 5px !important;
   text-align:left;
   width:50%;
   font-size: 4.5rem ;
@@ -354,7 +359,7 @@ width:100%;
   padding-top:2.5%;
   font-family: "Akrobat";
   text-align: center;
-  font-size:3.5rem;
+  font-size:2.5rem;
 
   color:white;
 
@@ -372,10 +377,16 @@ width:100%;
   z-index:9999
 }
 
+
+
 .contact_info_section--email{
   font-size: 5rem ;
+  font-weight: normal !important;
+    letter-spacing: 2px !important;
 font-family: "montserrat";
 font-weight: 500;
+font-weight: normal;
+    letter-spacing: 5px;
 width:70% !important;
 text-align: left !important;
 padding-left: 5% ;
@@ -492,6 +503,8 @@ padding-left: 5% ;
   .contact_info_section--number {
     font-size: 3rem !important;
     width: 70% !important;
+    font-weight: normal;
+    letter-spacing: 5px;
 }
 .contact_info_section--email {
   font-size: 2.2rem !important;
@@ -525,6 +538,24 @@ padding-left: 5% ;
 .about_us_row{
   margin-top:50% !important
 }
+.home_quote_container{
+  width:90%;
+
+}
+.gallery_img{
+  height:25vh !important;
+  width:100%;
+}
+.gallery_img--big{
+  height:50vh !important;
+  width:100%;
+}
+.gallery_home_container{
+  height:0;
+}
+.contact_section{
+  height:35vh;
+}
 .about_us_image {
     height: 45vh;
     width: 100%;
@@ -534,7 +565,7 @@ padding-left: 5% ;
 }
 
 .contact_section p {
-    margin-top: 15%;
+    margin-top: 20%;
     padding-left: 5% !important;
 }
 .contact_section_bluebox {
@@ -625,11 +656,11 @@ padding-left: 5% ;
     display: inline;
     background: #2985BB;
 }
-.about_us_col{
-  width:45% !important;
-  max-width:45% !important;
-  flex:45% !important
-
+.about_us_col {
+    margin-left: 5%;
+    width: 90% !important;
+    max-width: 90% !important;
+    flex: 90% !important;
 }
 .no_col{
   width:0% !important;
@@ -660,6 +691,27 @@ padding-left: 5% ;
   }
   .meet_owners_container {
     margin-top: 12.5% !important;
+  }
+  .buttons_t{
+    margin-top:5%;
+    margin-left:6%;
+  }
+  .contact_section{
+    height:35vh !important;
+  }
+  .contact_info_section--email{
+    font-weight: normal !important;
+  }
+  .contact_info_section {
+    padding:10% 0%;
+  }
+  .contact_info_section--number{
+    font-weight: normal !important;
+  }
+  .contact_section_bluebox{
+    z-index: -1 !important;
+    width: 50% !important;
+    top: 55% !important;
   }
 }
 
