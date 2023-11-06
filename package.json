@@ -8,6 +8,7 @@
     "express-ejs-layouts": "^2.5.1",
     "fs": "^0.0.1-security",
     "gh-pages": "^5.0.0",
+    "git-pages": "^0.8.1",
     "mongodb": "^5.0.0",
     "mysql2": "^3.0.1",
     "node-sass": "^9.0.0",
