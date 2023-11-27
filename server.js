@@ -6,7 +6,7 @@ var user_routes = require("./routes/user/user_routes.js");
 var admin_routes = require("./routes/admin/admin_routes.js");
 var db = require("./util/database.js");
 var bodyParser = require("body-parser");
-
+var axios = require("axios");
 var app = express();
 var port = process.env.PORT || 3002;
 app.use(bodyParser.json({extended:true}));
@@ -17,11 +17,14 @@ app.use(express.static('public'));
 app.use(user_routes);
 app.use(admin_routes);
 
+
 app.set("view engine","ejs");
 
 db.MongoConnect(()=>{
 
-  app.listen(port,()=>{
+  app.listen(port,async()=>{
+    
+
 
     // var days = ["Monday","Tuesday","Wendsday","Thursday","Friday","Saturday","Sunday"];
     // var seperateByHours = 2;

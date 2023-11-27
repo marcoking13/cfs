@@ -112,7 +112,7 @@ function NavClick(){
 
 function Init(){
 
-  if(width >= 700){
+  if(width >= 900){
     navbar_element.innerHTML = desktop_nav;
   }else{
     navbar_element.innerHTML = mobile_nav;

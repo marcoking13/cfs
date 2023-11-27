@@ -1,0 +1,17 @@
+
+
+[[edge_functions]]
+function = "replace_laborer_by_id"
+path = "/test"
+
+[[edge_functions]]
+function = "delete_all_laborers"
+path = "/test"
+
+[[edge_functions]]
+function = "add_laborer"
+path = "/test"
+
+[[edge_functions]]
+function = "toggle_favorite_schedule"
+path = "/test"

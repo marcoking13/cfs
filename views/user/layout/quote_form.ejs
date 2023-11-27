@@ -9,7 +9,7 @@
 
               <p class="quotesheet_title ">Make Your Windows Shine Today!</p>
 
-            <form action="/modal" method="POST">
+            <form action="/" method="POST">
 
               <div class="row padding-bottom-small">
 
@@ -19,19 +19,19 @@
                           Full Name
                       </label>
 
-                      <input class="form-control quote_input quote_input_home" name="firstName" placeholder="Enter first name" />
+                      <input class="form-control quote_input quote_input_home"  id = "full-name" name="firstName" placeholder="Enter first name" />
 
                       <label>
                           Address
                       </label>
 
-                      <input class="form-control quote_input quote_input_home" name="address" placeholder="Enter Address" />
+                      <input class="form-control quote_input quote_input_home"  id = "address" name="address" placeholder="Enter Address" />
 
                       <label>
                           Zip Code
                       </label>
 
-                      <input class="form-control quote_input quote_input_home" type="number"name="address" placeholder="Enter Zip Code" />
+                      <input class="form-control quote_input quote_input_home" id = "zip" type="number"name="address" placeholder="Enter Zip Code" />
 
                   </div>
 
@@ -44,7 +44,7 @@
                             Screen Count
                         </label>
 
-                        <input class="form-control quote_input quote_input_home "  type="number" name="screenCount" placeholder="Screen Count" />
+                        <input class="form-control quote_input quote_input_home "  id = "screen" type="number" name="screenCount" placeholder="Screen Count" value = "0"/>
 
                       </div>
 
@@ -54,7 +54,7 @@
                         < 4X4 Ft
                     </label>
 
-                    <input class="form-control quote_input quote_input_home"  type="number" name="smWindowCount" placeholder="Window Count" />
+                    <input class="form-control quote_input quote_input_home" id="small" type="number" name="smWindowCount" placeholder="Window Count" value = "0"/>
 
                   </div>
 
@@ -64,7 +64,7 @@
                         4X4 to 8X8 Ft
                     </label>
 
-                    <input class="form-control quote_input quote_input_home"  type="number" name="mdWindowCount" placeholder="Window Count" />
+                    <input class="form-control quote_input quote_input_home"  id = "medium" type="number" name="mdWindowCount" placeholder="Window Count" value = "0" />
 
                   </div>
 
@@ -74,7 +74,7 @@
                           > 8X8 Ft
                       </label>
 
-                      <input class="form-control quote_input quote_input_home"  type="number" name="lgWindowCount" placeholder="Window Count" />
+                      <input class="form-control quote_input quote_input_home"  id="large" type="number" name="lgWindowCount" placeholder="Window Count" value = "0"/>
 
                     </div>
 

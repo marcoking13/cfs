@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p> Hello World</p>
+
+    <script>
+      async  function  Test(){
+          console.log("s")
+          let results = await fetch("/.netlify/functions/get_schedules")
+          .then(response => {
+            console.log(response.json());
+          })
+
+
+      }
+      Test();
+    </script>
+  </body>
+</html>

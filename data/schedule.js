@@ -26,12 +26,15 @@ const price_sheet = [
 
 class Schedule {
 
-  constructor(name,address,windows,date,time,new_sizes){
+  constructor(name,address,windows,date,time,small,medium,large,screens){
 
       this.name = name;
       this.address = address;
       this.windows = windows;
-      this.new_sizes = new_sizes;
+      this.large = large;
+      this.small = small;
+      this.medium = medium;
+      this.screens = screens;
       this.date = date;
       this.time = time;
       this.total = 0;
@@ -44,12 +47,12 @@ class Schedule {
 
     var db_instance = db.GetDb();
 
-    this.total_all_prices();
-
-
+    var w = await db_instance.collection("schedules").deleteMany({});
     db_instance.collection("schedules").insertOne(this).then((result)=>{
-    }).catch(err => {console.log(err)});
 
+    }).catch(err => {console.log(err)});
+    var v = await db_instance.collection("schedules").find().toArray();
+    console.log(v);
   }
 
   static async MakeFavorite(id,toggle,cb){

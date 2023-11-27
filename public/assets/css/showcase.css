@@ -10,9 +10,9 @@
 }
 .banners{
     margin-top:5%;
-    position: absolute;
+    position: absolute !important;
     width:100%;
-    top:20%;
+    top:30% !important;
     z-index:1;
 
 }
@@ -84,6 +84,7 @@
 .showcase_background{
   z-index:0;
   width:50%;
+      height: 105vh ;
   margin-left:2.5%;
   position: absolute;
   top:-5%;
@@ -139,7 +140,7 @@ span{
 
 }
 .showcase_background{
-  height:100vh;
+  height: 105vh ;
   width:50%;
   padding-left:2.5%;
   margin-left:2.5%;

@@ -286,8 +286,8 @@ a:hover{
 }
   .what_we_do_container{
     margin-top:0%;
-    height:150vh !important;
-    background-image: linear-gradient(to right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .9),rgba(0, 35, 50, .7)),url("./../images/what_we_do_new.png");
+    height:120vh !important;
+    background-image: linear-gradient(to bottom right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .8),rgba(0, 35, 50, .7)),url("./../images/what_we_do_new.png");
   }
   .what_we_do_link {
     font-size: 2rem !important;
@@ -305,10 +305,19 @@ a:hover{
     max-width:83.33% !important;
     flex:83.33% !important;
   }
+  .banners{
+        margin-top: 25% !important;
+  }
+  .value_box_subtitle{
+    font-size:2rem;
+  }
+  .what_we_do_description{
+        width: 70%;
+  }
   .about_container {
     position: relative;
     padding-bottom: 15%;
-    padding-top: 15%;
+    padding-top: 12.5%;
     text-align: justify !important;
 }
 
@@ -353,10 +362,14 @@ border-bottom: 1px solid white;
   }
   .what_we_do_container{
     background-position: center;
-    background-image:linear-gradient(to right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .4)),url('./../images/what_we_do_new.png') !important
-  }
+background-image: linear-gradient(to right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .5),rgba(0, 35, 50, .4)),url(./../images/what_we_do_new.png) !important;  }
 }
 
+@media screen and (max-width:1400px) and (min-width:1080px) and (orientation:landscape){
+.banners{
+margin-top:25% !important;
+}
+}
 
 /*@media screen and (orientation:landscape) and (max-width:1000px){
   .about_container{

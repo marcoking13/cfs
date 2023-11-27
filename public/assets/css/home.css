@@ -5,6 +5,9 @@
   top:65%;
   left:-5%;
 }
+.our_clients_containers{
+  margin-top:-20%;
+}
 .about_us_row{
   position:relative;
   z-index: 99220009;
@@ -711,7 +714,7 @@ padding-left: 5% ;
   .contact_section_bluebox{
     z-index: -1 !important;
     width: 50% !important;
-    top: 55% !important;
+    top: 75% !important;
   }
 }
 
@@ -860,3 +863,56 @@ padding-left: 5% ;
   font-size:2rem;
 }
 } */
+
+@media screen and (max-width:1400px) and (min-width:1080px) and (orientation:landscape){
+.our_work_section{
+margin-top:25% !important;
+}
+
+}
+@media screen and (max-width:844px ) and (orientation:landscape){
+
+.contact_section_title{
+  margin-top: 7.5%;
+}
+.our_clients_col{
+  height:140% !important;
+}
+.contact_section{
+  margin-top: 10% !important;
+}
+.contact_section_bluebox {
+  margin-top:5%;
+}
+.our_client_buttons{
+  top: 170% !important;
+}
+.main_box_paragraph{
+  font-size:1rem;
+}
+.main_box_heading{
+  font-size:1.5rem !important;
+}
+  .about_us_row{
+        margin-top: 55% !important;
+  }
+  .our_clients_overlay{
+        height: 150% !important;
+  }
+  .cfs-heading-container {
+    width:140% !important;
+  }
+
+  .cfs-heading{
+    font-size:4.5rem !important
+  }
+
+  .home_quote_container {
+    top: 105%;
+  }
+
+  .showcase_banner--2{
+    margin-top: 5%;
+  }
+
+}

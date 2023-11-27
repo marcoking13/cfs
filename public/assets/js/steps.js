@@ -70,8 +70,22 @@ var arrow_right = document.querySelector(".clean_arrow--right");
 var bubbles = document.getElementsByClassName("clean_bubble");
 
 var lines = document.getElementsByClassName("what_we_clean_line");
+var desktop_bubbles = `  <div class="clean_bubble_ clean_bubble_active" ><p>1</p></div>
+  <div class="what_we_clean_line clean_line_active" ></div>
 
+  <div class="clean_bubble clean_bubble--2" > <p> 2</p></div>
+  <div class="what_we_clean_line"></div>
 
+  <div class="clean_bubble clean_bubble--3" ><p>3</p></div>
+  <div class="what_we_clean_line"></div>
+
+  <div class="clean_bubble clean_bubble--4"><p>4</p></div>`;
+
+var progress_container = document.querySelector(".progress_container");
+
+if(window.innerWidth <= 680){
+  progress_container.innerHTML = "";
+}
 function GenerateBubbles(){
 
   for(var i =0; i <bubbles.length; i++){
@@ -169,7 +183,7 @@ function ToggleSteps(){
   var steps_box = document.querySelector(".steps_box");
   steps_box.innerHTML = GenerateSlide();
   GenerateBubbles();
-  
+
 }
 
 

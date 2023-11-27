@@ -9,7 +9,7 @@ router.get("/about",userController.GetAboutUsPage);
 router.get("/schedule",userController.GetSchedulePage);
 router.get("/contact_us",userController.GetContactUsPage);
 
-router.post("/modal",userController.GetScheduleData)
+router.post("/",userController.GetScheduleData)
 router.post("/exit",userController.ExitOutOfModal)
 
 module.exports = router;

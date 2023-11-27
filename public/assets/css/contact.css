@@ -20,6 +20,7 @@
 .margin-top-small{
   margin-top: 5%;
 }
+
 .banner_side{
   font-size: 2.5rem;
   color:white;
@@ -416,6 +417,46 @@ padding-bottom:75%
   margin-top:-10%;
   opacity:0;
 }
+@media screen and (max-width:1400px) and (min-width:1080px) and (orientation:landscape){
+.knob_s{
+  top: 55px !important;
+    right: -15px;
+    position: relative;
+}
+}
+@media screen and (max-width:880px) and (orientation:landscape){
+  cfs-heading-container{
+    width: 150% !important;
+  }
+  .cfs-heading{
+        font-size: 4rem !important;
+  }
+  .showcase_banner--2{
+    margin-top:5%;
+  }
+  .what_we_do_col {
+    max-width:50% !important;
+    width:50% !important;
+    flex: 0 0 50% !important;
+  }
+  .about_us_col{
+        margin-top: 5%;
+  }
+  .value_row{
+    visibility: hidden;
+height: 0;
+
+  }
+  .knob_s{
+    top: -20px !important;
+  }
+  .value_col{
+    margin-top: 5%;
+-ms-flex: 0 0 100% !important;
+flex: 0 0 100% !important;
+max-width: 100% !important;
+  }
+}
 @media screen and (max-width:1100px) and (min-width:700px) and (orientation:portrait){
   .meet_owner_col--2 {
     margin-top: 5%;
@@ -423,6 +464,19 @@ padding-bottom:75%
     font-size: 3rem;
     color: white;
     font-family: "Akrobat";
+}
+.ring{
+  left: 20%;
+position: absolute;
+top: 100%;
+}
+.ring_row{
+  margin-top:5%;
+}
+.knob_s{
+  top: 10% !important;
+right: -22.5% !important;
+position: relative
 }
 .banners{
       margin-top: 17% !important;
@@ -545,20 +599,127 @@ max-width: 41.666667%;
   margin-left:0%;
 }
 }
+.progress_container{
+  margin-left:20%;margin-top:5%;transform:translate3d(0px,0px,0px)
+}
+.progress_clean{
+  color:white;opacity:.8;font-size:5rem;font-weight:600;line-height:1
+}
+.clock_col{
+  margin-left:2.5%;
+}
+.text_clock_description{
+  text-align:justify;color;font-size:18px;font-weight:300;color:white;margin-left:10%;margin-top:10%;
+}
+.text_clock_title{
+  color:white;font-size:30px;font-weight:500;color:white;margin-left:10%;margin-top:5%
+}
 @media screen and (max-width:680px){
   .before_and_after_col--2{
     margin-top: 40% !important;
   }
+  .line_steps{
+    margin-top: 30%;
+  }
+  .clock_col{
+    margin-left:0%;
+  }
+  .text_clock_title{
+    text-align: center;
+    margin-left:0 !important
+  }
+  .text_clock_col{
+    margin-top: 90%;
+  }
+  .text_clock_description{
+        text-align: center;
+        margin-left:0 !important
+  }
+  .clean_title{
+    font-size:2.5rem !important;
+    text-align:left;
+    line-height: 1.5;
+    display: block;
+    width:100%;
+  }
+  .progress_clean{
+    text-align: center;
+    margin-top:10%;
+  }
+  .progress_container{
+    margin-left:0%;
+  }
+  .clean_bubble{
+    margin-left: 8%;
+    float: left;
+  display: inline;
+  }
+  .clean_bubble--2{
+    position: relative;
+    bottom: 79px;
+    margin-left: 20%;
+    margin-left: 8%;
+  }
+  .steps_box{
+    margin-top:2.5% !important
+  }
+  .progress_clean{
+    border-bottom:2px solid white;
+    padding-bottom:5%;
+  }
+  .clean_arrow{
+    top:85% !important;
+    z-index:999;
+  }
+  .clean_arrow:hover{
+    box-shadow: 0px 0px 0px 1px black !important;
+
+  }
+  .clean_arrow--right{
+    right:5% !important;
+  }
+  .clean_arrow--left{
+    left:5% !important;
+  }
+
+  .clean_bubble--3{
+    position: relative;
+    bottom: 79px;
+    margin-left: 20%;
+    margin-left:8%;
+  }
+  .clean_bubble--4{
+    position: relative;
+    bottom: 79px;
+    margin-left: 20%;
+    margin-left:8%;
+  }
+  .clean_line{
+    width: 50px;
+    height: 3px;
+    top: 15px !important;
+    position: relative;
+  }
+  .serve_line{
+    width:95% !important;
+    }
   .divide_meet_to_work{
     background: white;
     opacity:1;
     position: relative;
-
     display: block;
     height:.1rem;
     width:50%;
     margin-left: 25%;
     top:8rem;
+  }
+  .clean_number{
+
+  font-size:2rem !important;
+  }
+
+  .clean_serve{
+    font-size:1.5rem !important;
   }
   .before_and_after_col--1{
     margin-top: 20% !important;
@@ -587,7 +748,7 @@ max-width: 41.666667%;
     height:70vh !important;
 }
 .banners{
-  margin-top:45% !important;
+  margin-top:45%;
 }
   .meet_owner_name{
     text-align: center !important;
@@ -905,7 +1066,7 @@ flex:100%;
   background:white;
   transition: all .3s;
   background:white !important;
-  box-shadow:0px 0px 20px black
+  box-shadow:0px 0px 0px 20px black;
 }
 
 .clean_arrow_visible:hover img{
@@ -946,4 +1107,16 @@ flex:100%;
 .slidein{
   position: relative;
   animation: slidein 1 .5s ease-in;
+}
+
+
+.clean_title{
+  color:white;opacity:.8;font-size:5rem;font-weight:400;line-height:1
+
+}
+.serve_line{
+  height:1px;background:white;width:80%;
+}
+.clean_serve{
+  color:white;opacity:.8;font-size:1.7rem;font-weight:400;line-height:1.2
 }

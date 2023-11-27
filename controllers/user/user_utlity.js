@@ -60,6 +60,7 @@ async function  getData(req){
   const response = await new_schedule.save();
 
 
+
   modal = {
     wrapper:"active_wrapper",
     modal:"active_modal",
@@ -68,6 +69,8 @@ async function  getData(req){
   }
 
   lock = true;
+
+  return new_schedule;
 
 }
 

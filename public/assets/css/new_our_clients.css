@@ -151,6 +151,9 @@ width: 100%;
    .our_clients_col {
       width:70% !important;
     }
+    .contact_section_title{
+          margin-top: 45% !important;
+    }
     .main_box_paragraph{
       font-size: 1.3rem;
       font-family: 'Montserrat';
@@ -186,7 +189,7 @@ width: 100%;
       z-index:99999999999999999999999999;
 
       position: absolute;
-      top: 170%;
+      top: 160%;
 
       width: 100%;
     }

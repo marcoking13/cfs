@@ -28,10 +28,11 @@ var data_rendered_to_page = {
     clients:Clients,
     showcase:null,
     gallery:Gallery,
+    schedule:null,
     before_and_after_images: BeforeAndAfterConfig
 }
 
-function returnData (title,path,index,css_path,req){
+function returnData (title,path,index,css_path,req,schedule){
 
   utility.AddPageView(req);
 
@@ -40,6 +41,7 @@ function returnData (title,path,index,css_path,req){
   new_data.pageTitle = title;
   new_data.active_path = path;
   new_data.modal = modal
+    new_data.schedule = schedule;
   new_data.lock = utility.returnLockClass(lock);
   new_data.showcase = ShowcaseHeadings[index];
 
@@ -76,9 +78,13 @@ const GetSchedulePage = (req,res,next)=>{
 
 const GetScheduleData = async(req,res,next) =>{
 
-    await utility.getData(req);
+  var data = req.body;
+  var quote = new Schedule(data.name,data.address,0,null,null,data.small,data.medium,data.large,data.screens);
+  console.log(quote);
+  quote.save();
 
-    res.redirect(req.body.key);
+
+
 
 }
 
