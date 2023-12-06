@@ -162,7 +162,7 @@ span{
    padding:0;
 }
 
-@media screen and (orientation:landscape) and (max-width:800px) and (min-width:391px){
+@media screen and (orientation:landscape) and (max-width:900px) and (min-width:391px){
   .banners{
     top:55% !important;
   }
