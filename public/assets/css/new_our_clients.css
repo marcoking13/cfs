@@ -6,6 +6,9 @@
 .new_our_clients_row{
   position:relative;height:55vh;
 }
+.our_clients_containers{
+  margin-top:-20%;
+}
 
 .our_clients_col{
   height:100%;width:50%;position:absolute;top:0;
@@ -153,6 +156,18 @@ width: 100%;
     }
     .contact_section_title{
           margin-top: 45% !important;
+    }
+
+    .our_clients_containers{
+      margin-top:-2.5%;
+    }
+    .buttons_t{
+      margin-top:15%;
+    }
+    .contact_section_title{
+      top: -55%;
+position: absolute;
+z-index: 999;
     }
     .main_box_paragraph{
       font-size: 1.3rem;

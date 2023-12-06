@@ -12,7 +12,7 @@
     margin-top:5%;
     position: absolute !important;
     width:100%;
-    top:30% !important;
+    top:30% ;
     z-index:1;
 
 }
@@ -229,18 +229,15 @@ span{
     flex:100%;
     bottom:0rem;
   }
-  .about_us_row{
-    margin-top:105%;
-  }
+
   .showcase_container{
         background-position: 230%;
   }
   .cfs-heading{
     display: inline;
     box-sizing: border-box;
-    padding:2% 3%;
-    line-height:5rem;
     font-size:2.5rem;
+    margin-left: -2.5%;
   }
 
   .showcase_container{
@@ -278,6 +275,9 @@ span{
   }
   .showcase_banner--1{
     background: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, .2)) !important;
+  }
+  .banners{
+    top:70%;
   }
 }
 

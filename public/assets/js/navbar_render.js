@@ -116,8 +116,6 @@ function Init(){
 
   if(width >= 900){
     navbar_element.innerHTML = desktop_nav;
-  }else{
-    navbar_element.innerHTML = mobile_nav;
     var contact = document.querySelector(".nav_col--contact");
     contact.addEventListener("click",()=>{
       window.location.assign("/contact_us");
@@ -130,6 +128,9 @@ function Init(){
     schedule.addEventListener("click",()=>{
       window.location.assign("/#hq");
     })
+  }else{
+    navbar_element.innerHTML = mobile_nav;
+
   }
 
   nav_button = document.getElementById("button_navbar");

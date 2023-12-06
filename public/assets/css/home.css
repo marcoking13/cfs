@@ -5,9 +5,7 @@
   top:65%;
   left:-5%;
 }
-.our_clients_containers{
-  margin-top:-20%;
-}
+
 .about_us_row{
   position:relative;
   z-index: 99220009;
@@ -451,17 +449,20 @@ padding-left: 5% ;
     transform: scale(1);
   }
 }
-@media screen and (max-width:680px){
-  .home_quote_container{
-    top:125%;
-  }
+@media screen and (max-width:680px) and (orientation:portrait){
 
   .form_col--inner{
     width:100%;
     max-width:100%;
     flex:100%;
   }
-
+  .about_us{
+    margin-top:125% !important;
+  }
+  /* .banners{
+    width: 120%;
+    top: 80% !important;
+  } */
   .contact_section{
     height:25vh !important;
   }
@@ -528,7 +529,7 @@ padding-left: 5% ;
     margin-top:0%;
   }
   .about_us_row{
-    margin-top:100% !important;
+    margin-top:120%;
   }
   .contact_section_bluebox{
     height:50rem;
@@ -682,7 +683,7 @@ padding-left: 5% ;
 }
 
 }
-@media screen and (max-width:490px){
+/* @media screen and (max-width:490px){
   .about_us_row{
     margin-top:110% !important;
   }
@@ -716,7 +717,7 @@ padding-left: 5% ;
     width: 50% !important;
     top: 75% !important;
   }
-}
+} */
 
 /*
 
