@@ -2,9 +2,14 @@
 
 
 .knob_s{
-  top:30px;right:-5px;position:relative
+  top:30px;
+  right:-5px;
+  position:relative
 }
 
+}
+.knob_s{
+  top:40px;right:-10px;position:relative
 }
 .work_inner_container{
   padding-top:5%;
