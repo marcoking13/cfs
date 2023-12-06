@@ -6,7 +6,12 @@
   right:-5px;
   position:relative
 }
-
+.ring_row{
+  margin-top:5%;
+}
+.what_we_clean_s{
+  margin-top: 7.5%;
+}
 }
 .knob_s{
   top:40px;right:-10px;position:relative
