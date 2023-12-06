@@ -1,8 +1,8 @@
 <ul class="schedule_lists margin-top-5">
 
       <% var new_quotes = path == "/admin/home"  ? limited_quotes : quotes %>
-
-      <% if (quotes.length < 0) {%>
+      <% console.log(quotes) %>
+      <% if (new_quotes.length < 0) {%>
           <p> No Quotes Yet..</p>
       <% }else{ %>
 
@@ -15,18 +15,18 @@
               </div>
 
               <div class="col-6">
-                <p class="list_item_name font-16 akrobat"> Small (qty) : <%= quote.new_sizes[0].count %></p>
+                <p class="list_item_name font-16 akrobat"> Small (qty) : <%= quote.small %></p>
               </div>
 
               <div class="col-6">
-                <p class="list_item_name font-16 akrobat"> Medium (qty): <%= quote.new_sizes[1].count %></p>
+                <p class="list_item_name font-16 akrobat"> Medium (qty): <%= quote.medium %></p>
               </div>
 
               <div class="col-6">
-                <p class="list_item_name font-16 akrobat"> Large (qty): <%= quote.new_sizes[2].count %></p>
+                <p class="list_item_name font-16 akrobat"> Large (qty): <%= quote.large %></p>
               </div>
               <div class="col-12">
-                <p class="list_item_name font-18 akrobat"> Screens (qty): <%= quote.new_sizes[3].count %></p>
+                <p class="list_item_name font-18 akrobat"> Screens (qty): <%= quote.screens %></p>
               </div>
 
               <div class="col-6">

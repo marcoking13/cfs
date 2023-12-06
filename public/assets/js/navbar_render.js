@@ -12,26 +12,28 @@ var desktop_nav = `
   </div>
   <div class="col-1 no_col"></div>
 
-  <div class="col-2">
-    <a href="/"><p class="link_nav margin-left-5">Home</p></a>
-  </div>
+  <a class="col-2 nav_col nav_col--home" href="/">
+    <p class="link_nav margin-left-5">Home</p>
+  </a>
 
-  <div class="col-2">
-    <a href = "/about"><p class="link_nav">About Us</p></a>
-  </div>
+  <a class="col-2 nav_col  nav_col--about" href="/about">
+    <p class="link_nav">About Us</p>
+  </a>
 
-  <div class="col-2">
-    <a href = "/contact_us">  <p class="link_nav">Contact Us</p></a>
-  </div>
+  <a class="col-2 nav_col nav_col--contact" href="/contact_us">
+   <p class="link_nav">Contact Us</p>
+  </a>
 
-  <div class="col-2 sc_col">
-    <a href='/#hq'>  <p class="link_nav">Free Quote</p> </a>
-  </div>
-
+  <a class="col-2  nav_col sc_col nav_col--schedule" href="/#hq">
+   <p class="link_nav">Free Quote</p>
+  </a>
 
 </div>
 
 `;
+
+
+
 
 var mobile_nav = `
 
@@ -116,6 +118,18 @@ function Init(){
     navbar_element.innerHTML = desktop_nav;
   }else{
     navbar_element.innerHTML = mobile_nav;
+    var contact = document.querySelector(".nav_col--contact");
+    contact.addEventListener("click",()=>{
+      window.location.assign("/contact_us");
+    })
+    var about = document.querySelector(".nav_col--about");
+    about.addEventListener("click",()=>{
+      window.location.assign("/about");
+    })
+    var schedule = document.querySelector(".nav_col--schedule");
+    schedule.addEventListener("click",()=>{
+      window.location.assign("/#hq");
+    })
   }
 
   nav_button = document.getElementById("button_navbar");
@@ -129,6 +143,10 @@ function Init(){
     });
 
   }
+
+
+
+
 
 }
 

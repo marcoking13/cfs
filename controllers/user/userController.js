@@ -34,7 +34,7 @@ var data_rendered_to_page = {
 
 function returnData (title,path,index,css_path,req,schedule){
 
-  utility.AddPageView(req);
+  //utility.AddPageView(req);
 
   var new_data = {...data_rendered_to_page};
 
