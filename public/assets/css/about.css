@@ -251,6 +251,9 @@ a:hover{
     position: relative;
     bottom:2rem;
   }
+  .value_col p {
+    font-size:1.5rem !important;
+  }
 
   .intro-text-container{
     top:80%;
