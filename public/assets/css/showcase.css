@@ -209,7 +209,7 @@ span{
 .our_work_section{
   background:none !important;
 }
-@media screen and (max-width:700px) and (min-width:491px) and (orientation:landscape){
+/* @media screen and (max-width:700px) and (min-width:491px) and (orientation:landscape){
   .cfs-heading-container{
     width:130%;
   }
@@ -259,6 +259,7 @@ span{
   flex: 0% !important;}
 
 }
+} */
 @media screen and (max-width:490px){
   .cfs-heading-container{
     width:120%;
