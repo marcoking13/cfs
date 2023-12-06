@@ -209,7 +209,57 @@ span{
 .our_work_section{
   background:none !important;
 }
-@media screen and (max-width:690px){
+@media screen and (max-width:700px) and (min-width:491px) and (orientation:landscape){
+  .cfs-heading-container{
+    width:130%;
+  }
+  .banners{
+    top:55%;
+  }
+  .line-steps{
+    margin-top: 15%;
+  }
+  .text_clock_description{
+    font-size: 18px !important;
+  }
+  .text_clock_title{
+    text-align: center !important;
+    font-size:20px !important;
+  }
+
+.knob_s {
+    top: 5px !important;
+        left: -5px !important;
+}
+.clock_col{
+  max-width: 50% !important;
+  width:50% !important;
+  flex: 50% !important;
+  margin-top:0%;
+  margin-right:5%;
+}
+.progress_clean {
+  font-size:4rem;
+}
+.steps_box {
+    margin-top: 0%;}
+.ring{
+      left: -15px !important;
+}
+.text_clock_col{
+  max-width: 50% !important;
+  width:50% !important;
+  flex: 50% !important;
+  margin-left: 45%;
+  margin-top:0% !important;
+}
+.divider-clock{
+  max-width: 0% !important;
+  width:0% !important;
+  flex: 0% !important;}
+
+}
+@media screen and (max-width:490px){
   .cfs-heading-container{
     width:120%;
   }
