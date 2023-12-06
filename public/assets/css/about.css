@@ -183,12 +183,12 @@ a:hover{
   }
 
   .about_description{
-    font-size:2rem;
+    font-size:1.6rem;
     text-align: justify !important;
   }
 
   .what_we_do_description{
-    font-size: 1.8rem;
+    font-size: 1.6rem !important;
     text-align: justify;
     width:80%;
     font-family: "Montserrat";
@@ -209,7 +209,8 @@ a:hover{
 
   }
   .about_container{
-    padding:10% 0;
+    padding:5% 0;
+    padding-bottom:7.5%;
     margin-top:5% !important;
   }
 .value_box_subtitle{
@@ -286,7 +287,7 @@ a:hover{
 }
   .what_we_do_container{
     margin-top:0%;
-    height:120vh !important;
+    height:125vh !important;
     background-image: linear-gradient(to bottom right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .8),rgba(0, 35, 50, .7)),url("./../images/what_we_do_new.png");
   }
   .what_we_do_link {
