@@ -5,6 +5,7 @@
 .row{
   position: relative;
 }
+
 .showcase_container{
   position: relative;
 }
@@ -186,7 +187,6 @@ span{
     margin-left: -2.5%;
 }
   .banners {
-    margin-top: 27.5% ;
     width: 100%;
     z-index: 1;
 }
@@ -531,3 +531,6 @@ span{
     background:white !important;
   }
  } */
+ .banners{
+   top:100%;
+ }

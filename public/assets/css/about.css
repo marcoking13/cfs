@@ -313,7 +313,7 @@ a:hover{
     flex:83.33% !important;
   }
   .banners{
-        margin-top: 25% !important;
+        margin-top: 25%;
   }
   .value_box_subtitle{
     font-size:2rem;
@@ -369,12 +369,14 @@ border-bottom: 1px solid white;
   }
   .what_we_do_container{
     background-position: center;
-background-image: linear-gradient(to right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .8),rgba(0, 35, 50, .4)),url(./../images/what_we_do_new.png) !important;}
+    background-image: linear-gradient(to right,rgba(0, 35, 50, 1),rgba(0, 35, 50, 1),rgba(0, 35, 50, .8),rgba(0, 35, 50, .4)),url(./../images/what_we_do_new.png) !important;}
 
 @media screen and (max-width:1400px) and (min-width:1080px) and (orientation:landscape){
+
 .banners{
-margin-top:25% !important;
-}
+  margin-top:25% ;
+  }
+
 }
 
 /*@media screen and (orientation:landscape) and (max-width:1000px){
