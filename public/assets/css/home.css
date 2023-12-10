@@ -538,14 +538,15 @@ padding-left: 5% ;
 }
 
 
-@media screen and (max-width: 1100px) and (min-width:700px) and (orientation: portrait) {
+@media screen and (max-width: 1100px) and (min-width:900px) and (orientation: portrait) {
 .about_us_row{
-  margin-top:50% !important
+  margin-top:45% !important
 }
 .home_quote_container{
   width:90%;
 
 }
+
 .gallery_img{
   height:25vh !important;
   width:100%;
@@ -558,7 +559,8 @@ padding-left: 5% ;
   height:0;
 }
 .contact_section{
-  height:35vh;
+  height:45vh;
+      margin-top: -30% !important;
 }
 .about_us_image {
     height: 45vh;
@@ -569,7 +571,7 @@ padding-left: 5% ;
 }
 
 .contact_section p {
-    margin-top: 20%;
+    margin-top: 30%;
     padding-left: 5% !important;
 }
 .contact_section_bluebox {

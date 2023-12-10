@@ -167,10 +167,16 @@ span{
     top:55% !important;
   }
 }
-@media screen and (max-width:1100px) and (orientation:portrait) and (min-width:700px){
+@media screen and (max-width:1100px) and (orientation:portrait) and (min-width:900px){
   .showcase_container{
     margin-top: 1% !important;
     height:70vh;
+  }
+  .showcase_banner--2 {
+    height: 7.5vh !important;
+}
+  .banners{
+    top:95%;
   }
   .intro-text-container {
     width: 100%;
@@ -213,6 +219,7 @@ span{
 .our_work_section{
   background:none !important;
 }
+
 /* @media screen and (max-width:700px) and (min-width:491px) and (orientation:landscape){
   .cfs-heading-container{
     width:130%;

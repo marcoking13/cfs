@@ -1,4 +1,4 @@
-@media screen and (orientation:landscape) and (max-width:800px) and (min-width:391px){
+/* @media screen and (orientation:landscape) and (max-width:800px) and (min-width:391px){ */
 
 
 .knob_s{
@@ -482,7 +482,8 @@ flex: 0 0 100% !important;
 max-width: 100% !important;
   }
 }
-@media screen and (max-width:1100px) and (min-width:700px) and (orientation:portrait){
+@media screen and (max-width:1100px) and (min-width:900px) and (orientation:portrait){
+
   .meet_owner_col--2 {
     margin-top: 5%;
     text-align: justify;
@@ -825,6 +826,9 @@ flex:100%;
 }
 .banner_flip_inner {
   transition: transform 1s !important;
+}
+.ring_row{
+  margin-top:10%;
 }
 }
 
