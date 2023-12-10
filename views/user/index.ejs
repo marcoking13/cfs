@@ -68,7 +68,7 @@
 
   function ReturnModal(outside,total,name){
     return( `
-    <div class= "cfs_modal_wrapper max-z  modal_wrapper_pos" id="blackWrapper"></div>
+    <div  class= "cfs_modal_wrapper max-z  modal_wrapper_pos" id="blackWrapper"></div>
 
     <div style="width:100%;height:100%;position:absolute;top:0%;left:0%;z-index:999999999999999999999999999999999999999;top:105%" id="mainModal" tabindex="-1">
 
@@ -112,7 +112,7 @@
 
 
 
-                    <a href="/"><button class="no-style-button exit_button " type="submit"><p class="super-max-z font-25 absolute" style="right:-75% !important" id="modal_exit">X</p></button></a>
+                <a href="/"><button class="no-style-button exit_button " type="submit"><p class="super-max-z font-25 absolute" style="right:-75% !important" id="modal_exit">X</p></button></a>
 
 
               </div>
@@ -126,6 +126,7 @@
     </div>`)
   }
   var container_quote = document.querySelector(".modal_container_toggle");
+  var didGetQuote = false;
 
   quote_submit_button.addEventListener("click",async (e)=>{
     e.preventDefault();
@@ -176,6 +177,7 @@
       total:total
     }
     exit_button = document.querySelector(".modal_exit");
+
     // exit_button.addEventListener("click",()=>{
     //   container_quote.innerHTML = "";
     // })
@@ -184,6 +186,8 @@
 
     document.body.style.overflow = "hidden !important";
     await axios.post("/",quote);
+
+      didGetQuote = true;
   });
 
 </script>

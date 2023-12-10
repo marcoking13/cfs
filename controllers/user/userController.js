@@ -92,8 +92,11 @@ const GetHomePage = (req,res,next)=>{
 
    var data = returnData("Home","/",0,"home.css",req);
    //Schedule.deleteAll();
+   Meta.FindAllBrowsers((b)=>{
+     console.log(b)
 
    res.render(path.join(rootDir,"views","/user/index.ejs"),data);
+ });
 
 }
 

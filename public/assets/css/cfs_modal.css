@@ -50,8 +50,12 @@
   z-index:999;
   position: absolute;
 }
+#mainModal{
+  top:5% !important;
+  position: fixed !important;
+}
 .modal_pos{
-  top:20%;
+  top:10%;
   z-index:9999999999999999999;
 }
 

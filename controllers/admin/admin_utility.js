@@ -26,7 +26,7 @@ var data_rendered_to_page = {
 const  GetBrowserCounts = async ()=>{
 
       var browsers =   await Meta.ReturnAllBrowsers();
-
+      console.log(browsers);
       var new_brow = {...brow};
 
       for(var i = 0; i < browsers.length;i++){

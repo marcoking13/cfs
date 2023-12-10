@@ -110,6 +110,8 @@ class Meta {
 
   }
 
+
+
   static  async GetVisitorCount  (){
 
     var db_instance = db.GetDb();
