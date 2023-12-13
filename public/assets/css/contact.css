@@ -1170,7 +1170,7 @@ flex:100%;
 
 @media screen and (max-width:900px) and (min-width:600px){
   .banners{
-    top: 125% !important;
+    top: 145% !important;
     }
     .cfs-heading{
       font-size:4.5rem !important;
