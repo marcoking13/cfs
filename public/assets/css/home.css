@@ -449,7 +449,7 @@ padding-left: 5% ;
     transform: scale(1);
   }
 }
-@media screen and (max-width:680px) and (orientation:portrait){
+@media screen and (max-width:490px) and (orientation:portrait){
 
   .form_col--inner{
     width:100%;
@@ -540,11 +540,12 @@ padding-left: 5% ;
 
 @media screen and (max-width: 1100px) and (min-width:900px) and (orientation: portrait) {
 .about_us_row{
+  margin-left:10%;
   margin-top:45% !important
 }
 .home_quote_container{
   width:90%;
-
+margin-left:5%;
 }
 
 .gallery_img{

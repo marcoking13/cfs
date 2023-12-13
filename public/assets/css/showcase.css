@@ -177,7 +177,7 @@ span{
     height: 7.5vh !important;
 }
   .banners{
-    top:95%;
+    top:105%;
   }
   .intro-text-container {
     width: 100%;
@@ -193,6 +193,7 @@ span{
 .cfs-heading {
     /* width: 120%; */
     display: inline;
+    width:120%;
     padding: 2% 7.5%;
     margin-left: 0%;
     font-weight: 600;
@@ -201,7 +202,7 @@ span{
 }
 .showcase_banner--1 {
     width: 80%;
-    height: 7vh;
+    height: 6vh;
     background: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, .5)) !important;
 }
 .about_description{
@@ -210,7 +211,7 @@ span{
 
 .showcase_banner--2 {
     width: 30% !important;
-    height: 10vh;
+    height: 5vh;
     position: relative;
     bottom: 2rem;
 }
@@ -271,6 +272,7 @@ span{
 
 }
 } */
+
 @media screen and (max-width:490px){
   .cfs-heading-container{
     width:120%;
