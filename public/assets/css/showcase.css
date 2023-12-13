@@ -177,7 +177,7 @@ span{
     height: 7.5vh !important;
 }
   .banners{
-    top:115%;
+    top:115% !important;
   }
   .intro-text-container {
     width: 100%;

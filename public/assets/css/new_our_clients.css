@@ -259,12 +259,12 @@ z-index: 999;
   }
 }
 
-@media screen and (max-width:800px) and (min-width:600px) and (orientation:portrait){
+@media screen and (max-width:900px) and (min-width:600px) and (orientation:portrait){
   .new_our_clients_container{
-        margin-top: 40.5%;
+        margin-top: 32.5%;
   }
   .our_clients_col {
-    height: 70%;
+    height: 80%;
 
 }
 .our_clients_main_box{
