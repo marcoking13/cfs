@@ -538,7 +538,7 @@ padding-left: 5% ;
 }
 
 
-@media screen and (max-width: 800px) and (min-width:600px) and (orientation: portrait) {
+@media screen and (max-width: 900px) and (min-width:600px) and (orientation: portrait) {
 .about_us_row{
   margin-top:45% !important
 }

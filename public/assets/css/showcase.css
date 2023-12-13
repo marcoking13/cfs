@@ -168,7 +168,7 @@ span{
     top:55% !important;
   }
 }
-@media screen and (max-width:800px) and (orientation:portrait) and (min-width:600px){
+@media screen and (max-width:900px) and (orientation:portrait) and (min-width:600px){
   .showcase_container{
     margin-top: 1% !important;
     height:70vh;

@@ -1168,7 +1168,7 @@ flex:100%;
 }
 
 
-@media screen and (max-width:800px) and (min-width:600px){
+@media screen and (max-width:900px) and (min-width:600px){
   .banners{
     top: 125% !important;
     }
