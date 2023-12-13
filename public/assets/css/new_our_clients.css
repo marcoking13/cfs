@@ -134,21 +134,8 @@ width: 100%;
   left:0;
   background-image:linear-gradient(to right, rgba(3, 77, 118, 1),rgba(3, 77, 118, .5), rgba(3, 77, 118, 0), rgba(3, 77, 118, 0),rgba(3, 77, 118, 0));
 }
-@media screen and (min-width:700px) and (max-width:1200px) and (orientation:portrait){
-  .our_clients_main_box{
-    height: 70%;
-  }
-  .our_clients_overlay{
-        height: 49%;
-  }
-  .new_our_clients_container{
-        padding-bottom: 0%;
-  }
-  .our_client_buttons{
-    position: absolute;
-    top: 65%;
-    width: 100%;
-  }
+@media screen and (min-width:600px) and (max-width:800px) and (orientation:portrait){
+
 }
 @media screen and (max-width:680px){
    .our_clients_col {
@@ -272,13 +259,43 @@ z-index: 999;
   }
 }
 
-@media screen and (max-width:1100px) and (min-width:900px) and (orientation:portrait){
+@media screen and (max-width:800px) and (min-width:600px) and (orientation:portrait){
   .new_our_clients_container{
         margin-top: 32.5%;
   }
   .our_clients_col {
-    height: 70%;
+    height: 100%;
 
+}
+.our_clients_main_box{
+  height: 70%;
+}
+.our_clients_overlay{
+      height: 70%;
+}
+.new_our_clients_container{
+      padding-bottom: 0%;
+}
+.our_clients_text_banner{
+  margin-left:-5%;
+}
+.main_box_paragraph {
+  padding: 5% 2.5%;
+}
+
+.box_col--bottom{
+  padding:5% 2% !important;
+}
+.main_box_paragraph{
+  width:80%;
+}
+.main_box_heading{
+  font-size:2.5rem;
+}
+.our_client_buttons{
+  position: absolute;
+  top: 85%;
+  width: 100%;
 }
   .button_col_our_clients {
     margin-left: 35%;
@@ -286,7 +303,7 @@ z-index: 999;
   .our_client_button{
     z-index:999;
     position: relative;
-    height: 2rem;
+    height: 1.6rem;
     width: 20%;
     float: left;
     margin-left: 10%;

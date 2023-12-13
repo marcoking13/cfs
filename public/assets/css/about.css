@@ -312,9 +312,10 @@ a:hover{
     max-width:83.33% !important;
     flex:83.33% !important;
   }
+
   .banners{
-        margin-top: 25%;
-  }
+    top: 115% !important;
+    }
   .value_box_subtitle{
     font-size:2rem;
   }
