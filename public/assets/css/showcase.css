@@ -277,9 +277,9 @@ width: 2rem !important;
 
 }
 } */
-@media screen and (min-width:500px) and (max-width:900px) and (orientation:landscape){
+@media screen and (min-width:601px) and (max-width:900px) and (orientation:landscape){
   .banner{
-    top:115% !important;
+    top:90% !important;
   }
 }
 @media screen and (max-width:600px) and (orientation:portrait){

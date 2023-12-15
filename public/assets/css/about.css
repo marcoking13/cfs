@@ -1,3 +1,23 @@
+@media screen and (min-width:601px) and (max-width:900px) and (orientation:landscape){
+  .about_us_divider{
+    width:0% !important;
+    max-width:0% !important
+
+  }
+  .about_us_col{
+    padding: 5%;
+    flex: 100%;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .what_we_do_description{
+        width: 150% !important;
+  }
+}
+
+
+
+
 html{
     box-sizing: border-box
 }
