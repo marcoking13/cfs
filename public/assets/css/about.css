@@ -8,6 +8,8 @@
     margin-top:22.5%
   }
   .mission_col{
+    padding-top:2.5%;
+    padding-bottom:2%;
     flex: 100% !important;
     max-width: 100% !important;
     width:  100% !important;
