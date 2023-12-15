@@ -27,12 +27,19 @@ text-align: justify !important;
   .about_description{
     font-size:2rem !important;
   }
+  .what_we_do_col{
+    width:55% !important;
+    max-width: 55% !important;
+    flex:55% !important
+  }
   .what_we_do_title{
+    width:100% !important;
     font-size:2.5rem;
   }
-  .what_we_do_normal_link{
-    width:110%;
-    font-size:1.7rem;
+  .link_col{
+  width:45% !important;
+  max-width:45% !important;
+  flex:45% !important;
   }
 }
 
