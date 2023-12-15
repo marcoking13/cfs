@@ -262,6 +262,16 @@ z-index: 999;
   .our_clients_col {
     height: 100% !important;
   }
+  .our_clients_containers{
+    margin-top:0% !important;
+  }
+  .new_our_clients_row{
+    position: relative;
+    height: 75vh !important;
+  }
+  .our_client_buttons{
+        top: 120% !important;
+  }
 }
 
 @media screen and (max-width:900px) and (min-width:600px) and (orientation:portrait){

@@ -4,8 +4,15 @@
     max-width:0% !important
 
   }
+  .about_us_col--2{
+    margin-top:22.5%
+  }
+  .mission_col{
+    flex: 100% !important;
+    max-width: 100% !important;
+    width:  100% !important;
+  }
   .about_us_col{
-    padding: 5%;
     flex: 41.666666666% !important;
     max-width: 41.666666666% !important;
     width:  41.666666666% !important;
