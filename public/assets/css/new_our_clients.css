@@ -267,10 +267,10 @@ z-index: 999;
   }
   .new_our_clients_row{
     position: relative;
-    height: 75vh !important;
+    height: 95vh !important;
   }
   .our_client_buttons{
-        top: 120% !important;
+        top: 140% !important;
   }
 }
 
