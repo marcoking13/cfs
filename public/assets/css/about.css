@@ -376,9 +376,11 @@ a:hover{
   .mission_col{
     /* margin-top:5% !important; */
     /* padding-bottom:2%; */
-    flex: 100% !important;
-    max-width: 100% !important;
-    width:  100% !important;
+
+    margin-left:5%;
+    flex: 90% !important;
+    max-width: 90% !important;
+    width:  90% !important;
   }
 
   .banners{
