@@ -365,10 +365,20 @@ a:hover{
 }
 
 @media screen and (orientation:portrait) and (min-width:600px) and (max-width:900px){
-  .about_us_col{
-    width:83.33% !important;
-    max-width:83.33% !important;
-    flex:83.33% !important;
+  .about_us_divider{
+    width:0% !important;
+    max-width:0% !important
+
+  }
+  .about_us_col--2{
+    margin-top:22.5%
+  }
+  .mission_col{
+    /* margin-top:5% !important; */
+    /* padding-bottom:2%; */
+    flex: 100% !important;
+    max-width: 100% !important;
+    width:  100% !important;
   }
 
   .banners{
