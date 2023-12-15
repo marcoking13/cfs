@@ -542,6 +542,8 @@ padding-left: 5% ;
 .about_us_row{
   margin-top:45% !important;
   margin-left:5%;
+  width:90% !important;
+
 }
 .home_quote_container{
   width:90%;
