@@ -265,6 +265,9 @@ z-index: 999;
   .our_clients_containers{
     margin-top:0% !important;
   }
+  .main_box_paragraph{
+    margin-left:-2.5% !important
+  }
   .our_clients_overlay{
     height: 60% !important;
   }
