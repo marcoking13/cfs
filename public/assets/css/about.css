@@ -27,6 +27,13 @@ text-align: justify !important;
   .about_description{
     font-size:2rem !important;
   }
+  .what_we_do_title{
+    font-size:2.5rem;
+  }
+  .what_we_do_normal_link{
+    width:110%;
+    font-size:1.7rem;
+  }
 }
 
 
