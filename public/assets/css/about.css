@@ -12,6 +12,20 @@
   }
   .what_we_do_description{
         width: 150% !important;
+  }.about_container{
+    /* position: relative; */
+    padding-bottom: 0% !important;
+    margin-top: 0% !important;
+text-align: justify !important;
+  }
+  .what_we_do_container{
+    margin-top:-5% !important;
+  }
+  .about_title{
+    font-size:4rem !important
+  }
+  .about_description{
+    font-size:2rem !important;
   }
 }
 

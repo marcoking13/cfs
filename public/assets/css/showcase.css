@@ -163,11 +163,11 @@ span{
    padding:0;
 }
 
-@media screen and (orientation:landscape) and (max-width:900px) and (min-width:391px){
+/* @media screen and (orientation:landscape) and (max-width:900px) and (min-width:391px){
   .banners{
     top:55% !important;
   }
-}
+} */
 @media screen and (max-width:900px) and (orientation:portrait) and (min-width:600px){
   .showcase_container{
     margin-top: 1% !important;
