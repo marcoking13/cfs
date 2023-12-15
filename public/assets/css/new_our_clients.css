@@ -265,12 +265,15 @@ z-index: 999;
   .our_clients_containers{
     margin-top:0% !important;
   }
+  .our_clients_overlay{
+    height: 60% !important;
+  }
   .new_our_clients_row{
     position: relative;
     height: 95vh !important;
   }
   .our_client_buttons{
-        top: 140% !important;
+        top: 120% !important;
   }
 }
 
