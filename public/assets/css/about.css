@@ -6,9 +6,9 @@
   }
   .about_us_col{
     padding: 5%;
-    flex: 100%;
-    max-width: 100% !important;
-    width: 100% !important;
+    flex: 41.666666666% !important;
+    max-width: 41.666666666% !important;
+    width:  41.666666666% !important;
   }
   .what_we_do_description{
         width: 150% !important;
