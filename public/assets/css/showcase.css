@@ -278,7 +278,7 @@ width: 2rem !important;
 }
 } */
 
-@media screen and (max-width:490px){
+@media screen and (max-width:600px) and (orientation:portrait){
   .cfs-heading-container{
     width:120%;
   }
