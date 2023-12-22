@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes appear{
+  0%{
+    transform:translateY(-100px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
+
 @keyframes move_text_left{
   0%{
     left: -1000px;

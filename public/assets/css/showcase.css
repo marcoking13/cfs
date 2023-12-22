@@ -199,10 +199,9 @@ span{
 @media screen and (max-width:900px) and (orientation:portrait) and (min-width:600px){
 
   .showcase_container{
-    margin-top: 1% !important;
+    margin-top: 2.5% !important;
     height:70vh;
   }
-
   .intro-text-container {
     width: 100%;
     margin-top: 0%;

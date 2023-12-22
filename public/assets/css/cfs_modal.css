@@ -32,14 +32,7 @@
   height: 1000%;
   opacity: .5;
 }
-@keyframes appear{
-  0%{
-    transform:translateY(-100px);
-  }
-  100%{
-    transform:translateY(0px);
-  }
-}
+
 .modal_body{
   animation:appear .5s 1 ease-in;
 
