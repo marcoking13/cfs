@@ -1,16 +1,62 @@
-@font-face { font-family: Akrobat; font-weight: normal; src: url('./../fonts/Akrobat-Black.otf'); }
- @font-face { font-family: Akrobat; font-weight: lighter; src: url('./../fonts/Akrobat-Light.otf'); }
+
  footer p, footer a, footer i {
    font-family: "Akrobat";
-
  }
+
+ html{
+   box-sizing: border-box
+ }
+ 
  .relative{
    position: relative;
-
  }
+
  .padding-top-bottom-5{
    padding-top:5%;
    padding-bottom:5%;
+ }
+
+ .margin-top-very-small{
+   margin-top: 2.5%;
+ }
+ .btn{
+   color:white !important;
+ }
+
+ .padding-small{
+   padding:5%;
+ }
+ .padding-bottom-small{
+   padding-bottom: 5%;
+ }
+
+ .padding-top-small{
+   padding-top:5%;
+ }
+
+ .margin-top-small{
+   margin-top: 5%;
+ }
+
+ .margin-top-small-neg{
+   margin-top:-5%;
+ }
+
+
+ .bottom-0{
+   bottom:0%;
+ }
+ .padding-0{
+   padding:0% !important;
+ }
+ .float-right{
+   float:right;
+ }
+ .left-0{
+   left: 0% ;
+ }
+ .right-0{
+   right: 0% ;
  }
  .padding-top-bottom-2_5{
    padding-top:2.5%;

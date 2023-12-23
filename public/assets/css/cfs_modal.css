@@ -21,9 +21,9 @@
 }
 
 .active_wrapper{
-    opacity:.5 !important;
-    padding-bottom:10%;
-    background:black !important;
+  opacity:.5 !important;
+  padding-bottom:10%;
+  background:black !important;
 }
 
 .cfs_modal_wrapper{
@@ -35,18 +35,20 @@
 
 .modal_body{
   animation:appear .5s 1 ease-in;
-
 }
+
 .modal_wrapper_pos{
   top:0%;
   left:0%;
   z-index:999;
   position: absolute;
 }
+
 #mainModal{
   top:5% !important;
   position: fixed !important;
 }
+
 .modal_pos{
   top:10%;
   z-index:9999999999999999999;
@@ -62,14 +64,15 @@
   color:black !important;
 }
 
-
 .quote_button_modal{
   margin-top:1%;
   border-width:2px !important;
 }
+
 .mobile-height-200px{
   height:200px !important;
 }
+
 .quote_button_modal:hover{
   color:white !important;
   background:black !important;
@@ -77,29 +80,34 @@
 }
 
 @media screen and (max-width:690px){
+  
   .modal_pos{
     top:5% !important;
   }
+
   .mobile-col-10{
     padding-bottom:0 !important;
   }
+
   #modal_exit{
     color: #1B1742 !important;
-top: 0% !important;
-left: -10% !important;
+    top: 0% !important;
+    left: -10% !important;
   }
 
   .client_card{
     padding-bottom:0% !important;
   }
+
   .before_box{
     height:300px !important;
   }
+
   .mobile-after{
     position: absolute;
     bottom:1% !important;
-
   }
+
   .after_box{
     position: relative;
     z-index:99;
@@ -108,17 +116,18 @@ left: -10% !important;
   }
 
   .logo_img{
-        margin-top: -12.5% !important;
-  }
-  .small_logo_img{
-        margin-top: -17.5% !important;
-  }
-  .p_row{
-    position: absolute;
-left: 25% !important;
-width: 80% !important;
-margin-top: 5% !important;
+     margin-top: -12.5% !important;
   }
 
+  .small_logo_img{
+    margin-top: -17.5% !important;
+  }
+
+  .p_row{
+    position: absolute;
+    left: 25% !important;
+    width: 80% !important;
+    margin-top: 5% !important;
+  }
 
 }
