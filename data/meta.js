@@ -28,8 +28,7 @@ class Meta {
   static async ResetViews () {
 
     var db_instance = db.GetDb();
-
-    await db_instance.collection("unique_visitors").deleteMany();
+    //await db_instance.collection("unique_visitors").deleteMany();
     await db_instance.collection("visitors").deleteMany();
     await db_instance.collection("browsers").deleteMany();
     await db_instance.collection("pages").deleteMany();
@@ -40,9 +39,10 @@ class Meta {
 
     var db_instance = db.GetDb();
     var find = await db_instance.collection("visitors").findOne({ip:ip});
+
     if(!find){
 
-      await db_instance.collection("unique_visitors").insertOne({ip:ip});
+      //await db_instance.collection("unique_visitors").insertOne({ip:ip});
       await db_instance.collection("visitors").insertOne({ip:ip});
 
     }else{
@@ -59,7 +59,8 @@ class Meta {
 
     if(instance){
       await db_instance.collection("browsers").updateOne({ browser: browser}, {$set: {qty: instance.qty + 1}});
-    }else{
+    }
+    else{
       await db_instance.collection("browsers").insertOne({browser:browser,qty:1});
     }
 
@@ -79,15 +80,17 @@ class Meta {
       await db_instance.collection("pages").insertOne({name:browser,qty:1});
     }
 
-      var d = await db_instance.collection("pages").find({}).toArray();
-      console.log(d);
+    var d = await db_instance.collection("pages").find({}).toArray();
 
   }
 
   static async FindAllBrowsers(cb){
+
       var db_instance = db.GetDb();
       const data =  await db_instance.collection("browsers").find({}).toArray();
+
       cb(data);
+
   }
 
   static async ReturnAllBrowsers(){

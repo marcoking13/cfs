@@ -1,4 +1,3 @@
-const Quote = require("./../../data/quote.js");
 const Schedule = require("./../../data/schedule.js");
 const Meta = require("./../../data/meta.js");
 const Pricing = require("./../../config/pricing.js");
@@ -59,8 +58,6 @@ async function  getData(req){
 
   const response = await new_schedule.save();
 
-
-
   modal = {
     wrapper:"active_wrapper",
     modal:"active_modal",
@@ -73,7 +70,6 @@ async function  getData(req){
   return new_schedule;
 
 }
-
 
 exports.getData = getData;
 exports.AddPageView = AddPageView;

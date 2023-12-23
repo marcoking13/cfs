@@ -3,15 +3,14 @@ var path = require("path");
 var rootDir = require("./../../util/path.js");
 const utility = require("./user_utlity.js");
 
-const Quote = require("./../../data/quote.js");
 const Gallery = require("./../../config/gallery.js");
 const Schedule = require("./../../data/schedule.js");
 const Meta = require("./../../data/meta.js");
 const Pricing = require("./../../config/pricing.js");
 const Clients = require("./../../config/clients.js");
 const ShowcaseHeadings = require("./../../config/showcase_headings.js");
-const BeforeAndAfterConfig = require("./../../config/before_and_after_config.js");
 const Values = require("./../../config/values.js");
+const Steps = require("./../../config/steps.js");
 
 const isLoaded = false;
 const { detect } = require('detect-browser');
@@ -29,24 +28,25 @@ var data_rendered_to_page = {
     showcase:null,
     gallery:Gallery,
     schedule:null,
-    before_and_after_images: BeforeAndAfterConfig
 }
 
 function returnData (title,path,index,css_path,req,schedule){
-
-  //utility.AddPageView(req);
 
   var new_data = {...data_rendered_to_page};
 
   new_data.pageTitle = title;
   new_data.active_path = path;
   new_data.modal = modal
-    new_data.schedule = schedule;
+  new_data.schedule = schedule;
   new_data.lock = utility.returnLockClass(lock);
   new_data.showcase = ShowcaseHeadings[index];
 
   return new_data;
 
+}
+
+const GetSteps = (req,res,next) => {
+  res.json(Steps);
 }
 
 const GetAboutUsPage = (req,res,next) => {
@@ -55,6 +55,7 @@ const GetAboutUsPage = (req,res,next) => {
     res.render(path.join(rootDir,"views","/user/about_us.ejs"),data);
 
 }
+
 
 const ExitOutOfModal = (req,res,next) => {
 
@@ -80,11 +81,7 @@ const GetScheduleData = async(req,res,next) =>{
 
   var data = req.body;
   var quote = new Schedule(data.name,data.address,0,null,null,data.small,data.medium,data.large,data.screens);
-  console.log(quote);
   quote.save();
-
-
-
 
 }
 
@@ -93,9 +90,9 @@ const GetHomePage = (req,res,next)=>{
    var data = returnData("Home","/",0,"home.css",req);
    //Schedule.deleteAll();
    Meta.FindAllBrowsers((b)=>{
-     console.log(b)
 
    res.render(path.join(rootDir,"views","/user/index.ejs"),data);
+
  });
 
 }
@@ -111,6 +108,7 @@ const GetContactUsPage = (req,res,next)=>{
 
 exports.GetAboutUsPage = GetAboutUsPage;
 exports.GetSchedulePage = GetSchedulePage;
+exports.GetSteps = GetSteps;
 exports.ExitOutOfModal = ExitOutOfModal;
 exports.GetScheduleData = GetScheduleData;
 exports.GetHomePage = GetHomePage;

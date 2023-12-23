@@ -3,8 +3,10 @@ var ObjectId = require('mongodb').ObjectId;
 
 var days = ["Monday","Tuesday","Wendsday","Thursday","Friday","Saturday","Sunday"];
 var profile_colors = ["#0CC0DF","#38B6FF"];
+
 var seperateByHours = 2;
 var numberOfJobs = 7;
+
 var schedule = [];
 
 function GenerateSchedule(seperateByHours, numberOfJobs,days){
@@ -65,15 +67,18 @@ class Labor {
   static async EditSchedule(data,cb){
 
     var db_instance = db.GetDb();
+
     var _id = new ObjectId(data.person_id);
+
     var person = await db_instance.collection("laborers").findOne({_id:_id});
+
     var new_person = {...person};
-    console.log(new_person.schedule[data.day_id],data.day_id)
 
     new_person.schedule[data.day_id].schedule[data.time_id].job = data.name_of_job;
     new_person.schedule[data.day_id].schedule[data.time_id].address = data.address;
 
     await db_instance.collection("laborers").replaceOne({_id:_id},new_person);
+
     return cb(true);
 
   }

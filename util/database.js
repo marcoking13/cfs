@@ -1,8 +1,9 @@
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
+
 let _db;
+
 var url = "mongodb+srv://marcokhodr116:thirdpi1@cluster0.9nkwh9b.mongodb.net/?retryWrites=true&w=majority";
-var url_2 ="mongodb://localhost:27017/" ;
 
 const MongoConnect = (cb) => {
 

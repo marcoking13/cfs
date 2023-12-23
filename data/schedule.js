@@ -1,28 +1,8 @@
 const db = require("./../util/database.js");
+
 var ObjectId = require('mongodb').ObjectId;
 
-const price_sheet = [
-   {
-    key:"small",
-    price:2.5,
-    price_half:1
-  },
-  {
-  key:"medium",
-  price:3.5,
-  price_half:1.5
-  },
-  {
-  key:"large",
-  price:5.5,
-  price_half:2.5
-},
-  {
-  key:"screens",
-  price:6.5,
-  price_half:6
-  }
-]
+const price_sheet = require("./../config/pricing.js");
 
 class Schedule {
 
@@ -51,8 +31,9 @@ class Schedule {
     db_instance.collection("schedules").insertOne(this).then((result)=>{
 
     }).catch(err => {console.log(err)});
+
     var v = await db_instance.collection("schedules").find().toArray();
-    console.log(v);
+
   }
 
   static async MakeFavorite(id,toggle,cb){
@@ -91,7 +72,6 @@ class Schedule {
 
     var db_instance = db.GetDb();
     var schedules =  await db_instance.collection("schedules").deleteMany();
-
 
   }
 
@@ -154,7 +134,7 @@ class Schedule {
 
         for(var k = 0; k < price_sheet.length; k++){
 
-          if(this.new_sizes[i].key == price_sheet[k].key)
+            if(this.new_sizes[i].key == price_sheet[k].key)
             {
               total += price_sheet[k].price * this.new_sizes[i].count;
             }

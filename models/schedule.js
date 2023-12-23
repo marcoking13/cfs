@@ -20,9 +20,11 @@ class Schedule {
   }
 
   static async findAll(cb){
-    await db_instance.collection("schedules").deleteMany({});
+
     var db_instance = db.GetDb();
+    
     var schedules =  await db_instance.collection("schedules").find({}).toArray();
+
     cb(schedules);
 
   }

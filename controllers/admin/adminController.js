@@ -2,7 +2,6 @@ var express = require("express");
 var path = require("path");
 var rootDir = require("./../../util/path.js");
 
-var Quote = require("./../../data/quote.js");
 var Schedule = require("./../../data/schedule.js");
 var Meta = require("./../../data/meta.js");
 var Labor = require("./../../data/labor.js");
@@ -35,6 +34,7 @@ var data_rendered_to_page = {
 
 
 const EditSchedule = async (req,res,next) => {
+
   var data  = req.body;
 
   await Labor.EditSchedule(data,()=>{
@@ -80,7 +80,7 @@ const ShowSchedule = async (req,res,next) => {
 
       res.render(path.join(rootDir,"views","/admin/schedule_detail.ejs"),new_data_to_page);
 
-  }
+}
 
 const MakeFavorite = async(req,res,next) => {
 
@@ -96,7 +96,7 @@ const MakeFavorite = async(req,res,next) => {
 
 const CompleteQuotes = async(req,res,next)=>{
 
-  Schedule.completeThese(req.body.quotes,(data)=>{
+    Schedule.completeThese(req.body.quotes,(data)=>{
       res.redirect("/admin/home");
     });
 
@@ -117,13 +117,13 @@ const AddLaborer = async(req,res,next)=>{
 const AddBrowserView = (req,res,next) =>{
 
     const ipAddress = req.ip;
-       
 
     if(req.body.root !== "Schedule Page"){
       Meta.AddPageView(ipAddress);
       Meta.AddRootView(req.body.root);
       Meta.AddBrowserView(req.body.browser);
     }
+
 }
 
 const RootCount = (req,res,next) =>{
@@ -145,7 +145,7 @@ const CompletedQuotes = (req,res,next) => {
 
    Schedule.completeThese(req.body.quotes,(data)=>{
        res.redirect('/admin/quotes');
-   })
+   });
 
 }
 

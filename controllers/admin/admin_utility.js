@@ -1,4 +1,3 @@
-var Quote = require("./../../data/quote.js");
 var Schedule = require("./../../data/schedule.js");
 var Meta = require("./../../data/meta.js");
 var Labor = require("./../../data/labor.js");
@@ -9,6 +8,7 @@ var brow = {
   chrome:0,
   edge:0
 }
+
 var data_rendered_to_page = {
 
   quotes:null,
@@ -26,23 +26,24 @@ var data_rendered_to_page = {
 const  GetBrowserCounts = async ()=>{
 
       var browsers =   await Meta.ReturnAllBrowsers();
-      console.log(browsers);
+
       var new_brow = {...brow};
 
       for(var i = 0; i < browsers.length;i++){
 
-        if(browsers[i].browser == "Edge"){
+        if(browsers[i].browser.toUpperCase() == "Edge"){
           new_brow.edge = browsers[i].qty
         }
-        else if(browsers[i].browser == "Chrome"){
+        else if(browsers[i].browser.toUpperCase() == "Chrome"){
           new_brow.chrome = browsers[i].qty
         }
-        else if(browsers[i].browser == "Safari"){
+        else if(browsers[i].browser.toUpperCase() == "Safari"){
           new_brow.safari = browsers[i].qty
         }
-        else if(browsers[i].browser == "Firefox"){
+        else if(browsers[i].browser.toUpperCase() == "Firefox"){
           new_brow.firefox = browsers[i].qty
         }
+
       }
 
       return new_brow;
@@ -54,11 +55,14 @@ function MakeFavoritesBeginningArray(schedules){
     var new_schedules = [];
 
     for(var i =0; i< schedules.length;i++ ){
+
       if(schedules[i].isFavorite){
         new_schedules.unshift(schedules[i]);
-      }else{
+      }
+      else{
         new_schedules.push(schedules[i]);
       }
+
     }
 
   return new_schedules;
@@ -92,7 +96,6 @@ const renderAllData = async(req,res)=>{
       for(var i = 0; i < schedules.length; i++){
         total_potential_sales += schedules[i].total;
       }
-
 
       var new_data_to_page = {...data_rendered_to_page};
 
