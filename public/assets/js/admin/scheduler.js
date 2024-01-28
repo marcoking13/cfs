@@ -6,6 +6,9 @@ var edit_modal = document.querySelector(".modal_schedule");
 var submit_button = document.querySelector(".schedule_submit_button");
 var submit_form = document.querySelector(".schedule_submit_form");
 var overlay_container = document.querySelector(".overlay_container");
+var delete_button = document.querySelector(".delete_schedule");
+var display = document.querySelector(".display_schedule");
+
 
 var person_id;
 var time_id;
@@ -14,18 +17,52 @@ var name_of_job;
 var day_id;
 var address;
 
+function RenderDisplay(name_of_job,address){
+  console.log(name_of_job,address);
+  var name_of_job_ = name_of_job ? name_of_job : "";
+  var address_ = address ? address : "";
+
+  var html ;
+
+  if(name_of_job_.length > 0 || address_.length > 0){
+    html =(
+    `<h2 class="schedule_heading width-100 text-center">Name of Job</h2>
+    <br />
+    <p class="text-center schedule_text schedule_name"style="font-size:25px">${name_of_job_}</p>
+    <br />
+    <h2 class="schedule_heading width-100 text-center">Address</h2>
+    <br />
+    <p class="text-center schedule_text schedule_address"style="font-size:25px">${address_}</p>`
+)
+}else{
+  html = (
+      `<div class="padding-2"><h2 class="schedule_heading width-100 text-center"style="margin-top:5%;color:black;font-size:25px">No Job Posted</h2>
+      <p class="text-center schedule_text schedule_name"style="margin-top:15%;color:black;font-size:20px">Create New Schedule</p></div>`
+  )
+
+}
+
+ display.innerHTML = html
+
+}
+
 function AddToSubmitForms(){
 
   if(submit_button && submit_form){
 
     submit_button.addEventListener("click", (e)=>{
       e.preventDefault();
-      Submit();
+      Submit("schedule");
     })
 
     submit_form.addEventListener("submit", (e)=>{
       e.preventDefault();
-      Submit();
+      Submit("schedule");
+    });
+
+    delete_button.addEventListener("click", (e)=>{
+      console.log("s")
+      Submit("delete");
     })
 
   }
@@ -87,6 +124,8 @@ const ShowScheduleModal = (e) => {
   var day_id = element.getAttribute("day_id");
   var schedule_id = element.getAttribute("schedule_id");
 
+  var name_of_job = element.getAttribute("name_of_job");
+  var address = element.getAttribute("address_");
   var time_el = document.querySelector(".time_delta_container");
 
   var time_text = `<p class="font-30 text-center akrobat time_delta"> ${time}:00 AM - </p>`
@@ -95,6 +134,8 @@ const ShowScheduleModal = (e) => {
   console.log(day_id);
   SetId(person_id,time_id,schedule_id,day_id);
   RenderOverlay(false,"modal_schedule");
+
+  RenderDisplay(name_of_job,address);
 
   time_el.innerHTML = ""
   time_el.innerHTML = time_text;
@@ -111,7 +152,7 @@ const SetId = (person,time,schedule,day) => {
 }
 
 
-const Submit = async (e) => {
+const Submit = async (query) => {
 
   var job_input = document.getElementById("job_input");
   var address_input = document.getElementById("address_input");
@@ -128,7 +169,7 @@ const Submit = async (e) => {
     day_id:day_id
   }
 
-  await axios.post("/admin/edit/schedule",data,{headers: { 'content-type':'application/x-www-form-urlencoded', 'accept':'application/json' }});
+  await axios.post(`/admin/edit/${query}`,data,{headers: { 'content-type':'application/x-www-form-urlencoded', 'accept':'application/json' }});
 
   window.location.assign("/admin/schedule")
 

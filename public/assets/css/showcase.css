@@ -48,7 +48,7 @@ span{
 }
 
 .showcase_container{
-  height:100vh;
+  height:105vh;
   width:100%;
   background-size: cover;
   position: relative;
@@ -83,7 +83,7 @@ span{
 .showcase_background{
   z-index:0;
   width:50%;
-  height: 105vh ;
+  height: 110vh ;
   margin-left:2.5%;
   position: absolute;
   top:-5%;
@@ -96,7 +96,7 @@ span{
 
 .intro-text-container{
   width:80%;
-  margin-top:0%;
+  margin-top:-2.5%;
 }
 
 .showcase_image {
@@ -158,7 +158,7 @@ span{
   margin-top:5%;
   position: absolute !important;
   width:100%;
-  top:90% ;
+  top:95% ;
   z-index:1;
 }
 
@@ -169,7 +169,7 @@ span{
 }
 
 .showcase_banner--2{
-  width:30% !important;
+  width:60%;
   height:10vh;
   position: relative;
   bottom:5rem;

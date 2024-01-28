@@ -7,6 +7,11 @@
   background:white;
   border-color:white;
   color:#38B6FF;
+
+}
+
+.modal_show{
+  padding-top:10%;
 }
 
 .page_count_row{
@@ -14,6 +19,41 @@
   border:2px solid #e6e6e6;
   padding:5%;
   height:250px
+}
+.schedule_text{
+  font-style: 25px !important;
+  font-family: "Akrobat";
+}
+.address_eds{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.schedule_submit_button{
+  font-size:15px;
+}
+.delete_schedule{
+  background:black;
+  color:white;
+  width:100%;
+  font-size:14px;
+  transition: all .4s;
+
+}
+.modal_show{
+  padding-bottom:5% !important;
+}
+.delete_user:hover{
+  background:red !important;
+
+}
+
+.fav_icon{
+  filter:brightness(0);
+}
+.active_fav:hover{
+  filter:brightness(0) !important;
+
 }
 
 .modal_schedule{
@@ -130,8 +170,7 @@
 
 .add_box_schedule{
   border:2px solid #e6e6e6;
-  padding:10%;
-  height:30vh !important;
+  padding:2%;
 }
 
 .table_schedule_page{
@@ -165,14 +204,30 @@
   visibility: visible;
   visibility: visible !important;
 }
+.add_labor_name{
+  font-size:25px;
+  margin-top:5%;
+}
+#addUser:hover{
+  background:#38B6FF;
 
+}
+#addUser:hover p{
+  color:white !important;
+
+}
+.add_box:hover p{
+  color:white !important;
+}
+#addUser:hover img{
+  filter:brightness(2);
+}
 .add_box{
   border:2px solid #e6e6e6;
+  height:40vh;
 }
 
-.add_box_big_active{
-  border:3px solid yellow !important;
-}
+
 
 .add_box_big{
   border:2px solid #e6e6e6;
@@ -206,8 +261,6 @@
 
 .add_box{
   border:2px solid #e6e6e6;
-  padding:20%;
-  height:50vh
 }
 
 .add_box:hover{
@@ -243,7 +296,32 @@
 .active_fav{
   filter:invert(58%) sepia(63%) saturate(3267%) hue-rotate(325deg) brightness(103%) contrast(107%) !important;
 }
+.labor_name{
+  color:#292929;
+  font-size:15px;
+  width:100%;
+  padding-bottom:2.5%;
 
+}
+.add_box_big_active{
+  color:white !important
+}
+.add_box_big_active p{
+  color:white !important;
+}
+.add_box_schedule_inactive{
+  color:black !important;
+  opacity:.9;
+  background:white !important;
+}
+.add_box_schedule_active{
+  color:white !important;
+  opacity:1;
+  background:#38B6FF !important;
+}
+.add_box{
+  box-shadow:0px 0px  10px rgba(0,0,0,.3);
+}
 .delete_quote_button{
   background:none;
   color:#FF5757;
@@ -254,6 +332,10 @@
 
 .active_quote_button{
   visibility: visible !important;
+  color:black !important;
+  font-size:1.5rem;
+  font-weight:400;
+  font-family:"Akrobat";
 }
 .text-quote-col{
   margin-top:10%;
@@ -344,7 +426,6 @@
 
 .complete_quote_button{
   border-radius:none;
-  height:5vh;
 }
 
 td{

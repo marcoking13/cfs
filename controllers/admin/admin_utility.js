@@ -31,16 +31,16 @@ const  GetBrowserCounts = async ()=>{
 
       for(var i = 0; i < browsers.length;i++){
 
-        if(browsers[i].browser.toUpperCase() == "Edge"){
+        if(browsers[i].browser == "Edge"){
           new_brow.edge = browsers[i].qty
         }
-        else if(browsers[i].browser.toUpperCase() == "Chrome"){
+        else if(browsers[i].browser == "Chrome"){
           new_brow.chrome = browsers[i].qty
         }
-        else if(browsers[i].browser.toUpperCase() == "Safari"){
+        else if(browsers[i].browser == "Safari"){
           new_brow.safari = browsers[i].qty
         }
-        else if(browsers[i].browser.toUpperCase() == "Firefox"){
+        else if(browsers[i].browser == "Firefox"){
           new_brow.firefox = browsers[i].qty
         }
 

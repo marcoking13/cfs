@@ -6,11 +6,21 @@
  html{
    box-sizing: border-box
  }
- 
+ .cfs-background{
+   background:#38B6FF
+ }
+.filter-black{
+  filter:brightness(.5);
+}
  .relative{
    position: relative;
  }
-
+ .padding-bottom-5{
+   padding-bottom:5%;
+ }
+.margin-top-15{
+  margin-top:15%;
+}
  .padding-top-bottom-5{
    padding-top:5%;
    padding-bottom:5%;

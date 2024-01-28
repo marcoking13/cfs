@@ -4,15 +4,17 @@
 
       <div class="modal_schedule " >
 
+
         <div class="row">
 
-          <div class="col-4"></div>
+          <div class="col-3"></div>
 
-          <div class="col-4 modal_show padding-2_5" >
+          <div class="col-6 modal_show  relative" >
+            <div class="row">
+            <div class="col-6">
+            <form action = "/admin/edit/schedule" class="schedule_submit_form" method = "POST">
 
-          <form action = "/admin/edit/schedule" class="schedule_submit_form" method = "POST">
-
-              <div class="time_delta_container">              </div>
+              <div class="time_delta_container">   </div>
 
               <div class="margin-top-10 margin-bottom-10">
 
@@ -21,10 +23,21 @@
 
               </div>
 
-              <button type="submit" class="btn width-50 margin-left-25 white-background margin-top-10 schedule_submit_button"> Submit </button>
+              <button type="submit" class="btn width-100 white-background margin-top-10 schedule_submit_button"> Submit </button>
 
              </form>
 
+
+              <button type="submit" class="btn white-background margin-top-10 delete_schedule" > Delete </button>
+
+             </div>
+             <div class="col-6 "style="border-left:1px solid #e6e6e6;">
+               <div class="display_schedule">
+
+              </div>
+
+              </div>
+             </div>
            </div>
 
           </div>

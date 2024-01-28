@@ -36,6 +36,19 @@ var data_rendered_to_page = {
 const EditSchedule = async (req,res,next) => {
 
   var data  = req.body;
+  console.log(data);
+  await Labor.EditSchedule(data,()=>{
+    res.redirect("/admin/schedule");
+  });
+
+}
+
+const DeleteSchedule = async (req,res,next) => {
+
+  var data  = req.body;
+  data.name_of_job = "";
+  data.address = "";
+  console.log(data)
 
   await Labor.EditSchedule(data,()=>{
     res.redirect("/admin/schedule");
@@ -59,6 +72,7 @@ const GetQuotePage = async (req,res,next) => {
 
       var new_schedules = utility.MakeFavoritesBeginningArray(schedules);
       var new_data_to_page = {...data};
+
       data_rendered_to_page.quotes = new_schedules;
       data_rendered_to_page.path = req.path;
       data_rendered_to_page.pageTitle = "Admin Quotes";
@@ -89,7 +103,7 @@ const MakeFavorite = async(req,res,next) => {
 
     var fav = await Schedule.MakeFavorite(_id,isFav,(success)=>{
       var data = utility.renderAllData(req,res);
-      res.render(path.join(rootDir,"views",`/admin/index.ejs`),data);
+      res.redirect("/admin/home");
     });
 
 }
@@ -153,6 +167,8 @@ exports.DeleteQuotes = DeleteQuotes;
 exports.GetIndexPage = GetIndexPage;
 exports.RootCount = RootCount;
 exports.EditSchedule = EditSchedule;
+exports.DeleteSchedule = DeleteSchedule;
+
 exports.AddLaborer = AddLaborer;
 exports.ShowSchedule = ShowSchedule;
 exports.CompleteQuotes = CompleteQuotes;

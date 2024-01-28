@@ -1,12 +1,12 @@
 <ul class="schedule_lists margin-top-5">
+      <% console.log(quotes) %>
 
       <% var new_quotes = path == "/admin/home"  ? limited_quotes : quotes %>
-      <% console.log(quotes) %>
       <% if (new_quotes.length < 0) {%>
           <p> No Quotes Yet..</p>
       <% }else{ %>
 
-        <% for (let quote of new_quotes){%>
+        <% for (let quote of quotes){%>
 
           <li class="list_item_schedule row padding-2 dark-shadow relative width-100" quote_id = <%= quote._id %>>
 

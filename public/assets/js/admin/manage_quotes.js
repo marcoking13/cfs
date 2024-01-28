@@ -1,19 +1,17 @@
 var quotes_to_be_deleted = [];
+
 var option_buttons = document.getElementsByClassName("option_button");
 var favorite_buttons = document.getElementsByClassName("favorite_button");
 var delete_button = document.querySelector(".delete_quote_button");
 var complete_button = document.querySelector(".complete_quote_button");
-
 const sendQuotes  = async (className,backend_url,frontend_url)=>{
-
-  var interactable = complete_button.getAttribute("interactable");
-  var  r;
-
-  complete_button = document.querySelector("."+className)
+var interactable = complete_button.getAttribute("interactable");
+var r;
+complete_button = document.querySelector("."+className)
 
   if(interactable == 1){
 
-       r = await axios.post(`/admin/${backend_url}`,{quotes:quotes_to_be_deleted}, {
+      r = await axios.post(`/admin/${backend_url}`,{quotes:quotes_to_be_deleted}, {
 
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
