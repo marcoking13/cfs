@@ -177,7 +177,7 @@
   margin-top:-2.5%;
   padding:5%;
   position:relative ;
-  height:25rem;
+  height:20rem;
   width:100%
 }
 
@@ -476,13 +476,16 @@
     max-width:100%;
     flex:100%;
   }
-
+  /* .contact_section_title{
+    margin-top:40%;
+  } */
   .about_us{
-    margin-top:135% !important;
+    margin-top:125% !important;
   }
 
   .contact_section{
-    height:25vh !important;
+    /* height:25vh !important; */
+    margin-top:100%;
   }
 
   .about_us_banner{
@@ -515,7 +518,7 @@
   }
 
   .contact_section{
-    margin-top:20%;
+    margin-top:40%;
   }
 
   .our_client_banner{
@@ -579,7 +582,7 @@
   }
 
   .home_quote_container{
-    width:90%;
+    width:80%;
   }
 
   .gallery_img{

@@ -161,6 +161,11 @@
 
 @media screen and (max-width:680px){
 
+  .new_our_clients_container{
+    padding-bottom:45%;
+    padding-top:20%;
+  }
+
    .our_clients_col {
       width:70% !important;
       transition: all .4s !important;
@@ -279,7 +284,7 @@
     .contact_section_bluebox {
       z-index: -1;
       width: 30%;
-      top: -25%;
+      top: 35%;
       height: 150%;
     }
 
