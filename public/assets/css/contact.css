@@ -445,13 +445,33 @@
 
 }
 
-@media screen and (orientation:portrait)and  (max-width:490px){
+@media screen and (orientation:portrait)and  (max-width:590px){
 
-
+.desktop_only{
+  visibility: hidden;
+}
+.steps_box{
+  margin-top:-10%;
+}
     .showcase_background {
       height:70vh !important;
     }
 
+    .knob_s{
+      top: 60px !important;
+      right: -15px;
+    }
+.what_we_clean_line{
+  position: relative;
+  transform: rotate(90deg);
+  float: left;
+  bottom: 40px;
+  left: 40px;
+}
+.clean_bubble_{
+  top:4%;
+  position:absolute !important;
+}
   .clock_col{
     max-width: 1000% !important;
     width:100% !important;
@@ -509,9 +529,9 @@
     margin-left: 8%;
   }
 
-  .steps_box{
+  /* .steps_box{
     margin-top:2.5% !important
-  }
+  } */
 
   .progress_clean{
     border-bottom:2px solid white;
