@@ -337,7 +337,7 @@
 .home_quote_container{
   top:85%;
   width:80%;
-  left:5%;
+  left:10%;
   box-shadow: 0rem 2rem 5rem rgba(0,0,0,.5);
   transform: scale(1);
   animation: quote 1 ease-in .5s;
@@ -779,7 +779,7 @@
   }
 
   .about_us_row{
-    margin-top: 55% !important;
+    margin-top: 70% !important;
   }
 
   .our_clients_overlay{

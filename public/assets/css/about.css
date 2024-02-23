@@ -10,8 +10,8 @@
   }
 
   .mission_col{
-    margin-top:5% !important;
-    padding-bottom:2%;
+    padding-bottom:10%;
+    padding-top:12.5%;
     flex: 100% !important;
     max-width: 100% !important;
     width:  100% !important;
@@ -25,7 +25,7 @@
 
   .what_we_do_description{
     width: 150% !important;
-    font-size:1.6rem !important;
+    font-size:1.8rem !important;
   }
 
   .about_container{

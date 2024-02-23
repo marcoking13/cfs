@@ -309,13 +309,16 @@
   .our_clients_containers{
     margin-top:0% !important;
   }
+  .new_our_clients_container{
+    padding-bottom:0%;
+  }
 
   .main_box_paragraph{
     margin-left:-2.5% !important
   }
 
   .our_clients_overlay{
-    height: 100% !important;
+    height: 75% !important;
   }
 
   .new_our_clients_row{
@@ -324,7 +327,11 @@
   }
 
   .our_client_buttons{
-    top: 120% !important;
+    top: 100% !important;
+  }
+
+  .our_clients_main_box{
+    height:75%;
   }
 
 }
