@@ -21,7 +21,6 @@ var data_rendered_to_page = {
   modal:null,
   limited_quotes:null,
   path:null,
-
   pageTitle:null,
   people:null,
   meta:{
@@ -168,7 +167,6 @@ exports.GetIndexPage = GetIndexPage;
 exports.RootCount = RootCount;
 exports.EditSchedule = EditSchedule;
 exports.DeleteSchedule = DeleteSchedule;
-
 exports.AddLaborer = AddLaborer;
 exports.ShowSchedule = ShowSchedule;
 exports.CompleteQuotes = CompleteQuotes;
