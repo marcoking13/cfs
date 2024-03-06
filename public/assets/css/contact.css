@@ -434,7 +434,7 @@
   .ring{
     left: 20%;
     position: absolute;
-    top: 200%;
+    top: 100% !important;
   }
 
   .ring_row{
