@@ -542,7 +542,7 @@
   }
 
   .contact_info_section--email {
-    font-size: 2.2rem !important;
+    font-size: 2.2rem;
     width: 95% !important;
   }
 
@@ -803,7 +803,7 @@
     margin-top: 5%;
   }
   .contact_info_section--email{
-    font-size:2rem;
+    font-size:1.8rem !important;
   }
 
 }
