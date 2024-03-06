@@ -336,9 +336,11 @@
   .main_box_paragraph{
     font-size:1rem;
     padding:2.5%;
+    margin-left:-2.5%;
   }
 
 }
+
 .client_image{
   object-fit: fill;
 }
