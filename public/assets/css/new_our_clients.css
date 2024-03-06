@@ -306,6 +306,14 @@
     height: 100% !important;
   }
 
+  .our_client_button{
+    background:#00103d;
+    height:20%;
+    width:20%;
+    float:left;
+    margin-left:2%;
+  }
+
   .our_clients_containers{
     margin-top:0% !important;
   }
