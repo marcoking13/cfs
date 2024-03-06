@@ -335,6 +335,9 @@
   }
 
 }
+.client_image{
+  object-fit: fill;
+}
 
 @media screen and (max-width:900px) and (min-width:600px) and (orientation:portrait){
 
@@ -345,6 +348,8 @@
   .our_clients_col {
     height: 100%;
   }
+
+
 
   .our_clients_main_box{
     height: 70%;
