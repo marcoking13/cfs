@@ -308,12 +308,14 @@
 
   .our_client_button{
     background:#00103d;
-    height:20%;
+    height:2rem;
     width:20%;
     float:left;
     margin-left:2%;
   }
-
+.client_image{
+  width:85%;
+}
   .our_clients_containers{
     margin-top:0% !important;
   }
