@@ -307,7 +307,6 @@
   }
 
   .our_client_button{
-    background:#00103d;
     height:2rem;
     width:20%;
     float:left;
@@ -340,12 +339,12 @@
   }
 
   .our_clients_main_box{
-    height:75%;
+    height:85%;
   }
   .main_box_paragraph{
     font-size:1.1rem;
-    padding:2.5%;
     width:100%;
+
   }
 
 }
