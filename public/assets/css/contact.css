@@ -433,8 +433,8 @@
 
   .ring{
     left: 20%;
-    position: absolute;
-    top: 100% !important;
+    position: relative;
+    top: 100px;
   }
 
   .ring_row{
@@ -443,7 +443,7 @@
 
  .knob_s{
     top: -200% !important;
-    right: -20% !important;
+    right: -30% !important;
     position: relative
   }
 
