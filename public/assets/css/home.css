@@ -576,7 +576,7 @@
 
 @media screen and (max-width: 900px) and (min-width:600px) and (orientation: portrait) {
   .about_us_row{
-    margin-top:55% !important;
+    margin-top:60% !important;
     margin-left:5%;
     width:90% !important;
   }
@@ -688,7 +688,7 @@
   .new_our_clients_row {
       position: relative;
       height: 55vh;
-      margin-top: 15%;
+      margin-top: 5%;
   }
 
   .about_us_link {
