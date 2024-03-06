@@ -353,7 +353,7 @@
 @media screen and (max-width:1400px) and (min-width:1080px) and (orientation:landscape){
 
   .knob_s{
-    top: 55px !important;
+    top: 50px !important;
     right: -15px;
     position: relative;
   }
