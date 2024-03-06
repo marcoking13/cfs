@@ -324,7 +324,6 @@
   }
 
   .main_box_paragraph{
-    margin-left:-2.5% !important
   }
 
   .our_clients_overlay{
@@ -344,9 +343,9 @@
     height:75%;
   }
   .main_box_paragraph{
-    font-size:1rem;
+    font-size:1.1rem;
     padding:2.5%;
-    margin-left:-2.5%;
+    width:100%;
   }
 
 }
