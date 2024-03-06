@@ -366,6 +366,10 @@
   .progress_clean{
     margin-top:10%;
   }
+  .contact_number{
+    font-size:14px;
+    width:100%;
+  }
     .knob_s{
       top:0px !important;
     }
