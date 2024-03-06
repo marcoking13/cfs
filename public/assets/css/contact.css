@@ -367,8 +367,8 @@
     margin-top:10%;
   }
   .contact_number{
-    font-size:14px;
     width:100%;
+    display: block;
   }
     .knob_s{
       top:0px !important;
