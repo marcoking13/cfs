@@ -333,6 +333,10 @@
   .our_clients_main_box{
     height:75%;
   }
+  .main_box_paragraph{
+    font-size:1rem;
+    padding:2.5%;
+  }
 
 }
 .client_image{
