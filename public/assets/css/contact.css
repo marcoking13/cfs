@@ -434,7 +434,7 @@
   .ring{
     left: 20%;
     position: absolute;
-    top: 100%;
+    top: 150%;
   }
 
   .ring_row{
@@ -442,8 +442,8 @@
   }
 
  .knob_s{
-    top: -140% !important;
-    right: -22.5% !important;
+    top: -200% !important;
+    right: -20% !important;
     position: relative
   }
 
